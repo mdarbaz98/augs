@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap');
+$heading-font: 'PT Serif', serif;
+$para-font: 'Ubuntu', sans-serif;
+// $many-color: ("blk": #000,"wht": #fff,"ylw": yellow);
+
+
+@mixin btn($bg-color:#000) {
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: antiquewhite;
+    background-color: $bg-color;
+    cursor: pointer;
+}
+
