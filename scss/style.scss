@@ -8,10 +8,4 @@
     h1{
         // color: map-get($many-color , wht);
     }
-    button{
-        @include btn;
-    }
-    .snd{
-        @include btn(red);
-    }
 }
