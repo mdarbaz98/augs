@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,6 +112,7 @@ p {
   text-transform: uppercase;
   background-color: #212529;
   margin: 10px 5px;
+  display: block;
 }
 .home__section .section-1 .right__homeSection .home-category-buttons-section button a {
   color: #f8f9fa;
@@ -138,6 +139,9 @@ p {
   text-transform: uppercase;
   background-color: #212529;
   margin: 10px 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .owl-carousel .owl-nav button.owl-next,
