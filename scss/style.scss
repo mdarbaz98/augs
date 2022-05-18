@@ -1,11 +1,17 @@
 @use "./variables" as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components/buttons";
+@use "./components" as *;
 .main{
     p{
         // font-family: $heading-font;
         // color: map-get($many-color , ylw);
         // @include color;
+    }
+    .cr-btn{
+        @include btn(50px,8px 20px);
+    }
+    .sq-btn{
+        @include btn;
     }
 }

@@ -41,7 +41,19 @@ p {
   font-family: "Ubuntu", sans-serif;
 }
 
-.c-btn {
+.main .cr-btn {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px auto;
+}
+.main .sq-btn {
   font-family: "Ubuntu", sans-serif;
   padding: 8px 30px;
   border-radius: 4px;

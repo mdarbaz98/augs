@@ -1,9 +1,9 @@
 @use '../variables' as *;
 
-.c-btn{
+@mixin btn($radius: 4px,$padding: 8px 30px) {
     font-family: $para-font;
-    padding: 8px 30px;
-    border-radius: 4px;
+    padding: $padding;
+    border-radius: $radius;
     border: none;
     color: $color-9;
     letter-spacing: 0.7px;
