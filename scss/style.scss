@@ -2,16 +2,82 @@
 @use "./base/reset";
 @use "./base/typography";
 @use "./components" as *;
-.main{
-    p{
-        // font-family: $heading-font;
-        // color: map-get($many-color , ylw);
-        // @include color;
+@use "./utilities/" as *;
+// @import './pages/home.scss';
+.home__section {
+    .section-1 {
+      background-color: $color-8;
+      padding: 40px 45px;
+      .home__leftSection {
+        h1.home_heading {
+          font-size: 3.125rem;
+          max-width: 530px;
+          text-transform: uppercase;
+          padding: 20px 0px;
+        }
+        .three-div-container {
+          .home-div {
+            border: solid 1px $color-1;
+            border-radius: 6px;
+            padding: 22px 30px;
+            height: 100%;
+            h1 {
+              font-size: 1.375rem;
+            }
+            p {
+              font-size: 0.875rem;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+      .right__homeSection {
+        @include image-css(unset);
+  
+        .home-category-buttons-section {
+          button {
+            @include btn(50px, 2px 36px, 1.25rem, $heading-font);
+            a {
+              color: $color-9;
+            }
+          }
+        }
+      }
     }
-    .cr-btn{
-        @include btn(50px,8px 20px);
+    .section-2 {
+      .home-blog-section {
+        #home-owl-carousel {
+          @include blogCard;
+          .blog-desc-sec {
+            .sq-btn {
+              @include btn;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+      }
+  }
+  }
+  }
+  
+  @include owl-btn;
+  
+  //media screen queries
+  @media only screen and(max-width: 600px) {
+    .home__section {
+      padding: 15px;
+      .home__leftSection {
+        h1.home_heading {
+          max-width: 300px;
+        }
+        .three-div-container {
+          .home-div {
+            padding: 5px 10px;
+          }
+        }
+      }
+      .right__homeSection {
+        @include image-css(unset, 300px);
+      }
     }
-    .sq-btn{
-        @include btn;
-    }
-}
+  }
