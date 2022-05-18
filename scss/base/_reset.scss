@@ -15,8 +15,9 @@ h1,h2,h3{
 
 a,a:visited,a:active{
     text-decoration: none;
+    color: rgb(23, 23, 23);
 }
 
-*::after,*::before{
-    box-sizing: inherit;
-}
+// *::after,*::before{
+//     box-sizing: inherit;
+// }

@@ -1,11 +1,11 @@
 @use "./variables" as *;
+@use "./base/reset";
+@use "./base/typography";
+@use "./components/buttons";
 .main{
     p{
         // font-family: $heading-font;
         // color: map-get($many-color , ylw);
         // @include color;
-    }
-    h1{
-        // color: map-get($many-color , wht);
     }
 }

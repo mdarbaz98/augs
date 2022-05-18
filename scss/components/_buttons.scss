@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+.c-btn{
+    font-family: $para-font;
+    padding: 8px 30px;
+    border-radius: 4px;
+    border: none;
+    color: $color-9;
+    letter-spacing: 0.7px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: $color-1;
+    margin: 10px auto;
+}
