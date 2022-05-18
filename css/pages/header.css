@@ -16,12 +16,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: #171717;
-}
-
-.custome-container {
-  padding: 0px;
-  overflow-x: hidden;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
