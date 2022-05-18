@@ -4,7 +4,7 @@
 @use '../utilities/' as *;
 
 .home__section {
-    padding: 40px 30px;
+    padding: 40px 45px;
   .home__leftSection {
     h1.home_heading {
       font-size: 50px;
@@ -16,7 +16,7 @@
       .home-div {
         border: solid 1px $color-1;
         border-radius: 6px;
-        padding: 10px;
+        padding: 22px 30px;
         height: 100%;
         h1 {
           font-size: 22px;
@@ -41,7 +41,7 @@
     //   border-radius: 6px;
     //   }
     // }
-    @include image-css;
+    @include image-css(unset);
 
   }
 }

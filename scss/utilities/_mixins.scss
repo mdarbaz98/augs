@@ -1,12 +1,12 @@
 @use '../variables/' as *;
 
-@mixin image-css {
+@mixin image-css($width :530px, $height:556px) {
     .image-div {
         padding: 10px;
         border: solid 1px $color-1;
         border-radius: 6px;
-        width: 530px;
-        height: 556px;
+        width: $width;
+        height: $height;
         img {
             width: 100%;
             height: 100%;

@@ -51,7 +51,7 @@ p {
 }
 
 .home__section {
-  padding: 40px 30px;
+  padding: 40px 45px;
 }
 .home__section .home__leftSection h1.home_heading {
   font-size: 50px;
@@ -62,7 +62,7 @@ p {
 .home__section .home__leftSection .three-div-container .home-div {
   border: solid 1px #212529;
   border-radius: 6px;
-  padding: 10px;
+  padding: 22px 30px;
   height: 100%;
 }
 .home__section .home__leftSection .three-div-container .home-div h1 {
@@ -76,7 +76,7 @@ p {
   padding: 10px;
   border: solid 1px #212529;
   border-radius: 6px;
-  width: 530px;
+  width: unset;
   height: 556px;
 }
 .home__section .right__homeSection .image-div img {
