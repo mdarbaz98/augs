@@ -41,6 +41,10 @@ p {
   font-family: "Ubuntu", sans-serif;
 }
 
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 .main .cr-btn {
   font-family: "Ubuntu", sans-serif;
   padding: 8px 20px;
