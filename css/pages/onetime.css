@@ -40,3 +40,7 @@ p {
   color: #212529;
   font-family: "Ubuntu", sans-serif;
 }
+
+.onetime-privacy .onetime-banner-img img {
+  width: 100%;
+}

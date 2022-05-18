@@ -1,0 +1,8 @@
+@use "../variables/" as *;
+@use '../base/index' as *;
+
+.onetime-privacy{
+    .onetime-banner-img img{
+        width: 100%;
+    }
+}
