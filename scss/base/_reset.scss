@@ -1,11 +1,27 @@
+@use '../utilities/' as *;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+// body{
+//     font-size: 62.5% ;
+// }
+
+html{
+    //font size for phone 
     font-size: 100%;
+    @include mediaScreen(tab){
+        font-size: 70%;
+    }
+    @include mediaScreen(phone){
+        font-size: 63.75%;
+    }
+    @include mediaScreen(desktop){
+        font-size: 75%;
+    }
 }
 
 h1,h2,h3{
