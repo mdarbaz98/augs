@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,13 +144,86 @@ p {
   margin-right: auto;
 }
 
+.section-3 {
+  background-color: #e9ecef;
+}
+.section-3 .left-section {
+  max-width: 400px;
+}
+.section-3 .left-section p {
+  color: #212529;
+  font-size: 1.3rem;
+}
+.section-3 .right-section {
+  max-width: 500px;
+}
+.section-3 .right-section .form .form-floating input, .section-3 .right-section .form .form-floating textarea {
+  background-color: #c4c4c4;
+}
+.section-3 .right-section .form .form-floating label {
+  left: unset;
+  right: 0px;
+  color: #212529;
+}
+.section-3 .right-section .form button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 30px;
+  border-radius: 50px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  margin-left: auto;
+}
+
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
   width: 35px;
   height: 35px;
-  background-color: #000;
+  background-color: #212529;
   color: #fff;
   border-radius: 50px;
+}
+.owl-carousel .owl-nav {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .home__section .section-1 {
+    padding: 15px;
+  }
+  .home__section .section-1 .home__leftSection h1.home_heading {
+    max-width: 300px;
+  }
+  .home__section .section-1 .home__leftSection .three-div-container .home-div {
+    padding: 5px 10px;
+  }
+  .home__section .section-3 .left-section p {
+    font-weight: 600;
+  }
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  width: 35px;
+  height: 35px;
+  background-color: #212529;
+  color: #fff;
+  border-radius: 50px;
+}
+.owl-carousel .owl-nav {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
 }
 
 @media only screen and (max-width: 600px) {
