@@ -53,20 +53,15 @@
       display: flex;
       gap: 25px;
       position: absolute;
-      left: 50%;
       bottom: -2rem;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .owl-nav {
-      left: 40% !important;
-      bottom: -3.5rem !important;
+      justify-content: center;
+      width: 100%;
     }
   }
 }
 
 @mixin before {
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
