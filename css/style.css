@@ -352,3 +352,24 @@ p {
     object-fit: cover;
   }
 }
+.categoryproductED .header_cp_main {
+  margin-top: 4rem;
+}
+.categoryproductED .header_cp_main .header_cp_column1 {
+  padding: 0px;
+}
+.categoryproductED .header_cp_main .header_cp_column1 .header_cp_img img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 7px 0px 0px 7px;
+}
+.categoryproductED .header_cp_main .header_cp_column2 {
+  border-radius: 0px 7px 7px 0px;
+  background-color: #e9ecef;
+}
+.categoryproductED .header_cp_main .header_cp_column2 .header_cp_content {
+  margin-top: 2rem;
+}
+.categoryproductED .header_cp_main .header_cp_column2 .header_cp_content p {
+  font-size: 18px;
+}
