@@ -223,3 +223,178 @@ p {
     font-weight: 600;
   }
 }
+.onetime-privacy .onetime-banner-img,
+.onetime-about .onetime-banner-img,
+.onetime-tandc .onetime-banner-img,
+.onetime-contact .onetime-banner-img {
+  position: relative;
+}
+.onetime-privacy .onetime-banner-img img,
+.onetime-about .onetime-banner-img img,
+.onetime-tandc .onetime-banner-img img,
+.onetime-contact .onetime-banner-img img {
+  width: 100%;
+  height: 40rem;
+}
+.onetime-privacy .onetime-banner-img img,
+.onetime-about .onetime-banner-img img,
+.onetime-tandc .onetime-banner-img img,
+.onetime-contact .onetime-banner-img img {
+  width: 100%;
+  height: 40rem;
+}
+.onetime-privacy .overlay,
+.onetime-about .overlay,
+.onetime-tandc .overlay,
+.onetime-contact .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+.onetime-privacy .onetime-banner-content,
+.onetime-about .onetime-banner-content,
+.onetime-tandc .onetime-banner-content,
+.onetime-contact .onetime-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translate(-28%, -50%);
+  text-align: center;
+}
+.onetime-privacy .onetime-banner-content h1,
+.onetime-privacy .onetime-banner-content p,
+.onetime-about .onetime-banner-content h1,
+.onetime-about .onetime-banner-content p,
+.onetime-tandc .onetime-banner-content h1,
+.onetime-tandc .onetime-banner-content p,
+.onetime-contact .onetime-banner-content h1,
+.onetime-contact .onetime-banner-content p {
+  color: #f8f9fa;
+}
+.onetime-privacy .main-section,
+.onetime-about .main-section,
+.onetime-tandc .main-section,
+.onetime-contact .main-section {
+  margin-top: 1.875rem;
+}
+.onetime-privacy .main-section .main-section-inside1 .image-div,
+.onetime-privacy .main-section .contact-section-inside2 .image-div,
+.onetime-about .main-section .main-section-inside1 .image-div,
+.onetime-about .main-section .contact-section-inside2 .image-div,
+.onetime-tandc .main-section .main-section-inside1 .image-div,
+.onetime-tandc .main-section .contact-section-inside2 .image-div,
+.onetime-contact .main-section .main-section-inside1 .image-div,
+.onetime-contact .main-section .contact-section-inside2 .image-div {
+  padding: 10px;
+  border: solid 1px #212529;
+  border-radius: 6px;
+  width: 530px;
+  height: 556px;
+}
+.onetime-privacy .main-section .main-section-inside1 .image-div img,
+.onetime-privacy .main-section .contact-section-inside2 .image-div img,
+.onetime-about .main-section .main-section-inside1 .image-div img,
+.onetime-about .main-section .contact-section-inside2 .image-div img,
+.onetime-tandc .main-section .main-section-inside1 .image-div img,
+.onetime-tandc .main-section .contact-section-inside2 .image-div img,
+.onetime-contact .main-section .main-section-inside1 .image-div img,
+.onetime-contact .main-section .contact-section-inside2 .image-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.onetime-privacy .main-section .main-section-inside2 p,
+.onetime-about .main-section .main-section-inside2 p,
+.onetime-tandc .main-section .main-section-inside2 p,
+.onetime-contact .main-section .main-section-inside2 p {
+  font-size: 1rem;
+}
+.onetime-privacy .main-section .contact-section-inside1,
+.onetime-about .main-section .contact-section-inside1,
+.onetime-tandc .main-section .contact-section-inside1,
+.onetime-contact .main-section .contact-section-inside1 {
+  margin-top: 5rem;
+}
+.onetime-privacy .main-section .contact-section-inside1 p,
+.onetime-about .main-section .contact-section-inside1 p,
+.onetime-tandc .main-section .contact-section-inside1 p,
+.onetime-contact .main-section .contact-section-inside1 p {
+  font-size: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .onetime-privacy .onetime-banner-content,
+.onetime-about .onetime-banner-content,
+.onetime-tandc .onetime-banner-content,
+.onetime-contact .onetime-banner-content {
+    top: 30%;
+    left: 24%;
+    transform: translate(-18%, -50%);
+  }
+  .onetime-privacy .main-section .main-section-inside1,
+.onetime-privacy .main-section .contact-section-inside2,
+.onetime-about .main-section .main-section-inside1,
+.onetime-about .main-section .contact-section-inside2,
+.onetime-tandc .main-section .main-section-inside1,
+.onetime-tandc .main-section .contact-section-inside2,
+.onetime-contact .main-section .main-section-inside1,
+.onetime-contact .main-section .contact-section-inside2 {
+    padding: 0rem 1.875rem 1.25rem;
+  }
+  .onetime-privacy .main-section .main-section-inside1 .image-div,
+.onetime-privacy .main-section .contact-section-inside2 .image-div,
+.onetime-about .main-section .main-section-inside1 .image-div,
+.onetime-about .main-section .contact-section-inside2 .image-div,
+.onetime-tandc .main-section .main-section-inside1 .image-div,
+.onetime-tandc .main-section .contact-section-inside2 .image-div,
+.onetime-contact .main-section .main-section-inside1 .image-div,
+.onetime-contact .main-section .contact-section-inside2 .image-div {
+    padding: 10px;
+    border: solid 1px #212529;
+    border-radius: 6px;
+    width: 100%;
+    height: 556px;
+  }
+  .onetime-privacy .main-section .main-section-inside1 .image-div img,
+.onetime-privacy .main-section .contact-section-inside2 .image-div img,
+.onetime-about .main-section .main-section-inside1 .image-div img,
+.onetime-about .main-section .contact-section-inside2 .image-div img,
+.onetime-tandc .main-section .main-section-inside1 .image-div img,
+.onetime-tandc .main-section .contact-section-inside2 .image-div img,
+.onetime-contact .main-section .main-section-inside1 .image-div img,
+.onetime-contact .main-section .contact-section-inside2 .image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .onetime-privacy .main-section .contact-section-inside1,
+.onetime-about .main-section .contact-section-inside1,
+.onetime-tandc .main-section .contact-section-inside1,
+.onetime-contact .main-section .contact-section-inside1 {
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .onetime-banner-content {
+    top: 21%;
+  }
+
+  .main-section .contact-section-inside2 .image-div {
+    padding: 10px;
+    border: solid 1px #212529;
+    border-radius: 6px;
+    width: 100%;
+    height: 556px;
+  }
+  .main-section .contact-section-inside2 .image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+}
