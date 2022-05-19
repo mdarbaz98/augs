@@ -4,7 +4,7 @@ $('#home-owl-carousel').owlCarousel({
     nav:true,
     responsive:{
         0:{
-            items:1.5
+            items:1.3
         },
         600:{
             items:3

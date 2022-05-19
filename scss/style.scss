@@ -1,8 +1,8 @@
-@use "./variables"as *;
+@use "./variables" as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components"as *;
-@use "./utilities/"as *;
+@use "./components" as *;
+@use "./utilities/" as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -24,6 +24,7 @@
           height: 100%;
           h1 {
             font-size: 1.375rem;
+            text-transform: uppercase;
           }
           p {
             font-size: 0.875rem;
@@ -50,6 +51,22 @@
       #home-owl-carousel {
         @include blogCard;
         .blog-desc-sec {
+          h1 {
+            height: 2rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          p {
+            height: 4.5rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
           .sq-btn {
             @include btn;
             margin-left: auto;
@@ -60,31 +77,42 @@
     }
   }
 }
-.section-3{
+
+//before css
+.before {
+  width: fit-content;
+  @include before;
+}
+
+.section-3 {
   background-color: $color-8;
-  .left-section{
+  .left-section {
     max-width: 400px;
-    p{
+    p {
       color: $color-1;
-      font-size: 1.3rem
+      font-size: 1.3rem;
     }
   }
-  .right-section{
+  .right-section {
     max-width: 500px;
-    .form{
-      .form-floating{
-        input,textarea{
+    h3{
+      margin-left: auto;
+    }
+    .form {
+      .form-floating {
+        input,
+        textarea {
           background-color: $input;
         }
-        label{
+        label {
           left: unset;
           right: 0px;
           color: $color-1;
         }
-    }
-      button{
+      }
+      button {
         @include btn(50px);
-        margin-left: auto
+        margin-left: auto;
       }
     }
   }
@@ -97,7 +125,7 @@
   .home__section {
     // padding: 15px;
     .section-1 {
-      padding: 15px;
+      padding: 25px 5px;
       .home__leftSection {
         h1.home_heading {
           max-width: 300px;
@@ -105,41 +133,24 @@
         .three-div-container {
           .home-div {
             padding: 5px 10px;
+            p{
+              font-size: 1.2rem;
+            }
           }
+        }
+      }
+      .right__homeSection {
+        .image-div {
+          height: 350px;
         }
       }
     }
     .section-3 {
-      .left-section{
-        p{
+      .left-section {
+        p {
           font-weight: 600;
         }
       }
-    }
-  }
-}
-
-@include owl-btn;
-
-//media screen queries
-@media only screen and(max-width: 600px) {
-  .home__section {
-    padding: 15px;
-
-    .home__leftSection {
-      h1.home_heading {
-        max-width: 300px;
-      }
-
-      .three-div-container {
-        .home-div {
-          padding: 5px 10px;
-        }
-      }
-    }
-
-    .right__homeSection {
-      @include image-css(unset, 300px);
     }
   }
 }
@@ -170,7 +181,7 @@
     left: 0;
     width: 100%;
     height: 40rem;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .onetime-banner-content {
@@ -216,7 +227,6 @@
       transform: translate(-18%, -50%);
     }
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.875rem 1.25rem;
@@ -229,13 +239,11 @@
   }
 }
 
-@media only screen and (min-width:768px)and(max-width: 900px) {
-  
+@media only screen and (min-width: 768px) and(max-width: 900px) {
   .onetime-banner-content {
     top: 21%;
   }
   .main-section {
-
     .contact-section-inside2 {
       @include image-css(100%);
     }
