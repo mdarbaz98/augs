@@ -58,32 +58,32 @@
       }
     }
   }
-  .section-3{
-    background-color: $color-8;
-    .left-section{
-      max-width: 400px;
-      p{
-        color: $color-1;
-        font-size: 1.3rem
-      }
+}
+.section-3{
+  background-color: $color-8;
+  .left-section{
+    max-width: 400px;
+    p{
+      color: $color-1;
+      font-size: 1.3rem
     }
-    .right-section{
-      max-width: 500px;
-      .form{
-        .form-floating{
-          input,textarea{
-            background-color: $input;
-          }
-          label{
-            left: unset;
-            right: 0px;
-            color: $color-1;
-          }
-      }
-        button{
-          @include btn(50px);
-          margin-left: auto
+  }
+  .right-section{
+    max-width: 500px;
+    .form{
+      .form-floating{
+        input,textarea{
+          background-color: $input;
         }
+        label{
+          left: unset;
+          right: 0px;
+          color: $color-1;
+        }
+    }
+      button{
+        @include btn(50px);
+        margin-left: auto
       }
     }
   }

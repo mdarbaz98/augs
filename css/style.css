@@ -143,28 +143,29 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.home__section .section-3 {
+
+.section-3 {
   background-color: #e9ecef;
 }
-.home__section .section-3 .left-section {
+.section-3 .left-section {
   max-width: 400px;
 }
-.home__section .section-3 .left-section p {
+.section-3 .left-section p {
   color: #212529;
   font-size: 1.3rem;
 }
-.home__section .section-3 .right-section {
+.section-3 .right-section {
   max-width: 500px;
 }
-.home__section .section-3 .right-section .form .form-floating input, .home__section .section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .form-floating input, .section-3 .right-section .form .form-floating textarea {
   background-color: #c4c4c4;
 }
-.home__section .section-3 .right-section .form .form-floating label {
+.section-3 .right-section .form .form-floating label {
   left: unset;
   right: 0px;
   color: #212529;
 }
-.home__section .section-3 .right-section .form button {
+.section-3 .right-section .form button {
   font-family: "Ubuntu", sans-serif;
   padding: 8px 30px;
   border-radius: 50px;
