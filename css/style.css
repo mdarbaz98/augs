@@ -434,3 +434,19 @@ p {
     object-fit: cover;
   }
 }
+.footer__section {
+  font-family: "PT Serif", serif;
+  text-transform: capitalize;
+  background-color: #212529;
+}
+.footer__section .logo__div img {
+  width: 50px;
+}
+.footer__section .quick-links li a {
+  color: #f8f9fa;
+}
+.footer__section p {
+  color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 0px;
+}

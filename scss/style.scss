@@ -251,3 +251,33 @@
 }
 
 // one-time pages end
+
+
+//footer section css
+.footer__section{
+  font-family: $heading-font;
+  text-transform: capitalize;
+  background-color: $color-1;
+  .logo__div{
+    img{
+      width: 50px;
+    }
+  }
+  .quick-links{
+    li{
+      a{
+        color: $color-9;
+      }
+    }
+  }
+  p{
+  color: $color-9;
+  text-align: center;
+  margin-bottom: 0px;
+  }
+}
+//footer section css
+
+// header section css 
+
+// header section css 
