@@ -1,6 +1,7 @@
-@use '../variables' as *;
+@use '../variables'as *;
 
-@mixin btn($radius: 4px,$padding: 8px 30px,$fontSize: 0.8rem,$fontFamily: $para-font) {
+@mixin btn($radius: 4px,
+    $padding: 8px 40px, $fontSize: 0.8rem, $fontFamily: $para-font,$width:unset) {
     font-family: $fontFamily;
     padding: $padding;
     border-radius: $radius;
@@ -12,4 +13,5 @@
     background-color: $color-1;
     margin: 10px 5px;
     display: block;
+    width:$width;
 }

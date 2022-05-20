@@ -113,6 +113,7 @@ p {
   background-color: #212529;
   margin: 10px 5px;
   display: block;
+  width: unset;
 }
 .home__section .section-1 .right__homeSection .home-category-buttons-section button a {
   color: #f8f9fa;
@@ -130,7 +131,7 @@ p {
 }
 .home__section .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn {
   font-family: "Ubuntu", sans-serif;
-  padding: 8px 30px;
+  padding: 8px 40px;
   border-radius: 4px;
   border: none;
   color: #f8f9fa;
@@ -140,6 +141,7 @@ p {
   background-color: #212529;
   margin: 10px 5px;
   display: block;
+  width: unset;
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,7 +159,8 @@ p {
 .section-3 .right-section {
   max-width: 500px;
 }
-.section-3 .right-section .form .form-floating input, .section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .form-floating input,
+.section-3 .right-section .form .form-floating textarea {
   background-color: #c4c4c4;
 }
 .section-3 .right-section .form .form-floating label {
@@ -167,7 +170,7 @@ p {
 }
 .section-3 .right-section .form button {
   font-family: "Ubuntu", sans-serif;
-  padding: 8px 30px;
+  padding: 8px 40px;
   border-radius: 50px;
   border: none;
   color: #f8f9fa;
@@ -177,6 +180,7 @@ p {
   background-color: #212529;
   margin: 10px 5px;
   display: block;
+  width: unset;
   margin-left: auto;
 }
 
@@ -350,7 +354,32 @@ p {
 .onetime-about .main-section .contact-section-inside1 p,
 .onetime-tandc .main-section .contact-section-inside1 p,
 .onetime-contact .main-section .contact-section-inside1 p {
-  font-size: 18px;
+  font-size: 1.125rem;
+}
+.onetime-privacy .main-section .contact-section-inside2 .image-div,
+.onetime-about .main-section .contact-section-inside2 .image-div,
+.onetime-tandc .main-section .contact-section-inside2 .image-div,
+.onetime-contact .main-section .contact-section-inside2 .image-div {
+  padding: 10px;
+  border: solid 1px #212529;
+  border-radius: 6px;
+  width: 530px;
+  height: 420px;
+}
+.onetime-privacy .main-section .contact-section-inside2 .image-div img,
+.onetime-about .main-section .contact-section-inside2 .image-div img,
+.onetime-tandc .main-section .contact-section-inside2 .image-div img,
+.onetime-contact .main-section .contact-section-inside2 .image-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.onetime-privacy .main-section .contact-section-inside2 .section-3,
+.onetime-about .main-section .contact-section-inside2 .section-3,
+.onetime-tandc .main-section .contact-section-inside2 .section-3,
+.onetime-contact .main-section .contact-section-inside2 .section-3 {
+  background-color: transparent;
 }
 @media only screen and (max-width: 767px) {
   .onetime-privacy .onetime-banner-content,
@@ -445,4 +474,180 @@ p {
 }
 .categoryproductED .header_cp_main .header_cp_column2 .header_cp_content p {
   font-size: 18px;
+}
+.categoryproductED .products_category {
+  max-width: 1000px;
+}
+.categoryproductED .products_category .image-div {
+  padding: 10px;
+  border: solid 1px #212529;
+  border-radius: 6px;
+  width: unset;
+  height: unset;
+}
+.categoryproductED .products_category .image-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.categoryproductED .products_category .header_cp_main {
+  margin-top: 4rem;
+}
+.categoryproductED .products_category .header_cp_main .header_cp_column1 {
+  padding: 0px;
+}
+.categoryproductED .products_category .header_cp_main .header_cp_column1 .header_cp_img img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 7px 0px 0px 7px;
+}
+.categoryproductED .products_category .header_cp_main .header_cp_column2 {
+  border-radius: 0px 7px 7px 0px;
+  background-color: #e9ecef;
+}
+.categoryproductED .products_category .header_cp_main .header_cp_column2 .header_cp_content {
+  margin-top: 2rem;
+}
+.categoryproductED .products_category .header_cp_main .header_cp_column2 .header_cp_content p {
+  font-size: 18px;
+}
+.categoryproductED .products_category .header_cp_main {
+  margin-top: 0rem;
+}
+.categoryproductED .products_category .header_cp_column2 .btn-align {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.categoryproductED .products_category .header_cp_column2 .btn-align button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 40px;
+  border-radius: 0px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  width: 100%;
+}
+
+.section_blogpage .blog-heading-content {
+  margin-top: 3rem;
+  text-align: center;
+}
+.section_blogpage .blog-heading-content p {
+  font-size: 18px;
+  text-align: center;
+}
+.section_blogpage .blog-section {
+  margin-top: 3rem;
+}
+.section_blogpage .blog-section .blog-section_img img {
+  width: 90%;
+  height: 21rem;
+}
+.section_blogpage .blog-section .blog-section-inside2 h1 {
+  font-size: 1.875rem;
+  margin-top: 0.625rem;
+}
+.section_blogpage .blog-section .blog-section-inside2 p {
+  margin-top: 0.625rem;
+  font-size: 18px;
+}
+.section_blogpage .blog-section .blog-section-inside2 .span1 {
+  color: #ff7575;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.section_blogpage .blog-section .blog-section-inside2 .span2 {
+  color: #c1c1c1;
+  font-style: italic;
+}
+.section_blogpage .blog-section .blog-section-inside2 button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 40px;
+  border-radius: 0px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  width: unset;
+}
+.section_blogpage .outerline {
+  padding: 5px 0px 0px 7px;
+  border: solid 1px #212529;
+  border-radius: 35px;
+  height: 46px;
+  width: 151px;
+  margin: 4rem auto;
+}
+.section_blogpage button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 0px;
+  border-radius: 15px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  display: block;
+  width: 136px;
+}
+@media only screen and (max-width: 767px) {
+  .section_blogpage .blog-section {
+    margin-top: 3rem;
+  }
+  .section_blogpage .blog-section .blog-section_img img {
+    width: 100%;
+    height: 21rem;
+  }
+  .section_blogpage .blog-section .blog-section-inside2 h1 {
+    font-size: 2.475rem;
+  }
+  .section_blogpage .blog-section .blog-section-inside2 p {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  .section_blogpage .blog-section .blog-section-inside2 .span1 {
+    color: #ff7575;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .section_blogpage .blog-section .blog-section-inside2 .span2 {
+    color: #c1c1c1;
+    font-style: italic;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section_blogpage {
+    padding: 0px 15px;
+  }
+  .section_blogpage .blog-heading-content {
+    margin-top: 2rem;
+  }
+  .section_blogpage .blog-heading-content h1 {
+    font-size: 35px;
+  }
+  .section_blogpage .blog-heading-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .section_blogpage .outerline {
+    height: 42px;
+    margin: 3rem auto;
+  }
 }
