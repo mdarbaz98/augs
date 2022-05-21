@@ -110,6 +110,7 @@
 
   .right-section {
     max-width: 500px;
+
     h3 {
       margin-left: auto;
     }
@@ -153,6 +154,7 @@
         .three-div-container {
           .home-div {
             padding: 5px 10px;
+
             p {
               font-size: 1.2rem;
             }
@@ -232,9 +234,11 @@
   .onetime-banner-content h1 {
     color: $color-9;
   }
+
   .onetime-banner-content p {
     color: $color-9;
   }
+
   .main-section {
     margin-top: 1.875rem;
 
@@ -268,6 +272,7 @@
   .main_section_content2 {
     margin-top: 2rem;
   }
+
   @media only screen and (max-width: 767px) {
     .onetime-banner-content {
       top: 30%;
@@ -313,29 +318,77 @@
       height: 25rem;
     }
   }
-  .categorysection3 {
-    .categorybox {
-      box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
-      .categorybox_img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 50px;
-          height: 50px;
+
+  .categorysection2
+  {
+    .categorybox 
+    {
+      .categorybox_inside 
+      {
+        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+        padding: 10px;
+        border-radius: 10px;
+
+        .categorybox_img 
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem;
+
+          img {
+            width: 80px;
+            height: 56px;
+          }
+        }
+
+        .categorydetail_content 
+        {
+          h2 {
+            font-size: 20px;
+            margin: 10px 0px;
+          }
+
+          .cd_span{
+            i {
+              font-size: 11px;
+              color: #5dac34;
+              margin: 10px 0px;
+            }
+            span{
+              font-size: 15px;
+            }
+          }
+        }
+        .cd_button{
+          p{
+            margin-top: 3rem
+          }
+          span{
+            font-size: 22px;
+            font-weight: 500;
+          }
+          button 
+        {
+          @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
+          background-color: #29873c;;
+          margin: 0px auto;
+          opacity: 0.9;
+          font-size: 1rem
+        }
         }
       }
-      .categorydetail_content {
-        h2 {
-          font-size: 17px;
+      .categorybox_inside:hover{
+        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
+        button{
+          background-color: #01540a;
         }
-        .cd_span i {
-          font-size: 11px;
-        }
+        
       }
     }
   }
 }
+
 // categoryproductPE end
 
 // blogpage-start
@@ -444,6 +497,7 @@
       }
     }
   }
+
   p {
     color: $color-9;
     text-align: center;
@@ -455,11 +509,14 @@
 
 // header section css
 header {
+
   // z-index: 10;
   .navbar {
     background-color: $color-1;
+
     a {
       color: $color-9;
+
       &:hover {
         color: $color-9;
       }
@@ -497,6 +554,7 @@ header {
       }
     }
   }
+
   .side_Bar {
     position: fixed;
     left: -300px;
@@ -511,6 +569,7 @@ header {
         box-shadow: none;
       }
     }
+
     ul {
       .menu-list {
         border-bottom: solid $color-9 2px;
@@ -544,10 +603,12 @@ header {
           font-weight: 500;
           padding: 8px 20px;
         }
+
         .accordion-item {
           background-color: unset;
           color: $color-9;
           border: unset;
+
           .accordion-button {
             background-color: $color-1;
             color: $color-9;
@@ -570,6 +631,7 @@ header {
       }
     }
   }
+
   .overlay_Div {
     position: fixed;
     top: 0%;
