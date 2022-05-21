@@ -1,8 +1,8 @@
-@use "./variables"as *;
+@use "./variables" as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components"as *;
-@use "./utilities/"as *;
+@use "./components" as *;
+@use "./utilities/" as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -53,36 +53,36 @@
     }
   }
 
-  .section-2 {
-    .home-blog-section {
-      #home-owl-carousel {
-        @include blogCard;
+}
+.section-2 {
+  .home-blog-section {
+    #home-owl-carousel {
+      @include blogCard;
 
-        .blog-desc-sec {
-          h1 {
-            height: 2rem;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-          }
+      .blog-desc-sec {
+        h1 {
+          height: 2rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
 
-          p {
-            height: 5rem;
-            font-size: 1.1rem;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-          }
+        p {
+          height: 5rem;
+          font-size: 1.1rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
 
-          .sq-btn {
-            @include btn;
-            margin-left: auto;
-            margin-right: auto;
-          }
+        .sq-btn {
+          @include btn;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     }
@@ -116,7 +116,6 @@
 
     .form {
       .form-floating {
-
         input,
         textarea {
           background-color: $input;
@@ -198,8 +197,7 @@
 .onetime-privacy,
 .onetime-about,
 .onetime-tandc,
-.onetime-contact 
-{
+.onetime-contact {
   .onetime-banner-img {
     position: relative;
   }
@@ -231,7 +229,7 @@
     text-align: center;
   }
 
-  .onetime-banner-content h1{
+  .onetime-banner-content h1 {
     color: $color-9;
   }
   .onetime-banner-content p {
@@ -267,7 +265,7 @@
       }
     }
   }
-  .main_section_content2{
+  .main_section_content2 {
     margin-top: 2rem;
   }
   @media only screen and (max-width: 767px) {
@@ -278,7 +276,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.875rem 1.25rem;
@@ -307,32 +304,32 @@
 // one-time pages end
 
 // categoryproductPE start
-  .categoryproductED{
-    .categorysection1_inside1 {
-      margin: 1.25rem auto;
-      max-width:700px;
-    img{
+.categoryproductED {
+  .categorysection1_inside1 {
+    margin: 1.25rem auto;
+    max-width: 700px;
+    img {
       width: 100%;
       height: 25rem;
     }
   }
-  .categorysection3{
-    .categorybox{
+  .categorysection3 {
+    .categorybox {
       box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
       .categorybox_img {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        img {
           width: 50px;
-        height: 50px;
+          height: 50px;
         }
       }
       .categorydetail_content {
-        h2{
+        h2 {
           font-size: 17px;
         }
-        .cd_span i{
+        .cd_span i {
           font-size: 11px;
         }
       }
@@ -432,7 +429,7 @@
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
-  .row{
+  .row {
     border-bottom: solid 1px #fff;
     .logo__div {
       img {
@@ -584,3 +581,52 @@ header {
   }
 }
 // header section css
+
+// single product page css
+.product__page {
+  .top-section {
+    background-color: $color-8;
+    .product-section {
+      border: solid 1px $color-1;
+      border-radius: 6px;
+      padding: 10px;
+      .product-img {
+        img {
+          width: 100%;
+          height: 21.875rem;
+
+          object-fit: cover;
+        }
+        button {
+          @include btn;
+          width: 100%;
+          margin: 0px;
+        }
+      }
+      .product-desc {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 767px) {
+  .product__page {
+    .top-section {
+      .product-section {
+        border: none;
+        .shadow {
+          box-shadow: unset !important;
+          .product-img {
+            padding: 5px;
+            border: solid 1px $color-1;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+// single product page css
