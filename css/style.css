@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -479,23 +479,63 @@ p {
   width: 100%;
   height: 25rem;
 }
-.categoryproductED .categorysection3 .categorybox {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 10px;
 }
-.categoryproductED .categorysection3 .categorybox .categorybox_img {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem;
 }
-.categoryproductED .categorysection3 .categorybox .categorybox_img img {
-  width: 50px;
-  height: 50px;
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
+  width: 80px;
+  height: 56px;
 }
-.categoryproductED .categorysection3 .categorybox .categorydetail_content h2 {
-  font-size: 17px;
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
+  font-size: 20px;
+  margin: 10px 0px;
 }
-.categoryproductED .categorysection3 .categorybox .categorydetail_content .cd_span i {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
+  color: #5dac34;
+  margin: 10px 0px;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
+  font-size: 15px;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
+  margin-top: 3rem;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button span {
+  font-size: 22px;
+  font-weight: 500;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  width: 100%;
+  background-color: #29873c;
+  margin: 0px auto;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside:hover {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside:hover button {
+  background-color: #01540a;
 }
 
 .section_blogpage .blog-heading-content {

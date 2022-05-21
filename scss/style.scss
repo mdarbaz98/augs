@@ -109,6 +109,7 @@
 
   .right-section {
     max-width: 500px;
+
     h3 {
       margin-left: auto;
     }
@@ -154,6 +155,7 @@
         .three-div-container {
           .home-div {
             padding: 5px 10px;
+
             p {
               font-size: 1.2rem;
             }
@@ -198,8 +200,7 @@
 .onetime-privacy,
 .onetime-about,
 .onetime-tandc,
-.onetime-contact 
-{
+.onetime-contact {
   .onetime-banner-img {
     position: relative;
   }
@@ -231,12 +232,14 @@
     text-align: center;
   }
 
-  .onetime-banner-content h1{
+  .onetime-banner-content h1 {
     color: $color-9;
   }
+
   .onetime-banner-content p {
     color: $color-9;
   }
+
   .main-section {
     margin-top: 1.875rem;
 
@@ -267,9 +270,11 @@
       }
     }
   }
-  .main_section_content2{
+
+  .main_section_content2 {
     margin-top: 2rem;
   }
+
   @media only screen and (max-width: 767px) {
     .onetime-banner-content {
       top: 30%;
@@ -307,38 +312,87 @@
 // one-time pages end
 
 // categoryproductPE start
-  .categoryproductED{
-    .categorysection1_inside1 {
-      margin: 1.25rem auto;
-      max-width:700px;
-    img{
+.categoryproductED {
+  .categorysection1_inside1 {
+    margin: 1.25rem auto;
+    max-width: 700px;
+
+    img {
       width: 100%;
       height: 25rem;
     }
   }
-  .categorysection3{
-    .categorybox{
-      box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
-      .categorybox_img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-          width: 50px;
-        height: 50px;
+
+  .categorysection2
+  {
+    .categorybox 
+    {
+      .categorybox_inside 
+      {
+        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+        padding: 10px;
+        border-radius: 10px;
+
+        .categorybox_img 
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem;
+
+          img {
+            width: 80px;
+            height: 56px;
+          }
+        }
+
+        .categorydetail_content 
+        {
+          h2 {
+            font-size: 20px;
+            margin: 10px 0px;
+          }
+
+          .cd_span{
+            i {
+              font-size: 11px;
+              color: #5dac34;
+              margin: 10px 0px;
+            }
+            span{
+              font-size: 15px;
+            }
+          }
+        }
+        .cd_button{
+          p{
+            margin-top: 3rem
+          }
+          span{
+            font-size: 22px;
+            font-weight: 500;
+          }
+          button 
+        {
+          @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
+          background-color: #29873c;;
+          margin: 0px auto;
+          opacity: 0.9;
+          font-size: 1rem
+        }
         }
       }
-      .categorydetail_content {
-        h2{
-          font-size: 17px;
+      .categorybox_inside:hover{
+        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
+        button{
+          background-color: #01540a;
         }
-        .cd_span i{
-          font-size: 11px;
-        }
+        
       }
     }
   }
 }
+
 // categoryproductPE end
 
 // blogpage-start
@@ -437,11 +491,13 @@
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
+
   .logo__div {
     img {
       width: 50px;
     }
   }
+
   .quick-links {
     li {
       a {
@@ -449,6 +505,7 @@
       }
     }
   }
+
   p {
     color: $color-9;
     text-align: center;
@@ -460,48 +517,59 @@
 
 // header section css
 header {
+
   // z-index: 10;
   .navbar {
     background-color: $color-1;
+
     a {
       color: $color-9;
+
       &:hover {
         color: $color-9;
       }
     }
-    .menu-open-btn{
-      font-size: 1.25rem ;
+
+    .menu-open-btn {
+      font-size: 1.25rem;
     }
-    .header-form{
+
+    .header-form {
       position: relative;
-    height: 2.125rem;
-    width: 18.75rem;
-    input{
-      border-radius: 50px;
-      font-family: $para-font;
-      &:focus{
-        box-shadow: none;
-        border: none;
+      height: 2.125rem;
+      width: 18.75rem;
+
+      input {
+        border-radius: 50px;
+        font-family: $para-font;
+
+        &:focus {
+          box-shadow: none;
+          border: none;
+        }
       }
-    }
-      .header-search-btn{
+
+      .header-search-btn {
         width: 3.125rem;
-    height: 2.125rem;
-    position: absolute;
-    right: 12px;
-    padding-top: 2px;
-    &:focus{
-      box-shadow: none;
-      border: none;
-    }
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+        height: 2.125rem;
+        position: absolute;
+        right: 12px;
+        padding-top: 2px;
+
+        &:focus {
+          box-shadow: none;
+          border: none;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
+
   .side_Bar {
     position: fixed;
     left: -300px;
@@ -510,63 +578,76 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
-    .menu-close-btn{
+
+    .menu-close-btn {
       font-size: 1.25rem;
-      &:focus{
+
+      &:focus {
         box-shadow: none
       }
     }
+
     ul {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
-        form{
-          input{
+
+        form {
+          input {
             background-color: $color-1;
             color: $color-9;
             border: none;
             padding-left: 35px;
             margin-bottom: 10px;
             outline: none;
-            &::placeholder{
+
+            &::placeholder {
               color: $color-9;
             }
           }
-          .search-btn{
+
+          .search-btn {
             position: absolute;
             left: 0px;
             top: 0px;
             outline: none;
             padding: 3px;
-            &:focus{
+
+            &:focus {
               box-shadow: none
             }
           }
         }
-        .menu-links{
+
+        .menu-links {
           color: $color-9;
           font-size: 1rem;
           font-weight: 500;
           padding: 8px 20px;
         }
+
         .accordion-item {
           background-color: unset;
           color: $color-9;
           border: unset;
+
           .accordion-button {
             background-color: $color-1;
             color: $color-9;
-            &:focus{
+
+            &:focus {
               border-color: unset;
               box-shadow: unset;
             }
-            &::after{
-              background-image:url('../assets/images/dropdownImg.png');
+
+            &::after {
+              background-image: url('../assets/images/dropdownImg.png');
             }
           }
-          .accordion-body{
-            .menu-inner-ul{
-              li{
+
+          .accordion-body {
+            .menu-inner-ul {
+              li {
                 font-family: $para-font;
               }
             }
@@ -575,6 +656,7 @@ header {
       }
     }
   }
+
   .overlay_Div {
     position: fixed;
     top: 0%;
