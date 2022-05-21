@@ -24,7 +24,7 @@ html {
 }
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 68.75%;
+    font-size: 86.75%;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -70,7 +70,7 @@ p {
   padding: 40px 45px;
 }
 .home__section .section-1 .home__leftSection h1.home_heading {
-  font-size: 3.125rem;
+  font-size: 2.325rem;
   max-width: 530px;
   text-transform: uppercase;
   padding: 20px 0px;
@@ -139,7 +139,8 @@ p {
   -webkit-box-orient: vertical;
 }
 .home__section .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec p {
-  height: 4.5rem;
+  height: 5rem;
+  font-size: 1.1rem;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -665,10 +666,13 @@ p {
   text-transform: capitalize;
   background-color: #212529;
 }
-.footer__section .logo__div img {
+.footer__section .row {
+  border-bottom: solid 1px #fff;
+}
+.footer__section .row .logo__div img {
   width: 50px;
 }
-.footer__section .quick-links li a {
+.footer__section .row .quick-links li a {
   color: #f8f9fa;
 }
 .footer__section p {

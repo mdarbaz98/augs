@@ -12,7 +12,7 @@
 
     .home__leftSection {
       h1.home_heading {
-        font-size: 3.125rem;
+        font-size: 2.325rem;
         max-width: 530px;
         text-transform: uppercase;
         padding: 20px 0px;
@@ -68,7 +68,8 @@
             -webkit-box-orient: vertical;
           }
           p {
-            height: 4.5rem;
+            height: 5rem;
+            font-size: 1.1rem;
             text-overflow: ellipsis;
             overflow: hidden;
             display: -webkit-box;
@@ -132,7 +133,6 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
-
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
@@ -335,7 +335,6 @@
   }
 
   button {
-
     font-family: "Ubuntu", sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
@@ -383,17 +382,16 @@
       }
     }
   }
-  
 }
 @media only screen and (max-width: 767px) {
-  .section_blogpage{
+  .section_blogpage {
     padding: 0px 15px;
-    .blog-heading-content{
+    .blog-heading-content {
       margin-top: 2rem;
-      h1{
-        font-size:35px;
+      h1 {
+        font-size: 35px;
       }
-      p{
+      p {
         font-size: 16px;
         text-align: center;
       }
@@ -411,15 +409,18 @@
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
-  .logo__div {
-    img {
-      width: 50px;
+  .row{
+    border-bottom: solid 1px #fff;
+    .logo__div {
+      img {
+        width: 50px;
+      }
     }
-  }
-  .quick-links {
-    li {
-      a {
-        color: $color-9;
+    .quick-links {
+      li {
+        a {
+          color: $color-9;
+        }
       }
     }
   }
@@ -442,36 +443,36 @@ header {
         color: $color-9;
       }
     }
-    .menu-open-btn{
-      font-size: 1.25rem ;
+    .menu-open-btn {
+      font-size: 1.25rem;
     }
-    .header-form{
+    .header-form {
       position: relative;
-    height: 2.125rem;
-    width: 18.75rem;
-    input{
-      border-radius: 50px;
-      font-family: $para-font;
-      &:focus{
-        box-shadow: none;
-        border: none;
+      height: 2.125rem;
+      width: 18.75rem;
+      input {
+        border-radius: 50px;
+        font-family: $para-font;
+        &:focus {
+          box-shadow: none;
+          border: none;
+        }
       }
-    }
-      .header-search-btn{
+      .header-search-btn {
         width: 3.125rem;
-    height: 2.125rem;
-    position: absolute;
-    right: 12px;
-    padding-top: 2px;
-    &:focus{
-      box-shadow: none;
-      border: none;
-    }
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+        height: 2.125rem;
+        position: absolute;
+        right: 12px;
+        padding-top: 2px;
+        &:focus {
+          box-shadow: none;
+          border: none;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -483,40 +484,40 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
-    .menu-close-btn{
+    .menu-close-btn {
       font-size: 1.25rem;
-      &:focus{
-        box-shadow: none
+      &:focus {
+        box-shadow: none;
       }
     }
     ul {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
-        form{
-          input{
+        form {
+          input {
             background-color: $color-1;
             color: $color-9;
             border: none;
             padding-left: 35px;
             margin-bottom: 10px;
             outline: none;
-            &::placeholder{
+            &::placeholder {
               color: $color-9;
             }
           }
-          .search-btn{
+          .search-btn {
             position: absolute;
             left: 0px;
             top: 0px;
             outline: none;
             padding: 3px;
-            &:focus{
-              box-shadow: none
+            &:focus {
+              box-shadow: none;
             }
           }
         }
-        .menu-links{
+        .menu-links {
           color: $color-9;
           font-size: 1rem;
           font-weight: 500;
@@ -529,17 +530,17 @@ header {
           .accordion-button {
             background-color: $color-1;
             color: $color-9;
-            &:focus{
+            &:focus {
               border-color: unset;
               box-shadow: unset;
             }
-            &::after{
-              background-image:url('../assets/images/dropdownImg.png');
+            &::after {
+              background-image: url("../assets/images/dropdownImg.png");
             }
           }
-          .accordion-body{
-            .menu-inner-ul{
-              li{
+          .accordion-body {
+            .menu-inner-ul {
+              li {
                 font-family: $para-font;
               }
             }
@@ -558,4 +559,4 @@ header {
     z-index: 1031;
   }
 }
-// header section css 
+// header section css
