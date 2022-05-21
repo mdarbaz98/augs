@@ -73,30 +73,6 @@
   }
 }
 
-@mixin box {
-  .header_cp_main{
-    margin-top: 4rem;
-    .header_cp_column1{
-      padding: 0px;
-      .header_cp_img img{
-        width: 100%;
-        height: 30rem;
-        border-radius: 7px 0px 0px 7px;
-      }
-    }
-    .header_cp_column2{
-      border-radius: 0px 7px 7px 0px;
-      background-color: $color-8;
-      .header_cp_content{
-        margin-top: 2rem;
-        p{
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
 @mixin blogbox {
   .blog-heading-content{
     margin-top: 3rem;
@@ -132,6 +108,7 @@
       }
       button {
         @include btn(0px,8px 40px,0.8rem,$para-font,unset) ;
+        font-weight: 700;
       }
     }
   }

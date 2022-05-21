@@ -1,8 +1,8 @@
-@use "./variables" as *;
+@use "./variables"as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components" as *;
-@use "./utilities/" as *;
+@use "./components"as *;
+@use "./utilities/"as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -67,6 +67,7 @@
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
           }
+
           p {
             height: 4.5rem;
             text-overflow: ellipsis;
@@ -75,6 +76,7 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
           }
+
           .sq-btn {
             @include btn;
             margin-left: auto;
@@ -94,31 +96,39 @@
 
 .section-3 {
   background-color: $color-8;
+
   .left-section {
     max-width: 400px;
+
     p {
       color: $color-1;
       font-size: 1.3rem;
       font-weight: 600;
     }
   }
+
   .right-section {
     max-width: 500px;
-    h3{
+
+    h3 {
       margin-left: auto;
     }
+
     .form {
       .form-floating {
+
         input,
         textarea {
           background-color: $input;
         }
+
         label {
           left: unset;
           right: 0px;
           color: $color-1;
         }
       }
+
       button {
         @include btn(50px);
         margin-left: auto;
@@ -136,6 +146,7 @@
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
+
       .home__leftSection {
         h1.home_heading {
           max-width: 300px;
@@ -144,12 +155,14 @@
         .three-div-container {
           .home-div {
             padding: 5px 10px;
-            p{
+
+            p {
               font-size: 1.2rem;
             }
           }
         }
       }
+
       .right__homeSection {
         .image-div {
           height: 350px;
@@ -168,12 +181,12 @@
 }
 
 //media screen queries for Ipad
-@media only screen and(max-width: 900px){
+@media only screen and(max-width: 900px) {
   .section-1 {
     .home__leftSection {
       .three-div-container {
         .home-div {
-          p{
+          p {
             font-size: 1rem !important;
           }
         }
@@ -187,7 +200,8 @@
 .onetime-privacy,
 .onetime-about,
 .onetime-tandc,
-.onetime-contact {
+.onetime-contact 
+{
   .onetime-banner-img {
     position: relative;
   }
@@ -214,16 +228,17 @@
   .onetime-banner-content {
     position: absolute;
     top: 50%;
-    left: 33%;
-    transform: translate(-28%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
   }
 
-  .onetime-banner-content h1,
+  .onetime-banner-content h1{
+    color: $color-9;
+  }
   .onetime-banner-content p {
     color: $color-9;
   }
-
   .main-section {
     margin-top: 1.875rem;
 
@@ -254,7 +269,9 @@
       }
     }
   }
-
+  .main_section_content2{
+    margin-top: 2rem;
+  }
   @media only screen and (max-width: 767px) {
     .onetime-banner-content {
       top: 30%;
@@ -263,10 +280,11 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.875rem 1.25rem;
-        @include image-css(100%);
+        @include image-css(100%, 370px);
       }
 
       .contact-section-inside1 {
@@ -291,34 +309,38 @@
 // one-time pages end
 
 // categoryproductPE start
-.categoryproductED {
-  @include box;
-
-  .products_category {
-    @include image-css(unset, unset);
-    @include box;
-    max-width: 1000px;
-
-    .header_cp_main {
-      margin-top: 0rem;
+  .categoryproductED{
+    .categorysection1_inside1 {
+      margin: 1.25rem auto;
+      max-width:700px;
+    img{
+      width: 100%;
+      height: 25rem;
     }
-
-    .header_cp_column2 {
-      .btn-align {
+  }
+  .categorysection3{
+    .categorybox{
+      box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+      .categorybox_img {
         display: flex;
-        flex-direction: column;
-        height: 100%;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-
-        button {
-          @include btn(0px, 8px 40px, 0.8rem, $para-font, 100%);
+        img{
+          width: 50px;
+        height: 50px;
+        }
+      }
+      .categorydetail_content {
+        h2{
+          font-size: 17px;
+        }
+        .cd_span i{
+          font-size: 11px;
         }
       }
     }
   }
 }
-
 // categoryproductPE end
 
 // blogpage-start
@@ -329,7 +351,7 @@
     padding: 5px 0px 0px 7px;
     border: solid 1px #212529;
     border-radius: 35px;
-    height: 46px;
+    height: 45px;
     width: 151px;
     margin: 4rem auto;
   }
@@ -383,67 +405,81 @@
       }
     }
   }
-  
+
 }
+
 @media only screen and (max-width: 767px) {
-  .section_blogpage{
+  .section_blogpage {
     padding: 0px 15px;
-    .blog-heading-content{
+
+    .blog-heading-content {
       margin-top: 2rem;
-      h1{
-        font-size:35px;
+
+      h1 {
+        font-size: 35px;
       }
-      p{
+
+      p {
         font-size: 16px;
         text-align: center;
       }
     }
+
     .outerline {
       height: 42px;
       margin: 3rem auto;
     }
   }
 }
+
 // blogpage-end
 
 //footer section css
-.footer__section{
+.footer__section {
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
-  .logo__div{
-    img{
+
+  .logo__div {
+    img {
       width: 50px;
     }
   }
-  .quick-links{
-    li{
-      a{
+
+  .quick-links {
+    li {
+      a {
         color: $color-9;
       }
     }
   }
-  p{
-  color: $color-9;
-  text-align: center;
-  margin-bottom: 0px;
+
+  p {
+    color: $color-9;
+    text-align: center;
+    margin-bottom: 0px;
   }
 }
+
 //footer section css
 
 // header section css 
-header{
+header {
   z-index: 10;
-  .navbar{
+
+  .navbar {
     background-color: $color-1;
-    a{
+
+    a {
       color: $color-9;
-      &:hover{
+
+      &:hover {
         color: $color-9;
       }
     }
   }
-  .side_Bar{
+
+  .side_Bar {
     position: fixed;
     left: -300px;
     top: 0px;
@@ -452,7 +488,8 @@ header{
     background-color: $color-1;
     z-index: 2;
   }
-  .overlay_Div{
+
+  .overlay_Div {
     position: fixed;
     top: 0%;
     width: 100%;
@@ -462,4 +499,5 @@ header{
     z-index: 1;
   }
 }
+
 // header section css 
