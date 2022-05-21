@@ -539,6 +539,27 @@ p {
 .categoryproductED .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #01540a;
 }
+.categoryproductED .categorysection2 .outerline {
+  padding: 5px 0px 0px 7px;
+  border: solid 1px #212529;
+  border-radius: 35px;
+  height: 45px;
+  width: 151px;
+  margin: 3rem auto;
+}
+.categoryproductED .categorysection2 button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 0px;
+  border-radius: 15px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  display: block;
+  width: 136px;
+}
 
 .section_blogpage .blog-heading-content {
   margin-top: 3rem;
