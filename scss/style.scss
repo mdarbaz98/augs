@@ -93,6 +93,7 @@
 .before {
   width: fit-content;
   @include before;
+  font-size: 2rem;
 }
 
 .section-3 {
@@ -669,6 +670,26 @@ header {
         h1 {
           font-size: 2rem;
         }
+      }
+    }
+  }
+  .bottom-section{
+    .accordion-button{
+      background-color: $color-1;
+      color: $color-9;
+      padding: 8px 10px;
+    border-radius: 6px;
+      &::after{
+        filter: brightness(25);
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .accordion-body{
+      background-color: $color-10;
+      p{
+        color: $color-1;
       }
     }
   }
