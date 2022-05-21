@@ -1,39 +1,4 @@
-$('#home-owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1.3
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3.5
-        }
-    }
-})
-// categoryproduct-owl-carousel
-$('#categoryproduct-owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1.3
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3.5
-        }
-    }
-})
-
-// product-owl-carousel
-$('#product-owl-carousel').owlCarousel({
+$('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,

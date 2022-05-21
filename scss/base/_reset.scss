@@ -15,9 +15,15 @@ html{
     font-size: 100%;
     @include mediaScreen(tab){
         font-size: 70%;
+        p{
+            font-size: 1.5rem;
+        }
     }
     @include mediaScreen(phone){
-        font-size: 82.75%;
+        font-size: 62.75%;
+        p{
+            font-size: 1.5rem;
+        }
     }
     @include mediaScreen(desktop){
         font-size: 75%;
