@@ -1,32 +1,35 @@
-// header js
-$(document).ready(function(){
-    var i = 0;
-    $('.menu-open-btn').click(function(){
-        i++;
-        if(i%2 == 0){
-            $('.side_Bar').animate({'left':'-300px'},500);
-            $('.overlay_Div').animate({'left':'-100%'},400);
-        } else{
-            $('.side_Bar').animate({'left':'0px'},500);
-            $('.overlay_Div').animate({'left':'0%'},400);
-        }
-    }
-    );
+$(document).ready(function () {
+  // header js
+//   var i = 0;
+//   $(".menu-open-btn").click(function () {
+//     i++;
+//     if (i % 2 == 0) {
+//       $(".side_Bar").animate({ left: "-300px" }, 500);
+//       $(".overlay_Div").animate({ left: "-100%" }, 0);
+//       $('body').css({'overflow-y': 'scroll'})
+//     } else {
+//       $(".side_Bar").animate({ left: "0px" }, 500);
+//       $(".overlay_Div").animate({ left: "0%" }, 0);
+//       $('body').css({'overflow-y': 'hidden'})
+//     }
+//   });
 
-    $('.overlay_Div').click(function(){
-        alert('ok')
-        $('.side_Bar').animate({'left':'-300px'},500);
-            $('.overlay_Div').animate({'left':'-100%'},400);
-    });
+  $('.menu-open-btn').click(function() {
+    $(".side_Bar").animate({ left: "0px" }, 400);
+      $(".overlay_Div").animate({ left: "0%" }, 0);
+      $('body').css({'overflow-y': 'hidden'})
+  })
+  $('.menu-close-btn,.overlay_Div').click(function() {
+    $(".side_Bar").animate({ left: "-300px" }, 500);
+    $(".overlay_Div").animate({ left: "-100%" }, 0);
+    $('body').css({'overflow-y': 'scroll'})
+  })
 
-    $(body).css({'background':'red'});
-
-    // $('.menu-close-btn').click(function(){
-    //     $('.side_Bar').animate({'left':'-300px'},500);
-    // });
+  // owl inner icon
+  $(".owl-carosel .owl-next span").html(
+    `<i class="fa-solid fa-arrow-right"></i>`
+  );
+  $(".owl-carosel .owl-prev span").html(
+    `<i class="fa-solid fa-arrow-right"></i>`
+  );
 });
-// header js
-
-
-$('.owl-carosel .owl-next span').html(`<i class="fa-solid fa-angle-right"></i>`);
-$('.owl-carosel .owl-prev span').html(`<i class="fa-solid fa-angle-left"></i>`);

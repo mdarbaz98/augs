@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -452,9 +452,6 @@ p {
   margin-bottom: 0px;
 }
 
-header {
-  z-index: 10;
-}
 header .navbar {
   background-color: #212529;
 }
@@ -464,6 +461,38 @@ header .navbar a {
 header .navbar a:hover {
   color: #f8f9fa;
 }
+header .navbar .menu-open-btn {
+  font-size: 1.25rem;
+}
+header .navbar .header-form {
+  position: relative;
+  height: 2.125rem;
+  width: 18.75rem;
+}
+header .navbar .header-form input {
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+header .navbar .header-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+header .navbar .header-form .header-search-btn {
+  width: 3.125rem;
+  height: 2.125rem;
+  position: absolute;
+  right: 12px;
+  padding-top: 2px;
+}
+header .navbar .header-form .header-search-btn:focus {
+  box-shadow: none;
+  border: none;
+}
+header .navbar .header-form .header-search-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 header .side_Bar {
   position: fixed;
   left: -300px;
@@ -471,7 +500,63 @@ header .side_Bar {
   width: 300px;
   height: 100vh;
   background-color: #212529;
-  z-index: 2;
+  z-index: 1032;
+}
+header .side_Bar .menu-close-btn {
+  font-size: 1.25rem;
+}
+header .side_Bar .menu-close-btn:focus {
+  box-shadow: none;
+}
+header .side_Bar ul .menu-list {
+  border-bottom: solid #f8f9fa 2px;
+  color: #f8f9fa;
+}
+header .side_Bar ul .menu-list form input {
+  background-color: #212529;
+  color: #f8f9fa;
+  border: none;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  outline: none;
+}
+header .side_Bar ul .menu-list form input::placeholder {
+  color: #f8f9fa;
+}
+header .side_Bar ul .menu-list form .search-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline: none;
+  padding: 3px;
+}
+header .side_Bar ul .menu-list form .search-btn:focus {
+  box-shadow: none;
+}
+header .side_Bar ul .menu-list .menu-links {
+  color: #f8f9fa;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 20px;
+}
+header .side_Bar ul .menu-list .accordion-item {
+  background-color: unset;
+  color: #f8f9fa;
+  border: unset;
+}
+header .side_Bar ul .menu-list .accordion-item .accordion-button {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+header .side_Bar ul .menu-list .accordion-item .accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+header .side_Bar ul .menu-list .accordion-item .accordion-button::after {
+  background-image: url("../assets/images/dropdownImg.png");
+}
+header .side_Bar ul .menu-list .accordion-item .accordion-body .menu-inner-ul li {
+  font-family: "Ubuntu", sans-serif;
 }
 header .overlay_Div {
   position: fixed;
@@ -479,6 +564,6 @@ header .overlay_Div {
   width: 100%;
   left: -100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1031;
 }

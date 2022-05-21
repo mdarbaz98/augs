@@ -96,7 +96,7 @@
   }
   .right-section {
     max-width: 500px;
-    h3{
+    h3 {
       margin-left: auto;
     }
     .form {
@@ -134,7 +134,7 @@
         .three-div-container {
           .home-div {
             padding: 5px 10px;
-            p{
+            p {
               font-size: 1.2rem;
             }
           }
@@ -157,12 +157,12 @@
 }
 
 //media screen queries for Ipad
-@media only screen and(max-width: 900px){
+@media only screen and(max-width: 900px) {
   .section-1 {
     .home__leftSection {
       .three-div-container {
         .home-div {
-          p{
+          p {
             font-size: 1rem !important;
           }
         }
@@ -268,61 +268,156 @@
 
 // one-time pages end
 
-
 //footer section css
-.footer__section{
+.footer__section {
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
-  .logo__div{
-    img{
+  .logo__div {
+    img {
       width: 50px;
     }
   }
-  .quick-links{
-    li{
-      a{
+  .quick-links {
+    li {
+      a {
         color: $color-9;
       }
     }
   }
-  p{
-  color: $color-9;
-  text-align: center;
-  margin-bottom: 0px;
+  p {
+    color: $color-9;
+    text-align: center;
+    margin-bottom: 0px;
   }
 }
 //footer section css
 
-// header section css 
-header{
-  z-index: 10;
-  .navbar{
+// header section css
+header {
+  // z-index: 10;
+  .navbar {
     background-color: $color-1;
-    a{
+    a {
       color: $color-9;
-      &:hover{
+      &:hover {
         color: $color-9;
       }
     }
+    .menu-open-btn{
+      font-size: 1.25rem ;
+    }
+    .header-form{
+      position: relative;
+    height: 2.125rem;
+    width: 18.75rem;
+    input{
+      border-radius: 50px;
+      font-family: $para-font;
+      &:focus{
+        box-shadow: none;
+        border: none;
+      }
+    }
+      .header-search-btn{
+        width: 3.125rem;
+    height: 2.125rem;
+    position: absolute;
+    right: 12px;
+    padding-top: 2px;
+    &:focus{
+      box-shadow: none;
+      border: none;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+      }
+    }
   }
-  .side_Bar{
+  .side_Bar {
     position: fixed;
     left: -300px;
     top: 0px;
     width: 300px;
     height: 100vh;
     background-color: $color-1;
-    z-index: 2;
+    z-index: 1032;
+    .menu-close-btn{
+      font-size: 1.25rem;
+      &:focus{
+        box-shadow: none
+      }
+    }
+    ul {
+      .menu-list {
+        border-bottom: solid $color-9 2px;
+        color: $color-9;
+        form{
+          input{
+            background-color: $color-1;
+            color: $color-9;
+            border: none;
+            padding-left: 35px;
+            margin-bottom: 10px;
+            outline: none;
+            &::placeholder{
+              color: $color-9;
+            }
+          }
+          .search-btn{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            outline: none;
+            padding: 3px;
+            &:focus{
+              box-shadow: none
+            }
+          }
+        }
+        .menu-links{
+          color: $color-9;
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 8px 20px;
+        }
+        .accordion-item {
+          background-color: unset;
+          color: $color-9;
+          border: unset;
+          .accordion-button {
+            background-color: $color-1;
+            color: $color-9;
+            &:focus{
+              border-color: unset;
+              box-shadow: unset;
+            }
+            &::after{
+              background-image:url('../assets/images/dropdownImg.png');
+            }
+          }
+          .accordion-body{
+            .menu-inner-ul{
+              li{
+                font-family: $para-font;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .overlay_Div{
+  .overlay_Div {
     position: fixed;
     top: 0%;
     width: 100%;
     left: -100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1031;
   }
 }
-// header section css 
+// header section css
