@@ -11,7 +11,7 @@
         <!-- owl carousel  -->
 
         <!-- Font Awesome  -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Font Awesome  -->
 
         <!-- Bootstrap CDN  -->
@@ -26,25 +26,100 @@
             <section class="header">
                 <nav class="navbar fixed-top py-md-3 px-md-4 navbar-expand-lg">
                     <div class="container-fluid">
-                        <div>
-                            <button class="menu-open-btn">
-                                <span class="navbar-toggler-icon"></span>
+                        <div class="d-flex justify-content-center align-content-center">
+                            <button class="btn menu-open-btn text-white ">
+                              <i class="fa-solid fa-bars"></i>
                               </button>
                               <a class="navbar-brand" href="#">AUGS</a>
                         </div>
-                         <form class="d-flex">
+                         <form class="header-form d-flex">
                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                           <button class="btn btn-outline-success" type="submit">Search</button>
+                           <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                          </form>
                     </div>
                   </nav>
             </section>
             <section class="side_Bar">
-                <button class="menu-close-btn">X</button>
+                <div class="py-3 px-4">
+                    <div>
+                        <button class="btn text-white menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
+                        <a class="text-white" href="">AUGS</a>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="menu-list"><div>
+                                <form action="" class="position-relative">
+                                    <input type="text" placeholder="search">
+                                    <button class="btn text-white search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div></li>
+                            <li class="menu-list"><div>
+                                <p class="text-white mb-0">Menu</p>
+                                <div>
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                Conditions
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled menu-inner-ul pl-0-">
+                                                    <li>Premature Ejaculation</li>
+                                                    <li>Erectile Dysfunction</li>
+                                                </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                              Products
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                            <div class="accordion-body">
+                                              <ul class="list-unstyled menu-inner-ul pl-0-">
+                                                <li></li>
+                                                <li>Erectile Dysfunction</li>
+                                                <li>Erectile Dysfunction</li>
+                                            </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                              Blogs
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                            <div class="accordion-body">
+                                              <ul class="list-unstyled menu-inner-ul pl-0-">
+                                                <li></li>
+                                                <li>Erectile Dysfunction</li>
+                                                <li>Erectile Dysfunction</li>
+                                            </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div></li>
+                            <li class="menu-list">
+                              <h2 class="menu-links">About Us</h2>
+                          </li>
+                            <li class="menu-list">
+                              <h2 class="menu-links">Contact Us</h2>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="over overlay_Div"></section>
         </header>
-        <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem soluta perferendis ad atque? Molestias iure nihil, itaque cum necessitatibus provident ab id molestiae odit aliquam quasi quae, praesentium hic.</span><span>Assumenda reprehenderit vel veniam expedita magnam adipisci aliquid distinctio, illo tenetur? Sunt voluptas, est saepe, rem quis cum eius ipsa, assumenda suscipit sit quae amet culpa nihil ipsum qui tempora!</span><span>Commodi iure sit sed reprehenderit aut aliquam quo? Accusamus nulla vel aliquid dolor saepe corporis qui, ipsam voluptatibus? Sunt odit natus explicabo aliquam nostrum a asperiores quidem consequuntur. Impedit, quod.</span><span>Rerum repudiandae doloremque neque odit unde, ex eligendi hic voluptatem atque! Corrupti magni odit porro cum optio neque at expedita eum inventore quis? Corrupti ullam voluptatibus ex sed omnis quibusdam!</span><span>Quaerat modi numquam itaque quibusdam adipisci libero illum voluptatum sapiente qui vero labore in maxime quasi, incidunt officiis at veniam delectus voluptas impedit non eligendi repellendus, a animi. Harum, perspiciatis.</span><span>Nemo quo minima dicta itaque eveniet suscipit modi temporibus ullam nihil alias eos, provident accusamus quod veniam consequatur dolorum blanditiis quos voluptatum accusantium maiores cum. Nulla saepe unde accusamus autem!</span><span>Officia beatae esse fuga soluta eaque vitae ea dolore nobis molestias, delectus sit earum eligendi perspiciatis unde officiis molestiae et laboriosam aliquam ducimus tempore ad qui accusantium magni! Voluptatum, ipsam!</span><span>Asperiores velit reiciendis nihil non ullam excepturi hic dignissimos ea nulla, reprehenderit repellendus. Eum ipsa reprehenderit iure, et perferendis, necessitatibus sapiente soluta fugiat corrupti enim voluptatem mollitia, cumque voluptate nihil?</span><span>Laborum sunt aut eius ipsa voluptate esse fugiat minus amet neque mollitia exercitationem accusamus repellendus architecto perferendis ipsum nostrum dolore molestiae beatae doloremque, ab voluptatibus blanditiis dolores? Blanditiis, enim ducimus.</span><span>Delectus, porro praesentium molestiae explicabo quibusdam assumenda, voluptatem nulla minima, dolore tenetur aliquid sint. Quae quasi unde mollitia dolorum esse? Esse eum magni sequi accusamus quaerat optio. Cum, qui fuga?</span><span>At quo magnam perferendis quisquam consequatur? Assumenda est, voluptates recusandae animi, veritatis ratione quod error suscipit eos, sapiente deleniti iusto officiis nam deserunt? Blanditiis, hic accusantium velit iste perspiciatis a?</span><span>Consectetur odio modi dolorum aspernatur optio voluptate vel ipsum ratione rem at est repellendus ducimus totam, reprehenderit cupiditate facilis molestiae voluptatum, placeat porro fugit quae nam aliquam error harum! Ducimus.</span><span>Laboriosam ratione voluptatibus perspiciatis ipsam fugit earum praesentium quod provident, quia mollitia rerum pariatur libero, incidunt repellat saepe veniam? Aliquid cumque sapiente dolorem minus voluptates est, qui in fuga voluptas.</span><span>Magni nostrum non fuga voluptatibus odio natus praesentium aperiam eum sunt officia aspernatur, libero dolorem dicta cumque. Fugiat, voluptatum harum? Expedita dolorem voluptatibus a eum aspernatur quasi vitae ducimus debitis.</span><span>Est, qui? Hic tempora error consectetur! Adipisci ut saepe, soluta omnis quis incidunt! Explicabo maiores quam quos, repellat eius ipsa voluptas nesciunt iure sunt nemo, dolor rerum eveniet non voluptatibus.</span><span>Ipsam alias labore, dignissimos officia incidunt asperiores doloribus quia consectetur, earum hic tempore facilis eius dolorum ducimus obcaecati voluptatum itaque qui. Et nesciunt consectetur inventore error at qui id velit?</span><span>Dolores eaque similique voluptatum consequatur rem quis numquam amet. Amet vero, inventore voluptas soluta omnis veniam magnam, natus officia suscipit tempore quaerat et, sunt quasi accusantium maxime nesciunt nihil repudiandae.</span><span>Ea vel tempore labore corrupti consequatur. Impedit cumque quas animi cum, obcaecati nam. Itaque blanditiis autem nesciunt consectetur harum quam, corporis ipsa quod impedit, explicabo officia, eum eligendi fugit veritatis?</span><span>Corporis voluptatum, maiores ullam autem dicta laboriosam nobis ratione illo enim beatae repellat itaque quos accusamus perferendis vitae fuga, esse ducimus natus cum qui amet deserunt libero excepturi! Repellat, quibusdam?</span><span>Perferendis explicabo corrupti dolorum placeat quam quos distinctio laborum tempora eveniet similique, aliquam, adipisci rem, a praesentium excepturi incidunt unde odio saepe? Nulla eius corporis adipisci possimus necessitatibus! Rerum, perspiciatis.</span><span>Minima, sint eos. Alias eum itaque nemo distinctio iste cum nesciunt, sed vero voluptate et consequatur, voluptatum voluptates asperiores impedit veritatis repudiandae nobis dolorum quod corporis recusandae! Sequi, illum sunt?</span><span>Totam animi nihil iure quis a saepe quasi porro, similique doloribus quia accusamus recusandae dicta. Ab distinctio ut minus laboriosam, reprehenderit laudantium eos pariatur, maiores sed tempore dolores, aperiam voluptatum?</span><span>Omnis, iure, dicta numquam maxime, aliquam nihil at tempore consequatur quasi recusandae voluptates quis! Omnis nesciunt, a quo ipsam assumenda, officiis sequi quia voluptas incidunt, deleniti accusantium perspiciatis fugit dolorem.</span><span>Magni, minus obcaecati, aliquid sapiente amet esse dolorum voluptas maiores beatae, nemo expedita fugiat! Aliquid molestias aliquam perferendis, quisquam dolores esse ratione, perspiciatis dolor optio nisi, atque et error ad.</span><span>Dolorum asperiores obcaecati numquam, incidunt animi ullam placeat, soluta fuga sint quaerat culpa molestias error ad dolore officia minus nostrum aliquam explicabo quos magni reprehenderit deleniti eaque est ratione. Consequuntur.</span><span>Eos reprehenderit consequuntur optio sit impedit quam in consequatur soluta aperiam nesciunt sunt perspiciatis ipsum minima, maxime amet, totam delectus, ullam illo enim magnam qui! Id amet odio rerum commodi!</span><span>Autem nisi dignissimos dolor unde assumenda harum consequatur repellat aliquam eveniet saepe aperiam odit nesciunt, fugit consectetur. Eveniet nesciunt incidunt, suscipit reprehenderit velit vitae odit eligendi? Optio unde cupiditate autem?</span><span>Maxime nobis odio maiores nemo, blanditiis cumque saepe vero provident unde quis quaerat vitae. Fugit ipsam suscipit consectetur commodi aut similique, possimus facere dolore dicta pariatur sequi beatae corrupti praesentium?</span><span>Deleniti a sunt sint molestiae magni nulla cupiditate facilis adipisci voluptatibus, explicabo porro autem veritatis, cumque dolorem repudiandae neque rerum odio. Eligendi natus nemo consectetur, cumque mollitia ea tempore delectus.</span><span>Sunt modi nemo voluptatem reiciendis consequuntur consectetur eaque pariatur cupiditate veniam quisquam id dolorum quis saepe voluptatum nobis eum voluptates quod voluptate deleniti amet similique, eius odio accusamus. Consequuntur, eveniet!</span></p>
+        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tempora in. Sunt nostrum quasi omnis laborum atque dolorem praesentium, ipsa nihil iste labore eos assumenda provident quidem id eligendi porro.</span><span>Sint, cupiditate eos eveniet labore recusandae quae excepturi minus repudiandae debitis enim quos nihil cumque exercitationem, a quis harum aut similique ab sed perspiciatis. Voluptatem accusantium commodi molestiae quibusdam soluta.</span><span>Doloribus fugit temporibus sunt nulla deleniti voluptatibus cumque distinctio ipsa iure odio, illo reprehenderit, laudantium expedita recusandae quidem aspernatur magni veniam. Ullam, quod perferendis possimus aliquid velit provident itaque impedit!</span><span>Inventore, nihil harum maiores sit incidunt, laudantium optio magnam rem molestias eaque, tempora suscipit nulla. Facilis aspernatur corporis dolorem sequi eligendi tenetur? Quidem, beatae facilis. Obcaecati assumenda repudiandae ratione quaerat.</span><span>Incidunt doloribus alias veniam at quam libero consectetur voluptas nostrum ea fugiat odit quae dolores unde commodi facere repellendus placeat praesentium adipisci, illum quisquam, ducimus debitis! Architecto temporibus est sit!</span><span>Neque culpa corporis sed quibusdam consequatur ratione, aperiam odit perspiciatis illum natus magnam a tempora repellendus! Autem repudiandae vel hic obcaecati quisquam quasi unde expedita, fugiat consectetur. Quisquam, voluptatibus eos.</span><span>Impedit adipisci sint quas reiciendis? Repellendus iste odio aut temporibus dolorum deleniti quisquam dignissimos ea nisi. Magni harum odit dicta. Ad expedita repellendus vitae quibusdam temporibus odio veritatis eaque dolore.</span><span>Qui pariatur nulla voluptate tempore ut, libero doloremque hic velit nam enim veritatis autem sapiente corporis similique dignissimos eaque repellat magnam corrupti, molestias impedit ea, saepe architecto minus amet. Beatae.</span><span>Dolorem, quis? Magni commodi repellat dolores ducimus deleniti quod eius nostrum magnam nulla perspiciatis non animi illum, nisi deserunt necessitatibus ad tenetur optio? Dicta iste, dignissimos tempora nostrum sit dolorem?</span><span>Culpa esse quidem magnam eligendi nostrum? Dolore vel mollitia, repudiandae dolorum doloremque et quidem porro, hic non vero ipsum, excepturi quasi dolorem consequatur sapiente voluptatem aliquam aperiam odio similique eligendi!</span></p>
         <!-- jquery js  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!-- jquery js  -->
@@ -56,6 +131,8 @@
         <!-- owl carousel js  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <!-- owl carousel js  -->
+
+        <script src="https://kit.fontawesome.com/47f6311c78.js" crossorigin="anonymous"></script>
 
         <script src="./js/custome.js"></script>
 
