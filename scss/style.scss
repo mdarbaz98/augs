@@ -56,7 +56,7 @@
 }
 .section-2 {
   .home-blog-section {
-    #home-owl-carousel {
+    #home-owl-carousel, #product-owl-carousel{
       @include blogCard;
 
       .blog-desc-sec {
@@ -707,9 +707,22 @@ header {
       &:focus{
         box-shadow: none;
       }
+      &:not(.collapsed){
+        background-color: $color-10;
+        color: $color-1;
+        font-weight: 600;
+        box-shadow: none;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        &::after{
+          filter: brightness(0.1);
+        }
+      }
     }
     .accordion-body{
       background-color: $color-10;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
       p{
         color: $color-1;
       }
