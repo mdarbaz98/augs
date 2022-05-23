@@ -18,4 +18,11 @@ $(document).ready(function () {
   $(".owl-carousel .owl-prev span").html(
     `<i class="fa-solid fa-arrow-left"></i>`
   );
+
+  // post active table of content   
+
+    $('.tbc_links').click(()=>{
+      alert($(this));
+      // $(".tbc_links").removeClass('active')
+    })
 });

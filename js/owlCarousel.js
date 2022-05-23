@@ -1,4 +1,4 @@
-$('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel').owlCarousel({
+$('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel,#post-owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
