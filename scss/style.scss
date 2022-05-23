@@ -1,8 +1,8 @@
-@use "./variables" as *;
+@use "./variables"as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components" as *;
-@use "./utilities/" as *;
+@use "./components"as *;
+@use "./utilities/"as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -56,6 +56,7 @@
   }
 
 }
+
 .section-2 {
   .home-blog-section {
     #home-owl-carousel, #product-owl-carousel,#categoryproduct-owl-carousel{
@@ -91,6 +92,31 @@
   }
 }
 
+.section-2 {
+  .outerline {
+    padding: 5px 0px 0px 7px;
+    border: solid 1px #212529;
+    border-radius: 35px;
+    height: 45px;
+    width: 151px;
+    margin: 2rem auto;
+  }
+
+  button {
+    font-family: "Ubuntu", sans-serif;
+    padding: 8px 0px;
+    border-radius: 15px;
+    border: none;
+    color: #f8f9fa;
+    letter-spacing: 0.7px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: #212529;
+    display: block;
+    width: 136px;
+  }
+}
+
 //before css
 .before {
   width: fit-content;
@@ -120,6 +146,7 @@
 
     .form {
       .form-floating {
+
         input,
         textarea {
           background-color: $input;
@@ -145,6 +172,7 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
+
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
@@ -202,7 +230,8 @@
 .onetime-privacy,
 .onetime-about,
 .onetime-tandc,
-.onetime-contact {
+.onetime-contact 
+{
   .onetime-banner-img {
     position: relative;
   }
@@ -272,6 +301,7 @@
       }
     }
   }
+
   .main_section_content2 {
     margin-top: 2rem;
   }
@@ -284,10 +314,11 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.875rem 1.25rem;
-        @include image-css(100%, 370px);
+        @include image-css(100%, 415px);
       }
 
       .contact-section-inside1 {
@@ -295,16 +326,17 @@
       }
     }
   }
-}
-
-@media only screen and (min-width: 768px) and(max-width: 900px) {
-  .onetime-banner-content {
-    top: 21%;
-  }
-
-  .main-section {
-    .contact-section-inside2 {
-      @include image-css(100%);
+  @media only screen and (min-width: 768px) and(max-width: 900px) {
+    .onetime-banner-content {
+      top: 21%;
+      left: 49%;
+    }
+  
+    .main-section {
+      .main-section-inside1,
+      .contact-section-inside2 {
+        @include image-css(100%,320px);
+      }
     }
   }
 }
@@ -315,25 +347,22 @@
 .categoryproductED {
   .categorysection1_inside1 {
     margin: 1.25rem auto;
-    max-width: 700px;
+    // max-width: 700px;
+
     img {
       width: 100%;
-      height: 25rem;
+      height: 30rem;
     }
   }
 
-  .categorysection2
-  {
-    .categorybox 
-    {
-      .categorybox_inside 
-      {
+  .categorysection2 {
+    .categorybox {
+      .categorybox_inside {
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
         padding: 10px;
         border-radius: 10px;
 
-        .categorybox_img 
-        {
+        .categorybox_img {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -345,50 +374,55 @@
           }
         }
 
-        .categorydetail_content 
-        {
+        .categorydetail_content {
           h2 {
             font-size: 20px;
             margin: 10px 0px;
           }
 
-          .cd_span{
+          .cd_span {
             i {
               font-size: 11px;
-              color: #5dac34;
+              color: #212529;
               margin: 10px 0px;
             }
-            span{
+
+            span {
               font-size: 15px;
             }
           }
         }
-        .cd_button{
-          p{
+
+        .cd_button {
+          p {
             margin-top: 3rem
           }
-          span{
+
+          span {
             font-size: 22px;
             font-weight: 500;
           }
-          button 
-        {
-          @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
-          background-color: #29873c;;
-          margin: 0px auto;
-          opacity: 0.9;
-          font-size: 1rem
-        }
+
+          button {
+            @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
+            margin: 0px auto;
+            opacity: 0.9;
+            font-size: 1rem;
+            background-color: #444547;
+          }
         }
       }
-      .categorybox_inside:hover{
+
+      .categorybox_inside:hover {
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
-        button{
-          background-color: #01540a;
+
+        button {
+          background-color: #212529;
         }
-        
+
       }
     }
+
     .outerline {
       padding: 5px 0px 0px 7px;
       border: solid 1px #212529;
@@ -397,7 +431,7 @@
       width: 151px;
       margin: 3rem auto;
     }
-  
+
     button {
       font-family: "Ubuntu", sans-serif;
       padding: 8px 0px;
@@ -460,6 +494,8 @@
         p {
           margin-top: 2rem;
           font-size: 18px;
+          max-width: 800px;
+          margin-top: 0 auto;
         }
 
         .span1 {
@@ -482,11 +518,14 @@
 @media only screen and (max-width: 767px) {
   .section_blogpage {
     padding: 0px 15px;
+
     .blog-heading-content {
       margin-top: 2rem;
+
       h1 {
         font-size: 35px;
       }
+
       p {
         font-size: 16px;
         text-align: center;
@@ -507,13 +546,16 @@
   font-family: $heading-font;
   text-transform: capitalize;
   background-color: $color-1;
+
   .row {
     border-bottom: solid 1px #fff;
+
     .logo__div {
       img {
         width: 50px;
       }
     }
+
     .quick-links {
       li {
         a {
@@ -546,31 +588,38 @@ header {
         color: $color-9;
       }
     }
+
     .menu-open-btn {
       font-size: 1.25rem;
     }
+
     .header-form {
       position: relative;
       height: 2.125rem;
       width: 18.75rem;
+
       input {
         border-radius: 50px;
         font-family: $para-font;
+
         &:focus {
           box-shadow: none;
           border: none;
         }
       }
+
       .header-search-btn {
         width: 3.125rem;
         height: 2.125rem;
         position: absolute;
         right: 12px;
         padding-top: 2px;
+
         &:focus {
           box-shadow: none;
           border: none;
         }
+
         img {
           width: 100%;
           height: 100%;
@@ -588,8 +637,10 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
+
     .menu-close-btn {
       font-size: 1.25rem;
+
       &:focus {
         box-shadow: none;
       }
@@ -599,6 +650,7 @@ header {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
+
         form {
           input {
             background-color: $color-1;
@@ -607,21 +659,25 @@ header {
             padding-left: 35px;
             margin-bottom: 10px;
             outline: none;
+
             &::placeholder {
               color: $color-9;
             }
           }
+
           .search-btn {
             position: absolute;
             left: 0px;
             top: 0px;
             outline: none;
             padding: 3px;
+
             &:focus {
               box-shadow: none;
             }
           }
         }
+
         .menu-links {
           color: $color-9;
           font-size: 1rem;
@@ -637,14 +693,17 @@ header {
           .accordion-button {
             background-color: $color-1;
             color: $color-9;
+
             &:focus {
               border-color: unset;
               box-shadow: unset;
             }
+
             &::after {
               background-image: url("../assets/images/dropdownImg.png");
             }
           }
+
           .accordion-body {
             .menu-inner-ul {
               li {
@@ -667,16 +726,19 @@ header {
     z-index: 1031;
   }
 }
+
 // header section css
 
 // single product page css
 .product__page {
   .top-section {
     background-color: $color-8;
+
     .product-section {
       border: solid 1px $color-1;
       border-radius: 6px;
       padding: 10px;
+
       .product-img {
         img {
           width: 100%;
@@ -684,12 +746,14 @@ header {
 
           object-fit: cover;
         }
+
         button {
           @include btn;
           width: 100%;
           margin: 0px;
         }
       }
+
       .product-desc {
         h1 {
           font-size: 2rem;
@@ -737,8 +801,10 @@ header {
     .top-section {
       .product-section {
         border: none;
+
         .shadow {
           box-shadow: unset !important;
+
           .product-img {
             padding: 5px;
             border: solid 1px $color-1;
@@ -749,4 +815,5 @@ header {
     }
   }
 }
+
 // single product page css
