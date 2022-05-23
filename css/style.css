@@ -46,7 +46,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,7 +76,7 @@ p {
   padding: 40px 45px;
 }
 .home__section .section-1 .home__leftSection h1.home_heading {
-  font-size: 3.3rem;
+  font-size: 3.1rem;
   max-width: 530px;
   text-transform: uppercase;
   padding: 20px 0px;
