@@ -12,7 +12,7 @@
 
     .home__leftSection {
       h1.home_heading {
-        font-size: 2.325rem;
+        font-size: 3.3rem;
         max-width: 530px;
         text-transform: uppercase;
         padding: 20px 0px;
@@ -25,9 +25,11 @@
           padding: 22px 30px;
           height: 100%;
 
-          h1 {
+          span {
             font-size: 1.375rem;
             text-transform: uppercase;
+            font-family: $heading-font;
+            font-weight: 600;
           }
 
           p {
@@ -57,9 +59,7 @@
 
 .section-2 {
   .home-blog-section {
-
-    #home-owl-carousel,
-    #categoryproduct-owl-carousel {
+    #home-owl-carousel, #product-owl-carousel,#categoryproduct-owl-carousel{
       @include blogCard;
 
       .blog-desc-sec {
@@ -121,6 +121,7 @@
 .before {
   width: fit-content;
   @include before;
+  font-size: 2rem;
 }
 
 .section-3 {
@@ -757,6 +758,39 @@ header {
         h1 {
           font-size: 2rem;
         }
+      }
+    }
+  }
+  .bottom-section{
+    .accordion-button{
+      background-color: $color-1;
+      color: $color-9;
+      padding: 8px 10px;
+    border-radius: 6px;
+      &::after{
+        filter: brightness(25);
+      }
+      &:focus{
+        box-shadow: none;
+      }
+      &:not(.collapsed){
+        background-color: $color-10;
+        color: $color-1;
+        font-weight: 600;
+        box-shadow: none;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        &::after{
+          filter: brightness(0.1);
+        }
+      }
+    }
+    .accordion-body{
+      background-color: $color-10;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      p{
+        color: $color-1;
       }
     }
   }
