@@ -49,7 +49,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -474,7 +474,7 @@ p {
 .onetime-tandc .main-section .contact-section-inside2,
 .onetime-contact .main-section .main-section-inside1,
 .onetime-contact .main-section .contact-section-inside2 {
-    padding: 0rem 1.875rem 1.25rem;
+    padding: 0rem 1.25rem 1.25rem;
   }
   .onetime-privacy .main-section .main-section-inside1 .image-div,
 .onetime-privacy .main-section .contact-section-inside2 .image-div,
@@ -503,11 +503,18 @@ p {
     border-radius: 6px;
     object-fit: cover;
   }
+  .onetime-privacy .main-section .main-section-inside2,
+.onetime-about .main-section .main-section-inside2,
+.onetime-tandc .main-section .main-section-inside2,
+.onetime-contact .main-section .main-section-inside2 {
+    padding: 0rem 1.25rem;
+  }
   .onetime-privacy .main-section .contact-section-inside1,
 .onetime-about .main-section .contact-section-inside1,
 .onetime-tandc .main-section .contact-section-inside1,
 .onetime-contact .main-section .contact-section-inside1 {
     margin-top: 0rem;
+    padding: 0rem 1.25rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) {
@@ -643,6 +650,9 @@ p {
   width: 136px;
 }
 @media only screen and (max-width: 767px) {
+  .categoryproductED .categorysection2 .categorybox {
+    padding: 20px 20px 0px 20px;
+  }
   .categoryproductED .categorysection2 .outerline {
     height: 41px;
   }

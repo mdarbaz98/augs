@@ -321,12 +321,15 @@
     .main-section {
       .main-section-inside1,
       .contact-section-inside2 {
-        padding: 0rem 1.875rem 1.25rem;
+        padding: 0rem 1.25rem 1.25rem;
         @include image-css(100%, 415px);
       }
-
+      .main-section-inside2 {
+        padding: 0rem 1.25rem;
+      }
       .contact-section-inside1 {
         margin-top: 0rem;
+        padding:0rem 1.25rem;
       }
     }
   }
@@ -468,6 +471,9 @@
   }
   @media only screen and (max-width: 767px){
     .categorysection2 {
+      .categorybox{
+        padding: 20px 20px 0px 20px;
+      }
       .outerline {
         height: 41px;
       }
