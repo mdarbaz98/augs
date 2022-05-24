@@ -2,12 +2,12 @@
         <footer class="footer__section px-lg-5 py-lg-4 p-4">
             <section class="container-fluid">
                <div class="row">
-                <div class="col">
-                    <div class="logo__div">
-                        <img src="./assets/images/augs-logo.png" alt="augs-logo">
+                <div class="col-12 col-md-6">
+                    <div class="logo__div h-100 d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/augs-logo.png" class="augs-logo" alt="augs-logo">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <ul class="h-100 quick-links list-unstyled d-flex justify-content-evenly align-items-center mb-5">
                         <li><a href="">About us</a></li>
                         <li><a href="">contact us</a></li>

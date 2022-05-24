@@ -1,3 +1,72 @@
-@use "../variables/" as *;
-@use "../base/index" as *;
-/*# sourceMappingURL=header.css.map */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.custom-container {
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 70%;
+  }
+  html p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 70.75%;
+  }
+  html p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: rgb(23, 23, 23);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", serif;
+  color: #212529;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5625rem;
+}
+
+p {
+  color: #212529;
+  font-family: "Ubuntu", sans-serif;
+}

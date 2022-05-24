@@ -38,7 +38,7 @@ html {
 }
 @media only screen and (min-width: 1800px) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 }
 
@@ -256,6 +256,11 @@ p {
 .section-3 .right-section .form .form-floating textarea {
   background-color: #c4c4c4;
 }
+.section-3 .right-section .form .form-floating input:focus,
+.section-3 .right-section .form .form-floating textarea:focus {
+  border: none;
+  box-shadow: none;
+}
 .section-3 .right-section .form .form-floating label {
   left: unset;
   right: 0px;
@@ -295,6 +300,11 @@ p {
   bottom: -2rem;
   justify-content: center;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .owl-carousel .owl-nav {
+    bottom: -4rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -785,6 +795,12 @@ p {
 }
 .footer__section .row .logo__div img {
   width: 60px;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .footer__section .row .logo__div .augs-logo {
+    margin-right: unset;
+  }
 }
 .footer__section .row .quick-links li a {
   color: #f8f9fa;
