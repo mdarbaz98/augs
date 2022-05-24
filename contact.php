@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="container main-section">
+        <div class="container main-section mb-3">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 contact-section-inside1 ">
                     <h2>Contact Us</h2>
