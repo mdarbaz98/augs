@@ -6,9 +6,17 @@
     box-sizing: border-box;
 }
 
-// body{
-//     font-size: 62.5% ;
-// }
+body{
+    // &::-webkit-scrollbar{
+    //     background-color: #f1f1f1;
+    // }
+    // &::-webkit-scrollbar-track{
+    //     background-color: #f1f1f1;
+    // }
+    // &::-webkit-scrollbar-thumb{
+    //     background-color: #c1c1c1;
+    // }
+}
 
 html{
     //font size for phone 
@@ -16,13 +24,13 @@ html{
     @include mediaScreen(tab){
         font-size: 70%;
         p{
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
         }
     }
     @include mediaScreen(phone){
         font-size: 70.75%;
         p{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
     @include mediaScreen(desktop){
