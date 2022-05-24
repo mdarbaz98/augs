@@ -1,8 +1,8 @@
-@use "./variables"as *;
+@use "./variables" as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components"as *;
-@use "./utilities/"as *;
+@use "./components" as *;
+@use "./utilities/" as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -12,7 +12,7 @@
 
     .home__leftSection {
       h1.home_heading {
-        font-size: 3.3rem;
+        font-size: 3.1rem;
         max-width: 530px;
         text-transform: uppercase;
         padding: 20px 0px;
@@ -54,15 +54,14 @@
       }
     }
   }
-
 }
 
 .section-2 {
   .home-blog-section {
-
     #home-owl-carousel,
     #product-owl-carousel,
-    #categoryproduct-owl-carousel {
+    #categoryproduct-owl-carousel,
+    #post-owl-carousel {
       @include blogCard;
 
       .blog-desc-sec {
@@ -76,8 +75,8 @@
         }
 
         p {
-          height: 5rem;
-          font-size: 1.1rem;
+          height: 4.5rem;
+          font-size: 1rem;
           text-overflow: ellipsis;
           overflow: hidden;
           display: -webkit-box;
@@ -155,7 +154,6 @@
 
     .form {
       .form-floating {
-
         input,
         textarea {
           background-color: $input;
@@ -181,7 +179,6 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
-
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
@@ -322,7 +319,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.875rem 1.25rem;
@@ -420,7 +416,7 @@
 
         .cd_button {
           p {
-            margin-top: 3rem
+            margin-top: 3rem;
           }
 
           span {
@@ -444,7 +440,6 @@
         button {
           background-color: #212529;
         }
-
       }
     }
 
@@ -608,7 +603,6 @@
 
 // header section css
 header {
-
   // z-index: 10;
   .navbar {
     background-color: $color-1;
@@ -793,43 +787,39 @@ header {
       }
     }
   }
-
   .bottom-section {
-    .accordion-button {
-      background-color: $color-1;
-      color: $color-9;
-      padding: 8px 10px;
-      border-radius: 6px;
-
-      &::after {
-        filter: brightness(25);
-      }
-
-      &:focus {
-        box-shadow: none;
-      }
-
-      &:not(.collapsed) {
-        background-color: $color-10;
-        color: $color-1;
-        font-weight: 600;
-        box-shadow: none;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-
+    .accordion-item {
+      border: none;
+      .accordion-button {
+        background-color: $color-1;
+        color: $color-9;
+        padding: 8px 10px;
+        border-radius: 6px;
         &::after {
-          filter: brightness(0.1);
+          filter: brightness(25);
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &:not(.collapsed) {
+          background-color: $color-10;
+          color: $color-1;
+          font-weight: 600;
+          box-shadow: none;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          &::after {
+            filter: brightness(0.1);
+          }
         }
       }
-    }
-
-    .accordion-body {
-      background-color: $color-10;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-
-      p {
-        color: $color-1;
+      .accordion-body {
+        background-color: $color-10;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        p {
+          color: $color-1;
+        }
       }
     }
   }
@@ -856,3 +846,118 @@ header {
 }
 
 // single product page css
+
+// post page css
+.post__page {
+  .post-banner-img {
+    height: 500px;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .post-content-section {
+    .TBC-container{
+      position: sticky;
+      top: 40px;
+      .table-of-content {
+        li {
+          border: solid 1px $color-1;
+          border-radius: 6px;
+          padding: 5px 6px;
+          margin-bottom: 10px;
+          a {
+            display: flex;
+            align-items: center;
+            h2,
+            span {
+              font-size: 1.2rem;
+              margin-bottom: 0px;
+            }
+            span {
+              border-right: solid 1px $color-1;
+              margin-right: 10px;
+              padding: 0px 10px;
+            }
+          }
+        }
+        li.active{
+          background-color: $color-1;
+          a{
+            span,h2{
+            color: $color-9;
+            font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .headings {
+      font-size: 1.7rem;
+      margin: 30px 0px 10px;
+    }
+    p {
+      font-family: $para-font;
+    }
+    .sq-btn {
+      @include btn;
+    }
+    .accordion-item {
+      width: fit-content;
+      border: none;
+      .accordian-heading {
+        .accordion-button {
+          font-size: 1.2rem;
+          box-shadow: none;
+          border: none;
+          font-weight: 600;
+          width: 300px;
+          display: flex;
+          justify-content: space-between;
+          &::after {
+            display: none;
+          }
+          &:not(.collapsed) {
+            background-color: unset;
+            color: $color-1;
+          }
+          span {
+            background-color: $color-1;
+            color: $color-9;
+            padding: 6px 8px;
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .post__page {
+    padding: 10px;
+    .post-banner-img {
+      height: 200px;
+    }
+    .accordian-heading {
+      .accordion-button {
+        font-size: 1.4rem !important;
+      }
+    }
+      
+  }
+}
+
+@media screen and (max-width: 922px) {
+  .TBC-container {
+    .table-of-content {
+      li {
+        a {
+          span,h2{
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+// post page css
