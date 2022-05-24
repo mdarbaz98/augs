@@ -1,5 +1,5 @@
 <?php include('./include/header.php') ?>
-    <section class="post__page">
+    <section class="post__page pt-5 pt-md-0">
       <div
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
       >
@@ -323,7 +323,7 @@
           <h2 class="text-center my-4 mb-0 before position-relative m-auto">
             Related Blogs
           </h2>
-          <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
+          <div class="home-blog-section py-5 p-md-5 mb-5 mb-md-0">
             <div class="owl-carousel owl-theme" id="post-owl-carousel">
               <div class="blog-card">
                 <a href="">

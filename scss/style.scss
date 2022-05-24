@@ -157,6 +157,10 @@
         input,
         textarea {
           background-color: $input;
+          &:focus{
+            border: none;
+            box-shadow: none;
+          }
         }
 
         label {
@@ -580,6 +584,12 @@
     .logo__div {
       img {
         width: 60px;
+        margin-right: auto;
+      }
+      @media screen and (max-width: 767px) {
+        .augs-logo{
+          margin-right: unset;
+        }
       }
     }
 

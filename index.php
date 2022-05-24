@@ -1,5 +1,5 @@
 <?php include('./include/header.php') ?>
-    <section class="home__section">
+    <section class="home__section pt-5">
       <div class="section-1">
         <div class="container-fluid">
           <div class="row">
