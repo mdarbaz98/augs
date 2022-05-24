@@ -14,3 +14,13 @@ $('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel').owlC
         }
     }
 })
+
+
+// readmore
+$(document).ready(function(){
+    $("#hidden").click(function(){
+    //   $("#div1").fadeIn();
+      $("#hiddencontent").fadeIn("slow");
+    //   $("#div3").fadeIn(3000);
+    });
+  });

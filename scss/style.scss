@@ -59,7 +59,10 @@
 
 .section-2 {
   .home-blog-section {
-    #home-owl-carousel, #product-owl-carousel,#categoryproduct-owl-carousel{
+
+    #home-owl-carousel,
+    #product-owl-carousel,
+    #categoryproduct-owl-carousel {
       @include blogCard;
 
       .blog-desc-sec {
@@ -116,7 +119,13 @@
     width: 136px;
   }
 }
-
+@media only screen and (max-width: 767px){
+  .section-2 {
+    .outerline {
+      height: 41px;
+    }
+  }
+}
 //before css
 .before {
   width: fit-content;
@@ -230,8 +239,7 @@
 .onetime-privacy,
 .onetime-about,
 .onetime-tandc,
-.onetime-contact 
-{
+.onetime-contact {
   .onetime-banner-img {
     position: relative;
   }
@@ -326,16 +334,18 @@
       }
     }
   }
+
   @media only screen and (min-width: 768px) and(max-width: 900px) {
     .onetime-banner-content {
       top: 21%;
       left: 49%;
     }
-  
+
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
-        @include image-css(100%,320px);
+        @include image-css(100%, 320px);
       }
     }
   }
@@ -355,8 +365,23 @@
     }
   }
 
-  .categorysection2 {
-    .categorybox {
+  .categorysection1_inside2 {
+    h1 {
+      margin: 0.625rem 0rem 2rem 0rem;
+    }
+
+    #hidden {
+      background-color: transparent;
+      border: none;
+      color: #ff8700;
+      font-size: 15px;
+    }
+  }
+
+  .categorysection2 
+  {
+    .categorybox 
+    {
       .categorybox_inside {
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
         padding: 10px;
@@ -444,6 +469,13 @@
       background-color: #212529;
       display: block;
       width: 136px;
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .categorysection2 {
+      .outerline {
+        height: 41px;
+      }
     }
   }
 }
@@ -761,35 +793,42 @@ header {
       }
     }
   }
-  .bottom-section{
-    .accordion-button{
+
+  .bottom-section {
+    .accordion-button {
       background-color: $color-1;
       color: $color-9;
       padding: 8px 10px;
-    border-radius: 6px;
-      &::after{
+      border-radius: 6px;
+
+      &::after {
         filter: brightness(25);
       }
-      &:focus{
+
+      &:focus {
         box-shadow: none;
       }
-      &:not(.collapsed){
+
+      &:not(.collapsed) {
         background-color: $color-10;
         color: $color-1;
         font-weight: 600;
         box-shadow: none;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
-        &::after{
+
+        &::after {
           filter: brightness(0.1);
         }
       }
     }
-    .accordion-body{
+
+    .accordion-body {
       background-color: $color-10;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
-      p{
+
+      p {
         color: $color-1;
       }
     }

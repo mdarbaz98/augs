@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
-.shadow, .section-2 .home-blog-section #home-owl-carousel .blog-card, .section-2 .home-blog-section #product-owl-carousel .blog-card, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
+.shadow, .section-2 .home-blog-section #home-owl-carousel .blog-card,
+.section-2 .home-blog-section #product-owl-carousel .blog-card,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -128,18 +130,26 @@ p {
   color: #f8f9fa;
 }
 
-.section-2 .home-blog-section #home-owl-carousel .blog-card, .section-2 .home-blog-section #product-owl-carousel .blog-card, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
+.section-2 .home-blog-section #home-owl-carousel .blog-card,
+.section-2 .home-blog-section #product-owl-carousel .blog-card,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
   border-radius: 6px;
   overflow: hidden;
 }
-.section-2 .home-blog-section #home-owl-carousel .blog-card .blog-card-img-div img, .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img {
+.section-2 .home-blog-section #home-owl-carousel .blog-card .blog-card-img-div img,
+.section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img {
   width: 100%;
   height: 15.75rem;
 }
-.section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1, .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1 {
+.section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
+.section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1 {
   font-size: 1.5625rem;
 }
-.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec h1, .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec h1, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec h1 {
+.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec h1,
+.section-2 .home-blog-section #product-owl-carousel .blog-desc-sec h1,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec h1 {
   height: 2rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -147,7 +157,9 @@ p {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec p, .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec p, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec p {
+.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec p,
+.section-2 .home-blog-section #product-owl-carousel .blog-desc-sec p,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec p {
   height: 5rem;
   font-size: 1.1rem;
   text-overflow: ellipsis;
@@ -156,7 +168,9 @@ p {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn, .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec .sq-btn, .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn {
+.section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn,
+.section-2 .home-blog-section #product-owl-carousel .blog-desc-sec .sq-btn,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn {
   font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 4px;
@@ -195,6 +209,11 @@ p {
   width: 136px;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-2 .outerline {
+    height: 41px;
+  }
+}
 .before {
   width: fit-content;
   font-size: 2rem;
@@ -528,6 +547,15 @@ p {
   width: 100%;
   height: 30rem;
 }
+.categoryproductED .categorysection1_inside2 h1 {
+  margin: 0.625rem 0rem 2rem 0rem;
+}
+.categoryproductED .categorysection1_inside2 #hidden {
+  background-color: transparent;
+  border: none;
+  color: #ff8700;
+  font-size: 15px;
+}
 .categoryproductED .categorysection2 .categorybox .categorybox_inside {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.15);
   padding: 10px;
@@ -606,6 +634,11 @@ p {
   background-color: #212529;
   display: block;
   width: 136px;
+}
+@media only screen and (max-width: 767px) {
+  .categoryproductED .categorysection2 .outerline {
+    height: 41px;
+  }
 }
 
 .section_blogpage .blog-heading-content {
@@ -929,10 +962,18 @@ header .overlay_Div {
   .product__page .top-section .product-section {
     border: none;
   }
-  .product__page .top-section .product-section .shadow, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card, .product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card, .section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card, .product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card, .section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card {
+  .product__page .top-section .product-section .shadow, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card,
+.product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card,
+.section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card,
+.product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card {
     box-shadow: unset !important;
   }
-  .product__page .top-section .product-section .shadow .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card .product-img {
+  .product__page .top-section .product-section .shadow .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
+.product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card .product-img,
+.section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
+.product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .product-img,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card .product-img {
     padding: 5px;
     border: solid 1px #212529;
     border-radius: 6px;
