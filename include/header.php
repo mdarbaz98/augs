@@ -41,9 +41,9 @@
             </section>
             <section class="side_Bar">
                 <div class="py-3 px-4">
-                    <div>
+                    <div class="mb-4 m-md-0">
                         <button class="btn text-white menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
-                        <a class="text-white" href="">AUGS</a>
+                        <a class="text-white" href=""><img class="logo-img" src="./assets/images/augs-logo.png" alt=""></a>
                     </div>
                     <div>
                         <ul class="list-unstyled">
