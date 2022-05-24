@@ -9,10 +9,10 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <ul class="h-100 quick-links list-unstyled d-flex justify-content-evenly align-items-center mb-5">
-                        <li><a href="">About us</a></li>
-                        <li><a href="">contact us</a></li>
-                        <li><a href="">privacy policy</a></li>
-                        <li><a href="">terms & condition</a></li>
+                        <li><a href="./aboutus.php">About us</a></li>
+                        <li><a href="./contact.php">contact us</a></li>
+                        <li><a href="./privacypolicy.php">privacy policy</a></li>
+                        <li><a href="./termsandconditions.php">terms & condition</a></li>
                     </ul>
                 </div>
                </div>
