@@ -24,16 +24,13 @@ html {
   html {
     font-size: 70%;
   }
-  html p {
-    font-size: 1.5rem;
-  }
 }
 @media only screen and (max-width: 600px) {
   html {
     font-size: 70.75%;
   }
   html p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -49,7 +46,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
