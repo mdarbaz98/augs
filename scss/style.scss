@@ -579,7 +579,7 @@
 
     .logo__div {
       img {
-        width: 50px;
+        width: 60px;
       }
     }
 
@@ -604,6 +604,9 @@
 // header section css
 header {
   // z-index: 10;
+  .logo-img{
+    width: 60px;
+  }
   .navbar {
     background-color: $color-1;
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>header</title>
+        <title>Augs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- owl carousel  -->
@@ -30,10 +30,10 @@
                             <button class="btn menu-open-btn text-white ">
                               <i class="fa-solid fa-bars"></i>
                               </button>
-                              <a class="navbar-brand" href="#">AUGS</a>
+                              <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
                          <form class="header-form d-flex">
-                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                           <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                          </form>
                     </div>
@@ -119,22 +119,4 @@
             </section>
             <section class="over overlay_Div"></section>
         </header>
-        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tempora in. Sunt nostrum quasi omnis laborum atque dolorem praesentium, ipsa nihil iste labore eos assumenda provident quidem id eligendi porro.</span><span>Sint, cupiditate eos eveniet labore recusandae quae excepturi minus repudiandae debitis enim quos nihil cumque exercitationem, a quis harum aut similique ab sed perspiciatis. Voluptatem accusantium commodi molestiae quibusdam soluta.</span><span>Doloribus fugit temporibus sunt nulla deleniti voluptatibus cumque distinctio ipsa iure odio, illo reprehenderit, laudantium expedita recusandae quidem aspernatur magni veniam. Ullam, quod perferendis possimus aliquid velit provident itaque impedit!</span><span>Inventore, nihil harum maiores sit incidunt, laudantium optio magnam rem molestias eaque, tempora suscipit nulla. Facilis aspernatur corporis dolorem sequi eligendi tenetur? Quidem, beatae facilis. Obcaecati assumenda repudiandae ratione quaerat.</span><span>Incidunt doloribus alias veniam at quam libero consectetur voluptas nostrum ea fugiat odit quae dolores unde commodi facere repellendus placeat praesentium adipisci, illum quisquam, ducimus debitis! Architecto temporibus est sit!</span><span>Neque culpa corporis sed quibusdam consequatur ratione, aperiam odit perspiciatis illum natus magnam a tempora repellendus! Autem repudiandae vel hic obcaecati quisquam quasi unde expedita, fugiat consectetur. Quisquam, voluptatibus eos.</span><span>Impedit adipisci sint quas reiciendis? Repellendus iste odio aut temporibus dolorum deleniti quisquam dignissimos ea nisi. Magni harum odit dicta. Ad expedita repellendus vitae quibusdam temporibus odio veritatis eaque dolore.</span><span>Qui pariatur nulla voluptate tempore ut, libero doloremque hic velit nam enim veritatis autem sapiente corporis similique dignissimos eaque repellat magnam corrupti, molestias impedit ea, saepe architecto minus amet. Beatae.</span><span>Dolorem, quis? Magni commodi repellat dolores ducimus deleniti quod eius nostrum magnam nulla perspiciatis non animi illum, nisi deserunt necessitatibus ad tenetur optio? Dicta iste, dignissimos tempora nostrum sit dolorem?</span><span>Culpa esse quidem magnam eligendi nostrum? Dolore vel mollitia, repudiandae dolorum doloremque et quidem porro, hic non vero ipsum, excepturi quasi dolorem consequatur sapiente voluptatem aliquam aperiam odio similique eligendi!</span></p>
-        <!-- jquery js  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- jquery js  -->
-
-        <!-- Bootstrap js  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Bootstrap js  -->
-
-        <!-- owl carousel js  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <!-- owl carousel js  -->
-
-        <script src="https://kit.fontawesome.com/47f6311c78.js" crossorigin="anonymous"></script>
-
-        <script src="./js/custome.js"></script>
-
-    </body>
-</html>
+      

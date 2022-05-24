@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>product page</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- owl carousel  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <!-- owl carousel  -->
-
-    <!-- Font Awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
-      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Font Awesome  -->
-
-    <!-- Bootstrap CDN  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CDN  -->
-
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
+<?php include('./include/header.php') ?>
     <section class="product__page">
       <div class="top-section py-md-5 pt-5 pb-2">
         <div class="container">
@@ -229,25 +195,4 @@
           </div>
       </div>
     </section>
-    <script src="" async defer></script>
-    <!-- jquery js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- jquery js  -->
-
-    <!-- Bootstrap js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap js  -->
-
-    <!-- owl carousel js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- owl carousel js  -->
-    <!-- Fontawesom js -->
-    <script
-      src="https://kit.fontawesome.com/0068f1418c.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fontawesom js -->
-    <script src="./js/owlCarousel.js"></script>
-    <script src="./js/custome.js"></script>
-  </body>
-</html>
+    <?php include('./include/footer.php') ?>

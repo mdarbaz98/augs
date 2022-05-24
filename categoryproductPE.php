@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>categoryproduct</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- owl carousel  -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <!-- owl carousel  -->
-
-    <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" />
-    <!-- Font Awesome  -->
-
-    <!-- Bootstrap CDN  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap CDN  -->
-
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
+<?php include('./include/header.php') ?>
     <section class="categoryproductED">
         <div class="categorysection1">
             <div class="container">
@@ -226,29 +201,6 @@
                     <button class="">View All</button>
                 </div>
             </div>
-        </div>
-
-
-        
+        </div>   
     </section>
-    <script>
-        
-    </script>
-    <script src="" async defer></script>
-    <!-- jquery js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- jquery js  -->
-
-    <!-- Bootstrap js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap js  -->
-
-    <!-- owl carousel js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- owl carousel js  -->
-    <!-- Fontawesom js -->
-    <script src="https://kit.fontawesome.com/47f6311c78.js" crossorigin="anonymous"></script>
-    <!-- Fontawesom js -->
-    <script src="./js/owlCarousel.js"></script>
-    <script src="./js/custome.js"></script>
-</body>
+    <?php include('./include/footer.php') ?>
