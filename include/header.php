@@ -30,7 +30,7 @@
                             <button class="btn menu-open-btn text-white ">
                               <i class="fa-solid fa-bars"></i>
                               </button>
-                              <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
+                              <a class="navbar-brand" href="./index.php"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
                          <form class="header-form d-flex">
                            <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
@@ -43,7 +43,7 @@
                 <div class="py-3 px-4">
                     <div class="mb-4 m-md-0">
                         <button class="btn text-white menu-close-btn"><i class="fa-solid fa-xmark"></i></button>
-                        <a class="text-white" href=""><img class="logo-img" src="./assets/images/augs-logo.png" alt=""></a>
+                        <a class="text-white" href="./index.php"><img class="logo-img" src="./assets/images/augs-logo.png" alt=""></a>
                     </div>
                     <div>
                         <ul class="list-unstyled">
@@ -75,8 +75,8 @@
                                             <div class="accordion-body">
                                               <ul class="list-unstyled menu-inner-ul pl-0-">
                                                 <li></li>
-                                                <li>Erectile Dysfunction</li>
-                                                <li>Erectile Dysfunction</li>
+                                                <li><a href="./productpage.php">Product Dysfunction</a></li>
+                                                <li><a href="./productpage.php">Product Dysfunction</a></li>
                                             </ul>
                                             </div>
                                           </div>
@@ -90,9 +90,8 @@
                                           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                             <div class="accordion-body">
                                               <ul class="list-unstyled menu-inner-ul pl-0-">
-                                                <li></li>
-                                                <li>Erectile Dysfunction</li>
-                                                <li>Erectile Dysfunction</li>
+                                                <li><a href="./post.php">Erectile Dysfunction</a></li>
+                                                <li><a href="./post.php">Erectile Dysfunction</a></li>
                                             </ul>
                                             </div>
                                           </div>
