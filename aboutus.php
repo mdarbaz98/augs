@@ -18,7 +18,7 @@
                         <img src="https://images.unsplash.com/photo-1555421689-43cad7100750?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ya2luZyUyMG1lbnMlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500">
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2">
+                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2 mt-3">
                     <h2>About AUGS</h2>
                     <p>American Urogynecologic Society is a platform where people suffering from Erectile Dysfunction and Premature Ejaculation can find solutions to deal with and overcome the problems.</p>
                     <p>It's a great pleasure and thank you for reaching us out. This will help you know us better. American Urogynecologic Society (AUGS) provide help to the people suffering from Erectile Dysfunction and Premature Ejaculation by giving accurate information that has been verified by the experts.</p>
