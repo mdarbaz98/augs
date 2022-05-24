@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
 .shadow, .section-2 .home-blog-section #home-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .blog-card,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
 .section-2 .home-blog-section #post-owl-carousel .blog-card {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -53,7 +49,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -137,44 +133,28 @@ p {
 
 .section-2 .home-blog-section #home-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .blog-card,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
 .section-2 .home-blog-section #post-owl-carousel .blog-card {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   border-radius: 6px;
   overflow: hidden;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   width: 100%;
   height: 15.75rem;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1 {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-desc-sec h1 {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   font-size: 1.5625rem;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec h1,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec h1 {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec h1,
 .section-2 .home-blog-section #post-owl-carousel .blog-desc-sec h1 {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   height: 2rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -184,16 +164,10 @@ p {
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec p,
 .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec p,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec p {
-  height: 5rem;
-  font-size: 1.1rem;
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec p,
 .section-2 .home-blog-section #post-owl-carousel .blog-desc-sec p {
   height: 4.5rem;
   font-size: 1rem;
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -202,12 +176,8 @@ p {
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn,
 .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec .sq-btn,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn,
 .section-2 .home-blog-section #post-owl-carousel .blog-desc-sec .sq-btn {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
   font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 4px;
@@ -1006,26 +976,18 @@ header .overlay_Div {
 .product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card,
 .product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card,
 .product__page .top-section .product-section .section-2 .home-blog-section #post-owl-carousel .blog-card,
 .section-2 .home-blog-section #post-owl-carousel .product__page .top-section .product-section .blog-card {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
     box-shadow: unset !important;
   }
   .product__page .top-section .product-section .shadow .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
 .product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card .product-img,
 .section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
 .product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .product-img,
-<<<<<<< HEAD
-.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card .product-img {
-=======
 .section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
 .product__page .top-section .product-section .section-2 .home-blog-section #post-owl-carousel .blog-card .product-img,
 .section-2 .home-blog-section #post-owl-carousel .product__page .top-section .product-section .blog-card .product-img {
->>>>>>> 93352c2b46d417cde911cccedb1b1af6d3ca2e6d
     padding: 5px;
     border: solid 1px #212529;
     border-radius: 6px;
