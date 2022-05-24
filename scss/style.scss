@@ -682,7 +682,6 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
-
     .menu-close-btn {
       font-size: 1.25rem;
 
@@ -695,7 +694,11 @@ header {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
-
+        h2{
+          a{
+            color: $color-9;
+          }
+        }
         form {
           input {
             background-color: $color-1;

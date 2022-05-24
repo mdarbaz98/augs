@@ -38,8 +38,8 @@
                   <img class="shadow" src="https://media.istockphoto.com/photos/young-smiling-handsome-man-in-casual-clothes-posing-isolated-on-blue-picture-id1249420269?k=20&m=1249420269&s=612x612&w=0&h=taSQreK8i8J_nt-NQR0SBGVhXXtNWAtJuXiBnHBNW0g=" alt="home-image">
                 </div>
                 <div class="home-category-buttons-section pt-2 d-flex justify-content-center gap-2">
-                  <button><a href="">PE</a></button>
-                  <button><a href="">Ed</a></button>
+                  <button><a href="./categoryproduct.php">PE</a></button>
+                  <button><a href="./categoryproduct.php">Ed</a></button>
                 </div>
               </div>
             </div>
@@ -109,7 +109,9 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="left-section d-md-flex justify-content-center align-items-center h-100">
-                <p class="mb-5"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia ipsa numquam iure odio necessitatibus nostrum mollitia, odit modi quia animi non repellat dolor deleniti, quam obcaecati soluta at beatae. Adipisci officia ipsa numquam iure odio necessitatibus nostrum mollitia.</span></p>
+                <p class="mb-5">We aim to be a platform for people dealing with sexual dysfunction.Stories,Suggestions & Medicine
+                        provided by us will be a game changer in your sex life.Stepping out of your mental space is a
+                        necessity for you to recover and gain back your sexual pleasure.</p>
               </div>
             </div>
             <div class="col-12 col-md-6">

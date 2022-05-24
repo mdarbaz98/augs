@@ -48,13 +48,6 @@
                     <div>
                         <ul class="list-unstyled">
                             <li class="menu-list"><div>
-                                <form action="" class="position-relative">
-                                    <input type="text" placeholder="search">
-                                    <button class="btn text-white search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div></li>
-                            <li class="menu-list"><div>
-                                <p class="text-white mb-0">Menu</p>
                                 <div>
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
                                         <div class="accordion-item">
@@ -108,10 +101,10 @@
                                 </div>
                             </div></li>
                             <li class="menu-list">
-                              <h2 class="menu-links">About Us</h2>
+                              <h2 class="menu-links"><a href="./aboutus.php">About Us</a></h2>
                           </li>
                             <li class="menu-list">
-                              <h2 class="menu-links">Contact Us</h2>
+                              <h2 class="menu-links"><a href="./contact.php">Contact Us</a></h2>
                           </li>
                         </ul>
                     </div>
