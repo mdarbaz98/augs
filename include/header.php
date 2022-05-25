@@ -59,8 +59,8 @@
                                           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                                             <div class="accordion-body">
                                                 <ul class="list-unstyled menu-inner-ul pl-0-">
-                                                    <li>Premature Ejaculation</li>
-                                                    <li>Erectile Dysfunction</li>
+                                                    <li><a href="">Premature Ejaculation</a></li>
+                                                    <li><a href="">Erectile Dysfunction</a></li>
                                                 </ul>
                                             </div>
                                           </div>

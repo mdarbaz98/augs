@@ -930,6 +930,20 @@ header .overlay_Div {
   z-index: 1031;
 }
 
+@media screen and (max-width: 767px) {
+  .side_Bar .menu-list .menu-links {
+    padding: 8px 20px 8px 12px;
+  }
+  .side_Bar .menu-list .menu-links a {
+    font-size: 1.3rem;
+  }
+  .side_Bar a {
+    font-size: 1.1rem;
+  }
+  .side_Bar button {
+    font-size: 1.3rem;
+  }
+}
 .product__page .top-section {
   background-color: #e9ecef;
 }

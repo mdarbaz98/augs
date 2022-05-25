@@ -773,6 +773,25 @@ header {
   }
 }
 
+@media screen and(max-width: 767px) {
+  .side_Bar{
+    .menu-list{
+      .menu-links{
+        padding : 8px 20px 8px 12px;
+        a{
+          font-size: 1.3rem;
+        }
+      }
+    }
+    a{
+      font-size: 1.1rem;
+    }
+    button{
+      font-size: 1.3rem;
+    }
+  }
+}
+
 // header section css
 
 // single product page css
