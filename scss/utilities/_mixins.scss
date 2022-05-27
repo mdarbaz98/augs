@@ -35,6 +35,17 @@
       }
     }
   }
+  @media screen and (max-width: 767px){
+    .blog-desc-sec {
+      h1 {
+        font-size: 1.2625rem !important;
+        height: 1.5rem !important;
+      }
+      .sq-btn{
+        padding: 8px 25px !important;
+      }
+    }
+  }
 }
 
 @mixin owl-btn {

@@ -33,9 +33,9 @@ html {
     font-size: 1.2rem;
   }
 }
-@media only screen and (min-width: 1800px) {
+@media only screen and (max-width: 1800px) {
   html {
-    font-size: 85%;
+    font-size: 100%;
   }
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,8 +93,11 @@ p {
   font-family: "PT Serif", serif;
   font-weight: 600;
 }
+.home__section .section-1 .home__leftSection .three-div-container .home-div span small {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
 .home__section .section-1 .home__leftSection .three-div-container .home-div p {
-  font-size: 0.875rem;
   margin-bottom: 8px;
 }
 .home__section .section-1 .right__homeSection .image-div {
@@ -147,6 +150,21 @@ p {
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-desc-sec h1 {
   font-size: 1.5625rem;
+}
+@media screen and (max-width: 767px) {
+  .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec h1,
+.section-2 .home-blog-section #product-owl-carousel .blog-desc-sec h1,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec h1,
+.section-2 .home-blog-section #post-owl-carousel .blog-desc-sec h1 {
+    font-size: 1.2625rem !important;
+    height: 1.5rem !important;
+  }
+  .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn,
+.section-2 .home-blog-section #product-owl-carousel .blog-desc-sec .sq-btn,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn,
+.section-2 .home-blog-section #post-owl-carousel .blog-desc-sec .sq-btn {
+    padding: 8px 25px !important;
+  }
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec h1,
@@ -310,12 +328,13 @@ p {
   }
   .home__section .section-1 .home__leftSection h1.home_heading {
     max-width: 300px;
+    font-size: 2rem;
   }
   .home__section .section-1 .home__leftSection .three-div-container .home-div {
     padding: 5px 10px;
   }
   .home__section .section-1 .home__leftSection .three-div-container .home-div p {
-    font-size: 1.2rem;
+    font-size: 0.84rem;
   }
   .home__section .section-1 .right__homeSection .image-div {
     height: 350px;
@@ -324,9 +343,9 @@ p {
     font-weight: 600;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 768px) {
   .section-1 .home__leftSection .three-div-container .home-div p {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 }
 .onetime-privacy .onetime-banner-img,
@@ -932,6 +951,10 @@ header .overlay_Div {
 }
 
 @media screen and (max-width: 767px) {
+  header .navbar .header-form {
+    width: 14.75rem;
+  }
+
   .side_Bar .menu-list .menu-links {
     padding: 8px 20px 8px 12px;
   }

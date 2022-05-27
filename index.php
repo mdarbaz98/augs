@@ -10,22 +10,22 @@
                   <div class="row">
                     <div class="col">
                       <div class="home-div div-1 text-center">
-                        <span>up</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur !</p>
+                        <span>u<small class="text-lowercase">p</small></span>
+                        <p>UP- Uplift your sexual desires and make a push towards your fantasies.</p>
                       </div>
                     </div>
   
                     <div class="col">
                       <div class=" home-div div-1 text-center">
-                        <span>Straight</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>S<small class="text-lowercase">traight</small></span>
+                        <p>Straight- Unleash the beast inside you.</p>
                       </div>
                     </div>
                     
                     <div class="col">
                       <div class=" home-div div-1 text-center">
-                        <span>Powerful</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>P<small class="text-lowercase">owerful</small></span>
+                        <p>Powerful- Enjoy the journey at your fullest.</p>
                       </div>
                     </div>
                   </div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="section-2">
-        <h2 class="text-center my-4 mb-0 before position-relative m-auto">Recent Blogs</h2>
+        <h2 class="text-center my-5 mb-0 before position-relative m-auto">Recent Blogs</h2>
         <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
           <div class="owl-carousel owl-theme" id="home-owl-carousel">
             <div class="blog-card">

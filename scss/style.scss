@@ -30,10 +30,14 @@
             text-transform: uppercase;
             font-family: $heading-font;
             font-weight: 600;
+            small{
+              font-family: $para-font;
+              font-weight: 500;
+            }
           }
 
           p {
-            font-size: 0.875rem;
+            // font-size: 0.875rem;
             margin-bottom: 8px;
           }
         }
@@ -190,6 +194,7 @@
       .home__leftSection {
         h1.home_heading {
           max-width: 300px;
+          font-size: 2rem;
         }
 
         .three-div-container {
@@ -197,7 +202,7 @@
             padding: 5px 10px;
 
             p {
-              font-size: 1.2rem;
+              font-size: 0.84rem;
             }
           }
         }
@@ -221,13 +226,13 @@
 }
 
 //media screen queries for Ipad
-@media only screen and(max-width: 900px) {
+@media only screen and(max-width: 900px) and (min-width: 768px) {
   .section-1 {
     .home__leftSection {
       .three-div-container {
         .home-div {
           p {
-            font-size: 1rem !important;
+            font-size: 1rem;
           }
         }
       }
@@ -775,6 +780,11 @@ header {
 }
 
 @media screen and(max-width: 767px) {
+  header{
+    .navbar .header-form{
+    width: 14.75rem;
+    }
+  } 
   .side_Bar{
     .menu-list{
       .menu-links{
