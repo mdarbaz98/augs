@@ -1,8 +1,8 @@
-@use "./variables" as *;
+@use "./variables"as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components" as *;
-@use "./utilities/" as *;
+@use "./components"as *;
+@use "./utilities/"as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -58,6 +58,7 @@
 
 .section-2 {
   .home-blog-section {
+
     #home-owl-carousel,
     #product-owl-carousel,
     #categoryproduct-owl-carousel,
@@ -118,13 +119,15 @@
     width: 136px;
   }
 }
-@media only screen and (max-width: 767px){
+
+@media only screen and (max-width: 767px) {
   .section-2 {
     .outerline {
       height: 41px;
     }
   }
 }
+
 //before css
 .before {
   width: fit-content;
@@ -154,10 +157,12 @@
 
     .form {
       .form-floating {
+
         input,
         textarea {
           background-color: $input;
-          &:focus{
+
+          &:focus {
             border: none;
             box-shadow: none;
           }
@@ -183,6 +188,7 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
+
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
@@ -323,17 +329,20 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.25rem 1.25rem;
         @include image-css(100%, 415px);
       }
+
       .main-section-inside2 {
         padding: 0rem 1.25rem;
       }
+
       .contact-section-inside1 {
         margin-top: 0rem;
-        padding:0rem 1.25rem;
+        padding: 0rem 1.25rem;
       }
     }
   }
@@ -373,7 +382,7 @@
       margin: 0.625rem 0rem 2rem 0rem;
     }
 
-    #hidden {
+    .moreless-button {
       background-color: transparent;
       border: none;
       color: #ff8700;
@@ -385,7 +394,8 @@
   {
     .categorybox 
     {
-      .categorybox_inside {
+      .categorybox_inside 
+      {
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
         padding: 10px;
         border-radius: 10px;
@@ -412,7 +422,7 @@
             i {
               font-size: 11px;
               color: #212529;
-              margin: 10px 0px;
+              margin: 10px 10px 10px 0px;
             }
 
             span {
@@ -473,11 +483,14 @@
       width: 136px;
     }
   }
-  @media only screen and (max-width: 767px){
+
+  @media only screen and (max-width: 767px) {
     .categorysection2 {
-      .categorybox{
+      .categorybox {
         padding: 20px 20px 0px 20px;
+
       }
+
       .outerline {
         height: 41px;
       }
@@ -513,14 +526,35 @@
     display: block;
     width: 136px;
   }
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .section_blogpage {
+    padding: 0px 15px;
+
+    .blog-heading-content {
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .outerline {
+      height: 42px;
+      margin: 3rem auto;
+    }
+
     .blog-section {
       margin-top: 3rem;
 
       .blog-section_img img {
         width: 100%;
         height: 21rem;
+        border-radius: 7px;
       }
 
       .blog-section-inside2 {
@@ -539,7 +573,7 @@
           color: #ff7575;
           font-weight: 600;
           font-size: 18px;
-          margin-top: 5px;
+
         }
 
         .span2 {
@@ -548,30 +582,6 @@
           font-size: 15px;
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .section_blogpage {
-    padding: 0px 15px;
-
-    .blog-heading-content {
-      margin-top: 2rem;
-
-      h1 {
-        font-size: 35px;
-      }
-
-      p {
-        font-size: 16px;
-        text-align: center;
-      }
-    }
-
-    .outerline {
-      height: 42px;
-      margin: 3rem auto;
     }
   }
 }
@@ -592,8 +602,9 @@
         width: 60px;
         margin-right: auto;
       }
+
       @media screen and (max-width: 767px) {
-        .augs-logo{
+        .augs-logo {
           margin-right: unset;
         }
       }
@@ -619,10 +630,12 @@
 
 // header section css
 header {
+
   // z-index: 10;
-  .logo-img{
+  .logo-img {
     width: 60px;
   }
+
   .navbar {
     background-color: $color-1;
 
@@ -683,6 +696,7 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
+
     .menu-close-btn {
       font-size: 20px;
 
@@ -695,9 +709,11 @@ header {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
-        a{
+
+        a {
           color: $color-9;
         }
+
         form {
           input {
             background-color: $color-1;
@@ -775,19 +791,22 @@ header {
 }
 
 @media screen and(max-width: 767px) {
-  .side_Bar{
-    .menu-list{
-      .menu-links{
-        padding : 8px 20px 8px 12px;
-        a{
+  .side_Bar {
+    .menu-list {
+      .menu-links {
+        padding: 8px 20px 8px 12px;
+
+        a {
           font-size: 1.3rem;
         }
       }
     }
-    a{
+
+    a {
       font-size: 1.1rem;
     }
-    button{
+
+    button {
       font-size: 1.3rem;
     }
   }
@@ -796,12 +815,13 @@ header {
 // header section css
 
 // single product page css
-.sticky_accordion{
+.sticky_accordion {
   position: fixed;
   top: 50px;
   left: 0px;
   right: 0px;
 }
+
 .product__page {
   .top-section {
     background-color: $color-8;
@@ -833,20 +853,25 @@ header {
       }
     }
   }
+
   .bottom-section {
     .accordion-item {
       border: none;
+
       .accordion-button {
         background-color: $color-1;
         color: $color-9;
         padding: 8px 10px;
         border-radius: 6px;
+
         &::after {
           filter: brightness(25);
         }
+
         &:focus {
           box-shadow: none;
         }
+
         &:not(.collapsed) {
           background-color: $color-10;
           color: $color-1;
@@ -854,15 +879,18 @@ header {
           box-shadow: none;
           border-bottom-left-radius: 0px;
           border-bottom-right-radius: 0px;
+
           &::after {
             filter: brightness(0.1);
           }
         }
       }
+
       .accordion-body {
         background-color: $color-10;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
+
         p {
           color: $color-1;
         }
@@ -901,26 +929,32 @@ header {
     border-radius: 6px;
     object-fit: cover;
   }
+
   .post-content-section {
-    .TBC-container{
-      .accordion-item{
-        .accordion-button{
+    .TBC-container {
+      .accordion-item {
+        .accordion-button {
           font-size: 1.8rem;
           font-weight: 600;
-          &:not(.collapsed){
+
+          &:not(.collapsed) {
             color: $color-1;
             background-color: unset;
-            &::after{
+
+            &::after {
               filter: brightness(0.1);
             }
           }
-          &:focus{
+
+          &:focus {
             box-shadow: none;
           }
         }
       }
+
       position: sticky;
       top: 90px;
+
       .table-of-content {
         li {
           border: solid 1px $color-1;
@@ -928,15 +962,18 @@ header {
           padding: 5px 6px;
           margin-bottom: 10px;
           cursor: pointer;
+
           a {
             display: flex;
             align-items: center;
             font-size: 1.2rem;
             font-family: $heading-font;
             font-weight: 600;
+
             span {
               margin-bottom: 0px;
             }
+
             span {
               border-right: solid 1px $color-1;
               margin-right: 10px;
@@ -944,31 +981,38 @@ header {
             }
           }
         }
-        .tbc_links.active{
+
+        .tbc_links.active {
           background-color: $color-1;
-          a{
-            
+
+          a {
+
             color: $color-9;
             font-weight: 500;
-            
+
           }
         }
       }
     }
+
     .headings {
       font-size: 1.7rem;
       margin: 30px 0px 10px;
     }
+
     p {
       font-family: $para-font;
     }
+
     .sq-btn {
       @include btn;
     }
-    .bottom-accordion-section{
+
+    .bottom-accordion-section {
       .accordion-item {
         width: fit-content;
         border: none;
+
         .accordian-heading {
           .accordion-button {
             font-size: 1.2rem;
@@ -978,13 +1022,16 @@ header {
             width: 300px;
             display: flex;
             justify-content: space-between;
+
             &::after {
               display: none;
             }
+
             &:not(.collapsed) {
               background-color: unset;
               color: $color-1;
             }
+
             span {
               background-color: $color-1;
               color: $color-9;
@@ -1001,15 +1048,17 @@ header {
 @media screen and (max-width: 767px) {
   .post__page {
     padding: 10px;
+
     .post-banner-img {
       height: 200px;
     }
+
     .accordian-heading {
       .accordion-button {
         font-size: 1.4rem !important;
       }
     }
-      
+
   }
 }
 
@@ -1018,7 +1067,9 @@ header {
     .table-of-content {
       li {
         a {
-          span,h2{
+
+          span,
+          h2 {
             font-size: 1.5rem !important;
           }
         }
@@ -1026,4 +1077,5 @@ header {
     }
   }
 }
+
 // post page css

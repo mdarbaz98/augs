@@ -25,40 +25,37 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 contact-section-inside2">
                     <div class="image-div onetime-main-img">
-                        <div class="section-3 px-2 py-5">
-                            <div class="container-fluid">
-                                <h3 class="d-block d-md-none text-center mb-5">Enquiry Form</h3>
-                                <div class="row">
-                                    <div class="col-12 col-md-12">
-                                        <div class="right-section ms-auto">
-                                            <form class="form" action="">
-                                                <div class="form-floating mb-4">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="Jhon">
-                                                    <label for="floatingInput">Your name</label>
-                                                </div>
-                                                <div class="form-floating mb-4">
-                                                    <input type="email" class="form-control" id="floatingInput"
-                                                        placeholder="name@example.com">
-                                                    <label for="floatingInput">Your email address</label>
-                                                </div>
-                                                <div class="form-floating mb-4">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="9999 9999 99">
-                                                    <label for="floatingInput">Tour contact</label>
-                                                </div>
-                                                <div class="form-floating mb-5">
-                                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                                        id="floatingTextarea"></textarea>
-                                                    <label for="floatingTextarea">Your message</label>
-                                                </div>
-                                                <button class="">Submit</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="section-3 px-2 py-5  p-md-4">
+        <div class="container-fluid">
+          <h3 class="d-block d-md-none text-center mb-5 before position-relative m-auto">Enquiry Form</h3>
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <div class="right-section ms-auto">
+                <h3 class="text-md-end text-center my-3 d-none d-md-block before position-relative">Enquiry Form</h3>
+                <form class="form mt-4" action="">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Jhon">
+                    <label for="floatingInput">Your name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label  for="floatingInput">Your email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="9999 9999 99">
+                    <label for="floatingInput">Our contact</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Your message</label>
+                  </div>
+                  <button class="">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
                     </div>
                 </div>
             </div>
