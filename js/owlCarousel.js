@@ -17,10 +17,11 @@ $('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel,#post-
 
 
 // readmore
-$(document).ready(function(){
-    $("#hidden").click(function(){
-    //   $("#div1").fadeIn();
-      $("#hiddencontent").fadeIn("slow");
-    //   $("#div3").fadeIn(3000);
-    });
+$('.moreless-button').click(function() {
+    $('.moretext').slideToggle();
+    if ($('.moreless-button').text() == "Read more") {
+      $(this).text("Read less")
+    } else {
+      $(this).text("Read more")
+    }
   });
