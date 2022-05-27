@@ -854,6 +854,7 @@ header .navbar .header-form .header-search-btn img {
 }
 header .side_Bar {
   position: fixed;
+  overflow-y: auto;
   left: -300px;
   top: 0px;
   width: 300px;
@@ -944,6 +945,13 @@ header .overlay_Div {
     font-size: 1.3rem;
   }
 }
+.sticky_accordion {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+}
+
 .product__page .top-section {
   background-color: #e9ecef;
 }
@@ -1044,21 +1052,37 @@ header .overlay_Div {
 }
 .post__page .post-content-section .TBC-container {
   position: sticky;
-  top: 40px;
+  top: 90px;
+}
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: unset;
+}
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:not(.collapsed)::after {
+  filter: brightness(0.1);
+}
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:focus {
+  box-shadow: none;
 }
 .post__page .post-content-section .TBC-container .table-of-content li {
   border: solid 1px #212529;
   border-radius: 6px;
   padding: 5px 6px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .post__page .post-content-section .TBC-container .table-of-content li a {
   display: flex;
   align-items: center;
-}
-.post__page .post-content-section .TBC-container .table-of-content li a h2,
-.post__page .post-content-section .TBC-container .table-of-content li a span {
   font-size: 1.2rem;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+}
+.post__page .post-content-section .TBC-container .table-of-content li a span {
   margin-bottom: 0px;
 }
 .post__page .post-content-section .TBC-container .table-of-content li a span {
@@ -1066,10 +1090,10 @@ header .overlay_Div {
   margin-right: 10px;
   padding: 0px 10px;
 }
-.post__page .post-content-section .TBC-container .table-of-content li.active {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active {
   background-color: #212529;
 }
-.post__page .post-content-section .TBC-container .table-of-content li.active a span, .post__page .post-content-section .TBC-container .table-of-content li.active a h2 {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a {
   color: #f8f9fa;
   font-weight: 500;
 }
@@ -1094,11 +1118,11 @@ header .overlay_Div {
   display: block;
   width: unset;
 }
-.post__page .post-content-section .accordion-item {
+.post__page .post-content-section .bottom-accordion-section .accordion-item {
   width: fit-content;
   border: none;
 }
-.post__page .post-content-section .accordion-item .accordian-heading .accordion-button {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button {
   font-size: 1.2rem;
   box-shadow: none;
   border: none;
@@ -1107,14 +1131,14 @@ header .overlay_Div {
   display: flex;
   justify-content: space-between;
 }
-.post__page .post-content-section .accordion-item .accordian-heading .accordion-button::after {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button::after {
   display: none;
 }
-.post__page .post-content-section .accordion-item .accordian-heading .accordion-button:not(.collapsed) {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed) {
   background-color: unset;
   color: #212529;
 }
-.post__page .post-content-section .accordion-item .accordian-heading .accordion-button span {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button span {
   background-color: #212529;
   color: #f8f9fa;
   padding: 6px 8px;

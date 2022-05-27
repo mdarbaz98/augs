@@ -59,8 +59,8 @@
                                           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                                             <div class="accordion-body">
                                                 <ul class="list-unstyled menu-inner-ul pl-0-">
-                                                    <li><a href="">Premature Ejaculation</a></li>
-                                                    <li><a href="">Erectile Dysfunction</a></li>
+                                                    <li class="mb-3"><a href="">Premature Ejaculation</a></li>
+                                                    <li class="mb-3"><a href="">Erectile Dysfunction</a></li>
                                                 </ul>
                                             </div>
                                           </div>
@@ -75,8 +75,8 @@
                                             <div class="accordion-body">
                                               <ul class="list-unstyled menu-inner-ul pl-0-">
                                                 <li></li>
-                                                <li><a href="./productpage.php">Product Dysfunction</a></li>
-                                                <li><a href="./productpage.php">Product Dysfunction</a></li>
+                                                <li class="mb-3"><a href="./productpage.php">Product Dysfunction</a></li>
+                                                <li class="mb-3"><a href="./productpage.php">Product Dysfunction</a></li>
                                             </ul>
                                             </div>
                                           </div>
@@ -90,8 +90,8 @@
                                           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                             <div class="accordion-body">
                                               <ul class="list-unstyled menu-inner-ul pl-0-">
-                                                <li><a href="./post.php">Erectile Dysfunction</a></li>
-                                                <li><a href="./post.php">Erectile Dysfunction</a></li>
+                                                <li class="mb-3"><a href="./post.php">Erectile Dysfunction</a></li>
+                                                <li class="mb-3"><a href="./post.php">Erectile Dysfunction</a></li>
                                             </ul>
                                             </div>
                                           </div>

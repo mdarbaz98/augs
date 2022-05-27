@@ -676,6 +676,7 @@ header {
 
   .side_Bar {
     position: fixed;
+    overflow-y: auto;
     left: -300px;
     top: 0px;
     width: 300px;
@@ -795,6 +796,12 @@ header {
 // header section css
 
 // single product page css
+.sticky_accordion{
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+}
 .product__page {
   .top-section {
     background-color: $color-8;
@@ -896,20 +903,38 @@ header {
   }
   .post-content-section {
     .TBC-container{
+      .accordion-item{
+        .accordion-button{
+          font-size: 1.8rem;
+          font-weight: 600;
+          &:not(.collapsed){
+            color: $color-1;
+            background-color: unset;
+            &::after{
+              filter: brightness(0.1);
+            }
+          }
+          &:focus{
+            box-shadow: none;
+          }
+        }
+      }
       position: sticky;
-      top: 40px;
+      top: 90px;
       .table-of-content {
         li {
           border: solid 1px $color-1;
           border-radius: 6px;
           padding: 5px 6px;
           margin-bottom: 10px;
+          cursor: pointer;
           a {
             display: flex;
             align-items: center;
-            h2,
+            font-size: 1.2rem;
+            font-family: $heading-font;
+            font-weight: 600;
             span {
-              font-size: 1.2rem;
               margin-bottom: 0px;
             }
             span {
@@ -919,13 +944,13 @@ header {
             }
           }
         }
-        li.active{
+        .tbc_links.active{
           background-color: $color-1;
           a{
-            span,h2{
+            
             color: $color-9;
             font-weight: 500;
-            }
+            
           }
         }
       }
@@ -940,30 +965,32 @@ header {
     .sq-btn {
       @include btn;
     }
-    .accordion-item {
-      width: fit-content;
-      border: none;
-      .accordian-heading {
-        .accordion-button {
-          font-size: 1.2rem;
-          box-shadow: none;
-          border: none;
-          font-weight: 600;
-          width: 300px;
-          display: flex;
-          justify-content: space-between;
-          &::after {
-            display: none;
-          }
-          &:not(.collapsed) {
-            background-color: unset;
-            color: $color-1;
-          }
-          span {
-            background-color: $color-1;
-            color: $color-9;
-            padding: 6px 8px;
-            margin-left: 2rem;
+    .bottom-accordion-section{
+      .accordion-item {
+        width: fit-content;
+        border: none;
+        .accordian-heading {
+          .accordion-button {
+            font-size: 1.2rem;
+            box-shadow: none;
+            border: none;
+            font-weight: 600;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            &::after {
+              display: none;
+            }
+            &:not(.collapsed) {
+              background-color: unset;
+              color: $color-1;
+            }
+            span {
+              background-color: $color-1;
+              color: $color-9;
+              padding: 6px 8px;
+              margin-left: 2rem;
+            }
           }
         }
       }

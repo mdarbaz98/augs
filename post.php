@@ -17,55 +17,32 @@
           <div class="row">
             <div class="col-lg-3 col-12">
               <div class="TBC-container">
-                <h2 class="before position-relative mx-auto my-5">
+              <div class="accordion accordion-flush" id="mobile-table-of-content">
+              <div class="accordion-item mobile-tbc d-block d-lg-none">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Table Of Content
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#mobile-table-of-content">
+                  <div class="accordion-body p-md-0 pt-md-3">
+                  <ul class="table-of-content list-unstyled mb-md-5" id="table-of-content-for-mobile">
+                  </ul>
+                  </div>
+                </div>
+            </div>
+            </div>
+                <h2 class="before position-relative mx-auto my-5 d-none d-lg-block">
                   Table of content
                 </h2>
-                <ul class="table-of-content list-unstyled mb-md-5">
-                  <li onclick="scrollToElement(h1)" class="tbc_links">
-                    <a href="#"
-                      ><span>1.</span>
-                      <h2>What is PE</h2></a
-                    >
-                  </li>
-                  <li onclick="scrollToElement(h2)" class="tbc_links">
-                    <a href=""
-                      ><span>2.</span>
-                      <h2>What Paroxetine</h2></a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><span>3.</span>
-                      <h2>Is Paroxetine</h2></a
-                    >
-                  </li>
+                <ul class="table-of-content list-unstyled mb-md-5 d-none d-lg-block" id="table-of-content">
                 </ul>
               </div>
             </div>
             <div class="col-lg-6 col-12">
-              <!-- <h2 class="before position-relative mx-auto my-5 d-lg-none d-block">Table of content</h2> -->
               <div class="container p-0 overflow-hidden">
-                <!-- <ul class="table-of-content list-unstyled mb-md-5 d-lg-none d-block">
-                  <li>
-                    <a href=""
-                      ><span>1.</span>
-                      <h2>What is PE</h2></a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><span>2.</span>
-                      <h2>What Paroxetine</h2></a
-                    >
-                  </li>
-                  <li>
-                    <a href=""
-                      ><span>3.</span>
-                      <h2>Is Paroxetine</h2></a
-                    >
-                  </li>
-                </ul> -->
-                <h2 class="headings">What is PE?</h2>
+                <div class="blog-body">
+                <h2 class="headings" id="h1">What is PE?</h2>
                 <p>
                   <span
                     >Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -169,7 +146,8 @@
                     nulla.</span
                   >
                 </p>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                </div>
+                <div class="accordion bottom-accordion-section" id="accordionPanelsStayOpenExample">
                   <div class="accordion-item">
                     <h2
                       class="accordion-header accordian-heading"

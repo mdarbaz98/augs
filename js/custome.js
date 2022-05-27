@@ -1,15 +1,23 @@
+// smoothscroll fucntion
+function scrollToElement(elementId) {
+  const yOffset = -150;
+  var element = document.getElementById(elementId);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
+
 $(document).ready(function () {
   // header js
-  $('.menu-open-btn').click(function() {
+  $(".menu-open-btn").click(function () {
     $(".side_Bar").animate({ left: "0px" }, 400);
-      $(".overlay_Div").animate({ left: "0%" }, 0);
-      $('body').css({'overflow-y': 'hidden'})
-  })
-  $('.menu-close-btn,.overlay_Div').click(function() {
+    $(".overlay_Div").animate({ left: "0%" }, 0);
+    $("body").css({ "overflow-y": "hidden" });
+  });
+  $(".menu-close-btn,.overlay_Div").click(function () {
     $(".side_Bar").animate({ left: "-300px" }, 500);
     $(".overlay_Div").animate({ left: "-100%" }, 0);
-    $('body').css({'overflow-y': 'scroll'})
-  })
+    $("body").css({ "overflow-y": "scroll" });
+  });
 
   // owl inner icon
   $(".owl-carousel .owl-next span").html(
@@ -19,10 +27,35 @@ $(document).ready(function () {
     `<i class="fa-solid fa-arrow-left"></i>`
   );
 
-  // post active table of content   
+  // post active table of content
 
-    $('.tbc_links').click(()=>{
-      alert($(this));
-      // $(".tbc_links").removeClass('active')
-    })
+  var i = 0;
+  $(".blog-body h2").each(function () {
+    ++i;
+    $(this).attr("id", "h" + i);
+    if (i == 1) {
+      var status = "active";
+    } else {
+      var status = "";
+    }
+    $("#table-of-content,#table-of-content-for-mobile").append(
+      `<li onclick="scrollToElement('h${i}')" class="tbc_links ${status}" id>
+        <a
+          ><span>${i}.</span>
+          ${$(this).html()}</a
+        >
+      </li>`
+    );
+
+    $("#table-of-content strong").contents().unwrap();
+  });
+
+  //sticky TBC for mobile
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      $(".mobile-tbc").addClass("sticky_accordion");
+    } else {
+      $(".mobile-tbc").removeClass("sticky_accordion");
+    }
+  });
 });
