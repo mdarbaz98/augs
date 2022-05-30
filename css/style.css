@@ -114,7 +114,12 @@ p {
   border-radius: 6px;
   object-fit: cover;
 }
-.home__section .section-1 .right__homeSection .home-category-buttons-section button {
+.home__section .section-1 .right__homeSection .home-category-buttons-section a {
+  border-radius: 50px;
+  border: solid #212529 2px;
+  color: #f8f9fa;
+}
+.home__section .section-1 .right__homeSection .home-category-buttons-section a button {
   font-family: "PT Serif", serif;
   padding: 2px 36px;
   border-radius: 50px;
@@ -127,9 +132,7 @@ p {
   margin: 10px 5px;
   display: block;
   width: unset;
-}
-.home__section .section-1 .right__homeSection .home-category-buttons-section button a {
-  color: #f8f9fa;
+  margin: 4px;
 }
 
 .section-2 .home-blog-section #home-owl-carousel .blog-card,
@@ -263,6 +266,9 @@ p {
   border: none;
   box-shadow: none;
 }
+.section-3 .right-section .form .form-floating textarea {
+  height: 6.25rem;
+}
 .section-3 .right-section .form .form-floating label {
   left: unset;
   right: 0px;
@@ -299,7 +305,7 @@ p {
   display: flex;
   gap: 25px;
   position: absolute;
-  bottom: -2rem;
+  bottom: -3rem;
   justify-content: center;
   width: 100%;
 }
@@ -800,7 +806,7 @@ p {
   border-bottom: solid 1px #fff;
 }
 .footer__section .row .logo__div img {
-  width: 60px;
+  width: 80px;
   margin-right: auto;
 }
 @media screen and (max-width: 767px) {
@@ -872,6 +878,17 @@ header .side_Bar {
   height: 100vh;
   background-color: #212529;
   z-index: 1032;
+}
+header .side_Bar::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 8px;
+}
+header .side_Bar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+header .side_Bar::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 20px;
 }
 header .side_Bar .menu-close-btn {
   font-size: 20px;
@@ -1134,7 +1151,6 @@ header .overlay_Div {
   width: unset;
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item {
-  width: fit-content;
   border: none;
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button {
@@ -1142,7 +1158,6 @@ header .overlay_Div {
   box-shadow: none;
   border: none;
   font-weight: 600;
-  width: 300px;
   display: flex;
   justify-content: space-between;
 }

@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="bottom-section py-5">
+      <div class="bottom-section pt-5 pb-4">
         <h2 class="before position-relative mx-auto">Products Content</h2>
         <div class="container py-5">
           <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -143,7 +143,7 @@
                 <div class="blog-card">
                   <a href="">
                     <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 pb-3">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                     <button class="sq-btn">READ MORE</button>
@@ -153,7 +153,7 @@
                 <div class="blog-card">
                   <a href="">
                     <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 pb-3">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                     <button class="sq-btn">READ MORE</button>
@@ -163,7 +163,7 @@
                 <div class="blog-card">
                   <a href="">
                     <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 pb-3">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at? em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at</p>
                     <button class="sq-btn">READ MORE</button>
@@ -173,7 +173,7 @@
                 <div class="blog-card">
                   <a href="">
                     <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 pb-3">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                     <button class="sq-btn">READ MORE</button>
@@ -183,7 +183,7 @@
                 <div class="blog-card">
                   <a href="">
                     <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 pb-3">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                     <button class="sq-btn">READ MORE</button>

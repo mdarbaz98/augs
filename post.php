@@ -17,21 +17,21 @@
           <div class="row">
             <div class="col-lg-3 col-12">
               <div class="TBC-container">
-              <div class="accordion accordion-flush" id="mobile-table-of-content">
-              <div class="accordion-item mobile-tbc d-block d-lg-none">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Table Of Content
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#mobile-table-of-content">
-                  <div class="accordion-body p-md-0 pt-md-3">
-                  <ul class="table-of-content list-unstyled mb-md-5" id="table-of-content-for-mobile">
-                  </ul>
+                <div class="accordion mobile-tbc accordion-flush" id="mobile-table-of-content">
+                  <div class="accordion-item d-block d-lg-none">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Table Of Content
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#mobile-table-of-content">
+                        <div class="accordion-body p-md-0 pt-md-3">
+                          <ul class="table-of-content list-unstyled mb-md-5" id="table-of-content-for-mobile">
+                          </ul>
+                        </div>
+                    </div>
                   </div>
                 </div>
-            </div>
-            </div>
                 <h2 class="before position-relative mx-auto my-5 d-none d-lg-block">
                   Table of content
                 </h2>
@@ -301,7 +301,7 @@
           <h2 class="text-center my-4 mb-0 before position-relative m-auto">
             Related Blogs
           </h2>
-          <div class="home-blog-section py-5 p-md-5 mb-5 mb-md-0">
+          <div class="home-blog-section py-5 p-md-5 mb-5 mb-md-4">
             <div class="owl-carousel owl-theme" id="post-owl-carousel">
               <div class="blog-card">
                 <a href="">
@@ -311,7 +311,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-3 px-md-5">
+                  <div class="blog-desc-sec pb-3 px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -329,7 +329,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-3 px-md-5">
+                  <div class="blog-desc-sec pb-3 px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -347,7 +347,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-3 px-md-5">
+                  <div class="blog-desc-sec pb-3 px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -367,7 +367,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-3 px-md-5">
+                  <div class="blog-desc-sec pb-3 px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -385,7 +385,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-3 px-md-5">
+                  <div class="blog-desc-sec pb-3 px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.

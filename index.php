@@ -37,16 +37,16 @@
                 <div class="image-div">
                   <img class="shadow" src="https://media.istockphoto.com/photos/young-smiling-handsome-man-in-casual-clothes-posing-isolated-on-blue-picture-id1249420269?k=20&m=1249420269&s=612x612&w=0&h=taSQreK8i8J_nt-NQR0SBGVhXXtNWAtJuXiBnHBNW0g=" alt="home-image">
                 </div>
-                <div class="home-category-buttons-section pt-2 d-flex justify-content-center gap-2">
-                  <button><a href="./categoryproduct.php">PE</a></button>
-                  <button><a href="./categoryproduct.php">Ed</a></button>
+                <div class="home-category-buttons-section pt-4 d-flex justify-content-center gap-2">
+                  <a href="./categoryproduct.php"><button>PE</button></a>
+                  <a href="./categoryproduct.php"><button>Ed</button></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section-2">
+      <div class="section-2 pb-4">
         <h2 class="text-center my-5 mb-0 before position-relative m-auto">Recent Blogs</h2>
         <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
           <div class="owl-carousel owl-theme" id="home-owl-carousel">
