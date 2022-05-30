@@ -313,13 +313,14 @@ p {
     padding: 25px 5px;
   }
   .home__section .section-1 .home__leftSection h1.home_heading {
+    font-size: 2.2rem;
     max-width: 300px;
   }
   .home__section .section-1 .home__leftSection .three-div-container .home-div {
     padding: 5px 10px;
   }
   .home__section .section-1 .home__leftSection .three-div-container .home-div p {
-    font-size: 1.2rem;
+    font-size: 0.8rem !important;
   }
   .home__section .section-1 .right__homeSection .image-div {
     height: 350px;
@@ -1167,7 +1168,8 @@ header .overlay_Div {
   }
 }
 @media screen and (max-width: 922px) {
-  .TBC-container .table-of-content li a span, .TBC-container .table-of-content li a h2 {
+  .TBC-container .table-of-content li a span,
+.TBC-container .table-of-content li a h2 {
     font-size: 1.5rem !important;
   }
 }

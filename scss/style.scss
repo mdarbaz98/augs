@@ -30,7 +30,7 @@
             text-transform: uppercase;
             font-family: $heading-font;
             font-weight: 600;
-            small{
+            small {
               font-family: $para-font;
               font-weight: 500;
             }
@@ -122,7 +122,7 @@
     width: 136px;
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .section-2 {
     .outerline {
       height: 41px;
@@ -161,7 +161,7 @@
         input,
         textarea {
           background-color: $input;
-          &:focus{
+          &:focus {
             border: none;
             box-shadow: none;
           }
@@ -193,6 +193,7 @@
 
       .home__leftSection {
         h1.home_heading {
+          font-size: 2.2rem;
           max-width: 300px;
         }
 
@@ -201,7 +202,7 @@
             padding: 5px 10px;
 
             p {
-              font-size: 1.2rem;
+              font-size: 0.8rem !important;
             }
           }
         }
@@ -337,7 +338,7 @@
       }
       .contact-section-inside1 {
         margin-top: 0rem;
-        padding:0rem 1.25rem;
+        padding: 0rem 1.25rem;
       }
     }
   }
@@ -349,7 +350,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         @include image-css(100%, 320px);
@@ -385,10 +385,8 @@
     }
   }
 
-  .categorysection2 
-  {
-    .categorybox 
-    {
+  .categorysection2 {
+    .categorybox {
       .categorybox_inside {
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
         padding: 10px;
@@ -477,9 +475,9 @@
       width: 136px;
     }
   }
-  @media only screen and (max-width: 767px){
+  @media only screen and (max-width: 767px) {
     .categorysection2 {
-      .categorybox{
+      .categorybox {
         padding: 20px 20px 0px 20px;
       }
       .outerline {
@@ -597,7 +595,7 @@
         margin-right: auto;
       }
       @media screen and (max-width: 767px) {
-        .augs-logo{
+        .augs-logo {
           margin-right: unset;
         }
       }
@@ -624,7 +622,7 @@
 // header section css
 header {
   // z-index: 10;
-  .logo-img{
+  .logo-img {
     width: 60px;
   }
   .navbar {
@@ -701,7 +699,7 @@ header {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
-        a{
+        a {
           color: $color-9;
         }
         form {
@@ -781,22 +779,22 @@ header {
 }
 
 @media screen and(max-width: 767px) {
-  .header-form{
+  .header-form {
     width: 14.75rem !important;
   }
-  .side_Bar{
-    .menu-list{
-      .menu-links{
-        padding : 8px 20px 8px 12px;
-        a{
+  .side_Bar {
+    .menu-list {
+      .menu-links {
+        padding: 8px 20px 8px 12px;
+        a {
           font-size: 1.3rem;
         }
       }
     }
-    a{
+    a {
       font-size: 1.1rem;
     }
-    button{
+    button {
       font-size: 1.3rem;
     }
   }
@@ -805,7 +803,7 @@ header {
 // header section css
 
 // single product page css
-.sticky_accordion{
+.sticky_accordion {
   position: fixed;
   top: 50px;
   left: 0px;
@@ -911,19 +909,19 @@ header {
     object-fit: cover;
   }
   .post-content-section {
-    .TBC-container{
-      .accordion-item{
-        .accordion-button{
+    .TBC-container {
+      .accordion-item {
+        .accordion-button {
           font-size: 1.8rem;
           font-weight: 600;
-          &:not(.collapsed){
+          &:not(.collapsed) {
             color: $color-1;
             background-color: unset;
-            &::after{
+            &::after {
               filter: brightness(0.1);
             }
           }
-          &:focus{
+          &:focus {
             box-shadow: none;
           }
         }
@@ -953,13 +951,11 @@ header {
             }
           }
         }
-        .tbc_links.active{
+        .tbc_links.active {
           background-color: $color-1;
-          a{
-            
+          a {
             color: $color-9;
             font-weight: 500;
-            
           }
         }
       }
@@ -974,7 +970,7 @@ header {
     .sq-btn {
       @include btn;
     }
-    .bottom-accordion-section{
+    .bottom-accordion-section {
       .accordion-item {
         width: fit-content;
         border: none;
@@ -1018,7 +1014,6 @@ header {
         font-size: 1.4rem !important;
       }
     }
-      
   }
 }
 
@@ -1027,7 +1022,8 @@ header {
     .table-of-content {
       li {
         a {
-          span,h2{
+          span,
+          h2 {
             font-size: 1.5rem !important;
           }
         }
