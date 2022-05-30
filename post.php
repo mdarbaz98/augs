@@ -311,7 +311,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -329,7 +329,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -347,7 +347,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -367,7 +367,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -385,7 +385,7 @@
                       alt="blog-image"
                     />
                   </div>
-                  <div class="blog-desc-sec px-5">
+                  <div class="blog-desc-sec px-3 px-md-5">
                     <h1 class="my-2">Know about levitra</h1>
                     <p>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.

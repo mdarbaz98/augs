@@ -10,22 +10,22 @@
                   <div class="row">
                     <div class="col">
                       <div class="home-div div-1 text-center">
-                        <span>up</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur !</p>
+                        <span>u<small class="text-lowercase">p</small></span>
+                        <p>UP- Uplift your sexual desires and make a push towards your fantasies.</p>
                       </div>
                     </div>
   
                     <div class="col">
                       <div class=" home-div div-1 text-center">
-                        <span>Straight</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>S<small class="text-lowercase">traight</small></span>
+                        <p>Straight- Unleash the beast inside you.</p>
                       </div>
                     </div>
                     
                     <div class="col">
                       <div class=" home-div div-1 text-center">
-                        <span>Powerful</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>P<small class="text-lowercase">owerful</small></span>
+                        <p>Powerful- Enjoy the journey at your fullest.</p>
                       </div>
                     </div>
                   </div>
@@ -47,13 +47,13 @@
         </div>
       </div>
       <div class="section-2">
-        <h2 class="text-center my-4 mb-0 before position-relative m-auto">Recent Blogs</h2>
+        <h2 class="text-center my-5 mb-0 before position-relative m-auto">Recent Blogs</h2>
         <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
           <div class="owl-carousel owl-theme" id="home-owl-carousel">
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-5">
+              <div class="blog-desc-sec px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -63,7 +63,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-5">
+              <div class="blog-desc-sec px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -73,7 +73,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-5">
+              <div class="blog-desc-sec px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at? em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at</p>
                 <button class="sq-btn">READ MORE</button>
@@ -83,7 +83,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-5">
+              <div class="blog-desc-sec px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -93,7 +93,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-5">
+              <div class="blog-desc-sec px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -128,7 +128,7 @@
                   </div>
                   <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="9999 9999 99">
-                    <label for="floatingInput">Our contact</label>
+                    <label for="floatingInput">Your contact</label>
                   </div>
                   <div class="form-floating mb-4">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>

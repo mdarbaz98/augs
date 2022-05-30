@@ -30,7 +30,7 @@ html {
     font-size: 90.75%;
   }
   html p {
-    font-size: 1.2rem;
+    font-size: 1.1875rem;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -46,7 +46,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,6 +92,10 @@ p {
   text-transform: uppercase;
   font-family: "PT Serif", serif;
   font-weight: 600;
+}
+.home__section .section-1 .home__leftSection .three-div-container .home-div span small {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
 }
 .home__section .section-1 .home__leftSection .three-div-container .home-div p {
   font-size: 0.875rem;
@@ -571,7 +575,7 @@ p {
 .categoryproductED .categorysection1_inside2 h1 {
   margin: 0.625rem 0rem 2rem 0rem;
 }
-.categoryproductED .categorysection1_inside2 .moreless-button {
+.categoryproductED .categorysection1_inside2 #hidden {
   background-color: transparent;
   border: none;
   color: #ff8700;
@@ -599,7 +603,7 @@ p {
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
   color: #212529;
-  margin: 10px 10px 10px 0px;
+  margin: 10px 0px;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
   font-size: 15px;
@@ -680,7 +684,6 @@ p {
   margin-top: 3rem;
 }
 .section_blogpage .blog-section .blog-section_img img {
-  border-radius: 7px;
   width: 90%;
   height: 21rem;
 }
@@ -737,29 +740,13 @@ p {
   display: block;
   width: 136px;
 }
-
 @media only screen and (max-width: 767px) {
-  .section_blogpage {
-    padding: 0px 15px;
-  }
-  .section_blogpage .blog-heading-content h1 {
-    font-size: 35px;
-  }
-  .section_blogpage .blog-heading-content p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .section_blogpage .outerline {
-    height: 42px;
-    margin: 3rem auto;
-  }
   .section_blogpage .blog-section {
     margin-top: 3rem;
   }
   .section_blogpage .blog-section .blog-section_img img {
     width: 100%;
     height: 21rem;
-    border-radius: 7px;
   }
   .section_blogpage .blog-section .blog-section-inside2 h1 {
     font-size: 2.475rem;
@@ -774,11 +761,32 @@ p {
     color: #ff7575;
     font-weight: 600;
     font-size: 18px;
+    margin-top: 5px;
   }
   .section_blogpage .blog-section .blog-section-inside2 .span2 {
     color: #c1c1c1;
     font-style: italic;
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section_blogpage {
+    padding: 0px 15px;
+  }
+  .section_blogpage .blog-heading-content {
+    margin-top: 2rem;
+  }
+  .section_blogpage .blog-heading-content h1 {
+    font-size: 35px;
+  }
+  .section_blogpage .blog-heading-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .section_blogpage .outerline {
+    height: 42px;
+    margin: 3rem auto;
   }
 }
 .footer__section {
@@ -821,6 +829,8 @@ header .navbar a:hover {
 }
 header .navbar .menu-open-btn {
   font-size: 20px;
+  border: solid 1px white;
+  margin-right: 8px;
 }
 header .navbar .header-form {
   position: relative;
@@ -931,6 +941,10 @@ header .overlay_Div {
 }
 
 @media screen and (max-width: 767px) {
+  .header-form {
+    width: 14.75rem !important;
+  }
+
   .side_Bar .menu-list .menu-links {
     padding: 8px 20px 8px 12px;
   }
@@ -1156,8 +1170,7 @@ header .overlay_Div {
   }
 }
 @media screen and (max-width: 922px) {
-  .TBC-container .table-of-content li a span,
-.TBC-container .table-of-content li a h2 {
+  .TBC-container .table-of-content li a span, .TBC-container .table-of-content li a h2 {
     font-size: 1.5rem !important;
   }
 }
