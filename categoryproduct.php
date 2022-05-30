@@ -197,7 +197,9 @@
                 </div>
 
                 <div class="outerline">
-                    <button class="">View All</button>
+                   <a href="./blog.php">
+                   <button class="">View All</button>
+                   </a>
                 </div>
             </div>
         </div>   

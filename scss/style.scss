@@ -289,7 +289,7 @@
 
     .main-section-inside1,
     .contact-section-inside2 {
-      @include image-css;
+      @include image-css();
     }
 
     .main-section-inside2 {
@@ -367,7 +367,7 @@
 .categoryproductED 
 {
   .categorysection1_inside1 {
-    margin: 0.25rem auto;
+    margin: 1.25rem auto;
 
     img {
       width: 100%;
@@ -482,9 +482,9 @@
 
   @media only screen and (max-width: 767px) {
 
-    // .categorysection1_inside2 {
-    //  padding: 0px 0px 0px 10px;
-    // }
+    .categorysection1_inside1 {
+      margin: 0.25rem auto;
+    }
     .categorysection2 
     {
       .categorybox {
@@ -546,6 +546,7 @@
 
       h1 {
         font-size: 35px;
+        text-transform: capitalize;
       }
 
       p {
@@ -565,6 +566,7 @@
         width: 100%;
         height: 21rem;
         border-radius: 7px;
+        object-fit: cover;
       }
 
       .blog-section-inside2 {

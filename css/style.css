@@ -46,7 +46,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -563,7 +563,7 @@ p {
 }
 
 .categoryproductED .categorysection1_inside1 {
-  margin: 0.25rem auto;
+  margin: 1.25rem auto;
 }
 .categoryproductED .categorysection1_inside1 img {
   width: 100%;
@@ -659,6 +659,9 @@ p {
   width: 136px;
 }
 @media only screen and (max-width: 767px) {
+  .categoryproductED .categorysection1_inside1 {
+    margin: 0.25rem auto;
+  }
   .categoryproductED .categorysection2 .categorybox {
     padding: 20px 20px 0px 20px;
   }
@@ -676,6 +679,9 @@ p {
 .section_blogpage .blog-heading-content {
   margin-top: 6rem;
   text-align: center;
+}
+.section_blogpage .blog-heading-content h1 {
+  text-transform: capitalize;
 }
 .section_blogpage .blog-heading-content p {
   font-size: 18px;
@@ -754,6 +760,7 @@ p {
   }
   .section_blogpage .blog-heading-content h1 {
     font-size: 35px;
+    text-transform: capitalize;
   }
   .section_blogpage .blog-heading-content p {
     font-size: 16px;
@@ -769,6 +776,7 @@ p {
     width: 100%;
     height: 21rem;
     border-radius: 7px;
+    object-fit: cover;
   }
   .section_blogpage .blog-section .blog-section-inside2 h1 {
     font-size: 2.475rem;
