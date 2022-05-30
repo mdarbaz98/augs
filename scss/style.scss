@@ -104,11 +104,11 @@
 
 .section-2 {
   .outerline {
-    padding: 5px 0px 0px 7px;
-    border: solid 1px $color-1;
+    padding: 4px;
+    border: solid 2px $color-1;
     border-radius: 35px;
     height: 45px;
-    width: 151px;
+    width: fit-content;
     margin: 2rem auto;
   }
 
@@ -126,15 +126,6 @@
     width: 136px;
   }
 }
-
-@media only screen and (max-width: 767px) {
-  .section-2 {
-    .outerline {
-      height: 43px;
-    }
-  }
-}
-
 //before css
 .before {
   width: fit-content;
@@ -466,11 +457,11 @@
     }
 
     .outerline {
-      padding: 5px 0px 0px 7px;
-      border: solid 1px $color-1;
+      padding:4px;
+      border: solid 2px $color-1;
       border-radius: 35px;
       height: 45px;
-      width: 151px;
+      width: fit-content;
       margin: 3rem auto;
     }
 
@@ -507,17 +498,11 @@
       button{
         padding: 7px 0px;
       }
-      .outerline {
-        height: 44px;
-      }
     }
     .section-2 {
       button{
         padding: 7px 0px;
       }
-      .outerline {
-        height: 44px;
-    }
     }
   }
 }
@@ -529,11 +514,11 @@
   @include blogbox;
 
   .outerline {
-    padding: 5px 0px 0px 7px;
-    border: solid 1px $color-1;
+    padding: 4px;
+    border: solid 2px $color-1;
     border-radius: 35px;
     height: 45px;
-    width: 151px;
+    width: fit-content;
     margin: 4rem auto;
   }
 
@@ -570,7 +555,6 @@
     }
 
     .outerline {
-      height: 44px;
       margin: 3rem auto;
     }
 
@@ -599,13 +583,15 @@
           color: #ff7575;
           font-weight: 600;
           font-size: 18px;
-          margin-top: 5px;
+          display: block;
+          margin-top: 7px;
         }
 
         .span2 {
           color: #c1c1c1;
           font-style: italic;
           font-size: 15px;
+          display: block;
         }
       }
     }
