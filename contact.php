@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 contact-section-inside2">
                     <div class="image-div onetime-main-img">
-                    <div class="section-3 px-2 py-5  p-md-4">
+                    <div class="section-3 px-2 py-3 p-md-4">
         <div class="container-fluid">
           <h3 class="d-block d-md-none text-center mb-5 before position-relative m-auto">Enquiry Form</h3>
           <div class="row">

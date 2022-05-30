@@ -91,8 +91,10 @@
   .blog-section{
     margin-top: 3rem;
     .blog-section_img img{
+      border-radius: 7px;
       width: 90%;
       height: 21rem;
+      object-fit: cover;
     }
     .blog-section-inside2{
       h1{
@@ -115,6 +117,7 @@
       button {
         @include btn(0px,8px 40px,0.8rem,$para-font,unset) ;
         font-weight: 700;
+        margin: 10px 0px;
       }
     }
   }

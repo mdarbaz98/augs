@@ -1,8 +1,8 @@
-@use "./variables" as *;
+@use "./variables"as *;
 @use "./base/reset";
 @use "./base/typography";
-@use "./components" as *;
-@use "./utilities/" as *;
+@use "./components"as *;
+@use "./utilities/"as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -30,6 +30,7 @@
             text-transform: uppercase;
             font-family: $heading-font;
             font-weight: 600;
+
             small {
               font-family: $para-font;
               font-weight: 500;
@@ -64,6 +65,7 @@
 
 .section-2 {
   .home-blog-section {
+
     #home-owl-carousel,
     #product-owl-carousel,
     #categoryproduct-owl-carousel,
@@ -103,7 +105,7 @@
 .section-2 {
   .outerline {
     padding: 5px 0px 0px 7px;
-    border: solid 1px #212529;
+    border: solid 1px $color-1;
     border-radius: 35px;
     height: 45px;
     width: 151px;
@@ -119,18 +121,20 @@
     letter-spacing: 0.7px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    background-color: #212529;
+    background-color: $color-1;
     display: block;
     width: 136px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .section-2 {
     .outerline {
-      height: 41px;
+      height: 43px;
     }
   }
 }
+
 //before css
 .before {
   width: fit-content;
@@ -160,9 +164,11 @@
 
     .form {
       .form-floating {
+
         input,
         textarea {
           background-color: $input;
+
           &:focus {
             border: none;
             box-shadow: none;
@@ -192,6 +198,7 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
+
     // padding: 15px;
     .section-1 {
       padding: 25px 5px;
@@ -258,11 +265,7 @@
   .onetime-banner-img img {
     width: 100%;
     height: 40rem;
-  }
-
-  .onetime-banner-img img {
-    width: 100%;
-    height: 40rem;
+    object-fit: cover;
   }
 
   .overlay {
@@ -313,7 +316,7 @@
     }
 
     .contact-section-inside2 {
-      @include image-css(530px, 420px);
+      @include image-css(530px, 430px);
 
       .section-3 {
         background-color: transparent;
@@ -327,20 +330,23 @@
 
   @media only screen and (max-width: 767px) {
     .onetime-banner-content {
-      top: 30%;
+      top: 40%;
       left: 24%;
       transform: translate(-18%, -50%);
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.25rem 1.25rem;
-        @include image-css(100%, 415px);
+        @include image-css(100%, auto);
       }
+
       .main-section-inside2 {
         padding: 0rem 1.25rem;
       }
+
       .contact-section-inside1 {
         margin-top: 0rem;
         padding: 0rem 1.25rem;
@@ -355,6 +361,7 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         @include image-css(100%, 320px);
@@ -366,14 +373,15 @@
 // one-time pages end
 
 // categoryproductPE start
-.categoryproductED {
+.categoryproductED 
+{
   .categorysection1_inside1 {
-    margin: 1.25rem auto;
-    // max-width: 700px;
+    margin: 0.25rem auto;
 
     img {
       width: 100%;
-      height: 30rem;
+      height: 25rem;
+      object-fit: cover;
     }
   }
 
@@ -382,7 +390,7 @@
       margin: 0.625rem 0rem 2rem 0rem;
     }
 
-    #hidden {
+    .moreless-button {
       background-color: transparent;
       border: none;
       color: #ff8700;
@@ -393,7 +401,7 @@
   .categorysection2 {
     .categorybox {
       .categorybox_inside {
-        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+        box-shadow: $shadow;
         padding: 10px;
         border-radius: 10px;
 
@@ -418,8 +426,8 @@
           .cd_span {
             i {
               font-size: 11px;
-              color: #212529;
-              margin: 10px 0px;
+              color: $color-1;
+              margin: 10px 10px 0px 0px;
             }
 
             span {
@@ -452,14 +460,14 @@
         box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
 
         button {
-          background-color: #212529;
+          background-color: $color-1;
         }
       }
     }
 
     .outerline {
       padding: 5px 0px 0px 7px;
-      border: solid 1px #212529;
+      border: solid 1px $color-1;
       border-radius: 35px;
       height: 45px;
       width: 151px;
@@ -475,13 +483,19 @@
       letter-spacing: 0.7px;
       font-size: 0.8rem;
       text-transform: uppercase;
-      background-color: #212529;
+      background-color: $color-1;
       display: block;
       width: 136px;
     }
   }
+
   @media only screen and (max-width: 767px) {
-    .categorysection2 {
+
+    // .categorysection1_inside2 {
+    //  padding: 0px 0px 0px 10px;
+    // }
+    .categorysection2 
+    {
       .categorybox {
         padding: 20px 20px 0px 20px;
         .categorybox_inside {
@@ -490,9 +504,20 @@
           }
         }
       }
-      .outerline {
-        height: 41px;
+      button{
+        padding: 7px 0px;
       }
+      .outerline {
+        height: 44px;
+      }
+    }
+    .section-2 {
+      button{
+        padding: 7px 0px;
+      }
+      .outerline {
+        height: 44px;
+    }
     }
   }
 }
@@ -505,7 +530,7 @@
 
   .outerline {
     padding: 5px 0px 0px 7px;
-    border: solid 1px #212529;
+    border: solid 1px $color-1;
     border-radius: 35px;
     height: 45px;
     width: 151px;
@@ -521,18 +546,41 @@
     letter-spacing: 0.7px;
     font-size: 0.8rem;
     text-transform: uppercase;
-    background-color: #212529;
+    background-color: $color-1;
     display: block;
     width: 136px;
   }
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+  .section_blogpage {
+    padding: 0px 15px;
+
+    .blog-heading-content {
+      margin-top: 6rem;
+
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .outerline {
+      height: 44px;
+      margin: 3rem auto;
+    }
+
     .blog-section {
       margin-top: 3rem;
 
       .blog-section_img img {
         width: 100%;
         height: 21rem;
+        border-radius: 7px;
       }
 
       .blog-section-inside2 {
@@ -561,29 +609,9 @@
         }
       }
     }
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  .section_blogpage {
-    padding: 0px 15px;
-
-    .blog-heading-content {
-      margin-top: 2rem;
-
-      h1 {
-        font-size: 35px;
-      }
-
-      p {
-        font-size: 16px;
-        text-align: center;
-      }
-    }
-
-    .outerline {
-      height: 42px;
-      margin: 3rem auto;
+    button {
+      padding: 7px 0px;
     }
   }
 }
@@ -604,6 +632,7 @@
         width: 80px;
         margin-right: auto;
       }
+
       @media screen and (max-width: 767px) {
         .augs-logo {
           margin-right: unset;
@@ -631,10 +660,12 @@
 
 // header section css
 header {
+
   // z-index: 10;
   .logo-img {
     width: 60px;
   }
+
   .navbar {
     background-color: $color-1;
 
@@ -720,9 +751,11 @@ header {
       .menu-list {
         border-bottom: solid $color-9 2px;
         color: $color-9;
+
         a {
           color: $color-9;
         }
+
         form {
           input {
             background-color: $color-1;
@@ -803,18 +836,22 @@ header {
   .header-form {
     width: 14.75rem !important;
   }
+
   .side_Bar {
     .menu-list {
       .menu-links {
         padding: 8px 20px 8px 12px;
+
         a {
           font-size: 1.3rem;
         }
       }
     }
+
     a {
       font-size: 1.1rem;
     }
+
     button {
       font-size: 1.3rem;
     }
@@ -830,6 +867,7 @@ header {
   left: 0px;
   right: 0px;
 }
+
 .product__page {
   .top-section {
     background-color: $color-8;
@@ -861,20 +899,25 @@ header {
       }
     }
   }
+
   .bottom-section {
     .accordion-item {
       border: none;
+
       .accordion-button {
         background-color: $color-1;
         color: $color-9;
         padding: 8px 10px;
         border-radius: 6px;
+
         &::after {
           filter: brightness(25);
         }
+
         &:focus {
           box-shadow: none;
         }
+
         &:not(.collapsed) {
           background-color: $color-10;
           color: $color-1;
@@ -882,15 +925,18 @@ header {
           box-shadow: none;
           border-bottom-left-radius: 0px;
           border-bottom-right-radius: 0px;
+
           &::after {
             filter: brightness(0.1);
           }
         }
       }
+
       .accordion-body {
         background-color: $color-10;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
+
         p {
           color: $color-1;
         }
@@ -929,26 +975,32 @@ header {
     border-radius: 6px;
     object-fit: cover;
   }
+
   .post-content-section {
     .TBC-container {
       .accordion-item {
         .accordion-button {
           font-size: 1.8rem;
           font-weight: 600;
+
           &:not(.collapsed) {
             color: $color-1;
             background-color: unset;
+
             &::after {
               filter: brightness(0.1);
             }
           }
+
           &:focus {
             box-shadow: none;
           }
         }
       }
+
       position: sticky;
       top: 90px;
+
       .table-of-content {
         li {
           border: solid 1px $color-1;
@@ -956,15 +1008,18 @@ header {
           padding: 5px 6px;
           margin-bottom: 10px;
           cursor: pointer;
+
           a {
             display: flex;
             align-items: center;
             font-size: 1.2rem;
             font-family: $heading-font;
             font-weight: 600;
+
             span {
               margin-bottom: 0px;
             }
+
             span {
               border-right: solid 1px $color-1;
               margin-right: 10px;
@@ -972,8 +1027,10 @@ header {
             }
           }
         }
+
         .tbc_links.active {
           background-color: $color-1;
+
           a {
             color: $color-9;
             font-weight: 500;
@@ -981,20 +1038,25 @@ header {
         }
       }
     }
+
     .headings {
       font-size: 1.7rem;
       margin: 30px 0px 10px;
     }
+
     p {
       font-family: $para-font;
     }
+
     .sq-btn {
       @include btn;
     }
+
     .bottom-accordion-section {
       .accordion-item {
         // width: fit-content;
         border: none;
+
         .accordian-heading {
           .accordion-button {
             font-size: 1.2rem;
@@ -1004,13 +1066,16 @@ header {
             // width: 300px;
             display: flex;
             justify-content: space-between;
+
             &::after {
               display: none;
             }
+
             &:not(.collapsed) {
               background-color: unset;
               color: $color-1;
             }
+
             span {
               background-color: $color-1;
               color: $color-9;
@@ -1027,9 +1092,11 @@ header {
 @media screen and (max-width: 767px) {
   .post__page {
     padding: 10px;
+
     .post-banner-img {
       height: 200px;
     }
+
     .accordian-heading {
       .accordion-button {
         font-size: 1.4rem !important;
@@ -1043,6 +1110,7 @@ header {
     .table-of-content {
       li {
         a {
+
           span,
           h2 {
             font-size: 1.5rem !important;
@@ -1052,4 +1120,5 @@ header {
     }
   }
 }
+
 // post page css

@@ -13,7 +13,7 @@
                         <p>Premature Ejaculation means when you experience orgasm before the desired time. It is a common situation a man faces. Around 40 percent of males undergo this situation. 
                             In Premature Ejaculation, a man can experience early orgasm before or between sexual intercourse, resulting in dissatisfaction with you and your partner. It can be depressing and stressful for a man, and there are several reasons that can raise PE, but firstly let’s normalize it for better understanding and your doubt clearance.
                         <span>
-                            <br><a class="moreless-button">Read more...</a></span></p>
+                        <a class="moreless-button">Read more...</a></span></p>
                         <div class="moretext" style="display: none;">
                             <h2>Are There Any Symptoms Of Premature Ejaculation?</h2>
                             <p>Premature Ejaculation is not a disease that has symptoms. Early ejaculation is itself a sign of PE. If you ejaculate nearly in a minute every time you have sex or masturbation, then there are chances of Premature Ejaculation. You need to observe these instances at the time you are having sexual intercourse. </p>
