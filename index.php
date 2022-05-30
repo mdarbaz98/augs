@@ -53,7 +53,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-3 px-md-5">
+              <div class="blog-desc-sec pb-3 px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -63,7 +63,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-3 px-md-5">
+              <div class="blog-desc-sec pb-3 px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -73,7 +73,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-3 px-md-5">
+              <div class="blog-desc-sec pb-3 px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at? em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at</p>
                 <button class="sq-btn">READ MORE</button>
@@ -83,7 +83,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-3 px-md-5">
+              <div class="blog-desc-sec pb-3 px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>
@@ -93,7 +93,7 @@
             <div class="blog-card">
               <a href="">
                 <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-              <div class="blog-desc-sec px-3 px-md-5">
+              <div class="blog-desc-sec pb-3 px-3 px-md-5">
                 <h1 class="my-2">Know about levitra</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
                 <button class="sq-btn">READ MORE</button>

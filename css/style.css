@@ -145,6 +145,7 @@ p {
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
   width: 100%;
   height: 15.75rem;
+  object-fit: cover;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
