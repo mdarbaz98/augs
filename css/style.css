@@ -660,6 +660,9 @@ p {
   .categoryproductED .categorysection2 .categorybox {
     padding: 20px 20px 0px 20px;
   }
+  .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
+    margin-top: 0rem;
+  }
   .categoryproductED .categorysection2 .outerline {
     height: 41px;
   }
