@@ -479,6 +479,11 @@
     .categorysection2 {
       .categorybox {
         padding: 20px 20px 0px 20px;
+        .categorybox_inside{
+          .cd_button p {
+            margin-top: 0rem;
+        }
+        }
       }
       .outerline {
         height: 41px;
