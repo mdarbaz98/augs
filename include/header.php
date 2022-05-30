@@ -91,7 +91,7 @@
                                             <div class="accordion-body">
                                               <ul class="list-unstyled menu-inner-ul pl-0-">
                                                 <li class="mb-3"><a href="./post.php">Erectile Dysfunction</a></li>
-                                                <li class="mb-3"><a href="./post.php">Erectile Dysfunction</a></li>
+                                                <li class="mb-3"><a href="./blog.php">Erectile Dysfunction</a></li>
                                             </ul>
                                             </div>
                                           </div>
