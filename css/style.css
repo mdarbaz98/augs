@@ -442,7 +442,7 @@ p {
   border: solid 1px #212529;
   border-radius: 6px;
   width: 530px;
-  height: 430px;
+  height: auto;
 }
 .onetime-privacy .main-section .contact-section-inside2 .image-div img,
 .onetime-about .main-section .contact-section-inside2 .image-div img,
@@ -524,6 +524,12 @@ p {
     margin-top: 0rem;
     padding: 0rem 1.25rem;
   }
+  .onetime-privacy .main_section_content2,
+.onetime-about .main_section_content2,
+.onetime-tandc .main_section_content2,
+.onetime-contact .main_section_content2 {
+    margin-top: 0rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .onetime-privacy .onetime-banner-content,
@@ -593,6 +599,7 @@ p {
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
   width: 80px;
   height: 56px;
+  object-fit: cover;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
   font-size: 20px;

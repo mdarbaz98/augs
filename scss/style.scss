@@ -53,9 +53,10 @@
           border-radius: 50px;
           border: solid $color-1 2px;
           color: $color-9;
-            button {
-              @include btn(50px, 2px 36px, 1.25rem, $heading-font);
-              margin: 4px;
+
+          button {
+            @include btn(50px, 2px 36px, 1.25rem, $heading-font);
+            margin: 4px;
           }
         }
       }
@@ -126,6 +127,7 @@
     width: 136px;
   }
 }
+
 //before css
 .before {
   width: fit-content;
@@ -165,8 +167,9 @@
             box-shadow: none;
           }
         }
-        textarea{
-          height: 6.25rem ;
+
+        textarea {
+          height: 6.25rem;
         }
 
         label {
@@ -189,8 +192,6 @@
 //media screen queries for mobile
 @media only screen and(max-width: 600px) {
   .home__section {
-
-    // padding: 15px;
     .section-1 {
       padding: 25px 5px;
 
@@ -307,7 +308,7 @@
     }
 
     .contact-section-inside2 {
-      @include image-css(530px, 430px);
+      @include image-css(530px, auto);
 
       .section-3 {
         background-color: transparent;
@@ -343,6 +344,10 @@
         padding: 0rem 1.25rem;
       }
     }
+
+    .main_section_content2 {
+      margin-top: 0rem;
+    }
   }
 
   @media only screen and (min-width: 768px) and(max-width: 900px) {
@@ -364,8 +369,7 @@
 // one-time pages end
 
 // categoryproductPE start
-.categoryproductED 
-{
+.categoryproductED {
   .categorysection1_inside1 {
     margin: 1.25rem auto;
 
@@ -405,6 +409,7 @@
           img {
             width: 80px;
             height: 56px;
+            object-fit: cover;
           }
         }
 
@@ -457,7 +462,7 @@
     }
 
     .outerline {
-      padding:4px;
+      padding: 4px;
       border: solid 2px $color-1;
       border-radius: 35px;
       height: 45px;
@@ -485,22 +490,25 @@
     .categorysection1_inside1 {
       margin: 0.25rem auto;
     }
-    .categorysection2 
-    {
+
+    .categorysection2 {
       .categorybox {
         padding: 20px 20px 0px 20px;
+
         .categorybox_inside {
           .cd_button p {
             margin-top: 0rem;
           }
         }
       }
-      button{
+
+      button {
         padding: 7px 0px;
       }
     }
+
     .section-2 {
-      button{
+      button {
         padding: 7px 0px;
       }
     }
@@ -716,17 +724,21 @@ header {
     height: 100vh;
     background-color: $color-1;
     z-index: 1032;
+
     &::-webkit-scrollbar {
       background-color: #ffffff;
       width: 8px;
     }
+
     &::-webkit-scrollbar-track {
       background-color: #f1f1f1;
     }
+
     &::-webkit-scrollbar-thumb {
       background-color: $color-4;
       border-radius: 20px;
     }
+
     .menu-close-btn {
       font-size: 20px;
 
