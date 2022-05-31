@@ -83,6 +83,9 @@
   .blog-heading-content{
     margin-top: 6rem;
     text-align: center;
+    h1{
+      text-transform: capitalize;
+    }
     p{
       font-size: 18px;
       text-align: center;

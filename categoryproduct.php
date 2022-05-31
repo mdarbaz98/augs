@@ -29,7 +29,7 @@
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                                <img src="https://oneglobalpharma.com/0zn1xjghdj_admin/pages/products/Lorazepam-Resize-Medicine.jpg"
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     alt="">
                             </div>
                             <div class="categorydetail_content">
@@ -52,7 +52,7 @@
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                                <img src="https://oneglobalpharma.com/0zn1xjghdj_admin/pages/products/ETIZOLAM-Resize-Medicine.jpg"
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     alt="">
                             </div>
                             <div class="categorydetail_content">
@@ -75,7 +75,7 @@
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                                <img src="https://oneglobalpharma.com/0zn1xjghdj_admin/pages/products/Tramadol-Resize-Medicine.jpg"
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     alt="">
                             </div>
                             <div class="categorydetail_content">
@@ -98,7 +98,7 @@
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                                <img src="https://oneglobalpharma.com/0zn1xjghdj_admin/pages/products/Tramadol-Resize-Medicine.jpg"
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     alt="">
                             </div>
                             <div class="categorydetail_content">
@@ -197,7 +197,9 @@
                 </div>
 
                 <div class="outerline">
-                    <button class="">View All</button>
+                   <a href="./blog.php">
+                   <button class="">View All</button>
+                   </a>
                 </div>
             </div>
         </div>   
