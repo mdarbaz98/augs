@@ -106,6 +106,6 @@ include('include/config.php');
 <?php
     include('include/footer.php');
   }else{
-    echo "<script>window.location='http://localhost/admin/index.php'</script>";
+    echo "<script>window.location='http://localhost/augs/admin/index.php'</script>";
     }
  ?>
