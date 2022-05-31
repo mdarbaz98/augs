@@ -109,7 +109,7 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="left-section d-md-flex justify-content-center align-items-center h-100">
-                <p class="mb-5">We aim to be a platform for people dealing with sexual dysfunction.Stories,Suggestions & Medicine
+                <p class="mb-5">We aim to be a platform for people dealing with sexual dysfunction.</br> Stories,Suggestions & Medicine
                         provided by us will be a game changer in your sex life.Stepping out of your mental space is a
                         necessity for you to recover and gain back your sexual pleasure.</p>
               </div>

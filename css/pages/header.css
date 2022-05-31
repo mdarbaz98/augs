@@ -30,9 +30,14 @@ html {
     font-size: 1.1875rem;
   }
 }
+@media only screen and (min-width: 411px) and (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+}
 @media only screen and (min-width: 1800px) {
   html {
-    font-size: 85%;
+    font-size: 100%;
   }
 }
 

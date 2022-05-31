@@ -1,4 +1,4 @@
-<?php include('./include/header.php') ?>
+<?php include ('./include/header.php') ?>
     <section class="post__page pt-5 pt-md-0">
       <div
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
@@ -10,6 +10,7 @@
             src="https://dronexl.co/wp-content/uploads/2021/09/Screen-Shot-2021-09-09-at-19.32.51.jpg"
             alt=""
           />
+          <p class="mt-2">Publish : 23-01-2020</p>
         </div>
       </div>
       <div class="post-content-section">
@@ -17,21 +18,23 @@
           <div class="row">
             <div class="col-lg-3 col-12">
               <div class="TBC-container">
-                <div class="accordion mobile-tbc accordion-flush" id="mobile-table-of-content">
-                  <div class="accordion-item d-block d-lg-none">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Table Of Content
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#mobile-table-of-content">
-                        <div class="accordion-body p-md-0 pt-md-3">
-                          <ul class="table-of-content list-unstyled mb-md-5" id="table-of-content-for-mobile">
-                          </ul>
+                  <div>
+                    <div class="accordion mobile-tbc accordion-flush" id="mobile-table-of-content">
+                    <div class="accordion-item d-block d-lg-none">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button post-sticky-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Table Of Content
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#mobile-table-of-content">
+                          <div class="accordion-body p-md-0 pt-md-3">
+                            <ul class="table-of-content list-unstyled mb-md-5" id="table-of-content-for-mobile">
+                            </ul>
+                          </div>
                         </div>
+                      </div>
                     </div>
                   </div>
-                </div>
                 <h2 class="before position-relative mx-auto my-5 d-none d-lg-block">
                   Table of content
                 </h2>
@@ -162,7 +165,6 @@
                         aria-controls="post-accordian-1"
                       >
                         Accordion Item
-                        <span><i class="fa-solid fa-plus"></i></span>
                       </button>
                     </h2>
                     <div
@@ -209,7 +211,6 @@
                         aria-controls="panelsStayOpen-collapseTwo"
                       >
                         Accordion Item
-                        <span><i class="fa-solid fa-plus"></i></span>
                       </button>
                     </h2>
                     <div
@@ -256,7 +257,6 @@
                         aria-controls="panelsStayOpen-collapseThree"
                       >
                         Accordion Item
-                        <span><i class="fa-solid fa-plus"></i></span>
                       </button>
                     </h2>
                     <div
@@ -401,4 +401,4 @@
       </div>
     </section>
    
-    <?php include('./include/footer.php') ?>
+    <?php include ('./include/footer.php') ?>

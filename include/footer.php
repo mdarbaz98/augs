@@ -4,7 +4,7 @@
                <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="logo__div h-100 d-flex align-items-center justify-content-center">
-                        <img src="./assets/images/augs-logo.png" class="augs-logo" alt="augs-logo">
+                        <a class="augs-logo" href="./index.php"><img src="./assets/images/augs-logo.png" alt="augs-logo"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">

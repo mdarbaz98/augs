@@ -33,9 +33,14 @@ html {
     font-size: 1.1875rem;
   }
 }
+@media only screen and (min-width: 411px) and (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+}
 @media only screen and (min-width: 1800px) {
   html {
-    font-size: 85%;
+    font-size: 100%;
   }
 }
 
@@ -325,7 +330,7 @@ p {
     font-size: 0.8rem !important;
   }
   .home__section .section-1 .right__homeSection .image-div {
-    height: 350px;
+    height: 400px;
   }
   .home__section .section-3 .left-section p {
     font-weight: 600;
@@ -416,23 +421,11 @@ p {
   border-radius: 6px;
   object-fit: cover;
 }
-.onetime-privacy .main-section .main-section-inside2 p,
-.onetime-about .main-section .main-section-inside2 p,
-.onetime-tandc .main-section .main-section-inside2 p,
-.onetime-contact .main-section .main-section-inside2 p {
-  font-size: 1rem;
-}
 .onetime-privacy .main-section .contact-section-inside1,
 .onetime-about .main-section .contact-section-inside1,
 .onetime-tandc .main-section .contact-section-inside1,
 .onetime-contact .main-section .contact-section-inside1 {
   margin-top: 5rem;
-}
-.onetime-privacy .main-section .contact-section-inside1 p,
-.onetime-about .main-section .contact-section-inside1 p,
-.onetime-tandc .main-section .contact-section-inside1 p,
-.onetime-contact .main-section .contact-section-inside1 p {
-  font-size: 1.125rem;
 }
 .onetime-privacy .main-section .contact-section-inside2 .image-div,
 .onetime-about .main-section .contact-section-inside2 .image-div,
@@ -804,9 +797,11 @@ p {
 .footer__section .row {
   border-bottom: solid 1px #fff;
 }
-.footer__section .row .logo__div img {
-  width: 80px;
+.footer__section .row .logo__div a {
   margin-right: auto;
+}
+.footer__section .row .logo__div a img {
+  width: 80px;
 }
 @media screen and (max-width: 767px) {
   .footer__section .row .logo__div .augs-logo {
@@ -823,7 +818,7 @@ p {
 }
 
 header .logo-img {
-  width: 60px;
+  width: 70px;
 }
 header .navbar {
   background-color: #212529;
@@ -890,7 +885,7 @@ header .side_Bar::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 header .side_Bar .menu-close-btn {
-  font-size: 20px;
+  font-size: 25px;
 }
 header .side_Bar .menu-close-btn:focus {
   box-shadow: none;
@@ -956,6 +951,7 @@ header .overlay_Div {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1031;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -1023,6 +1019,7 @@ header .overlay_Div {
   color: #f8f9fa;
   padding: 8px 10px;
   border-radius: 6px;
+  font-size: 1.2rem;
 }
 .product__page .bottom-section .accordion-item .accordion-button::after {
   filter: brightness(25);
@@ -1048,6 +1045,7 @@ header .overlay_Div {
 }
 .product__page .bottom-section .accordion-item .accordion-body p {
   color: #212529;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1075,15 +1073,20 @@ header .overlay_Div {
     border-radius: 6px;
   }
 }
-.post__page .post-banner-img {
+.post__page .post-banner-section .post-banner-img {
   height: 500px;
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
 }
+.post__page .post-banner-section p {
+  font-family: "Ubuntu", sans-serif;
+  color: #6c757d;
+}
 .post__page .post-content-section .TBC-container {
   position: sticky;
   top: 90px;
+  z-index: 2;
 }
 .post__page .post-content-section .TBC-container .accordion-item .accordion-button {
   font-size: 1.8rem;
@@ -1157,15 +1160,18 @@ header .overlay_Div {
   box-shadow: none;
   border: none;
   font-weight: 600;
-  display: flex;
-  justify-content: space-between;
+  color: #212529;
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button::after {
-  display: none;
+  background-image: url("../assets/images/minus.png");
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed) {
   background-color: unset;
   color: #212529;
+}
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed)::after {
+  filter: brightness(0);
+  background-image: url("../assets/images/plus.png");
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button span {
   background-color: #212529;
@@ -1179,7 +1185,7 @@ header .overlay_Div {
     padding: 10px;
   }
   .post__page .post-banner-img {
-    height: 200px;
+    height: 200px !important;
   }
   .post__page .accordian-heading .accordion-button {
     font-size: 1.4rem !important;

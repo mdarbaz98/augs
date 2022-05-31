@@ -11,12 +11,12 @@ $(document).ready(function () {
   $(".menu-open-btn").click(function () {
     $(".side_Bar").animate({ left: "0px" }, 400);
     $(".overlay_Div").animate({ left: "0%" }, 0);
-    $("body").css({ "overflow-y": "hidden" });
+    $("body,html").css({ "overflow-y": "hidden" });
   });
   $(".menu-close-btn,.overlay_Div").click(function () {
     $(".side_Bar").animate({ left: "-300px" }, 500);
     $(".overlay_Div").animate({ left: "-100%" }, 0);
-    $("body").css({ "overflow-y": "scroll" });
+    $("body,html").css({ "overflow-y": "scroll" });
   });
 
   // owl inner icon
@@ -58,17 +58,21 @@ $(document).ready(function () {
       $(".mobile-tbc").removeClass("sticky_accordion");
     }
   });
+
+
+  // auto close accordion of post page
+  $("#table-of-content-for-mobile .tbc_links").click(function () {
+    $('.post-sticky-accordion-btn').click();
+  });
 });
 
 
 // readmore
-$('.moreless-button').click(function() {
-  $('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Read less") {
-    $(this).text("Read more...")
+$(".moreless-button").click(function () {
+  $(".moretext").slideToggle();
+  if ($(".moreless-button").text() == "Read less") {
+    $(this).text("Read more...");
   } else {
-    $(this).text("Read less")
+    $(this).text("Read less");
   }
 });
-
-

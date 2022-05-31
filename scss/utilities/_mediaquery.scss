@@ -4,6 +4,11 @@
             @content;
         }
     }
+    @if $value == i-phone {
+        @media only screen and (min-width: 411px) and (max-width: 600px) {
+            @content;
+        }
+    }
     @if $value == tab {
         @media only screen and(max-width: 900px) {
             @content;
