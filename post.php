@@ -8,9 +8,6 @@
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
       >
         <div class="container-fluid">
-<<<<<<< HEAD
-          <h2 class="text-center position-relative mx-auto my-5">everything you need to know about Sildenafil for PE</h2>
-=======
           <?php
           $sql = "SELECT * FROM `post` WHERE status=1 AND id=15";
           $stmt = $conn->prepare($sql);
@@ -37,7 +34,6 @@
           }
           ?>
           <h2 class="before position-relative mx-auto my-5">Paroxetine</h2>
->>>>>>> af21973e769d1fbe7369b1e1a80fa69c410bb86c
           <img
             class="post-banner-img"
             src="admin/<?php echo $image ?>"
