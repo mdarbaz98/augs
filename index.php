@@ -38,8 +38,8 @@
                   <img class="shadow" src="https://media.istockphoto.com/photos/young-smiling-handsome-man-in-casual-clothes-posing-isolated-on-blue-picture-id1249420269?k=20&m=1249420269&s=612x612&w=0&h=taSQreK8i8J_nt-NQR0SBGVhXXtNWAtJuXiBnHBNW0g=" alt="home-image">
                 </div>
                 <div class="home-category-buttons-section pt-4 d-flex justify-content-center gap-2">
-                  <a href="./categoryproduct.php"><button>PE</button></a>
-                  <a href="./categoryproduct.php"><button>Ed</button></a>
+                  <a href="category/pe"><button>PE</button></a>
+                  <a href="category/ed"><button>Ed</button></a>
                 </div>
               </div>
             </div>

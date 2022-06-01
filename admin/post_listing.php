@@ -133,7 +133,7 @@ include('include/config.php');
 														<td>
 															<?php echo $data['uploaded_on'] ?>
 														</td>
-														<td><a href="category_update.php?id=<?php echo $data['id']; ?>" class="btn btn-primary"><i class="fa-solid fa-eye"></i></td>
+														<td><a href="http://localhost/augs/<?php echo $data['slug']; ?>" class="btn btn-primary"><i class="fa-solid fa-eye"></i></td>
 														<td><a href="update_post.php?id=<?php echo $data['id']; ?>" class="btn btn-success"><i class="fas fa-edit"></i></td>                                   
                             <td><a class="btn btn-danger" href="javascript:void(0)" onclick="trashPost(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
 													</tr>

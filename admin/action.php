@@ -243,7 +243,7 @@ if($_POST['btn']=='trashPost_id'){
         }
         $content="";
         if(isset($_POST['content'])){
-            $content = trim_data($_POST['content']);
+            $content = $_POST['content'];
         }else{
             $content="";
         }
@@ -364,7 +364,7 @@ if($_POST['btn']=='trashPost_id'){
         }
         $content="";
         if(isset($_POST['content'])){
-            $content = trim_data($_POST['content']);
+            $content = $_POST['content'];
         }else{
             $content="";
         }
