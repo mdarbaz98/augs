@@ -40,8 +40,8 @@ include('include/config.php');
 										<label for="Title" class="form-label"> Product Name</label>
 										<input type="text" class="form-control " id="pro_name" name="pro_name" value="<?php echo $row['name'] ?>" > </div>
 									<div class="form-group  w-100">
-										<label for="horizontal-firstname-input">Product Description</label>
-										<input type="text" class="form-control" id="desc" name="desc" value="<?php echo $row['pro_desc'] ?>" > </div>
+										<label for="horizontal-firstname-input">Product Slug</label>
+										<input type="text" class="form-control" id="slug" name="slug" value="<?php echo $row['slug'] ?>" > </div>
 								</div>
 								<div class="d-flex my-4">
 									<div class="form-group  mx-3  w-100 ">
@@ -52,11 +52,12 @@ include('include/config.php');
 										<input type="text" class="form-control" id="prc" name="prc" value="<?php echo $row['prc'] ?>" > </div>
 								</div>
 								<div class="d-flex my-4">
-									<div class="form-group  mx-3  w-100">
-										<label for="horizontal-firstname-input" class="col-form-label">Discount Price</label>
-										<input type="text" class="form-control" id="disc" name="disc" value="<?php echo $row['disc'] ?>" > </div>
+								<div class="form-group  mx-3  w-100">
+										<label for="horizontal-firstname-input" class="col-form-label">Description</label>
+										<textarea id="pro_desc" name="pro_desc" class="form-control" rows="40"><?php echo $row['pro_desc'] ?></textarea>
+                 					</div>
 									<div class="form-group   mx-3 w-100">
-										<label for="horizontal-firstname-input" class="col-form-label">One Global Link</label>
+										<label for="horizontal-firstname-input" class="col-form-label">Link</label>
 										<input type="text" class="form-control" id="link" name="link"  value="<?php echo $row['link'] ?>"> </div>
 								</div>
 								<div class="d-flex my-4">
@@ -95,10 +96,10 @@ include('include/config.php');
                                     <img src="<?php echo $image ?>"alt="<?php echo $alt ?>" class="image_path"></div>
 									<input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>  
 									
-								<div class="w-50 h-50 float-right">
+								<div class="w-100 h-50 float-right">
 									<div class="customefeature_image"></div>
 								</div>
-
+									</div>
 								<div class="submit-btns clearfix d-flex">   
 								<input type="hidden" name="product_id" value="<?php echo $row['id'] ?>">        
                             <input type="hidden" name="btn" value="updateProduct">

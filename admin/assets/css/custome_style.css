@@ -465,5 +465,10 @@ div.dataTables_wrapper div.dataTables_filter {
 .image_path {
   width: 90px;
 }
-
+#product_form .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
+  height: 200px !important;
+}
+#updateProduct  .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
+  height: 200px !important;
+}
 

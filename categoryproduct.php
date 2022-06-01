@@ -1,4 +1,5 @@
 <?php include('./include/header.php');
+	include('admin/include/config.php');
     echo $cat = $_GET['cat'];
 ?>
     <section class="categoryproductED">
@@ -28,30 +29,47 @@
             <h2 class="text-center before position-relative">Products</h2>
             <div class="container">
                 <div class="row">
+                     <?php
+                                $stmt = $conn->prepare("SELECT * FROM `product` ORDER BY id DESC");
+                                $stmt->execute();
+                                $i=1;
+                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                foreach ($data as $data)
+                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+									$stmt_img->execute([$data['img_id']]);
+									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+										if (!empty($img_data)) {
+										$image = $img_data[0]['path']; 
+										$alt = $img_data[0]['alt'];
+										}else{
+											$image="Not Found";
+											$alt="Not Found";
+										}								 
+					?>
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                    alt="">
+                            <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img">
                             </div>
                             <div class="categorydetail_content">
-                                <h2>Viagra</h2>
+                                <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Lasts up to 4-5hrs</span>
+                                    <!-- <i class="fa-solid fa-circle"></i> -->
+                                    <span><?php echo $data['pro_desc'] ?></span>
                                 </div>
-                                <div class="cd_span">
+                                <!-- <div class="cd_span">
                                     <i class="fa-solid fa-circle"></i>
                                     <span>Effective for 62-82% of men</span>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="cd_button">
-                                <p><span>$23.00</span></p>
+                                <p>from <span>$<?php echo $data['prc'] ?></span></p>
                                 <button>View</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
+                    <?php $i++;} ?>
+                    <!-- <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
                                 <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
@@ -119,7 +137,8 @@
                                 <button>View</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
                 <div class="outerline">
                     <button class="">View All</button>
@@ -127,74 +146,39 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="section-2">
-                <h2 class="text-center my-4 mb-0 before position-relative m-auto">Related Blogs</h2>
-                <div class="home-blog-section py-5 mb-5 mb-md-0">
+                <h2 class="text-center my-4  mb-0 before position-relative m-auto">Related Blogs</h2>
+                <div class="home-blog-section py-5 mb-5 mx-5 mb-md-0">
                     <div class="owl-carousel owl-theme" id="categoryproduct-owl-carousel">
+                    <?php
+                                $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC");
+                                $stmt->execute();
+                                $i=1;
+                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                foreach ($data as $data)
+                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+									$stmt_img->execute([$data['img_id']]);
+									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+										if (!empty($img_data)) {
+										$image = $img_data[0]['path']; 
+										$alt = $img_data[0]['alt'];
+										}else{
+											$image="Not Found";
+											$alt="Not Found";
+										}								 
+					?>
                         <div class="blog-card">
                             <a href="">
-                                <div class="blog-card-img-div"><img
-                                        src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                                        alt="blog-image"></div>
-                                <div class="blog-desc-sec pb-3 px-3 px-md-5 ">
-                                    <h1 class="my-2">Know about levitra</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
+                                <div class="blog-card-img-div"><img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img"></div>
+                                <div class="blog-desc-sec px-5">
+                                    <h1 class="my-2"><?php echo $data['title'] ?></h1>
+                                    <p><?php echo $data['description'] ?></p>
                                     <button class="sq-btn">READ MORE</button>
                                 </div>
                             </a>
                         </div>
-                        <div class="blog-card">
-                            <a href="">
-                                <div class="blog-card-img-div"><img
-                                        src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                                        alt="blog-image"></div>
-                                <div class="blog-desc-sec pb-3 px-3 px-md-5 ">
-                                    <h1 class="my-2">Know about levitra</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                                    <button class="sq-btn">READ MORE</button>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="blog-card">
-                            <a href="">
-                                <div class="blog-card-img-div"><img
-                                        src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                                        alt="blog-image"></div>
-                                <div class="blog-desc-sec pb-3 px-3 px-md-5 ">
-                                    <h1 class="my-2">Know about levitra</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at? em, ipsum
-                                        dolor
-                                        sit amet consectetur adipisicing elit. Facere, at em, ipsum dolor sit amet
-                                        consectetur adipisicing elit. Facere, at</p>
-                                    <button class="sq-btn">READ MORE</button>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="blog-card">
-                            <a href="">
-                                <div class="blog-card-img-div"><img
-                                        src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                                        alt="blog-image"></div>
-                                <div class="blog-desc-sec pb-3 px-3 px-md-5 ">
-                                    <h1 class="my-2">Know about levitra</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                                    <button class="sq-btn">READ MORE</button>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="blog-card">
-                            <a href="">
-                                <div class="blog-card-img-div"><img
-                                        src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                                        alt="blog-image"></div>
-                                <div class="blog-desc-sec pb-3 px-3 px-md-5 ">
-                                    <h1 class="my-2">Know about levitra</h1>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                                    <button class="sq-btn">READ MORE</button>
-                                </div>
-                            </a>
-                        </div>
+                        <?php $i++;} ?>
                     </div>
                 </div>
 
