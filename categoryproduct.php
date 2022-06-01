@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="categorysection2">
-            <h2 class="text-center my-5 mb-4 before position-relative m-auto">Products</h2>
+            <h2 class="text-center before position-relative">Products</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                             <div class="cd_button">
-                                <p>from <span>$23.00</span></p>
+                                <p><span>$23.00</span></p>
                                 <button>View</button>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                             <div class="cd_button">
-                                <p>from <span> $37.00</span></p>
+                                <p><span> $37.00</span></p>
                                 <button>View</button>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="cd_button">
-                                <p>from <span> $15.00</span></p>
+                                <p><span> $15.00</span></p>
                                 <button>View</button>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="cd_button">
-                                <p>from <span> $53.00</span></p>
+                                <p><span> $53.00</span></p>
                                 <button>View</button>
                             </div>
                         </div>

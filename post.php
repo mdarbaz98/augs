@@ -83,7 +83,125 @@
                     nulla.</span
                   >
                 </p>
-                <button class="sq-btn mx-auto">CTA's</button>
+                <!-- <button class="sq-btn mx-auto">CTA's</button> -->
+                <div class="cta_main">
+                  <div class="container-fluid mb-lg-5 pb-lg-5">
+                    <div class="row owl-carousel owl-theme" id="post_cta_slider">
+                    <div class="col-12 ctabox col-lg-11 mb-5 mb-md-0 ">
+                        <div class="cta_inside">
+                          <div class="ribbon">
+                          <div class="box">
+                            <span>One-Time or Subscription</span>
+                          </div>
+                          </div>
+                            <div class="cta_img">
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                            </div>
+                            <div class="cta_content">
+                                <p>Sildenafil</p>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Effective for 62-82% of men</span>
+                                </div>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Works in 1hr and lasts 4-5hrs</span>
+                                </div>
+                            </div>
+                            <div class="cta_cd_button">
+                                <p><span> $37.00</span></p>
+                                <button>View</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 ctabox col-lg-11 mb-5 mb-md-0 ">
+                        <div class="cta_inside">
+                          <div class="ribbon">
+                          <div class="box">
+                            <span>One-Time or Subscription</span>
+                          </div>
+                          </div>
+                            <div class="cta_img">
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                            </div>
+                            <div class="cta_content">
+                               <p>Sildenafil</p>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Effective for 62-82% of men</span>
+                                </div>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Works in 1hr and lasts 4-5hrs</span>
+                                </div>
+                            </div>
+                            <div class="cta_cd_button">
+                                <p><span> $37.00</span></p>
+                                <button>View</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 ctabox col-lg-11 mb-5 mb-md-0 ">
+                        <div class="cta_inside">
+                          <div class="ribbon">
+                          <div class="box">
+                            <span>One-Time or Subscription</span>
+                          </div>
+                          </div>
+                            <div class="cta_img">
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                            </div>
+                            <div class="cta_content">
+                               <p>Sildenafil</p>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Effective for 62-82% of men</span>
+                                </div>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Works in 1hr and lasts 4-5hrs</span>
+                                </div>
+                            </div>
+                            <div class="cta_cd_button">
+                                <p><span> $37.00</span></p>
+                                <button>View</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 ctabox col-lg-11 mb-5 mb-md-0 ">
+                        <div class="cta_inside">
+                          <div class="ribbon">
+                          <div class="box">
+                            <span>One-Time or Subscription</span>
+                          </div>
+                          </div>
+                            <div class="cta_img">
+                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                            </div>
+                            <div class="cta_content">
+                               <p>Sildenafil</p>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Effective for 62-82% of men</span>
+                                </div>
+                                <div class="cta_cd_span d-flex">
+                                <img src="https://i.ibb.co/cwNVVwD/13-Pro-2.png">
+                                    <span>Works in 1hr and lasts 4-5hrs</span>
+                                </div>
+                            </div>
+                            <div class="cta_cd_button">
+                                <p><span> $37.00</span></p>
+                                <button>View</button>
+                            </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
                 <h2 class="headings">What Paroxetine?</h2>
                 <p>
                   <span

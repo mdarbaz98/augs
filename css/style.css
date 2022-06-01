@@ -387,7 +387,7 @@ p {
 .onetime-about .main-section,
 .onetime-tandc .main-section,
 .onetime-contact .main-section {
-  margin-top: 1.875rem;
+  margin-top: 0.875rem;
 }
 .onetime-privacy .main-section .main-section-inside1 .image-div,
 .onetime-privacy .main-section .contact-section-inside2 .image-div,
@@ -585,8 +585,11 @@ p {
   color: #ff8700;
   font-size: 15px;
 }
+.categoryproductED .categorysection2 h2 {
+  margin: 1rem auto 3rem;
+}
 .categoryproductED .categorysection2 .categorybox .categorybox_inside {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
   padding: 10px;
   border-radius: 10px;
 }
@@ -614,7 +617,7 @@ p {
   font-size: 15px;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;
@@ -637,9 +640,6 @@ p {
   opacity: 0.9;
   font-size: 1rem;
   background-color: #444547;
-}
-.categoryproductED .categorysection2 .categorybox .categorybox_inside:hover {
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #212529;
@@ -668,6 +668,9 @@ p {
 @media only screen and (max-width: 767px) {
   .categoryproductED .categorysection1_inside1 {
     margin: 0.25rem auto;
+  }
+  .categoryproductED .categorysection2 h2 {
+    margin: 0px auto 12px;
   }
   .categoryproductED .categorysection2 .categorybox {
     padding: 20px 20px 0px 20px;
@@ -1142,6 +1145,120 @@ header .overlay_Div {
 .post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a {
   color: #f8f9fa;
   font-weight: 500;
+}
+.post__page .post-content-section .cta_main #post_cta_slider .owl-nav {
+  bottom: -4rem;
+}
+.post__page .post-content-section .cta_main .ctabox {
+  position: relative;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .ribbon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .box {
+  height: 30px;
+  width: max-content;
+  border: 1px solid #1cab2a;
+  background: #1cab2a;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px 0px 30px;
+  position: relative;
+  border-radius: 0px 6px 0px 0px;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .box span {
+  color: #fff;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .box:before {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 29px;
+  z-index: 1;
+  background: #fff;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+  left: -15px;
+  top: -1px;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem 2rem;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_img img {
+  width: 80px;
+  height: 56px;
+  object-fit: cover;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_content p {
+  font-size: 2rem;
+  margin: 10px 0px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_content .cta_cd_span img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin: 0px 10px 0px 0px;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_content .cta_cd_span span {
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 3px;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button p {
+  margin: 1rem 0rem 2rem 0rem;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button span {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 9px 0px;
+  border-radius: 25px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+  width: 59%;
+  background-color: #212529;
+  left: 55px;
+  font-weight: 700;
+  width: 59%;
+}
+.post__page .post-content-section .cta_main .ctabox .categorybox_inside:hover button {
+  background-color: #212529;
+}
+@media only screen and (max-width: 767px) {
+  .post__page .post-content-section .cta_main #post_cta_slider .owl-nav {
+    bottom: -1rem;
+  }
 }
 .post__page .post-content-section .headings {
   font-size: 1.7rem;

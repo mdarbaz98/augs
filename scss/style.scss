@@ -286,7 +286,7 @@
   }
 
   .main-section {
-    margin-top: 1.875rem;
+    margin-top: 0.875rem;
 
     .main-section-inside1,
     .contact-section-inside2 {
@@ -394,6 +394,10 @@
   }
 
   .categorysection2 {
+    h2 {
+      margin: 1rem auto 3rem;
+    }
+
     .categorybox {
       .categorybox_inside {
         box-shadow: $shadow;
@@ -434,7 +438,7 @@
 
         .cd_button {
           p {
-            margin-top: 3rem;
+            margin-top: 1rem;
           }
 
           span {
@@ -453,8 +457,6 @@
       }
 
       .categorybox_inside:hover {
-        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
-
         button {
           background-color: $color-1;
         }
@@ -492,6 +494,10 @@
     }
 
     .categorysection2 {
+      h2 {
+        margin: 0px auto 12px
+      }
+
       .categorybox {
         padding: 20px 20px 0px 20px;
 
@@ -1038,7 +1044,134 @@ header {
         }
       }
     }
-
+    .cta_main
+    {
+      #post_cta_slider{
+        .owl-nav{
+          bottom: -4rem;
+        }
+      }
+      .ctabox {
+        position: relative;
+      
+        .cta_inside 
+        {
+          box-shadow: $shadow;
+          padding: 10px;
+          border-radius: 10px;
+          .ribbon{
+            position: absolute;
+            right: 0px;
+          top: 0px;
+          z-index: -1;
+          }
+          .box {
+            height: 30px;
+            width: max-content;
+            border: 1px solid #1cab2a;
+            background: #1cab2a;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0px 12px 0px 30px;
+            position: relative;
+            border-radius: 0px 6px 0px 0px;
+            span{
+              color: #fff;
+            }
+          }
+          .box:before{
+            position: absolute;
+            content: "";
+            width: 29px;
+            height: 29px;
+            z-index: 1;
+            background: #fff;
+            border-left: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+            left: -15px;
+            top:-1px ;
+          }
+          .cta_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0rem 2rem;
+      
+            img {
+              width: 80px;
+              height: 56px;
+              object-fit: cover;
+            }
+          }
+      
+          .cta_content {
+            p {
+              font-size: 2rem;
+              margin: 10px 0px;
+              text-align: center;
+              font-family: $heading-font;
+              font-weight: 700;
+            }
+      
+            .cta_cd_span {
+              img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                margin: 0px 10px 0px 0px;
+              }
+      
+              span {
+                font-size: 15px;
+                display: inline-block;
+                margin-top: 3px;
+              }
+            }
+          }
+      
+          .cta_cd_button {
+            p {
+              margin: 1rem 0rem 2rem 0rem;
+            }
+      
+            span {
+              font-size: 22px;
+              font-weight: 500;
+              text-align: center;
+              display: block
+            }
+      
+            button {
+              @include btn(25px, 9px 0px, 0.8rem, $para-font, 100%);
+              position: absolute;
+              bottom: -25px;
+              width: 59%;
+              background-color: #212529;
+              left: 55px;
+              font-weight: 700;
+              width: 59%;
+            }
+          }
+        }
+      
+        .categorybox_inside:hover {
+          button {
+            background-color: $color-1;
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        #post_cta_slider{
+          .owl-nav{
+            bottom: -1rem;
+          }
+        }
+      }
+    }
     .headings {
       font-size: 1.7rem;
       margin: 30px 0px 10px;
@@ -1122,3 +1255,4 @@ header {
 }
 
 // post page css
+
