@@ -72,4 +72,4 @@ $('.moreless-button').click(function () {
   } else {
     $(this).text('Read less')
   }
-})
+});

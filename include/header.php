@@ -30,8 +30,12 @@
                               <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
                          <form class="header-form d-flex">
-                           <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+                           <input class="form-control search-input me-2" type="search" placeholder="Search here..." aria-label="Search">
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
+                           <div class="wrapper">
+                           <ul class="list-unstyled autoCom-Box">
+                           </ul>
+                           </div>
                          </form>
                     </div>
                   </nav>
