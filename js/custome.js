@@ -73,7 +73,6 @@ $('.moreless-button').click(function () {
   } else {
     $(this).text('Read less')
   }
-<<<<<<< HEAD
 });
 
 
@@ -103,7 +102,7 @@ inputBox.onkeyup = (e)=>{
             // passing return data inside li tag
             return data = '<li>'+ data +'</li>';
         });
-        searchWrapper.classList.add("active"); //show autocomplete box
+        suggBox.classList.add("active"); //show autocomplete box
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
@@ -111,19 +110,21 @@ inputBox.onkeyup = (e)=>{
             allList[i].setAttribute("onclick", "select(this)");
         }
     }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+      suggBox.classList.remove("active"); //hide autocomplete box
     }
 }
 
 function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
-    icon.onclick = ()=>{
+    icon.onclick = (e)=>{
+      e.preventDefault();  
+      alert(selectData)
         webLink = "https://www.google.com/search?q=" + selectData;
         linkTag.setAttribute("href", webLink);
-        linkTag.click();
+        webLink.click();
     }
-    searchWrapper.classList.remove("active");
+    suggBox.classList.remove("active");
 }
 
 function showSuggestions(list){
@@ -163,6 +164,3 @@ let suggestions = [
     "What does HTML stands for?",
     "What does CSS stands for?",
 ];
-=======
-})
->>>>>>> 9efc7739fab8e29bd0e3d4e34ddbbb978c6ba1e3
