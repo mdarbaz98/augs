@@ -129,7 +129,7 @@ function initTiny() {
         description: 'creates a question answer',
         content: `                <div class="accordion bottom-accordion-section" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
-          <h2
+          <h3
             class="accordion-header accordian-heading"
             id="panelsStayOpen-headingOne"
           >
@@ -143,7 +143,7 @@ function initTiny() {
             >
               Accordion Item
             </button>
-          </h2>
+          </h3>
           <div
             id="post-accordian-1"
             class="accordion-collapse collapse show"
@@ -175,7 +175,7 @@ function initTiny() {
           </div>
         </div>
         <div class="accordion-item">
-          <h2
+          <h3
             class="accordion-header accordian-heading"
             id="panelsStayOpen-headingTwo"
           >
@@ -189,7 +189,7 @@ function initTiny() {
             >
               Accordion Item
             </button>
-          </h2>
+          </h3>
           <div
             id="panelsStayOpen-collapseTwo"
             class="accordion-collapse collapse"
@@ -221,7 +221,7 @@ function initTiny() {
           </div>
         </div>
         <div class="accordion-item">
-          <h2
+          <h3
             class="accordion-header accordian-heading"
             id="panelsStayOpen-headingThree"
           >
@@ -235,7 +235,7 @@ function initTiny() {
             >
               Accordion Item
             </button>
-          </h2>
+          </h3>
           <div
             id="panelsStayOpen-collapseThree"
             class="accordion-collapse collapse"

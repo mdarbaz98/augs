@@ -1,4 +1,4 @@
-<?php  include('admin/include/config.php');
+<?php include('admin/include/config.php');
     include ('./include/header.php') ?>
 
 
@@ -82,6 +82,7 @@
           </div>
         </div>
       </div>
+      
       <div class="container-fluid">
         <div class="section-2">
           <h2 class="text-center my-4 mb-0 before position-relative m-auto">
