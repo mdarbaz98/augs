@@ -257,19 +257,23 @@ p {
 .section-3 .right-section h3 {
   margin-left: auto;
 }
-.section-3 .right-section .form .form-floating input,
-.section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .normal-form .error {
+  color: red;
+  font-size: 12px;
+}
+.section-3 .right-section .form .normal-form input,
+.section-3 .right-section .form .normal-form textarea {
   background-color: #c4c4c4;
 }
-.section-3 .right-section .form .form-floating input:focus,
-.section-3 .right-section .form .form-floating textarea:focus {
+.section-3 .right-section .form .normal-form input:focus,
+.section-3 .right-section .form .normal-form textarea:focus {
   border: none;
   box-shadow: none;
 }
-.section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .normal-form textarea {
   height: 6.25rem;
 }
-.section-3 .right-section .form .form-floating label {
+.section-3 .right-section .form .normal-form label {
   left: unset;
   right: 0px;
   color: #212529;

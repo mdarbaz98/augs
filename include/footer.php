@@ -21,6 +21,7 @@
         </footer>
         
         <script src="" async defer></script>
+       
         <!-- jquery js  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!-- jquery js  -->
@@ -35,7 +36,18 @@
         <!-- Fontawesom js -->
         <script src="https://kit.fontawesome.com/0068f1418c.js" crossorigin="anonymous"></script>
         <!-- Fontawesom js -->
-        <script src="./js/owlCarousel.js"></script>
+        <!-- validation link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="./js/validation.js"></script>
+    <!-- owl carousel js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+       
+    <script src="./js/owlCarousel.js"></script>
         <script src="./js/custome.js"></script>
+       
+
     </body>
 </html>

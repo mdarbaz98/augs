@@ -34,7 +34,7 @@ include('include/config.php');
     <h4 class="card-title mb-4">Content</h4>                
                 <div class="form-group mx-2" style="position: relative;">
                 <textarea id="content" name="content" class="form-control" rows="50" placeholder="Enter Content"></textarea>
-                <div style="position: absolute;top: 3px;right: 307px;z-index:1;" >
+                <div  class="imageBtn" style="position: absolute;top: 2px;left: 368px;" >
                 <div class="btn upload-btn content_upload ml-2" data-toggle="modal" data-target="#postModalContent">Image <i class="fa-solid fa-arrow-up-from-bracket"></i></div>            
                 </div>   
             </div>
