@@ -18,7 +18,7 @@
                         <img src="https://images.unsplash.com/photo-1555421689-43cad7100750?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ya2luZyUyMG1lbnMlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500">
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2 mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2">
                     <h2>Privacy Policy</h2>
                     <p>We are dedicated to be your trusted online partner for your sexual health and well being journey. If you are here to gain knowledge about sexual health conditions adn know about their medications then you’re at the right spot.</p>
                     <p>By clicking on our website, you maye allow certain information to be shared with us. This allowance helps us to serve you with the best relevant content and sexual health information.</p>

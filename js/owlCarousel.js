@@ -14,3 +14,23 @@ $('#home-owl-carousel,#product-owl-carousel,#categoryproduct-owl-carousel,#post-
         }
     }
 })
+
+$('#post_cta_slider').owlCarousel({
+    loop:true,
+    margin:5,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 5,
+            margin:10
+        },
+        600:{
+            items:1.5
+        },
+        1000:{
+            items:2
+        }
+    }
+})

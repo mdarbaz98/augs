@@ -18,7 +18,7 @@
                         <img src="https://images.unsplash.com/photo-1555421689-43cad7100750?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ya2luZyUyMG1lbnMlMjBwaG90b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500">
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2 mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 main-section-inside2">
                     <h2>Terms and Conditions</h2>
                     <p>When we call out AUGS.com, a.k.a,'American Urogynecologic society', we refer to the
                         website's owners. In terms the'you' is indicated to our respected readers.</p>
