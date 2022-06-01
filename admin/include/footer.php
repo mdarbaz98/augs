@@ -61,6 +61,85 @@
 <!-- modal image upload gallery open -->
 
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div  class="modal-dialog modal-xl custome_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Upload And Set Feature Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Upload</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gallery</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          
+            <div class="container">
+              <div class="row mt-5">
+                <div class="col-sm-10 m-auto">
+                    <form id="form_submit1" class="form">
+                    <label class="form__container" id="upload-container">Choose or Drag & Drop Files
+              <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
+            </label>
+            <div class="form__files-container" id="files-list-container"></div>
+                  
+                    <button class="btn btn-success" type="submit" >Upload File</button>
+                    <input type="hidden" name="btn" value="insert_images"/>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container" id="getall_images">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="row m-auto mt-5">
+            <?php 
+            $images=$conn->prepare("SELECT * FROM images WHERE status=?");
+            $images->execute([1]);
+            $total_images = $images->rowCount();
+            if ($total_images > 0) {
+                while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
+          ?>
+              <div class="col">
+              <div class="img_div">
+              <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="imageChahge(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
+              </div>              
+              </div>
+              <?php } }else{ ?>
+                <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
+                <?php }?>
+            </div>
+
+                </div>
+                <div class="col-sm-4">
+              <div class="card mt-3" id="for_dynamicImage"> 
+              </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" id="postModalContent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div  class="modal-dialog modal-xl custome_modal">
@@ -72,148 +151,66 @@
         </button>
       </div>
       <div class="modal-body">
-
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Upload</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gallery</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="true">Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Gallery</a>
+        </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab">
   
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-sm-10 m-auto">
-            <form id="form_submit2" class="form">
-            <label class="form__container" id="upload-container">Choose or Drag & Drop Files
-      <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
-    </label>
-    <div class="form__files-container" id="files-list-container"></div>
-          
-            <button class="btn btn-success" type="submit" >Upload File</button>
-            <input type="hidden" name="btn" value="insert_images"/>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-  <div class="container" id="getall_images">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="row m-auto mt-5">
-        <?php 
-        $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-        $images->execute([1]);
-        $total_images = $images->rowCount();
-        if ($total_images > 0) {
-            while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
-      ?>
-          <div class="col">
-          <div class="img_div">
-          <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="postImagechange(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
-          </div>              
-          </div>
-          <?php } }else{ ?>
-            <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
-            <?php }?>
-        </div>
-
-            </div>
-            <div class="col-sm-4">
-          <div class="card mt-3" id="for_dynamicImage2"> 
-          </div>
-
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-sm-10 m-auto">
+                <form id="form_submit2" class="form">
+                <label class="form__container" id="upload-container">Choose or Drag & Drop Files
+          <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
+        </label>
+        <div class="form__files-container" id="files-list-container"></div>
+              
+                <button class="btn btn-success" type="submit" >Upload File</button>
+                <input type="hidden" name="btn" value="insert_images"/>
+            </form>
             </div>
           </div>
         </div>
       </div>
-      </div>
-
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div  class="modal-dialog modal-xl custome_modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Upload And Set Feature Image</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Upload</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Gallery</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-sm-10 m-auto">
-            <form id="form_submit1" class="form">
-            <label class="form__container" id="upload-container">Choose or Drag & Drop Files
-      <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
-    </label>
-    <div class="form__files-container" id="files-list-container"></div>
-          
-            <button class="btn btn-success" type="submit" >Upload File</button>
-            <input type="hidden" name="btn" value="insert_images"/>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-  <div class="container" id="getall_images">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="row m-auto mt-5">
-        <?php 
-        $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-        $images->execute([1]);
-        $total_images = $images->rowCount();
-        if ($total_images > 0) {
-            while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
-      ?>
-          <div class="col">
-          <div class="img_div">
-          <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="imageChahge(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
-          </div>              
-          </div>
-          <?php } }else{ ?>
-            <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
-            <?php }?>
-        </div>
+        <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+        <div class="container" id="getall_images">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="row m-auto mt-5">
+              <?php 
+              $images=$conn->prepare("SELECT * FROM images WHERE status=?");
+              $images->execute([1]);
+              $total_images = $images->rowCount();
+              if ($total_images > 0) {
+                  while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
+            ?>
+                <div class="col">
+                <div class="img_div">
+                <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="postImagechange(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
+                </div>              
+                </div>
+                <?php } }else{ ?>
+                  <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
+                  <?php }?>
+              </div>
 
-            </div>
-            <div class="col-sm-4">
-          <div class="card mt-3" id="for_dynamicImage"> 
-          </div>
+                  </div>
+                  <div class="col-sm-4">
+                <div class="card mt-3" id="for_dynamicImage2"> 
+                </div>
 
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      </div>
+            </div>
 
       </div>
       <div class="modal-footer">
@@ -234,68 +231,66 @@
         </button>
       </div>
       <div class="modal-body">
-
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true">Upload</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="false">Gallery</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
-  
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-sm-10 m-auto">
-            <form id="form_submit" class="form">
-            <label class="form__container" id="upload-container">Choose or Drag & Drop Files
-      <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
-    </label>
-    <div class="form__files-container" id="files-list-container"></div>
-          
-            <button class="btn btn-success" type="submit" >Upload File</button>
-            <input type="hidden" name="btn" value="insert_images"/>
-        </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
-    <h1>fgdgfdgfdgdf</h1>
-  <div class="container" id="getall_images">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="row m-auto mt-5">
-        <?php 
-        $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-        $images->execute([1]);
-        $total_images = $images->rowCount();
-        if ($total_images > 0) {
-            while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
-      ?>
-          <div class="col">
-          <div class="img_div">
-          <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="contenImage(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
-          </div>              
-          </div>
-          <?php } }else{ ?>
-            <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
-            <?php }?>
-        </div>
-
-            </div>
-            <div class="col-sm-4">
-          <div class="card mt-3" id="for_dynamicImage1"> 
-          </div>
-
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true">Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="false">Gallery</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+      
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-sm-10 m-auto">
+                <form id="form_submit" class="form">
+                <label class="form__container" id="upload-container">Choose or Drag & Drop Files
+          <input class="form__file" id="upload-files" name="files[]" type="file" accept="image/*" multiple="multiple"/>
+        </label>
+        <div class="form__files-container" id="files-list-container"></div>
+              
+                <button class="btn btn-success" type="submit" >Upload File</button>
+                <input type="hidden" name="btn" value="insert_images"/>
+            </form>
             </div>
           </div>
         </div>
       </div>
-      </div>
+  
+        <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab1">
+        <div class="container" id="getall_images">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="row m-auto mt-5">
+              <?php 
+              $images=$conn->prepare("SELECT * FROM images WHERE status=?");
+              $images->execute([1]);
+              $total_images = $images->rowCount();
+              if ($total_images > 0) {
+                  while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
+            ?>
+                <div class="col">
+                <div class="img_div">
+                <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="contenImage(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
+                </div>              
+                </div>
+                <?php } }else{ ?>
+                  <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
+                  <?php }?>
+              </div>
+
+                  </div>
+                  <div class="col-sm-4">
+                <div class="card mt-3" id="for_dynamicImage1"> 
+                </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
 
       </div>
       <div class="modal-footer">

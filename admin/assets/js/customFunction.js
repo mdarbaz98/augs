@@ -21,8 +21,8 @@ $('#form_submit,#form_submit1,#form_submit2').validate({
         alert(data)
         getAllimages()
         $('.nav-link').removeClass('active')
-        $('#profile-tab,#profile-tab1').click()
-        $('#profile-tab,#profile-tab1').addClass('active')
+        $('#profile-tab,#profile-tab1,#profile-tab2').click()
+        $('#profile-tab,#profile-tab1,#profile-tab2').addClass('active')
 
         // console.log(data)
 
