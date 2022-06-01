@@ -27,7 +27,7 @@ include('include/config.php');
       <h4 class="card-title mb-4">Content</h4>        
                 <div class="form-group  mx-2" style="position: relative;">
                 <textarea id="content" name="content" class="form-control" rows="50" placeholder="Type here..."></textarea>
-                <div style="position: absolute;top: 3px;right: 307px;z-index:1;">
+                <div class="imageBtn">
                 <div class="btn upload-btn content_upload" data-toggle="modal" data-target="#exampleModalContent">Image <i class="fa-solid fa-arrow-up-from-bracket"></i></div>            
                 </div>
               </div>

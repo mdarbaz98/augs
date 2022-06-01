@@ -6395,7 +6395,7 @@ input::placeholder {
 .header-btn a {
   color: white;
 }
-#addPost .row .card .card-body  .imageBtn{
+.imageBtn{
   position:absolute;
   top: 3px;
   left:  368px;
