@@ -54,7 +54,7 @@
     }
     .owl-nav {
       display: flex;
-      gap: 25px;
+      gap: 20px;
       position: absolute;
       bottom: -3rem;
       justify-content: center;
@@ -128,3 +128,96 @@
   
 }
 
+@mixin  categoryProductCTA {
+  .categorysection2 {
+    .categorybox {
+      .categorybox_inside {
+        box-shadow: $shadow;
+        padding: 10px;
+        border-radius: 10px;
+
+        .categorybox_img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem;
+
+          img {
+            width: 80px;
+            height: 56px;
+            object-fit: cover;
+          }
+        }
+
+        .categorydetail_content {
+          h2 {
+            font-size: 20px;
+            margin: 10px 0px;
+          }
+
+          .cd_span {
+            i {
+              font-size: 11px;
+              color: $color-1;
+              margin: 10px 10px 0px 0px;
+            }
+
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .cd_button {
+          p {
+            margin-top: 3rem;
+          }
+
+          span {
+            font-size: 22px;
+            font-weight: 500;
+          }
+
+          button {
+            @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
+            margin: 0px auto;
+            opacity: 0.9;
+            font-size: 1rem;
+            background-color: #444547;
+          }
+        }
+      }
+
+      .categorybox_inside:hover {
+        box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 25%);
+
+        button {
+          background-color: $color-1;
+        }
+      }
+    }
+
+    .outerline {
+      padding: 4px;
+      border: solid 2px $color-1;
+      border-radius: 35px;
+      height: 45px;
+      width: fit-content;
+      margin: 3rem auto;
+    }
+
+    button {
+      font-family: "Ubuntu", sans-serif;
+      padding: 8px 0px;
+      border-radius: 15px;
+      border: none;
+      color: #f8f9fa;
+      letter-spacing: 0.7px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      background-color: $color-1;
+      display: block;
+      width: 136px;
+    }
+  }
+}

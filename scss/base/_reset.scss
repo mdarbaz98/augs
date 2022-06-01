@@ -35,9 +35,9 @@ html{
     }
     @include mediaScreen(i-phone){
         font-size: 100%;
-        // p{
-        //     font-size: 1.1875rem;
-        // }
+        p{
+            font-size: 1.1875rem;
+        }
     }
     @include mediaScreen(desktop){
         font-size: 100%;
