@@ -154,9 +154,10 @@ p {
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
-  width: 100%;
+  width: fit-content;
   height: 15.75rem;
   object-fit: cover;
+  margin: 0px 75px;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
@@ -260,19 +261,23 @@ p {
 .section-3 .right-section h3 {
   margin-left: auto;
 }
-.section-3 .right-section .form .form-floating input,
-.section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .normal-form .error {
+  color: red;
+  font-size: 12px;
+}
+.section-3 .right-section .form .normal-form input,
+.section-3 .right-section .form .normal-form textarea {
   background-color: #c4c4c4;
 }
-.section-3 .right-section .form .form-floating input:focus,
-.section-3 .right-section .form .form-floating textarea:focus {
+.section-3 .right-section .form .normal-form input:focus,
+.section-3 .right-section .form .normal-form textarea:focus {
   border: none;
   box-shadow: none;
 }
-.section-3 .right-section .form .form-floating textarea {
+.section-3 .right-section .form .normal-form textarea {
   height: 6.25rem;
 }
-.section-3 .right-section .form .form-floating label {
+.section-3 .right-section .form .normal-form label {
   left: unset;
   right: 0px;
   color: #212529;
@@ -343,6 +348,13 @@ p {
   .section-1 .home__leftSection .three-div-container .home-div p {
     font-size: 1rem !important;
   }
+}
+.onetime-privacy .error,
+.onetime-about .error,
+.onetime-tandc .error,
+.onetime-contact .error {
+  color: red;
+  font-size: 12px;
 }
 .onetime-privacy .onetime-banner-img,
 .onetime-about .onetime-banner-img,

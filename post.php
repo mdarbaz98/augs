@@ -1,14 +1,47 @@
-<?php include ('./include/header.php') ?>
+<?php  include('admin/include/config.php');
+    include ('./include/header.php') ?>
+
+
+    
     <section class="post__page pt-5 pt-md-0">
       <div
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
       >
         <div class="container-fluid">
+<<<<<<< HEAD
           <h2 class="text-center position-relative mx-auto my-5">everything you need to know about Sildenafil for PE</h2>
+=======
+          <?php
+          $sql = "SELECT * FROM `post` WHERE status=1 AND id=15";
+          $stmt = $conn->prepare($sql);
+          $stmt->execute();
+          $i=1;
+          $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          if (!empty($data)) {
+          foreach ($data as $data)
+          {  $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+             $stmt_img->execute([$data['img_id']]);
+             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+             if (!empty($img_data)) {
+              $image = $img_data[0]['path']; 
+              $alt = $img_data[0]['alt'];
+            }else{
+              $image="Not Found";
+              $alt="Not Found";
+             }
+            // echo "<pre>";
+            // print_r($data);
+            // echo "</pre>";
+            $content = $data['content'];
+            }
+          }
+          ?>
+          <h2 class="before position-relative mx-auto my-5">Paroxetine</h2>
+>>>>>>> af21973e769d1fbe7369b1e1a80fa69c410bb86c
           <img
             class="post-banner-img"
-            src="https://dronexl.co/wp-content/uploads/2021/09/Screen-Shot-2021-09-09-at-19.32.51.jpg"
-            alt=""
+            src="admin/<?php echo $image ?>"
+            alt="<?php echo $alt ?>"
           />
           <p class="mt-2">Publish : 23-01-2020</p>
         </div>
@@ -45,111 +78,7 @@
             <div class="col-lg-6 col-12">
               <div class="container p-0 overflow-hidden">
                 <div class="blog-body">
-                <h2 class="headings" id="h1">What is PE?</h2>
-                <p>
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum provident quo placeat officia veniam in iusto
-                    quas dolor animi, suscipit fugit illum modi voluptatibus
-                    maxime asperiores. Iusto, dolores eligendi? Esse.</span
-                  ><span
-                    >Repudiandae architecto, harum iste nemo minus nostrum
-                    doloremque? Sit, ipsum corrupti saepe sed est voluptatum
-                    nihil repellendus quo nobis nesciunt ipsa laboriosam
-                    similique vitae excepturi quos. Repudiandae dolores beatae
-                    iste.</span
-                  ><span
-                    >Optio consequuntur inventore minima, placeat eos reiciendis
-                    aspernatur doloribus repellendus deleniti, sint iusto
-                    officiis ea, dolorum dolorem earum cum non perferendis.
-                    Dolor dolorem magni fugit dolorum, quibusdam quidem nobis
-                    nulla.</span
-                  >
-                </p>
-                <p>
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum provident quo placeat officia veniam in iusto
-                    quas dolor animi, suscipit fugit illum modi voluptatibus
-                    maxime asperiores. Iusto, dolores eligendi? Esse.</span
-                  ><span
-                    >Repudiandae architecto, harum iste nemo minus nostrum
-                    doloremque? Sit, ipsum corrupti saepe sed est voluptatum
-                    nihil repellendus quo nobis nesciunt ipsa laboriosam
-                    similique vitae excepturi quos. Repudiandae dolores beatae
-                    iste.</span
-                  ><span
-                    >Optio consequuntur inventore minima, placeat eos reiciendis
-                    aspernatur doloribus repellendus deleniti, sint iusto
-                    officiis ea, dolorum dolorem earum cum non perferendis.
-                    Dolor dolorem magni fugit dolorum, quibusdam quidem nobis
-                    nulla.</span
-                  >
-                </p>
-                <!-- <button class="sq-btn mx-auto">CTA's</button> -->
-                
-                <h2 class="headings">What Paroxetine?</h2>
-                <p>
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum provident quo placeat officia veniam in iusto
-                    quas dolor animi, suscipit fugit illum modi voluptatibus
-                    maxime asperiores. Iusto, dolores eligendi? Esse.</span
-                  ><span
-                    >Repudiandae architecto, harum iste nemo minus nostrum
-                    doloremque? Sit, ipsum corrupti saepe sed est voluptatum
-                    nihil repellendus quo nobis nesciunt ipsa laboriosam
-                    similique vitae excepturi quos. Repudiandae dolores beatae
-                    iste.</span
-                  ><span
-                    >Optio consequuntur inventore minima, placeat eos reiciendis
-                    aspernatur doloribus repellendus deleniti, sint iusto
-                    officiis ea, dolorum dolorem earum cum non perferendis.
-                    Dolor dolorem magni fugit dolorum, quibusdam quidem nobis
-                    nulla.</span
-                  >
-                </p>
-                <p>
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum provident quo placeat officia veniam in iusto
-                    quas dolor animi, suscipit fugit illum modi voluptatibus
-                    maxime asperiores. Iusto, dolores eligendi? Esse.</span
-                  ><span
-                    >Repudiandae architecto, harum iste nemo minus nostrum
-                    doloremque? Sit, ipsum corrupti saepe sed est voluptatum
-                    nihil repellendus quo nobis nesciunt ipsa laboriosam
-                    similique vitae excepturi quos. Repudiandae dolores beatae
-                    iste.</span
-                  ><span
-                    >Optio consequuntur inventore minima, placeat eos reiciendis
-                    aspernatur doloribus repellendus deleniti, sint iusto
-                    officiis ea, dolorum dolorem earum cum non perferendis.
-                    Dolor dolorem magni fugit dolorum, quibusdam quidem nobis
-                    nulla.</span
-                  >
-                </p>
-                <h2 class="headings">Is Paroxetine</h2>
-                <p>
-                  <span
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum provident quo placeat officia veniam in iusto
-                    quas dolor animi, suscipit fugit illum modi voluptatibus
-                    maxime asperiores. Iusto, dolores eligendi? Esse.</span
-                  ><span
-                    >Repudiandae architecto, harum iste nemo minus nostrum
-                    doloremque? Sit, ipsum corrupti saepe sed est voluptatum
-                    nihil repellendus quo nobis nesciunt ipsa laboriosam
-                    similique vitae excepturi quos. Repudiandae dolores beatae
-                    iste.</span
-                  ><span
-                    >Optio consequuntur inventore minima, placeat eos reiciendis
-                    aspernatur doloribus repellendus deleniti, sint iusto
-                    officiis ea, dolorum dolorem earum cum non perferendis.
-                    Dolor dolorem magni fugit dolorum, quibusdam quidem nobis
-                    nulla.</span
-                  >
-                </p>
+                    <?php echo $content ?>
                 </div>
                 <div class="accordion bottom-accordion-section" id="accordionPanelsStayOpenExample">
                   <div class="accordion-item">

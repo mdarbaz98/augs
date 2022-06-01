@@ -64,7 +64,6 @@ $(document).ready(function () {
     $('.post-sticky-accordion-btn').click()
   })
 })
-
 // readmore
 $('.moreless-button').click(function () {
   $('.moretext').slideToggle()

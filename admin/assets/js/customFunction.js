@@ -21,8 +21,8 @@ $('#form_submit,#form_submit1,#form_submit2').validate({
         alert(data)
         getAllimages()
         $('.nav-link').removeClass('active')
-        $('#profile-tab,#profile-tab1').click()
-        $('#profile-tab,#profile-tab1').addClass('active')
+        $('#profile-tab,#profile-tab1,#profile-tab2').click()
+        $('#profile-tab,#profile-tab1,#profile-tab2').addClass('active')
 
         // console.log(data)
 
@@ -328,6 +328,48 @@ function trashProduct(id) {
       success: function (data) {
         if (data == 'trashed') {
           alert('Product Successfully Trashed')
+          location.reload()
+        }
+      },
+    })
+  }
+}
+//Trash enquiry
+function trashEnquiry(id) {
+  var x = confirm('Are you sure you want to trash this?')
+  if (x) {
+    $.ajax({
+      type: 'POST',
+      url: 'action.php',
+      dataType: 'html',
+      data: {
+        trashEnquiry_id: id,
+        btn: 'trashEnquiry_id',
+      },
+      success: function (data) {
+        if (data == 'trashed') {
+          alert('Enquiry Successfully Trashed')
+          location.reload()
+        }
+      },
+    })
+  }
+}
+// delete enquiry
+function deleteEnquiry(id) {
+  var x = confirm('Are you sure you want to delete this?')
+  if (x) {
+    $.ajax({
+      type: 'POST',
+      url: 'action.php',
+      dataType: 'html',
+      data: {
+        deleteEnquiry_id: id,
+        btn: 'deleteEnquiry_id',
+      },
+      success: function (data) {
+        if (data == 'deleted') {
+          alert('Enquiry Successfully deleteed')
           location.reload()
         }
       },

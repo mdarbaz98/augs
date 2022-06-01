@@ -1,4 +1,6 @@
-<?php include('./include/header.php') ?>
+<?php include('admin/include/config.php');
+      include('./include/header.php');
+?>
     <section class="section_blogpage">
         <div class="blog-heading-content">
             <h1>AUGS health blog</h1>

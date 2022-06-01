@@ -1,4 +1,6 @@
-<?php include('./include/header.php') ?>
+<?php include('./include/header.php');
+    echo $cat = $_GET['cat'];
+?>
     <section class="categoryproductED">
         <div class="categorysection1">
             <div class="container">

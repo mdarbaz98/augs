@@ -149,6 +149,7 @@
   }
 
   .right-section {
+    
     max-width: 500px;
 
     h3 {
@@ -156,8 +157,11 @@
     }
 
     .form {
-      .form-floating {
-
+      .normal-form {
+        .error{
+          color: red;
+          font-size: 12px;
+        }
         input,
         textarea {
           background-color: $input;
@@ -250,6 +254,10 @@
 .onetime-about,
 .onetime-tandc,
 .onetime-contact {
+  .error{
+    color: red;
+    font-size: 12px;
+  }
   .onetime-banner-img {
     position: relative;
   }

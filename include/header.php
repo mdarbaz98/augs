@@ -6,22 +6,19 @@
         <title>Augs</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="http://localhost/augs/">
         <!-- owl carousel  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
         <!-- owl carousel  -->
-
         <!-- Font Awesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Font Awesome  -->
-
         <!-- Bootstrap CDN  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
         <!-- Bootstrap CDN  -->
-        
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        
         <header>
             <section class="header">
                 <nav class="navbar fixed-top py-md-3 px-md-4 navbar-expand-lg">
@@ -30,7 +27,7 @@
                             <button class="btn menu-open-btn text-white ">
                               <i class="fa-solid fa-bars"></i>
                               </button>
-                              <a class="navbar-brand" href="./index.php"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
+                              <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
                          <form class="header-form d-flex">
                            <input class="form-control search-input me-2" type="search" placeholder="Search here..." aria-label="Search">
@@ -104,10 +101,10 @@
                                 </div>
                             </div></li>
                             <li class="menu-list">
-                              <h2 class="menu-links"><a href="./aboutus.php">About Us</a></h2>
+                              <h2 class="menu-links"><a href="about">About Us</a></h2>
                           </li>
                             <li class="menu-list">
-                              <h2 class="menu-links"><a href="./contact.php">Contact Us</a></h2>
+                              <h2 class="menu-links"><a href="contact">Contact Us</a></h2>
                           </li>
                         </ul>
                     </div>

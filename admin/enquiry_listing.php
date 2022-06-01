@@ -12,10 +12,10 @@ include('include/config.php');
 					<div class="col-12">
 						<div class="page-title-box d-sm-flex align-items-center justify-content-between">
 							<div>
-								<h4 class="mb-sm-0 font-size-18">Add Enquiry</h4></div>
+								<h4 class="mb-sm-0 font-size-18">Enquiry</h4></div>
 							<div class="page-title-right">
 								<ol class="breadcrumb m-0">
-									<li class="breadcrumb-item"><a href="javascript: void(0);">Draft</a></li>
+									<li class="breadcrumb-item"><a href="trash_enquiry.php">trash</a></li>
 								
 								</ol>
 							</div>
@@ -41,20 +41,20 @@ include('include/config.php');
 											<thead>
 												<tr role="row">
 													<th>Sr No.</th>
-													<th>Image</th>
-													<th>Name</th>
-													<th>Title</th>
-													<th>Description</th>
-													<th>Uploaded</th>
 													
-													<th>Edit</th>
+													<th>Name</th>
+													<th>Email</th>
+													<th>Contact</th>
+													<th>Msg</th>
+													
+													
 													<th>Delete</th>
 												</tr>
 											</thead>
 											<tbody>
 												<?php
 													  	$per_page = 10;
-															$stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC");
+															$stmt = $conn->prepare("SELECT * FROM `enquiry` WHERE status=1 ORDER BY id DESC");
 															$stmt->execute();
 															$number_of_rows = $stmt->fetchColumn();
 															$page = ceil($number_of_rows/$per_page);
@@ -66,35 +66,31 @@ include('include/config.php');
 																$start--;
 																$start = $start*$per_page;
 															}
-                                $sql = "SELECT * FROM `category` ORDER BY id DESC LIMIT $start,$per_page";
+                                $sql = "SELECT * FROM `enquiry` WHERE status=1 ORDER BY id DESC LIMIT $start,$per_page";
                                 $stmt = $conn->prepare($sql);
                                 $stmt->execute();
                                 $i=1;
                                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 if (!empty($data)) {
                                 foreach ($data as $data)
-                                {  $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-                                   $stmt1->execute([$data['img_id']]);
-                                   $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);?>
+                                {  ?>
 													<tr class="odd">
 														<td class="sorting_1 dtr-control" tabindex="0">
 															<?php echo $i; ?>
 														</td>
-														<td><img src="<?php echo $img_data[0]['path']; ?>" alt="<?php echo $img_data[0]['alt']; ?>" class="custome_img"></td>
 														<td>
 															<?php echo $data['name'] ?>
 														</td>
 														<td>
-															<?php echo $data['title'] ?>
+															<?php echo $data['email'] ?>
 														</td>
 														<td>
-															<?php echo $data['description'] ?>
+															<?php echo $data['contact'] ?>
 														</td>
 														<td>
-															<?php echo $data['date'] ?>
+															<?php echo $data['msg'] ?>
 														</td>
-															<td><a href="category_update.php?id=<?php echo $data['id']; ?>" class="btn btn-success"><i class="fas fa-edit"></i></td>                                   
-                                  <td><a class="btn btn-danger" href="javascript:void(0)" onclick="deleteCategory(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
+                                  <td><a class="btn btn-danger" href="javascript:void(0)" onclick="trashEnquiry(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
 													</tr>
 													<?php $i++; } }?>
 											</tbody>
