@@ -151,9 +151,10 @@ p {
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
-  width: 100%;
+  width: fit-content;
   height: 15.75rem;
   object-fit: cover;
+  margin: 0px 75px;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
@@ -344,6 +345,13 @@ p {
   .section-1 .home__leftSection .three-div-container .home-div p {
     font-size: 1rem !important;
   }
+}
+.onetime-privacy .error,
+.onetime-about .error,
+.onetime-tandc .error,
+.onetime-contact .error {
+  color: red;
+  font-size: 12px;
 }
 .onetime-privacy .onetime-banner-img,
 .onetime-about .onetime-banner-img,
