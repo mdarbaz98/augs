@@ -12,12 +12,9 @@ include('include/config.php');
 					<div class="col-12">
 						<div class="page-title-box d-sm-flex align-items-center justify-content-between">
 							<div>
-								<h4 class="mb-sm-0 font-size-18">Enquiry</h4></div>
+								<h4 class="mb-sm-0 font-size-18">Enquiry Trash List</h4></div>
 							<div class="page-title-right">
-								<ol class="breadcrumb m-0">
-									<li class="breadcrumb-item"><a href="trash_enquiry.php">trash</a></li>
 								
-								</ol>
 							</div>
 						</div>
 					</div>
@@ -45,8 +42,7 @@ include('include/config.php');
 													<th>Name</th>
 													<th>Email</th>
 													<th>Contact</th>
-													<th>Msg</th>
-													
+													<th>Msg</th>													
 													
 													<th>Delete</th>
 												</tr>
@@ -54,7 +50,7 @@ include('include/config.php');
 											<tbody>
 												<?php
 													  	$per_page = 10;
-															$stmt = $conn->prepare("SELECT * FROM `enquiry` WHERE status=1 ORDER BY id DESC");
+															$stmt = $conn->prepare("SELECT * FROM `enquiry` WHERE status=0 ORDER BY id DESC");
 															$stmt->execute();
 															$number_of_rows = $stmt->fetchColumn();
 															$page = ceil($number_of_rows/$per_page);
@@ -66,7 +62,7 @@ include('include/config.php');
 																$start--;
 																$start = $start*$per_page;
 															}
-                                $sql = "SELECT * FROM `enquiry` WHERE status=1 ORDER BY id DESC LIMIT $start,$per_page";
+                                $sql = "SELECT * FROM `enquiry` WHERE status=0 ORDER BY id DESC LIMIT $start,$per_page";
                                 $stmt = $conn->prepare($sql);
                                 $stmt->execute();
                                 $i=1;
@@ -90,7 +86,7 @@ include('include/config.php');
 														<td>
 															<?php echo $data['msg'] ?>
 														</td>
-                                  <td><a class="btn btn-danger" href="javascript:void(0)" onclick="trashEnquiry(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
+                                  <td><a class="btn btn-danger" href="javascript:void(0)" onclick="deleteEnquiry(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
 													</tr>
 													<?php $i++; } }?>
 											</tbody>

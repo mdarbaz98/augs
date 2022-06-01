@@ -187,8 +187,18 @@ if($_POST['btn']=='addUser'){
     echo 'deleted';
     }
 //   user ends here
-
-
+ // Trash enquiry
+ if($_POST['btn']=='trashEnquiry_id'){
+    $update = $conn->prepare('UPDATE enquiry SET status=0 WHERE id=?');
+    $update->execute([$_POST['trashEnquiry_id']]);
+    echo 'trashed';
+    }
+//   DELETE enquiry
+if($_POST['btn']=='deleteEnquiry_id'){
+    $update = $conn->prepare('DELETE FROM  enquiry WHERE id=?');
+    $update->execute([$_POST['deleteEnquiry_id']]);
+    echo 'deleted';
+    }
  // post start here
 // delete post
 if($_POST['btn']=='deletePost_id'){

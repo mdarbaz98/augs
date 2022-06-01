@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.1"
   },
   "name": "augs",
   "version": "1.0.0",
