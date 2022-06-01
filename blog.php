@@ -3,7 +3,7 @@
 ?>
     <section class="section_blogpage">
         <div class="blog-heading-content">
-            <h1>AUGS health blog</h1>
+            <h1>PE blogs</h1>
             <p>Bring a difference in your everyday life with our blogs and articles. We provide you thorough and verified information so you can live the best way possible.</p>
         </div>
         <!-- 1 -->
