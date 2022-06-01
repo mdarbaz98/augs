@@ -254,6 +254,10 @@
 .onetime-about,
 .onetime-tandc,
 .onetime-contact {
+  .error{
+    color: red;
+    font-size: 12px;
+  }
   .onetime-banner-img {
     position: relative;
   }

@@ -25,9 +25,10 @@
     @extend .shadow;
     .blog-card-img-div {
       img {
-        width: 100%;
+        width: fit-content;
         height: 15.75rem;
         object-fit: cover;
+        margin: 0px 75px;
       }
     }
     .blog-desc-sec {
