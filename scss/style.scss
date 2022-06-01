@@ -149,6 +149,7 @@
   }
 
   .right-section {
+    
     max-width: 500px;
 
     h3 {
@@ -156,8 +157,11 @@
     }
 
     .form {
-      .form-floating {
-
+      .normal-form {
+        .error{
+          color: red;
+          font-size: 12px;
+        }
         input,
         textarea {
           background-color: $input;
@@ -214,7 +218,7 @@
 
       .right__homeSection {
         .image-div {
-          height: 350px;
+          height: 400px;
         }
       }
     }
@@ -250,6 +254,10 @@
 .onetime-about,
 .onetime-tandc,
 .onetime-contact {
+  .error{
+    color: red;
+    font-size: 12px;
+  }
   .onetime-banner-img {
     position: relative;
   }
@@ -295,7 +303,7 @@
 
     .main-section-inside2 {
       p {
-        font-size: 1rem;
+        // font-size: 1rem;
       }
     }
 
@@ -303,7 +311,7 @@
       margin-top: 5rem;
 
       p {
-        font-size: 1.125rem;
+        // font-size: 1.125rem;
       }
     }
 
@@ -630,9 +638,11 @@
     border-bottom: solid 1px #fff;
 
     .logo__div {
-      img {
-        width: 80px;
+      a{
         margin-right: auto;
+        img {
+          width: 80px;
+        }
       }
 
       @media screen and (max-width: 767px) {
@@ -665,7 +675,7 @@ header {
 
   // z-index: 10;
   .logo-img {
-    width: 60px;
+    width: 70px;
   }
 
   .navbar {
@@ -689,7 +699,22 @@ header {
       position: relative;
       height: 2.125rem;
       width: 18.75rem;
-
+      .autoCom-Box{
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+        background-color: #f1f1f1;
+        li{
+          padding: 5px 10px;
+          font-family: $para-font;
+          cursor: pointer;
+          &:hover{
+            background-color: #ffffff;
+          }
+        }
+      }
       input {
         border-radius: 50px;
         font-family: $para-font;
@@ -746,7 +771,7 @@ header {
     }
 
     .menu-close-btn {
-      font-size: 20px;
+      font-size: 25px;
 
       &:focus {
         box-shadow: none;
@@ -835,6 +860,7 @@ header {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1031;
+    overflow: hidden;
   }
 }
 
@@ -915,6 +941,7 @@ header {
         color: $color-9;
         padding: 8px 10px;
         border-radius: 6px;
+        font-size: 1.2rem;
 
         &::after {
           filter: brightness(25);
@@ -945,6 +972,7 @@ header {
 
         p {
           color: $color-1;
+          font-size: 1.1rem;
         }
       }
     }
@@ -975,11 +1003,21 @@ header {
 
 // post page css
 .post__page {
-  .post-banner-img {
-    height: 500px;
-    width: 100%;
-    border-radius: 6px;
-    object-fit: cover;
+  .post-banner-section{
+    .post-banner-img {
+      height: 500px;
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    h2{
+      text-decoration: underline;
+      text-transform: capitalize;
+    }
+    p{
+      font-family: $para-font;
+      color: $color-4;
+    }
   }
 
   .post-content-section {
@@ -1006,7 +1044,7 @@ header {
 
       position: sticky;
       top: 90px;
-
+      z-index: 2;
       .table-of-content {
         li {
           border: solid 1px $color-1;
@@ -1181,6 +1219,8 @@ header {
       font-family: $para-font;
     }
 
+    @include categoryProductCTA;
+
     .sq-btn {
       @include btn;
     }
@@ -1196,17 +1236,21 @@ header {
             box-shadow: none;
             border: none;
             font-weight: 600;
-            // width: 300px;
-            display: flex;
-            justify-content: space-between;
-
+            color: $color-1;
             &::after {
-              display: none;
+              // background-image: url('../assets/images/minus.png');
+              background-image: url('../assets/images/plus.png');
             }
 
             &:not(.collapsed) {
               background-color: unset;
               color: $color-1;
+              &::after {
+                filter: brightness(0);
+                // background-image: url('../assets/images/plus.png');
+              background-image: url('../assets/images/minus.png');
+
+              }
             }
 
             span {
@@ -1222,12 +1266,18 @@ header {
   }
 }
 
+@media screen and (max-width: 399px) {
+  .augs-logo{
+    width: 60px !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .post__page {
     padding: 10px;
 
     .post-banner-img {
-      height: 200px;
+      height: 200px !important;
     }
 
     .accordian-heading {

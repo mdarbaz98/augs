@@ -32,25 +32,25 @@
             <div class="col-12 col-md-12">
               <div class="right-section ms-auto">
                 <h3 class="text-md-end text-center my-3 d-none d-md-block before position-relative">Enquiry Form</h3>
-                <form class="form mt-4" action="">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Jhon">
-                    <label for="floatingInput">Your name</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label  for="floatingInput">Your email address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="9999 9999 99">
-                    <label for="floatingInput">Your contact</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Your message</label>
-                  </div>
-                  <button class="">Submit</button>
-                </form>
+
+                <form class="form mt-4" id="enquiry">
+								<div class="form mb-2">
+									<input type="text" class="form-control p-3" id="name" name="name" placeholder="Your name">
+									<label for="name"></label>
+								</div>
+								<div class="form mb-3">
+									<input type="email" class="form-control p-3" id="email" name="email" placeholder="Your email address"> </div>
+								<div class="form mb-3">
+									<input type="text" class="form-control p-3" id="contact" name="contact" placeholder="Your contact"> </div>
+								<div class="form mb-4">
+									<textarea class="form-control p-3" placeholder="Leave a comment here" name="msg" id="msg"></textarea>
+								</div>
+								<div>
+									<input type="hidden" name="btn" value="addEnquiry">
+									<button type="submit">Submit</button>
+								</div>
+							</form>
+
               </div>
             </div>
           </div>

@@ -39,7 +39,7 @@
       </div>
       <div class="bottom-section pt-5 pb-4">
         <h2 class="before position-relative mx-auto">Products Content</h2>
-        <div class="container py-5">
+        <div class="container pt-5 pb-2">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item mb-3">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -60,15 +60,7 @@
                 aria-labelledby="panelsStayOpen-headingOne"
               >
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
                 </div>
               </div>
             </div>

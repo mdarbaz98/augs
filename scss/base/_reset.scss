@@ -33,8 +33,14 @@ html{
             font-size: 1.1875rem;
         }
     }
+    @include mediaScreen(i-phone){
+        font-size: 100%;
+        p{
+            font-size: 1.1875rem;
+        }
+    }
     @include mediaScreen(desktop){
-        font-size: 85%;
+        font-size: 100%;
     }
 }
 

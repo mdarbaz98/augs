@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^/?$ index.php [NC,L]
+RewriteRule ^about/?$ aboutus.php [NC,L]
+RewriteRule ^contact/?$ contact.php [NC,L]
+RewriteRule ^privacypolicy/?$ privacypolicy.php [NC,L]
+RewriteRule ^termsandconditions/?$ termsandconditions.php [NC,L]
+RewriteRule ^category/([^/\.]+)/?$ categoryproduct.php?cat=$1 [NC,L]
+RewriteRule ^([a-zA_Z_-]+)$ post.php?slug=$1 [NC,L]
