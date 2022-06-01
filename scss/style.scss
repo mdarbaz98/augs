@@ -706,10 +706,14 @@ header {
         width: 100%;
         padding: 10px 15px 10px 15px;
         background-color: #f1f1f1;
+        display: none;
         li{
           padding: 5px 10px;
           font-family: $para-font;
           cursor: pointer;
+          a{
+            color: $color-1;
+          }
           &:hover{
             background-color: #ffffff;
           }

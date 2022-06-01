@@ -33,8 +33,11 @@
                            <input class="form-control search-input me-2" type="search" placeholder="Search here..." aria-label="Search">
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                            <div class="wrapper">
-                           <ul class="list-unstyled autoCom-Box">
-                           </ul>
+                           <ul class="text-black list-unstyled autoCom-Box">
+                             <li><a href="">skdf</a></li>
+                             <li><a href="">tata</a></li>
+                             <li><a href="">oopopo</a></li>
+                             </ul>
                            </div>
                          </form>
                     </div>
