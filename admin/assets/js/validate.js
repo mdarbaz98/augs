@@ -60,10 +60,10 @@ $('#updateCta').validate({
 $('#product_form').validate({
   rules: {
     pro_name: 'required',
-    desc: 'required',
+    pro_desc: 'required',
     strn: { required: true },
     prc: { required: true },
-    disc: {
+    slug: {
       required: true,
     },
     link: {
@@ -96,10 +96,10 @@ $('#product_form').validate({
 $('#updateProduct').validate({
   rules: {
     pro_name: 'required',
-    desc: 'required',
+    pro_desc_update: 'required',
     strn: { required: true },
     prc: { required: true },
-    disc: {
+    slug: {
       required: true,
     },
     link: {

@@ -46,13 +46,15 @@ include('include/config.php');
 										<input type="text" class="form-control" id="prc" name="prc" placeholder="SEO Title"> </div>
 								</div>
 								<div class="d-flex my-4">
-									<div class="form-group  mx-3  w-100">
-										<label for="horizontal-firstname-input" class="col-form-label">Discount Price</label>
-										<input type="text" class="form-control" id="disc" name="disc" placeholder="SEO Title"> </div>
+								<div class="form-group  mx-3  w-100">
+										<label for="horizontal-firstname-input" class="col-form-label">Description</label>
+										<textarea id="pro_desc" name="pro_desc" class="form-control" rows="40"  placeholder="Type here..."></textarea>
+                 					</div>
 									<div class="form-group   mx-3 w-100">
-										<label for="horizontal-firstname-input" class="col-form-label">One Global Link</label>
+										<label for="horizontal-firstname-input" class="col-form-label">Link</label>
 										<input type="text" class="form-control" id="link" name="link" placeholder="SEO Title"> </div>
 								</div>	
+								
 
 								<div class="d-flex mt-4">
 								<div class="form-group ml-3 w-100">

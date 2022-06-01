@@ -47,7 +47,7 @@ include('include/config.php');
 													<th>Product Description</th>
 													<th>Strength</th>
 													<th>Price</th>
-													<th>Discount Price</th>
+													<th>Slug</th>
 													<th>One Global Link</th>
 													<th>Category</th>
                                                     <th>Upload</th>
@@ -99,7 +99,7 @@ include('include/config.php');
 															<?php echo $data['prc'] ?>
 														</td>
 														<td>
-															<?php echo $data['disc'] ?>
+															<?php echo $data['slug'] ?>
 														</td>
 														<td>
 															<?php echo $data['link'] ?>
