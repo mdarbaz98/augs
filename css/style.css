@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1306,7 +1306,7 @@ header .overlay_Div {
   font-family: "Ubuntu", sans-serif;
 }
 .post__page .post-content-section .categorysection2 .categorybox .categorybox_inside {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
   padding: 10px;
   border-radius: 10px;
 }
