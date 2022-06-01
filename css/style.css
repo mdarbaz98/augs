@@ -37,6 +37,9 @@ html {
   html {
     font-size: 100%;
   }
+  html p {
+    font-size: 1.1875rem;
+  }
 }
 @media only screen and (min-width: 1800px) {
   html {
@@ -51,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -303,7 +306,7 @@ p {
 }
 .owl-carousel .owl-nav {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   position: absolute;
   bottom: -3rem;
   justify-content: center;
@@ -854,6 +857,22 @@ header .navbar .header-form {
   height: 2.125rem;
   width: 18.75rem;
 }
+header .navbar .header-form .autoCom-Box {
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  background-color: #f1f1f1;
+}
+header .navbar .header-form .autoCom-Box li {
+  padding: 5px 10px;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+header .navbar .header-form .autoCom-Box li:hover {
+  background-color: #ffffff;
+}
 header .navbar .header-form input {
   border-radius: 50px;
   font-family: "Ubuntu", sans-serif;
@@ -1094,6 +1113,10 @@ header .overlay_Div {
   border-radius: 6px;
   object-fit: cover;
 }
+.post__page .post-banner-section h2 {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
 .post__page .post-banner-section p {
   font-family: "Ubuntu", sans-serif;
   color: #6c757d;
@@ -1153,6 +1176,86 @@ header .overlay_Div {
 .post__page .post-content-section p {
   font-family: "Ubuntu", sans-serif;
 }
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorybox_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
+  width: 80px;
+  height: 56px;
+  object-fit: cover;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
+  font-size: 11px;
+  color: #212529;
+  margin: 10px 10px 0px 0px;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
+  font-size: 15px;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button p {
+  margin-top: 3rem;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button span {
+  font-size: 22px;
+  font-weight: 500;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  margin: 10px 5px;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  opacity: 0.9;
+  font-size: 1rem;
+  background-color: #444547;
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside:hover {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside:hover button {
+  background-color: #212529;
+}
+.post__page .post-content-section .categorysection2 .outerline {
+  padding: 4px;
+  border: solid 2px #212529;
+  border-radius: 35px;
+  height: 45px;
+  width: fit-content;
+  margin: 3rem auto;
+}
+.post__page .post-content-section .categorysection2 button {
+  font-family: "Ubuntu", sans-serif;
+  padding: 8px 0px;
+  border-radius: 15px;
+  border: none;
+  color: #f8f9fa;
+  letter-spacing: 0.7px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #212529;
+  display: block;
+  width: 136px;
+}
 .post__page .post-content-section .sq-btn {
   font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
@@ -1178,7 +1281,7 @@ header .overlay_Div {
   color: #212529;
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button::after {
-  background-image: url("../assets/images/minus.png");
+  background-image: url("../assets/images/plus.png");
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed) {
   background-color: unset;
@@ -1186,7 +1289,7 @@ header .overlay_Div {
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed)::after {
   filter: brightness(0);
-  background-image: url("../assets/images/plus.png");
+  background-image: url("../assets/images/minus.png");
 }
 .post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button span {
   background-color: #212529;
@@ -1195,6 +1298,11 @@ header .overlay_Div {
   margin-left: 2rem;
 }
 
+@media screen and (max-width: 399px) {
+  .augs-logo {
+    width: 60px !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .post__page {
     padding: 10px;

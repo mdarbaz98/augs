@@ -5,7 +5,7 @@
           <div class="row">
             <div class="col-12 col-lg-7 order-lg-0 order-1">
               <div class="home__leftSection mt-lg-5">
-                <h1 class="home_heading">Don't worry,down there it's time to look up!</h1>
+                <h1 class="home_heading">Don't worry,down there, it's time to look up!</h1>
                 <div class="three-div-container">
                   <div class="row">
                     <div class="col">

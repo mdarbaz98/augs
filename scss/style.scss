@@ -685,7 +685,22 @@ header {
       position: relative;
       height: 2.125rem;
       width: 18.75rem;
-
+      .autoCom-Box{
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+        background-color: #f1f1f1;
+        li{
+          padding: 5px 10px;
+          font-family: $para-font;
+          cursor: pointer;
+          &:hover{
+            background-color: #ffffff;
+          }
+        }
+      }
       input {
         border-radius: 50px;
         font-family: $para-font;
@@ -981,6 +996,10 @@ header {
       border-radius: 6px;
       object-fit: cover;
     }
+    h2{
+      text-decoration: underline;
+      text-transform: capitalize;
+    }
     p{
       font-family: $para-font;
       color: $color-4;
@@ -1059,6 +1078,8 @@ header {
       font-family: $para-font;
     }
 
+    @include categoryProductCTA;
+
     .sq-btn {
       @include btn;
     }
@@ -1076,7 +1097,8 @@ header {
             font-weight: 600;
             color: $color-1;
             &::after {
-              background-image: url('../assets/images/minus.png');
+              // background-image: url('../assets/images/minus.png');
+              background-image: url('../assets/images/plus.png');
             }
 
             &:not(.collapsed) {
@@ -1084,7 +1106,9 @@ header {
               color: $color-1;
               &::after {
                 filter: brightness(0);
-                background-image: url('../assets/images/plus.png');
+                // background-image: url('../assets/images/plus.png');
+              background-image: url('../assets/images/minus.png');
+
               }
             }
 
@@ -1098,6 +1122,12 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .augs-logo{
+    width: 60px !important;
   }
 }
 

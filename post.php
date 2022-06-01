@@ -4,7 +4,7 @@
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
       >
         <div class="container-fluid">
-          <h2 class="before position-relative mx-auto my-5">Paroxetine</h2>
+          <h2 class="text-center position-relative mx-auto my-5">everything you need to know about Sildenafil for PE</h2>
           <img
             class="post-banner-img"
             src="https://dronexl.co/wp-content/uploads/2021/09/Screen-Shot-2021-09-09-at-19.32.51.jpg"
@@ -86,7 +86,8 @@
                     nulla.</span
                   >
                 </p>
-                <button class="sq-btn mx-auto">CTA's</button>
+                <!-- <button class="sq-btn mx-auto">CTA's</button> -->
+                
                 <h2 class="headings">What Paroxetine?</h2>
                 <p>
                   <span
