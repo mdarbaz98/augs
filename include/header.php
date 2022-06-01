@@ -27,7 +27,7 @@
                             <button class="btn menu-open-btn text-white ">
                               <i class="fa-solid fa-bars"></i>
                               </button>
-                              <a class="navbar-brand" href="home"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
+                              <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
                          <form class="header-form d-flex">
                            <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">

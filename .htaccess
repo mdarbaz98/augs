@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteRule ^home/?$ index.php [NC,L]
+RewriteRule ^/?$ index.php [NC,L]
 RewriteRule ^about/?$ aboutus.php [NC,L]
 RewriteRule ^contact/?$ contact.php [NC,L]
 RewriteRule ^privacypolicy/?$ privacypolicy.php [NC,L]
