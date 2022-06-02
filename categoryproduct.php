@@ -1,15 +1,31 @@
 <?php 
 	include('admin/include/config.php');
-    echo $cat = $_GET['cat'];
+    $page="category";
+    $cat = $_GET['cat'];
     $selectCatId = $conn->prepare('SELECT * FROM category WHERE slug=?');
     $selectCatId->execute([$cat]);
     while($row=$selectCatId->fetch(PDO::FETCH_ASSOC)){
     $catid = $row['id'];
     $title = $row['title'];
     $desc = $row['description'];
-    //echo $name = $row['name'];
+    $name = $row['name'];
     $content = $row['content'];
 }
+$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// Page Meta Auto Insertion Starts Here
+$robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+$seoTitle = $title;
+$seoDescription = $desc;
+$canonical = $actual_link;
+$ogtype = "article";
+$ogtitle = $seoTitle;
+$ogdescription = $seoDescription;
+$ogcurrenturl = $actual_link;
+// $lastupdate = "2021-11-19T09:50:24+00:00";
+// $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+// $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+$ogimagealt = "$name - AUGS";
+
 include('./include/header.php');
 ?>
     <section class="categoryproductED">
@@ -81,75 +97,6 @@ include('./include/header.php');
                         </div>
                     </div>
                     <?php $i++;} ?>
-                    <!-- <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
-                        <div class="categorybox_inside">
-                            <div class="categorybox_img">
-                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                    alt="">
-                            </div>
-                            <div class="categorydetail_content">
-                                <h2>Sildenafil</h2>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Effective for 62-82% of men</span>
-                                </div>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Works in 1hr and lasts 4-5hrs</span>
-                                </div>
-                            </div>
-                            <div class="cd_button">
-                                <p><span> $37.00</span></p>
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
-                        <div class="categorybox_inside">
-                            <div class="categorybox_img">
-                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                    alt="">
-                            </div>
-                            <div class="categorydetail_content">
-                                <h2>Tadalafil</h2>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Can be taken with food</span>
-                                </div>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Works in 30mins, lasts up</span>
-                                </div>
-                            </div>
-                            <div class="cd_button">
-                                <p><span> $15.00</span></p>
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
-                        <div class="categorybox_inside">
-                            <div class="categorybox_img">
-                                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                    alt="">
-                            </div>
-                            <div class="categorydetail_content">
-                                <h2>Zopiclone</h2>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Lasts up to 4-5hrs</span>
-                                </div>
-                                <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Effective for 62-82% of men</span>
-                                </div>
-                            </div>
-                            <div class="cd_button">
-                                <p><span> $53.00</span></p>
-                                <button>View</button>
-                            </div>
-                        </div>
-                    </div> -->
                     
                 </div>
                 <div class="outerline">
@@ -164,8 +111,8 @@ include('./include/header.php');
                 <div class="home-blog-section py-5 mb-5 mx-5 mb-md-0">
                     <div class="owl-carousel owl-theme" id="categoryproduct-owl-carousel">
                     <?php
-                                $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC");
-                                $stmt->execute();
+                                $stmt = $conn->prepare("SELECT * FROM `post` WHERE cat_id=? ORDER BY id DESC");
+                                $stmt->execute([$catid]);
                                 $i=1;
                                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($data as $data)
