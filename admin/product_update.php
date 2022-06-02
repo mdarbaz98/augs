@@ -36,11 +36,11 @@ include('include/config.php');
 									<div class="card-body">
 									<h4 class="card-title mb-4">Content</h4>
 										<div class="form-group    w-100">
-											<textarea id="pro_desc" name="pro_desc" class="form-control" rows="40"><?php echo $row['pro_desc'] ?></textarea>
+											<textarea id="content" name="content" class="form-control" rows="40"><?php echo $row['content'] ?></textarea>
 										</div>
 										<div class="form-group short mt-1  w-100">
 												<label for="horizontal-firstname-input">Product Description</label>
-												<textarea id="shrt_desc" name="shrt_desc" class="form-control" rows="40" placeholder="Type here..."></textarea>
+												<textarea id="shrt_desc" name="shrt_desc" class="form-control" rows="40" ><?php echo $row['shrt_desc'] ?></textarea>
 										</div>
 									</div>
 								</div>
@@ -58,6 +58,14 @@ include('include/config.php');
 										<div class=" mt-1 w-100">
 											<label for="horizontal-firstname-input">Product Slug</label>
 											<input type="text" class="form-control" id="slug" name="slug" value="<?php echo $row['slug'] ?>" > 
+										</div>	
+										<div class=" w-100 ">
+													<label for="horizontal-firstname-input" class="col-form-label">Title</label>
+													<input type="text" class="form-control" id="title" name="title" value="<?php echo $row['title'] ?>">
+										</div>	
+										<div class=" w-100 ">
+													<label for="horizontal-firstname-input" class="col-form-label">Seo Title</label>
+													<input type="text" class="form-control" id="seo_title" name="seo_title" value="<?php echo $row['seo_title'] ?>">
 										</div>	
 										<div class=" w-100 ">
 											<label for="horizontal-firstname-input" class="col-form-label">Strength</label>
@@ -87,6 +95,9 @@ include('include/config.php');
 															</option>
 															<?php } ?>
 													</select>
+										</div>
+										<div class=" w-100 ">
+													<textarea class="form-control"  id="description" name="description"  rows="3"><?php echo $data['description']  ?></textarea>
 										</div>
 										<!-- Upload Image -->
 											<?php
