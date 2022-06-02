@@ -1,8 +1,8 @@
-@use "./variables"as *;
-@use "./base/reset";
-@use "./base/typography";
-@use "./components"as *;
-@use "./utilities/"as *;
+@use './variables' as *;
+@use './base/reset';
+@use './base/typography';
+@use './components' as *;
+@use './utilities/' as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -66,7 +66,6 @@
 
 .section-2 {
   .home-blog-section {
-
     #home-owl-carousel,
     #product-owl-carousel,
     #categoryproduct-owl-carousel,
@@ -114,7 +113,7 @@
   }
 
   button {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -149,7 +148,6 @@
   }
 
   .right-section {
-    
     max-width: 500px;
 
     h3 {
@@ -158,7 +156,7 @@
 
     .form {
       .normal-form {
-        .error{
+        .error {
           color: red;
           font-size: 12px;
         }
@@ -254,7 +252,7 @@
 .onetime-about,
 .onetime-tandc,
 .onetime-contact {
-  .error{
+  .error {
     color: red;
     font-size: 12px;
   }
@@ -336,7 +334,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.25rem 1.25rem;
@@ -365,7 +362,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         @include image-css(100%, 320px);
@@ -481,7 +477,7 @@
     }
 
     button {
-      font-family: "Ubuntu", sans-serif;
+      font-family: 'Ubuntu', sans-serif;
       padding: 8px 0px;
       border-radius: 15px;
       border: none;
@@ -496,14 +492,13 @@
   }
 
   @media only screen and (max-width: 767px) {
-
     .categorysection1_inside1 {
       margin: 0.25rem auto;
     }
 
     .categorysection2 {
       h2 {
-        margin: 0px auto 12px
+        margin: 0px auto 12px;
       }
 
       .categorybox {
@@ -545,7 +540,7 @@
   }
 
   button {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -638,7 +633,7 @@
     border-bottom: solid 1px #fff;
 
     .logo__div {
-      a{
+      a {
         margin-right: auto;
         img {
           width: 80px;
@@ -672,7 +667,6 @@
 
 // header section css
 header {
-
   // z-index: 10;
   .logo-img {
     width: 70px;
@@ -699,18 +693,18 @@ header {
       position: relative;
       height: 2.125rem;
       width: 18.75rem;
-      .autoCom-Box{
+      .autoCom-Box {
         position: absolute;
         left: 0px;
         top: 35px;
         width: 100%;
         padding: 10px 15px 10px 15px;
         background-color: #f1f1f1;
-        li{
+        li {
           padding: 5px 10px;
           font-family: $para-font;
           cursor: pointer;
-          &:hover{
+          &:hover {
             background-color: #ffffff;
           }
         }
@@ -836,7 +830,7 @@ header {
             }
 
             &::after {
-              background-image: url("../assets/images/dropdownImg.png");
+              background-image: url('../assets/images/dropdownImg.png');
             }
           }
 
@@ -1003,18 +997,18 @@ header {
 
 // post page css
 .post__page {
-  .post-banner-section{
+  .post-banner-section {
     .post-banner-img {
       height: 500px;
       width: 100%;
       border-radius: 6px;
       object-fit: cover;
     }
-    h2{
+    h2 {
       text-decoration: underline;
       text-transform: capitalize;
     }
-    p{
+    p {
       font-family: $para-font;
       color: $color-4;
     }
@@ -1082,26 +1076,24 @@ header {
         }
       }
     }
-    .cta_main
-    {
-      #post_cta_slider{
-        .owl-nav{
+    .cta_main {
+      #post_cta_slider {
+        .owl-nav {
           bottom: -4rem;
         }
       }
       .ctabox {
         position: relative;
-      
-        .cta_inside 
-        {
+
+        .cta_inside {
           box-shadow: $shadow;
           padding: 10px;
           border-radius: 10px;
-          .ribbon{
+          .ribbon {
             position: absolute;
             right: 0px;
-          top: 0px;
-          z-index: -1;
+            top: 0px;
+            z-index: -1;
           }
           .box {
             height: 30px;
@@ -1113,16 +1105,16 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding:0px 12px 0px 30px;
+            padding: 0px 12px 0px 30px;
             position: relative;
             border-radius: 0px 6px 0px 0px;
-            span{
+            span {
               color: #fff;
             }
           }
-          .box:before{
+          .box:before {
             position: absolute;
-            content: "";
+            content: '';
             width: 29px;
             height: 29px;
             z-index: 1;
@@ -1131,21 +1123,21 @@ header {
             border-bottom: none;
             transform: rotate(45deg);
             left: -15px;
-            top:-1px ;
+            top: -1px;
           }
           .cta_img {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 4rem 0rem 2rem;
-      
+
             img {
               width: 80px;
               height: 56px;
               object-fit: cover;
             }
           }
-      
+
           .cta_content {
             p {
               font-size: 2rem;
@@ -1154,7 +1146,7 @@ header {
               font-family: $heading-font;
               font-weight: 700;
             }
-      
+
             .cta_cd_span {
               img {
                 width: 30px;
@@ -1162,7 +1154,7 @@ header {
                 object-fit: cover;
                 margin: 0px 10px 0px 0px;
               }
-      
+
               span {
                 font-size: 15px;
                 display: inline-block;
@@ -1170,19 +1162,19 @@ header {
               }
             }
           }
-      
+
           .cta_cd_button {
             p {
               margin: 1rem 0rem 2rem 0rem;
             }
-      
+
             span {
               font-size: 22px;
               font-weight: 500;
               text-align: center;
-              display: block
+              display: block;
             }
-      
+
             button {
               @include btn(25px, 9px 0px, 0.8rem, $para-font, 100%);
               position: absolute;
@@ -1195,7 +1187,7 @@ header {
             }
           }
         }
-      
+
         .categorybox_inside:hover {
           button {
             background-color: $color-1;
@@ -1203,8 +1195,8 @@ header {
         }
       }
       @media only screen and (max-width: 767px) {
-        #post_cta_slider{
-          .owl-nav{
+        #post_cta_slider {
+          .owl-nav {
             bottom: -1rem;
           }
         }
@@ -1248,8 +1240,7 @@ header {
               &::after {
                 filter: brightness(0);
                 // background-image: url('../assets/images/plus.png');
-              background-image: url('../assets/images/minus.png');
-
+                background-image: url('../assets/images/minus.png');
               }
             }
 
@@ -1267,7 +1258,7 @@ header {
 }
 
 @media screen and (max-width: 399px) {
-  .augs-logo{
+  .augs-logo {
     width: 60px !important;
   }
 }
@@ -1293,7 +1284,6 @@ header {
     .table-of-content {
       li {
         a {
-
           span,
           h2 {
             font-size: 1.5rem !important;
@@ -1305,4 +1295,3 @@ header {
 }
 
 // post page css
-
