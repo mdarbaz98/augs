@@ -63,7 +63,7 @@ include('include/config.php');
 													<th>Sr No.</th>
 													<th>Image</th>
 													<th>Product Name</th>
-													<th>Product Desc</th>
+													<th>Short desc</th>
 													<th>Strength</th>
 													<th>Price</th>
 													<th>Category</th>
@@ -106,7 +106,7 @@ include('include/config.php');
 															<?php echo $data['name'] ?>
 														</td>
 														<td>
-															<?php echo $data['pro_desc'] ?>
+															<?php echo $data['shrt_desc'] ?>
 														</td>
 														<td>
 															<?php echo $data['strnt'] ?>

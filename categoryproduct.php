@@ -55,7 +55,7 @@
                                 <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
                                     <!-- <i class="fa-solid fa-circle"></i> -->
-                                    <span><?php echo $data['pro_desc'] ?></span>
+                                    <span><?php echo $data['shrt_desc'] ?></span>
                                 </div>
                                 <!-- <div class="cd_span">
                                     <i class="fa-solid fa-circle"></i>
