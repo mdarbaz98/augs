@@ -879,11 +879,15 @@ header .navbar .header-form .autoCom-Box {
   width: 100%;
   padding: 10px 15px 10px 15px;
   background-color: #f1f1f1;
+  display: none;
 }
 header .navbar .header-form .autoCom-Box li {
   padding: 5px 10px;
   font-family: "Ubuntu", sans-serif;
   cursor: pointer;
+}
+header .navbar .header-form .autoCom-Box li a {
+  color: #212529;
 }
 header .navbar .header-form .autoCom-Box li:hover {
   background-color: #ffffff;
