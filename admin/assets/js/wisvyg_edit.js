@@ -245,6 +245,236 @@ function initTiny() {
           </div>
         </div>
         <div class="accordion-item">
+        <h3
+          class="accordion-header accordian-heading"
+          id="panelsStayOpen-headingTwo"
+        >
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+          >
+            Accordion Item
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo"
+        >
+          <div class="accordion-body">
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptatum provident quo placeat officia
+                veniam in iusto quas dolor animi, suscipit fugit
+                illum modi voluptatibus maxime asperiores. Iusto,
+                dolores eligendi? Esse.</span
+              ><span
+                >Repudiandae architecto, harum iste nemo minus
+                nostrum doloremque? Sit, ipsum corrupti saepe sed
+                est voluptatum nihil repellendus quo nobis nesciunt
+                ipsa laboriosam similique vitae excepturi quos.
+                Repudiandae dolores beatae iste.</span
+              ><span
+                >Optio consequuntur inventore minima, placeat eos
+                reiciendis aspernatur doloribus repellendus
+                deleniti, sint iusto officiis ea, dolorum dolorem
+                earum cum non perferendis. Dolor dolorem magni fugit
+                dolorum, quibusdam quidem nobis nulla.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+      <h3
+        class="accordion-header accordian-heading"
+        id="panelsStayOpen-headingTwo"
+      >
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseTwo"
+          aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseTwo"
+        >
+          Accordion Item
+        </button>
+      </h3>
+      <div
+        id="panelsStayOpen-collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingTwo"
+      >
+        <div class="accordion-body">
+          <p>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptatum provident quo placeat officia
+              veniam in iusto quas dolor animi, suscipit fugit
+              illum modi voluptatibus maxime asperiores. Iusto,
+              dolores eligendi? Esse.</span
+            ><span
+              >Repudiandae architecto, harum iste nemo minus
+              nostrum doloremque? Sit, ipsum corrupti saepe sed
+              est voluptatum nihil repellendus quo nobis nesciunt
+              ipsa laboriosam similique vitae excepturi quos.
+              Repudiandae dolores beatae iste.</span
+            ><span
+              >Optio consequuntur inventore minima, placeat eos
+              reiciendis aspernatur doloribus repellendus
+              deleniti, sint iusto officiis ea, dolorum dolorem
+              earum cum non perferendis. Dolor dolorem magni fugit
+              dolorum, quibusdam quidem nobis nulla.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+    <h3
+      class="accordion-header accordian-heading"
+      id="panelsStayOpen-headingTwo"
+    >
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseTwo"
+        aria-expanded="false"
+        aria-controls="panelsStayOpen-collapseTwo"
+      >
+        Accordion Item
+      </button>
+    </h3>
+    <div
+      id="panelsStayOpen-collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="panelsStayOpen-headingTwo"
+    >
+      <div class="accordion-body">
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Voluptatum provident quo placeat officia
+            veniam in iusto quas dolor animi, suscipit fugit
+            illum modi voluptatibus maxime asperiores. Iusto,
+            dolores eligendi? Esse.</span
+          ><span
+            >Repudiandae architecto, harum iste nemo minus
+            nostrum doloremque? Sit, ipsum corrupti saepe sed
+            est voluptatum nihil repellendus quo nobis nesciunt
+            ipsa laboriosam similique vitae excepturi quos.
+            Repudiandae dolores beatae iste.</span
+          ><span
+            >Optio consequuntur inventore minima, placeat eos
+            reiciendis aspernatur doloribus repellendus
+            deleniti, sint iusto officiis ea, dolorum dolorem
+            earum cum non perferendis. Dolor dolorem magni fugit
+            dolorum, quibusdam quidem nobis nulla.</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+  <h3
+    class="accordion-header accordian-heading"
+    id="panelsStayOpen-headingTwo"
+  >
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapseTwo"
+      aria-expanded="false"
+      aria-controls="panelsStayOpen-collapseTwo"
+    >
+      Accordion Item
+    </button>
+  </h3>
+  <div
+    id="panelsStayOpen-collapseTwo"
+    class="accordion-collapse collapse"
+    aria-labelledby="panelsStayOpen-headingTwo"
+  >
+    <div class="accordion-body">
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Voluptatum provident quo placeat officia
+          veniam in iusto quas dolor animi, suscipit fugit
+          illum modi voluptatibus maxime asperiores. Iusto,
+          dolores eligendi? Esse.</span
+        ><span
+          >Repudiandae architecto, harum iste nemo minus
+          nostrum doloremque? Sit, ipsum corrupti saepe sed
+          est voluptatum nihil repellendus quo nobis nesciunt
+          ipsa laboriosam similique vitae excepturi quos.
+          Repudiandae dolores beatae iste.</span
+        ><span
+          >Optio consequuntur inventore minima, placeat eos
+          reiciendis aspernatur doloribus repellendus
+          deleniti, sint iusto officiis ea, dolorum dolorem
+          earum cum non perferendis. Dolor dolorem magni fugit
+          dolorum, quibusdam quidem nobis nulla.</span
+        >
+      </p>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+<h3
+  class="accordion-header accordian-heading"
+  id="panelsStayOpen-headingTwo"
+>
+  <button
+    class="accordion-button collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseTwo"
+    aria-expanded="false"
+    aria-controls="panelsStayOpen-collapseTwo"
+  >
+    Accordion Item
+  </button>
+</h3>
+<div
+  id="panelsStayOpen-collapseTwo"
+  class="accordion-collapse collapse"
+  aria-labelledby="panelsStayOpen-headingTwo"
+>
+  <div class="accordion-body">
+    <p>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptatum provident quo placeat officia
+        veniam in iusto quas dolor animi, suscipit fugit
+        illum modi voluptatibus maxime asperiores. Iusto,
+        dolores eligendi? Esse.</span
+      ><span
+        >Repudiandae architecto, harum iste nemo minus
+        nostrum doloremque? Sit, ipsum corrupti saepe sed
+        est voluptatum nihil repellendus quo nobis nesciunt
+        ipsa laboriosam similique vitae excepturi quos.
+        Repudiandae dolores beatae iste.</span
+      ><span
+        >Optio consequuntur inventore minima, placeat eos
+        reiciendis aspernatur doloribus repellendus
+        deleniti, sint iusto officiis ea, dolorum dolorem
+        earum cum non perferendis. Dolor dolorem magni fugit
+        dolorum, quibusdam quidem nobis nulla.</span
+      >
+    </p>
+  </div>
+</div>
+</div>
+        <div class="accordion-item">
           <h3
             class="accordion-header accordian-heading"
             id="panelsStayOpen-headingThree"
@@ -710,4 +940,3 @@ initTinyproductupdate()
 $('.tox-tinymce .tox-menubar').append(
   '<button aria-haspopup="true" role="menuitem" type="button" tabindex="-1" data-alloy-tabstop="true" unselectable="on" class="tox-mbtn tox-mbtn--select" aria-expanded="false" style="user-select: none;"><span class="tox-mbtn__select-label">File</span><div class="tox-mbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button>',
 )
-

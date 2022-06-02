@@ -81,7 +81,7 @@ include('./include/header.php');
                             </div>
                             <div class="cd_button">
                                 <p>from <span>$<?php echo $data['prc'] ?></span></p>
-                                <button>View</button>
+                               <a href="<?php echo $data['slug'] ?>"><button>View</button></a>
                             </div>
                         </div>
                     </div>
