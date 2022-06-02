@@ -1,8 +1,19 @@
 <?php include('admin/include/config.php');
     $page="post";
     $slug = $_GET['slug'];
+
+    $post = $conn->prepare('SELECT * FROM post WHERE slug=?');
+    $post->execute([$slug]);
+    echo $postCount=$post->rowCount();
+    
+    $product = $conn->prepare('SELECT * FROM product WHERE slug=?');
+    $product->execute([$slug]);
+    echo $productCount=$product->rowCount();
+
+
     $selectpostId = $conn->prepare('SELECT * FROM post WHERE slug=?');
     $selectpostId->execute([$slug]);
+    
     while($row=$selectpostId->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
     $title = $row['title'];
