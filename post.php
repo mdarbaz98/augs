@@ -1,17 +1,38 @@
 <?php include('admin/include/config.php');
+    $page="post";
+    $slug = $_GET['slug'];
+    $selectpostId = $conn->prepare('SELECT * FROM post WHERE slug=?');
+    $selectpostId->execute([$slug]);
+    while($row=$selectpostId->fetch(PDO::FETCH_ASSOC)){
+    $id = $row['id'];
+    $title = $row['title'];
+    $desc = $row['description'];
+    // $name = $row['name'];
+    $content = $row['content'];
+    }
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Page Meta Auto Insertion Starts Here
+    $robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+    $seoTitle = $title;
+    $seoDescription = $desc;
+    $canonical = $actual_link;
+    $ogtype = "article";
+    $ogtitle = $seoTitle;
+    $ogdescription = $seoDescription;
+    $ogcurrenturl = $actual_link;
+    // $lastupdate = "2021-11-19T09:50:24+00:00";
+    // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    $ogimagealt = "$title - AUGS";
     include ('./include/header.php') ?>
-
-
-    
     <section class="post__page pt-5 pt-md-0">
       <div
         class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
       >
         <div class="container-fluid">
           <?php
-          $sql = "SELECT * FROM `post` WHERE status=1 AND id=15";
-          $stmt = $conn->prepare($sql);
-          $stmt->execute();
+          $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1 AND id=?");
+          $stmt->execute([$id]);
           $i=1;
           $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
           if (!empty($data)) {
