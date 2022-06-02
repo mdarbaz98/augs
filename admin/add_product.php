@@ -30,7 +30,7 @@
 									<div class="card-body">
 									<h4 class="card-title mb-4">Content</h4>
 										<div class="form-group long    w-100">
-												<textarea id="pro_desc" name="pro_desc" class="form-control" rows="40" placeholder="Type here..."></textarea>
+												<textarea id="content" name="content" class="form-control" rows="40" placeholder="Type here..."></textarea>
 										</div>
 										<div class="form-group short mt-1  w-100">
 												<label for="horizontal-firstname-input">Product Description</label>
@@ -55,7 +55,14 @@
 													<input type="text" class="form-control" id="slug" name="slug" placeholder="Enter Slug"> 
 										</div>	
 
-										
+										<div class=" w-100 ">
+													<label for="horizontal-firstname-input" class="col-form-label">Title</label>
+													<input type="text" class="form-control" id="title" name="title" placeholder="SEO Title">
+										</div>	
+										<div class=" w-100 ">
+													<label for="horizontal-firstname-input" class="col-form-label">Seo Title</label>
+													<input type="text" class="form-control" id="seo_title" name="seo_title" placeholder="SEO Title">
+										</div>	
 										<div class=" w-100 ">
 													<label for="horizontal-firstname-input" class="col-form-label">Strength</label>
 													<input type="text" class="form-control" id="strn" name="strn" placeholder="SEO Title">
@@ -83,6 +90,10 @@
 													<?php } ?>
 													</select>
 											</div>
+										</div>
+												<label for="horizontal-firstname-input" >Description</label>
+										<div class=" w-100 ">
+													<textarea class="form-control"  id="description" name="description"  rows="3"></textarea>
 										</div>
 										<div class="blog-img-box  w-100 " data-toggle="modal" data-target="#exampleModal"> 
 											<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image">
