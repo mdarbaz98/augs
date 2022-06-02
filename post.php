@@ -31,16 +31,13 @@
             // echo "</pre>";
             $content = $data['content'];
             }
-          }
+            }
           ?>
           <h2 class="before position-relative mx-auto my-5">Paroxetine</h2>
-          <img
-            class="post-banner-img"
-            src="admin/<?php echo $image ?>"
-            alt="<?php echo $alt ?>"
-          />
+          <img class="post-banner-img" src="admin/<?php echo $image ?>" alt="<?php echo $alt ?>"/>
           <p class="mt-2">Publish : 23-01-2020</p>
         </div>
+
       </div>
       <div class="post-content-section">
         <div class="container-fluid">
@@ -90,25 +87,41 @@
           </h2>
           <div class="home-blog-section py-5 p-md-5 mb-5 mb-md-4">
             <div class="owl-carousel owl-theme" id="post-owl-carousel">
+                    <?php
+                        $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC limit 6");
+                        $stmt->execute();
+                        $i=1;
+                        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($data as $data)
+                        {	
+                      $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                      $stmt_img->execute([$data['img_id']]);
+                      $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                      if (!empty($img_data))
+                              {
+                        $image = $img_data[0]['path']; 
+                      $alt = $img_data[0]['alt'];
+                      }else{
+                      $image="Not Found";
+                      $alt="Not Found";
+                      }								 
+                  	?>
               <div class="blog-card">
                 <a href="">
                   <div class="blog-card-img-div">
-                    <img
-                      src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg"
-                      alt="blog-image"
-                    />
+                  <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img">
                   </div>
                   <div class="blog-desc-sec pb-3 px-3 px-md-5">
-                    <h1 class="my-2">Know about levitra</h1>
+                    <h1 class="my-2"><?php echo $data['title'] ?></h1>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Facere, at?
+                    <?php echo $data['description'] ?>
                     </p>
                     <button class="sq-btn">READ MORE</button>
                   </div>
                 </a>
               </div>
-              <div class="blog-card">
+              <?php $i++;} ?>
+              <!-- <div class="blog-card">
                 <a href="">
                   <div class="blog-card-img-div">
                     <img
@@ -181,7 +194,7 @@
                     <button class="sq-btn">READ MORE</button>
                   </div>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
