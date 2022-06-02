@@ -387,25 +387,9 @@ function initTiny() {
       </div>`,
       },
       {
-        title: 'Two Column Image',
-        description: 'creates a new table',
-        content: `
-    <div class="img_with_para my-4 row d-block d-md-flex">
-              <div class="col mb-4 mb-md-0">
-                <img src="https://web-static.wrike.com/blog/content/uploads/2016/11/iStock-492785970.jpg?av=f9b41860b73b93b38b906a96accd10e2" alt="">
-              </div>
-              <div class="col">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                  natus facere, ratione ut non, maxime voluptates id pariatur
-                  dolorem officia, repellendus illum libero modi nisi
-                  reprehenderit asperiores sint ullam necessitatibus.
-                </p>
-              </div>
-            </div>
-            <hr>
-            <p></p>
-    `,
+        title: 'Add Read More Btn',
+        description: 'add btn',
+        content: `<a class="moreless-button">Read more...</a></span></p>`,
       },
       {
         title: 'Three Column Image',
