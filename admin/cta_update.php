@@ -84,6 +84,7 @@ include('include/config.php');
                 <img src="<?php echo $image ?>"alt="<?php echo $alt ?>" class="image_path">
                  </div>
                  <input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>  
+				 <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3">Remove Image</button> </div>
                  <div class="customefeature_image">
                  <!-- <img src="" alt="" class="image_path"> -->
                  </div>
