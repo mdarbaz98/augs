@@ -27,28 +27,6 @@ $(document).ready(function () {
     `<i class="fa-solid fa-arrow-left"></i>`
   );
 
-  // post active table of content
-
-  var i = 0;
-  $(".blog-body h2").each(function () {
-    ++i;
-    $(this).addClass("heading");
-    $(this).attr("id", "h" + i);
-    if (i == 1) {
-      var status = "active";
-    } else {
-      var status = "";
-    }
-    $("#table-of-content,#table-of-content-for-mobile").append(
-      `<li onclick="scrollToElement('h${i}')" class="tbc_links ${status}" id>
-        <a
-          ><span>${i}.</span>
-          ${$(this).html()}</a
-        >
-      </li>`
-    );
-    $("#table-of-content strong").contents().unwrap();
-  });
 
   //sticky TBC for mobile
   $(window).scroll(function () {
@@ -94,6 +72,31 @@ $(".moreless-button").click(function () {
 // category product show and hide content
 $(".categorysection1_inside2 h2").eq(1).next().nextAll().addClass("moretext");
 
+
+// post active table of content
+
+var i = 0;
+$(".blog-body h2").each(function () {
+  ++i;
+  $(this).addClass("heading");
+  $(this).attr("id", "h" + i);
+  if (i == 1) {
+    var status = "active";
+  } else {
+    var status = "";
+  }
+  $("#table-of-content,#table-of-content-for-mobile").append(
+    `<li onclick="scrollToElement('h${i}')" class="tbc_links ${status}">
+      <a
+        ><span>${i}.</span>
+        ${$(this).html()}</a
+      >
+    </li>`
+  );
+  loadBlogScrollJs();
+  $("#table-of-content strong").contents().unwrap();
+});
+
 // add active class on scroll
 function loadBlogScrollJs() {
   $(window).scroll(function () {
@@ -105,9 +108,9 @@ function loadBlogScrollJs() {
 
     while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
     arrayForm.forEach((ele) => {
-      console.log(ele)
       ele.classList.remove("active");
     });
     arrayForm[len].classList.add("active");
+    console.log(arrayForm[len]);
   });
 }

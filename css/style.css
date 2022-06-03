@@ -897,17 +897,11 @@ header .navbar .header-form .autoCom-Box {
   left: 0px;
   top: 35px;
   width: 100%;
-<<<<<<< Updated upstream
-  padding: 0px 10px 10px;
-  background-color: transparent;
-  display: none;
-=======
-  padding: 10px 15px 10px 15px;
   background-color: #f1f1f1;
->>>>>>> Stashed changes
+  display: none;
 }
 header .navbar .header-form .autoCom-Box li {
-  padding: 0px 10px;
+  padding: 4px 10px;
   font-family: "Ubuntu", sans-serif;
   background-color: #dee2e6;
   cursor: pointer;
@@ -917,8 +911,9 @@ header .navbar .header-form .autoCom-Box li a {
   color: #212529;
   padding: 5px 10px;
 }
-header .navbar .header-form .autoCom-Box li:hover {
-  background-color: #ffffff;
+header .navbar .header-form .autoCom-Box li a:hover {
+  background-color: #212529;
+  color: #f8f9fa;
 }
 header .navbar .header-form input {
   border-radius: 50px;
