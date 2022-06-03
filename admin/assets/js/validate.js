@@ -126,8 +126,12 @@ $('#updateProduct').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        alert(data)
-        console.log(data)
+        if (data=='updated') {
+          alert('Product Updated Successfully');
+          location.reload();
+        } else {
+          alert('Some Technical Issue')
+        }
       },
     })
   },
@@ -256,8 +260,12 @@ $('#updateCategory').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        alert(data)
-        console.log(data)
+        if (data=='updated') {
+          alert('Category Updated Successfully');
+          location.reload();
+        } else {
+          alert('Some Technical Issue')
+        }
       },
     })
   },
@@ -345,11 +353,9 @@ $('#updatePost').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        console.log(data)
-        alert(data)
-        if (data == 'inserted') {
-          alert('Blog Added Successfully')
-          $('#addPost').trigger('reset')
+        if (data=='updated') {
+          alert('Post Updated Successfully');
+          location.reload();
         } else {
           alert('Some Technical Issue')
         }

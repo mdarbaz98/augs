@@ -113,7 +113,7 @@ if($_POST['btn']=='updateCategory'){
   }
   $stmt = $conn->prepare("UPDATE category SET img_id=?, name=?, title=?, slug=?, content=?, description=?, status=? WHERE id=?");
   if($stmt->execute([$img_id, $cat_name, $title, $slug, $content, $desc, 1, $cat_id])){
-    echo "category updated sucessfully";
+    echo "updated";
   }
 
 }
@@ -666,7 +666,43 @@ if($_POST['btn']=='trashPost_id'){
             
     }//update post end
 
+//Remove features image
+if($_POST['btn']=="removeFeatureimage_id")
+{
+    $id = $_POST['removeFeatureimage_id'];
+    $selectAuthor=$conn->prepare("SELECT * FROM blog WHERE id = '$id'");
+    $selectAuthor->execute();
+    while($row=$selectAuthor->fetch(PDO::FETCH_ASSOC)){
+        $filename = $row['featured_image'];
+        $path = '../assets/upload/'.$filename;
+        if(file_exists($path)) {
+            unlink($path);
+            $sql=$conn->prepare("UPDATE `blog` SET `featured_image`='' WHERE `id`=?");            
+            $sql->execute([$id]);
+            echo "Updated";
+            } 
+      
+    }
+}
 
+//Delete features image
+if($_POST['btn']=="deleteFeatureimage_id")
+{
+    $id = $_POST['deleteFeatureimage_id'];
+    $selectAuthor=$conn->prepare("SELECT * FROM blog WHERE id = '$id'");
+    $selectAuthor->execute();
+    while($row=$selectAuthor->fetch(PDO::FETCH_ASSOC)){
+        $filename = $row['featured_image'];
+        $path = '../assets/upload/'.$filename;
+        if(file_exists($path)) {
+            unlink($path);
+            $sql=$conn->prepare("UPDATE `blog` SET `featured_image`='' WHERE `id`=?");            
+            $sql->execute([$id]);
+            echo "Updated";
+            } 
+      
+    }
+}
 
 
 

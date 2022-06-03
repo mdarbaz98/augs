@@ -69,12 +69,13 @@ include('include/config.php');
                 <img src="<?php echo $image ?>"alt="<?php echo $alt ?>" class="image_path">
                  </div>
                  <input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>  
+				 <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3">Remove Image</button> </div>        
                  <div class="customefeature_image">
                  <!-- <img src="" alt="" class="image_path"> -->
                  </div>
 								<!-- Drop Box -->
 								<div class="submit-btns clearfix d-flex">  
-                                <input type="hidden" name="user_id" value="<?php echo $row['id'] ?>">         
+                                <input type="hidden" name="user_id" value="<?php echo $row['id'] ?>"> 
                 <input type="hidden" name="btn" value="updateUser">
                 <input type="submit" class="post-btn float-left" name="blog_publish" value="Publish">
                 <!-- <button class="discard-btn" type="submit"> <i class="fa fa-trash" aria-hidden="true"></i>Discard</button> -->

@@ -61,6 +61,7 @@ include('include/config.php');
 										<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal"> <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image">
 											<h5>Set Feature Image</h5> </div>
 										<input type="hidden" class="image_id" name="img_id" />
+										<div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center remove-btn">Remove Image</button> </div>
 										<div class="customefeature_image"> <img src="" alt="" class="image_path"> </div>
 										<!-- Button trigger modal -->
 										<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
