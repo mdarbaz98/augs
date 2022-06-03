@@ -67,7 +67,7 @@
             }
             }
           ?>
-          <h2 class="before position-relative mx-auto my-5">Paroxetine</h2>
+          <h2 class="text-center position-relative mx-auto my-5">Paroxetine</h2>
           <img class="post-banner-img" src="admin/<?php echo $image ?>" alt="<?php echo $alt ?>"/>
           <p class="mt-2">Publish : 23-01-2020</p>
         </div>

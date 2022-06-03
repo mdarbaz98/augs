@@ -52,7 +52,7 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapse-1"
                 >
-                  What is PEs
+                 1. What is PEs 
                 </button>
               </h2>
               <div
@@ -75,7 +75,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-2"
                 >
-                  FAQ's
+                 2. FAQ's
                 </button>
               </h2>
               <div
@@ -106,7 +106,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-3"
                 >
-                  Conclusion
+                 3. Conclusion 
                 </button>
               </h2>
               <div
@@ -137,7 +137,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-4"
                 >
-                  Conclusion
+                4.  Conclusion
                 </button>
               </h2>
               <div
@@ -168,7 +168,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-5"
                 >
-                  Conclusion
+                5.  Conclusion
                 </button>
               </h2>
               <div
@@ -199,7 +199,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-6"
                 >
-                  Conclusion
+                6.  Conclusion
                 </button>
               </h2>
               <div
@@ -230,7 +230,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-7"
                 >
-                  Conclusion
+                7. Conclusion
                 </button>
               </h2>
               <div
@@ -261,7 +261,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-8"
                 >
-                  Conclusion
+                8. Conclusion
                 </button>
               </h2>
               <div
@@ -292,7 +292,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-9"
                 >
-                  Conclusion
+                 9. Conclusion
                 </button>
               </h2>
               <div
@@ -323,7 +323,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse-10"
                 >
-                  Conclusion
+                 10. Conclusion
                 </button>
               </h2>
               <div
