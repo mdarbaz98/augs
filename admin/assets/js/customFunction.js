@@ -369,7 +369,7 @@ function deleteEnquiry(id) {
       },
       success: function (data) {
         if (data == 'deleted') {
-          alert('Enquiry Successfully deleteed')
+          alert('Enquiry Successfully deleted')
           location.reload()
         }
       },

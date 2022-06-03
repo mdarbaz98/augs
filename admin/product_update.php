@@ -82,18 +82,16 @@ include('include/config.php');
 										<div class=" mt-1">
 										<div class="form-group w-100">
 												<label class="form-label"> Select Category </label>
-												<?php $stmt = $conn->prepare("SELECT * FROM `category` WHERE status=?");
-												$stmt->execute([1]);
-												$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+												<?php 	$stmt = $conn->prepare("SELECT * FROM `category` WHERE status=?");
+														$stmt->execute([1]);
+														$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 													?>
 													<select class="form-control sel_cat" id="category" name="category" title="Please select Category">
 														<option value="">Pick a Category... </option>
 														<?php foreach ($data as $data) {
-														?>
-															<option value="<?php echo $data['id']; ?>">
-																<?php echo $data['name']; ?>
-															</option>
-															<?php } ?>
+            											?> 
+														<option value="<?php echo $data['id']; ?>" <?php if ($data['id'] == $row['cat_id']) echo ' selected="selected"'; ?> ><?php echo $data['name']; ?></option>
+           											 <?php } ?>
 													</select>
 										</div>
 										<div class=" w-100 ">
