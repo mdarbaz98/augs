@@ -389,6 +389,10 @@
       margin: 0.625rem 0rem 2rem 0rem;
     }
 
+    .moretext{
+      display: none;
+    }
+
     .moreless-button {
       background-color: transparent;
       border: none;
@@ -698,15 +702,18 @@ header {
         left: 0px;
         top: 35px;
         width: 100%;
-        padding: 10px 15px 10px 15px;
-        background-color: #f1f1f1;
+        padding: 0px 10px 10px;
+        background-color: transparent;
         display: none;
         li {
-          padding: 5px 10px;
+          padding: 0px 10px;
           font-family: $para-font;
+          background-color: $color-7;
           cursor: pointer;
           a {
+            display: block;
             color: $color-1;
+            padding: 5px 10px;
           }
           &:hover {
             background-color: #ffffff;

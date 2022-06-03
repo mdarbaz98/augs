@@ -19,7 +19,7 @@ $(document).ready(function () {
     $("body,html").css({ "overflow-y": "scroll" });
   });
 
-  // owl inner icon
+  // owl btn inner icon
   $(".owl-carousel .owl-next span").html(
     `<i class="fa-solid fa-arrow-right"></i>`
   );
@@ -66,22 +66,26 @@ $(document).ready(function () {
   // search filter js
   $(".search-input").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    if(value){
-      $('.autoCom-Box').show()
-      $(".autoCom-Box li").filter(function () {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      })
-    }else{
-      $('.autoCom-Box').hide()
+    if (value) {
+      $(".autoCom-Box").show();
+        $(".autoCom-Box li").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    } else {
+      $(".autoCom-Box").hide();
     }
   });
 });
+
 // readmore
 $(".moreless-button").click(function () {
-  $(".moretext").slideToggle();
-  if ($(".moreless-button").text() == "Read less") {
-    $(this).text("Read more...");
+  $(".moretext").toggle();
+  if ($(".moreless-button").text() == "Read more") {
+    $(this).text("Read less...");
   } else {
-    $(this).text("Read less");
+    $(this).text("Read more");
   }
 });
+
+// category product show and hide content 
+$(".categorysection1_inside2 h2").eq(1).next().nextAll().addClass('moretext')
