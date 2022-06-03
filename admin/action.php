@@ -94,7 +94,11 @@ if($_POST['btn']=='addProduct'){
     }else{
         $name="";
     }
-    $descri = $_POST['pro_desc'];
+    $title=$_POST['title'];
+    $seo_title=$_POST['seo_title'];
+    $descri = $_POST['description'];
+    $content=$_POST['content'];
+    $shrt_descri = $_POST['shrt_desc'];
     $slug = $_POST['slug'];
     $strn = $_POST['strn'];
     $prc = $_POST['prc'];
@@ -115,23 +119,27 @@ if($_POST['btn']=='addProduct'){
     }
 
     
-    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,pro_desc, strnt, prc,slug, link, cat_id, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?)");
-    if($stmt->execute([$img_id, $name, $descri, $strn, $prc, $slug, $link, $cat, $PostDate, $draft])){
+    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,description,content,title,seo_title,shrt_desc, strnt, prc,slug, link, cat_id, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    if($stmt->execute([$img_id, $name,  $title,$descri, $seo_title,  $content,$shrt_descri,$strn, $prc, $slug, $link, $cat, $PostDate, $draft])){
       echo "inserted";
     }
   }
   if($_POST['btn']=='updateProduct'){
     $product_id=$_POST['product_id'];
     $name = $_POST['pro_name'];
-    $descri = $_POST['pro_desc'];
+    $title=$_POST['title'];
+    $seo_title=$_POST['seo_title'];
+    $content=$_POST['content'];
+    $shrt_descri = $_POST['shrt_desc'];
+    $descri = $_POST['description'];
     $strn = $_POST['strn'];
     $prc = $_POST['prc'];
     $slug = $_POST['slug'];
     $link = $_POST['link'];
     $cat = $_POST['category'];   
     $img_id = $_POST['img_id'];
-    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, pro_desc=?, strnt=?, prc=?,slug=?,link=?,cat_id=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id, $name, $descri, $strn, $prc, $slug, $link,$cat,1,$product_id])){
+    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, description=?, shrt_desc=?,content =?,title=?,seo_title=?,strnt=?, prc=?,slug=?,link=?,cat_id=?, status=? WHERE id=?");
+    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content,$descri,$shrt_descri, $strn, $prc, $slug, $link,$cat,1,$product_id])){
       echo "updated";
     }
   }

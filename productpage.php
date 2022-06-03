@@ -1,4 +1,5 @@
 <?php include('./include/header.php') ?>
+
     <section class="product__page pt-5">
       <div class="top-section py-md-5 pt-5 pb-2">
         <div class="container">
@@ -349,56 +350,37 @@
             <h2 class="text-center my-4 mb-0 before position-relative m-auto">Recent Blogs</h2>
             <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
               <div class="owl-carousel owl-theme" id="product-owl-carousel">
+              <?php
+                            $stmt = $conn->prepare("SELECT * FROM `post`where `cat_id`= 4 ORDER BY id DESC limit 6");
+                            $stmt->execute();
+                            $i=1;
+                            $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                            foreach ($data as $data)
+                            {	
+                                $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                              $stmt_img->execute([$data['img_id']]);
+                              $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                              if (!empty($img_data))
+                                      {
+                                  $image = $img_data[0]['path']; 
+                                $alt = $img_data[0]['alt'];
+                                }else{
+                                $image="Not Found";
+                                $alt="Not Found";
+                                }								 
+	            ?>
                 <div class="blog-card">
                   <a href="">
-                    <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
+                    <div class="blog-card-img-div"> <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img">  </div>
                   <div class="blog-desc-sec px-3 pb-3">
-                    <h1 class="my-2">Know about levitra</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
+                    <h1 class="my-2"><?php echo $data['title'] ?> </h1>
+                    <p><?php echo $data['description'] ?></p>
                     <button class="sq-btn">READ MORE</button>
-                  </div>
+                  </div> 
                   </a>
                 </div>
-                <div class="blog-card">
-                  <a href="">
-                    <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-3 pb-3">
-                    <h1 class="my-2">Know about levitra</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                    <button class="sq-btn">READ MORE</button>
-                  </div>
-                  </a>
-                </div>
-                <div class="blog-card">
-                  <a href="">
-                    <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-3 pb-3">
-                    <h1 class="my-2">Know about levitra</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at? em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at em, ipsum dolor sit amet consectetur adipisicing elit. Facere, at</p>
-                    <button class="sq-btn">READ MORE</button>
-                  </div>
-                  </a>
-                </div>
-                <div class="blog-card">
-                  <a href="">
-                    <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-3 pb-3">
-                    <h1 class="my-2">Know about levitra</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                    <button class="sq-btn">READ MORE</button>
-                  </div>
-                  </a>
-                </div>
-                <div class="blog-card">
-                  <a href="">
-                    <div class="blog-card-img-div"><img src="https://images.assetsdelivery.com/compings_v2/luismolinero/luismolinero1909/luismolinero190917934.jpg" alt="blog-image"></div>
-                  <div class="blog-desc-sec px-3 pb-3">
-                    <h1 class="my-2">Know about levitra</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, at?</p>
-                    <button class="sq-btn">READ MORE</button>
-                  </div>
-                  </a>
-                </div>
+
+                <?php $i++;} ?>
               </div>
             </div>
           </div>

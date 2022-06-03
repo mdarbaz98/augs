@@ -6401,3 +6401,13 @@ input::placeholder {
   left:  368px;
   z-index:1;
 }
+.product-btn {
+  background-color: #556ee6;
+  font-size: 14px;
+  padding: 10px 28px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+}

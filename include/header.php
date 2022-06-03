@@ -1,10 +1,13 @@
-<?php include('admin/include/config.php') ?>
+<?php
+date_default_timezone_set('Asia/Kolkata');
+include('admin/include/config.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Augs</title>
+        <title><?php echo $seoTitle; ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="http://localhost/augs/">
@@ -18,6 +21,60 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
         <!-- Bootstrap CDN  -->
         <link rel="stylesheet" href="./css/style.css">
+        <meta name="description" content="<?php echo $seoDescription ?>" />
+  <meta name="robots" content="<?php echo $robot ?>" />
+  <link rel="canonical" href="<?php echo $canonical; ?>" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="<?php echo $ogtype; ?>" />
+  <meta property="og:title" content="<?php echo $ogtitle; ?>" />
+  <meta property="og:description" content="<?php echo $ogdescription; ?>" />
+  <meta property="og:url" content="<?php echo $ogcurrenturl; ?>" />
+  <meta property="og:site_name" content="AUGS" />
+  <!-- <meta property="og:updated_time" content="<?php //echo $lastupdate; ?>" />
+  <meta property="og:image" content="<?php //echo $ogimage; ?>" />
+  <meta property="og:image:secure_url" content="<?php //echo $sogimage; ?>" />
+  <meta property="og:image:alt" content="<?php //echo $ogimagealt ?>" /> -->
+  <?php
+    if($page=="post"){
+  ?>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "<?php echo $ogtitle; ?>",
+      },  
+      "publisher": {
+        "@type": "Organization",
+        "name": "AUGS",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "assets/augs-logo.png"
+        }
+      },
+      "datePublished": ""
+    }
+  </script>
+  <?php
+    }else{
+  ?>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Practical Anxiety Solutions",
+      "url": "https://practicalanxietysolutions.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+<?php
+
+    }
+
+?>
     </head>
     <body>
         <header>

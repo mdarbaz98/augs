@@ -245,6 +245,236 @@ function initTiny() {
           </div>
         </div>
         <div class="accordion-item">
+        <h3
+          class="accordion-header accordian-heading"
+          id="panelsStayOpen-headingTwo"
+        >
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+          >
+            Accordion Item
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo"
+        >
+          <div class="accordion-body">
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptatum provident quo placeat officia
+                veniam in iusto quas dolor animi, suscipit fugit
+                illum modi voluptatibus maxime asperiores. Iusto,
+                dolores eligendi? Esse.</span
+              ><span
+                >Repudiandae architecto, harum iste nemo minus
+                nostrum doloremque? Sit, ipsum corrupti saepe sed
+                est voluptatum nihil repellendus quo nobis nesciunt
+                ipsa laboriosam similique vitae excepturi quos.
+                Repudiandae dolores beatae iste.</span
+              ><span
+                >Optio consequuntur inventore minima, placeat eos
+                reiciendis aspernatur doloribus repellendus
+                deleniti, sint iusto officiis ea, dolorum dolorem
+                earum cum non perferendis. Dolor dolorem magni fugit
+                dolorum, quibusdam quidem nobis nulla.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+      <h3
+        class="accordion-header accordian-heading"
+        id="panelsStayOpen-headingTwo"
+      >
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseTwo"
+          aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseTwo"
+        >
+          Accordion Item
+        </button>
+      </h3>
+      <div
+        id="panelsStayOpen-collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingTwo"
+      >
+        <div class="accordion-body">
+          <p>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptatum provident quo placeat officia
+              veniam in iusto quas dolor animi, suscipit fugit
+              illum modi voluptatibus maxime asperiores. Iusto,
+              dolores eligendi? Esse.</span
+            ><span
+              >Repudiandae architecto, harum iste nemo minus
+              nostrum doloremque? Sit, ipsum corrupti saepe sed
+              est voluptatum nihil repellendus quo nobis nesciunt
+              ipsa laboriosam similique vitae excepturi quos.
+              Repudiandae dolores beatae iste.</span
+            ><span
+              >Optio consequuntur inventore minima, placeat eos
+              reiciendis aspernatur doloribus repellendus
+              deleniti, sint iusto officiis ea, dolorum dolorem
+              earum cum non perferendis. Dolor dolorem magni fugit
+              dolorum, quibusdam quidem nobis nulla.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+    <h3
+      class="accordion-header accordian-heading"
+      id="panelsStayOpen-headingTwo"
+    >
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseTwo"
+        aria-expanded="false"
+        aria-controls="panelsStayOpen-collapseTwo"
+      >
+        Accordion Item
+      </button>
+    </h3>
+    <div
+      id="panelsStayOpen-collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="panelsStayOpen-headingTwo"
+    >
+      <div class="accordion-body">
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Voluptatum provident quo placeat officia
+            veniam in iusto quas dolor animi, suscipit fugit
+            illum modi voluptatibus maxime asperiores. Iusto,
+            dolores eligendi? Esse.</span
+          ><span
+            >Repudiandae architecto, harum iste nemo minus
+            nostrum doloremque? Sit, ipsum corrupti saepe sed
+            est voluptatum nihil repellendus quo nobis nesciunt
+            ipsa laboriosam similique vitae excepturi quos.
+            Repudiandae dolores beatae iste.</span
+          ><span
+            >Optio consequuntur inventore minima, placeat eos
+            reiciendis aspernatur doloribus repellendus
+            deleniti, sint iusto officiis ea, dolorum dolorem
+            earum cum non perferendis. Dolor dolorem magni fugit
+            dolorum, quibusdam quidem nobis nulla.</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+  <h3
+    class="accordion-header accordian-heading"
+    id="panelsStayOpen-headingTwo"
+  >
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapseTwo"
+      aria-expanded="false"
+      aria-controls="panelsStayOpen-collapseTwo"
+    >
+      Accordion Item
+    </button>
+  </h3>
+  <div
+    id="panelsStayOpen-collapseTwo"
+    class="accordion-collapse collapse"
+    aria-labelledby="panelsStayOpen-headingTwo"
+  >
+    <div class="accordion-body">
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Voluptatum provident quo placeat officia
+          veniam in iusto quas dolor animi, suscipit fugit
+          illum modi voluptatibus maxime asperiores. Iusto,
+          dolores eligendi? Esse.</span
+        ><span
+          >Repudiandae architecto, harum iste nemo minus
+          nostrum doloremque? Sit, ipsum corrupti saepe sed
+          est voluptatum nihil repellendus quo nobis nesciunt
+          ipsa laboriosam similique vitae excepturi quos.
+          Repudiandae dolores beatae iste.</span
+        ><span
+          >Optio consequuntur inventore minima, placeat eos
+          reiciendis aspernatur doloribus repellendus
+          deleniti, sint iusto officiis ea, dolorum dolorem
+          earum cum non perferendis. Dolor dolorem magni fugit
+          dolorum, quibusdam quidem nobis nulla.</span
+        >
+      </p>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+<h3
+  class="accordion-header accordian-heading"
+  id="panelsStayOpen-headingTwo"
+>
+  <button
+    class="accordion-button collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseTwo"
+    aria-expanded="false"
+    aria-controls="panelsStayOpen-collapseTwo"
+  >
+    Accordion Item
+  </button>
+</h3>
+<div
+  id="panelsStayOpen-collapseTwo"
+  class="accordion-collapse collapse"
+  aria-labelledby="panelsStayOpen-headingTwo"
+>
+  <div class="accordion-body">
+    <p>
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptatum provident quo placeat officia
+        veniam in iusto quas dolor animi, suscipit fugit
+        illum modi voluptatibus maxime asperiores. Iusto,
+        dolores eligendi? Esse.</span
+      ><span
+        >Repudiandae architecto, harum iste nemo minus
+        nostrum doloremque? Sit, ipsum corrupti saepe sed
+        est voluptatum nihil repellendus quo nobis nesciunt
+        ipsa laboriosam similique vitae excepturi quos.
+        Repudiandae dolores beatae iste.</span
+      ><span
+        >Optio consequuntur inventore minima, placeat eos
+        reiciendis aspernatur doloribus repellendus
+        deleniti, sint iusto officiis ea, dolorum dolorem
+        earum cum non perferendis. Dolor dolorem magni fugit
+        dolorum, quibusdam quidem nobis nulla.</span
+      >
+    </p>
+  </div>
+</div>
+</div>
+        <div class="accordion-item">
           <h3
             class="accordion-header accordian-heading"
             id="panelsStayOpen-headingThree"
@@ -321,6 +551,237 @@ function initTiny() {
               </div>
             </div>
           </div>
+
+          <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              What is PEs
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne"
+          >
+            What is PEs
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne"
+        >
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-3">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseOne"
+          aria-expanded="true"
+          aria-controls="panelsStayOpen-collapseOne"
+        >
+          What is PEs
+        </button>
+      </h2>
+      <div
+        id="panelsStayOpen-collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="panelsStayOpen-headingOne"
+      >
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item mb-3">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseOne"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseOne"
+      >
+        What is PEs
+      </button>
+    </h2>
+    <div
+      id="panelsStayOpen-collapseOne"
+      class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingOne"
+    >
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-3">
+  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <button
+      class="accordion-button"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapseOne"
+      aria-expanded="true"
+      aria-controls="panelsStayOpen-collapseOne"
+    >
+      What is PEs
+    </button>
+  </h2>
+  <div
+    id="panelsStayOpen-collapseOne"
+    class="accordion-collapse collapse show"
+    aria-labelledby="panelsStayOpen-headingOne"
+  >
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+    </div>
+  </div>
+</div>
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+  <button
+    class="accordion-button"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseOne"
+    aria-expanded="true"
+    aria-controls="panelsStayOpen-collapseOne"
+  >
+    What is PEs
+  </button>
+</h2>
+<div
+  id="panelsStayOpen-collapseOne"
+  class="accordion-collapse collapse show"
+  aria-labelledby="panelsStayOpen-headingOne"
+>
+  <div class="accordion-body">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+  </div>
+</div>
+</div>
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+  <button
+    class="accordion-button"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseOne"
+    aria-expanded="true"
+    aria-controls="panelsStayOpen-collapseOne"
+  >
+    What is PEs
+  </button>
+</h2>
+<div
+  id="panelsStayOpen-collapseOne"
+  class="accordion-collapse collapse show"
+  aria-labelledby="panelsStayOpen-headingOne"
+>
+  <div class="accordion-body">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+  </div>
+</div>
+</div>
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+  <button
+    class="accordion-button"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseOne"
+    aria-expanded="true"
+    aria-controls="panelsStayOpen-collapseOne"
+  >
+    What is PEs
+  </button>
+</h2>
+<div
+  id="panelsStayOpen-collapseOne"
+  class="accordion-collapse collapse show"
+  aria-labelledby="panelsStayOpen-headingOne"
+>
+  <div class="accordion-body">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+  </div>
+</div>
+</div>
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+  <button
+    class="accordion-button"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseOne"
+    aria-expanded="true"
+    aria-controls="panelsStayOpen-collapseOne"
+  >
+    What is PEs
+  </button>
+</h2>
+<div
+  id="panelsStayOpen-collapseOne"
+  class="accordion-collapse collapse show"
+  aria-labelledby="panelsStayOpen-headingOne"
+>
+  <div class="accordion-body">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+  </div>
+</div>
+</div>
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+  <button
+    class="accordion-button"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#panelsStayOpen-collapseOne"
+    aria-expanded="true"
+    aria-controls="panelsStayOpen-collapseOne"
+  >
+    What is PEs
+  </button>
+</h2>
+<div
+  id="panelsStayOpen-collapseOne"
+  class="accordion-collapse collapse show"
+  aria-labelledby="panelsStayOpen-headingOne"
+>
+  <div class="accordion-body">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
+  </div>
+</div>
+</div>
           <div class="accordion-item mb-3">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button
@@ -435,7 +896,7 @@ initTiny()
 // second wysiwyg
 function initTinyproduct() {
   tinymce.init({
-    selector: 'textarea#pro_desc',
+    selector: 'textarea#shrt_desc',
     setup: function (editor) {
       editor.on('change', function () {
         editor.save()
