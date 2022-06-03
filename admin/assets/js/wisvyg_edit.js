@@ -149,7 +149,7 @@ function initTiny() {
       </div>`,
       },
       {
-        title: 'Products Content',
+        title: 'Products Content 10',
         description: 'creates a new table',
         content: `<div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item mb-3">
