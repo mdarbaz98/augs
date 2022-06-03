@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -587,6 +587,9 @@ p {
 .categoryproductED .categorysection1_inside2 h1 {
   margin: 0.625rem 0rem 2rem 0rem;
 }
+.categoryproductED .categorysection1_inside2 .moretext {
+  display: none;
+}
 .categoryproductED .categorysection1_inside2 .moreless-button {
   background-color: transparent;
   border: none;
@@ -877,17 +880,20 @@ header .navbar .header-form .autoCom-Box {
   left: 0px;
   top: 35px;
   width: 100%;
-  padding: 10px 15px 10px 15px;
-  background-color: #f1f1f1;
+  padding: 0px 10px 10px;
+  background-color: transparent;
   display: none;
 }
 header .navbar .header-form .autoCom-Box li {
-  padding: 5px 10px;
+  padding: 0px 10px;
   font-family: "Ubuntu", sans-serif;
+  background-color: #dee2e6;
   cursor: pointer;
 }
 header .navbar .header-form .autoCom-Box li a {
+  display: block;
   color: #212529;
+  padding: 5px 10px;
 }
 header .navbar .header-form .autoCom-Box li:hover {
   background-color: #ffffff;
