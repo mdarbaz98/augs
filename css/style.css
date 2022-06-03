@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -697,8 +697,25 @@ p {
   }
 }
 
+.section_blogpage .blog_tabs {
+  margin-top: 4rem;
+}
+.section_blogpage .blog_tabs .tabsbtn {
+  font-size: 15px;
+  border-radius: 7px;
+  color: #212429;
+}
+.section_blogpage .blog_tabs .nav-link:hover {
+  border-color: 2px solid #e9ecef #e9ecef #dee2e6;
+  color: #212429;
+}
+.section_blogpage .blog_tabs .nav-tabs .nav-link.active {
+  color: #FFF;
+  background-color: #212429;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
 .section_blogpage .blog-heading-content {
-  margin-top: 6rem;
+  margin-top: 3rem;
   text-align: center;
 }
 .section_blogpage .blog-heading-content h1 {
@@ -777,7 +794,7 @@ p {
     padding: 0px 15px;
   }
   .section_blogpage .blog-heading-content {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
   .section_blogpage .blog-heading-content h1 {
     font-size: 35px;
