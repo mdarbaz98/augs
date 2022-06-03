@@ -32,6 +32,7 @@ $(document).ready(function () {
   var i = 0;
   $(".blog-body h2").each(function () {
     ++i;
+    $(this).addClass("heading");
     $(this).attr("id", "h" + i);
     if (i == 1) {
       var status = "active";
@@ -46,7 +47,6 @@ $(document).ready(function () {
         >
       </li>`
     );
-
     $("#table-of-content strong").contents().unwrap();
   });
 
@@ -64,17 +64,21 @@ $(document).ready(function () {
     $(".post-sticky-accordion-btn").click();
   });
   // search filter js
-  $(".search-input").on("keyup", function () {
+  $(".search-input").on("keyup", function (event) {    
     var value = $(this).val().toLowerCase();
+    if(event.keyCode == 13){
+      window.location.href = 'http://localhost/augs/search.php?q='+value;
+    }
     if (value) {
       $(".autoCom-Box").show();
-        $(".autoCom-Box li").filter(function () {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      $(".autoCom-Box li").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
       });
     } else {
       $(".autoCom-Box").hide();
     }
   });
+
 });
 
 // readmore
@@ -87,5 +91,23 @@ $(".moreless-button").click(function () {
   }
 });
 
-// category product show and hide content 
-$(".categorysection1_inside2 h2").eq(1).next().nextAll().addClass('moretext')
+// category product show and hide content
+$(".categorysection1_inside2 h2").eq(1).next().nextAll().addClass("moretext");
+
+// add active class on scroll
+function loadBlogScrollJs() {
+  $(window).scroll(function () {
+    const headingElement = document.querySelectorAll(".tbc_links");
+    const headingSections = document.querySelectorAll(".blog-body h2");
+    const arrayForm = Array.from(headingElement);
+
+    let len = headingSections.length;
+
+    while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
+    arrayForm.forEach((ele) => {
+      console.log(ele)
+      ele.classList.remove("active");
+    });
+    arrayForm[len].classList.add("active");
+  });
+}
