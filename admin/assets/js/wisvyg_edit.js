@@ -151,424 +151,30 @@ function initTiny() {
       {
         title: 'FAQ',
         description: 'creates a question answer',
-        content: `                <div class="accordion bottom-accordion-section" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h3
-            class="accordion-header accordian-heading"
-            id="panelsStayOpen-headingOne"
-          >
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#post-accordian-1"
-              aria-expanded="true"
-              aria-controls="post-accordian-1"
-            >
-              Accordion Item
-            </button>
-          </h3>
-          <div
-            id="post-accordian-1"
-            class="accordion-collapse collapse show"
-            aria-labelledby="panelsStayOpen-headingOne"
-          >
-            <div class="accordion-body">
-              <p>
-                <span
-                  >Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Voluptatum provident quo placeat officia
-                  veniam in iusto quas dolor animi, suscipit fugit
-                  illum modi voluptatibus maxime asperiores. Iusto,
-                  dolores eligendi? Esse.</span
-                ><span
-                  >Repudiandae architecto, harum iste nemo minus
-                  nostrum doloremque? Sit, ipsum corrupti saepe sed
-                  est voluptatum nihil repellendus quo nobis nesciunt
-                  ipsa laboriosam similique vitae excepturi quos.
-                  Repudiandae dolores beatae iste.</span
-                ><span
-                  >Optio consequuntur inventore minima, placeat eos
-                  reiciendis aspernatur doloribus repellendus
-                  deleniti, sint iusto officiis ea, dolorum dolorem
-                  earum cum non perferendis. Dolor dolorem magni fugit
-                  dolorum, quibusdam quidem nobis nulla.</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3
-            class="accordion-header accordian-heading"
-            id="panelsStayOpen-headingTwo"
-          >
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
-            >
-              Accordion Item
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingTwo"
-          >
-            <div class="accordion-body">
-              <p>
-                <span
-                  >Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Voluptatum provident quo placeat officia
-                  veniam in iusto quas dolor animi, suscipit fugit
-                  illum modi voluptatibus maxime asperiores. Iusto,
-                  dolores eligendi? Esse.</span
-                ><span
-                  >Repudiandae architecto, harum iste nemo minus
-                  nostrum doloremque? Sit, ipsum corrupti saepe sed
-                  est voluptatum nihil repellendus quo nobis nesciunt
-                  ipsa laboriosam similique vitae excepturi quos.
-                  Repudiandae dolores beatae iste.</span
-                ><span
-                  >Optio consequuntur inventore minima, placeat eos
-                  reiciendis aspernatur doloribus repellendus
-                  deleniti, sint iusto officiis ea, dolorum dolorem
-                  earum cum non perferendis. Dolor dolorem magni fugit
-                  dolorum, quibusdam quidem nobis nulla.</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-        <h3
-          class="accordion-header accordian-heading"
-          id="panelsStayOpen-headingTwo"
-        >
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseTwo"
-            aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseTwo"
-          >
-            Accordion Item
-          </button>
-        </h3>
-        <div
-          id="panelsStayOpen-collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="panelsStayOpen-headingTwo"
-        >
-          <div class="accordion-body">
-            <p>
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Voluptatum provident quo placeat officia
-                veniam in iusto quas dolor animi, suscipit fugit
-                illum modi voluptatibus maxime asperiores. Iusto,
-                dolores eligendi? Esse.</span
-              ><span
-                >Repudiandae architecto, harum iste nemo minus
-                nostrum doloremque? Sit, ipsum corrupti saepe sed
-                est voluptatum nihil repellendus quo nobis nesciunt
-                ipsa laboriosam similique vitae excepturi quos.
-                Repudiandae dolores beatae iste.</span
-              ><span
-                >Optio consequuntur inventore minima, placeat eos
-                reiciendis aspernatur doloribus repellendus
-                deleniti, sint iusto officiis ea, dolorum dolorem
-                earum cum non perferendis. Dolor dolorem magni fugit
-                dolorum, quibusdam quidem nobis nulla.</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-      <h3
-        class="accordion-header accordian-heading"
-        id="panelsStayOpen-headingTwo"
-      >
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#panelsStayOpen-collapseTwo"
-          aria-expanded="false"
-          aria-controls="panelsStayOpen-collapseTwo"
-        >
-          Accordion Item
-        </button>
-      </h3>
-      <div
-        id="panelsStayOpen-collapseTwo"
-        class="accordion-collapse collapse"
-        aria-labelledby="panelsStayOpen-headingTwo"
-      >
-        <div class="accordion-body">
-          <p>
-            <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Voluptatum provident quo placeat officia
-              veniam in iusto quas dolor animi, suscipit fugit
-              illum modi voluptatibus maxime asperiores. Iusto,
-              dolores eligendi? Esse.</span
-            ><span
-              >Repudiandae architecto, harum iste nemo minus
-              nostrum doloremque? Sit, ipsum corrupti saepe sed
-              est voluptatum nihil repellendus quo nobis nesciunt
-              ipsa laboriosam similique vitae excepturi quos.
-              Repudiandae dolores beatae iste.</span
-            ><span
-              >Optio consequuntur inventore minima, placeat eos
-              reiciendis aspernatur doloribus repellendus
-              deleniti, sint iusto officiis ea, dolorum dolorem
-              earum cum non perferendis. Dolor dolorem magni fugit
-              dolorum, quibusdam quidem nobis nulla.</span
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-    <h3
-      class="accordion-header accordian-heading"
-      id="panelsStayOpen-headingTwo"
-    >
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#panelsStayOpen-collapseTwo"
-        aria-expanded="false"
-        aria-controls="panelsStayOpen-collapseTwo"
-      >
-        Accordion Item
-      </button>
-    </h3>
-    <div
-      id="panelsStayOpen-collapseTwo"
-      class="accordion-collapse collapse"
-      aria-labelledby="panelsStayOpen-headingTwo"
-    >
-      <div class="accordion-body">
-        <p>
-          <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Voluptatum provident quo placeat officia
-            veniam in iusto quas dolor animi, suscipit fugit
-            illum modi voluptatibus maxime asperiores. Iusto,
-            dolores eligendi? Esse.</span
-          ><span
-            >Repudiandae architecto, harum iste nemo minus
-            nostrum doloremque? Sit, ipsum corrupti saepe sed
-            est voluptatum nihil repellendus quo nobis nesciunt
-            ipsa laboriosam similique vitae excepturi quos.
-            Repudiandae dolores beatae iste.</span
-          ><span
-            >Optio consequuntur inventore minima, placeat eos
-            reiciendis aspernatur doloribus repellendus
-            deleniti, sint iusto officiis ea, dolorum dolorem
-            earum cum non perferendis. Dolor dolorem magni fugit
-            dolorum, quibusdam quidem nobis nulla.</span
-          >
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-  <h3
-    class="accordion-header accordian-heading"
-    id="panelsStayOpen-headingTwo"
-  >
-    <button
-      class="accordion-button collapsed"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#panelsStayOpen-collapseTwo"
-      aria-expanded="false"
-      aria-controls="panelsStayOpen-collapseTwo"
-    >
-      Accordion Item
-    </button>
-  </h3>
-  <div
-    id="panelsStayOpen-collapseTwo"
-    class="accordion-collapse collapse"
-    aria-labelledby="panelsStayOpen-headingTwo"
-  >
-    <div class="accordion-body">
-      <p>
-        <span
-          >Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Voluptatum provident quo placeat officia
-          veniam in iusto quas dolor animi, suscipit fugit
-          illum modi voluptatibus maxime asperiores. Iusto,
-          dolores eligendi? Esse.</span
-        ><span
-          >Repudiandae architecto, harum iste nemo minus
-          nostrum doloremque? Sit, ipsum corrupti saepe sed
-          est voluptatum nihil repellendus quo nobis nesciunt
-          ipsa laboriosam similique vitae excepturi quos.
-          Repudiandae dolores beatae iste.</span
-        ><span
-          >Optio consequuntur inventore minima, placeat eos
-          reiciendis aspernatur doloribus repellendus
-          deleniti, sint iusto officiis ea, dolorum dolorem
-          earum cum non perferendis. Dolor dolorem magni fugit
-          dolorum, quibusdam quidem nobis nulla.</span
-        >
-      </p>
-    </div>
-  </div>
-</div>
-<div class="accordion-item">
-<h3
-  class="accordion-header accordian-heading"
-  id="panelsStayOpen-headingTwo"
->
-  <button
-    class="accordion-button collapsed"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseTwo"
-    aria-expanded="false"
-    aria-controls="panelsStayOpen-collapseTwo"
-  >
-    Accordion Item
-  </button>
-</h3>
-<div
-  id="panelsStayOpen-collapseTwo"
-  class="accordion-collapse collapse"
-  aria-labelledby="panelsStayOpen-headingTwo"
->
-  <div class="accordion-body">
-    <p>
-      <span
-        >Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Voluptatum provident quo placeat officia
-        veniam in iusto quas dolor animi, suscipit fugit
-        illum modi voluptatibus maxime asperiores. Iusto,
-        dolores eligendi? Esse.</span
-      ><span
-        >Repudiandae architecto, harum iste nemo minus
-        nostrum doloremque? Sit, ipsum corrupti saepe sed
-        est voluptatum nihil repellendus quo nobis nesciunt
-        ipsa laboriosam similique vitae excepturi quos.
-        Repudiandae dolores beatae iste.</span
-      ><span
-        >Optio consequuntur inventore minima, placeat eos
-        reiciendis aspernatur doloribus repellendus
-        deleniti, sint iusto officiis ea, dolorum dolorem
-        earum cum non perferendis. Dolor dolorem magni fugit
-        dolorum, quibusdam quidem nobis nulla.</span
-      >
-    </p>
-  </div>
-</div>
-</div>
-        <div class="accordion-item">
-          <h3
-            class="accordion-header accordian-heading"
-            id="panelsStayOpen-headingThree"
-          >
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Accordion Item
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingThree"
-          >
-            <div class="accordion-body">
-              <p>
-                <span
-                  >Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Voluptatum provident quo placeat officia
-                  veniam in iusto quas dolor animi, suscipit fugit
-                  illum modi voluptatibus maxime asperiores. Iusto,
-                  dolores eligendi? Esse.</span
-                ><span
-                  >Repudiandae architecto, harum iste nemo minus
-                  nostrum doloremque? Sit, ipsum corrupti saepe sed
-                  est voluptatum nihil repellendus quo nobis nesciunt
-                  ipsa laboriosam similique vitae excepturi quos.
-                  Repudiandae dolores beatae iste.</span
-                ><span
-                  >Optio consequuntur inventore minima, placeat eos
-                  reiciendis aspernatur doloribus repellendus
-                  deleniti, sint iusto officiis ea, dolorum dolorem
-                  earum cum non perferendis. Dolor dolorem magni fugit
-                  dolorum, quibusdam quidem nobis nulla.</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>`,
+        content: ``,
       },
 
       {
         title: 'Products Content',
         description: 'creates a new table',
-        content: `<div class="container pt-5 pb-2">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne"
-              >
-                What is PEs
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="panelsStayOpen-headingOne"
-            >
-              <div class="accordion-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item mb-3">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        content: `<div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-1">
             <button
               class="accordion-button"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
+              data-bs-target="#panelsStayOpen-collapse-1"
               aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
+              aria-controls="panelsStayOpen-collapse-1"
             >
-              What is PEs
+             1. What is PEs 
             </button>
           </h2>
           <div
-            id="panelsStayOpen-collapseOne"
+            id="panelsStayOpen-collapse-1"
             class="accordion-collapse collapse show"
-            aria-labelledby="panelsStayOpen-headingOne"
+            aria-labelledby="panelsStayOpen-heading-1"
           >
             <div class="accordion-body">
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
@@ -576,275 +182,286 @@ function initTiny() {
           </div>
         </div>
         <div class="accordion-item mb-3">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne"
-            aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne"
+          <h2 class="accordion-header" id="panelsStayOpen-heading-3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-3"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-3"
+            >
+             2. Conclusion 
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-3"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-3"
           >
-            What is PEs
-          </button>
-        </h2>
-        <div
-          id="panelsStayOpen-collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="panelsStayOpen-headingOne"
-        >
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item mb-3">
-      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#panelsStayOpen-collapseOne"
-          aria-expanded="true"
-          aria-controls="panelsStayOpen-collapseOne"
-        >
-          What is PEs
-        </button>
-      </h2>
-      <div
-        id="panelsStayOpen-collapseOne"
-        class="accordion-collapse collapse show"
-        aria-labelledby="panelsStayOpen-headingOne"
-      >
-        <div class="accordion-body">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item mb-3">
-    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-      <button
-        class="accordion-button"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#panelsStayOpen-collapseOne"
-        aria-expanded="true"
-        aria-controls="panelsStayOpen-collapseOne"
-      >
-        What is PEs
-      </button>
-    </h2>
-    <div
-      id="panelsStayOpen-collapseOne"
-      class="accordion-collapse collapse show"
-      aria-labelledby="panelsStayOpen-headingOne"
-    >
-      <div class="accordion-body">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item mb-3">
-  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-    <button
-      class="accordion-button"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#panelsStayOpen-collapseOne"
-      aria-expanded="true"
-      aria-controls="panelsStayOpen-collapseOne"
-    >
-      What is PEs
-    </button>
-  </h2>
-  <div
-    id="panelsStayOpen-collapseOne"
-    class="accordion-collapse collapse show"
-    aria-labelledby="panelsStayOpen-headingOne"
-  >
-    <div class="accordion-body">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-    </div>
-  </div>
-</div>
-<div class="accordion-item mb-3">
-<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseOne"
-    aria-expanded="true"
-    aria-controls="panelsStayOpen-collapseOne"
-  >
-    What is PEs
-  </button>
-</h2>
-<div
-  id="panelsStayOpen-collapseOne"
-  class="accordion-collapse collapse show"
-  aria-labelledby="panelsStayOpen-headingOne"
->
-  <div class="accordion-body">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-  </div>
-</div>
-</div>
-<div class="accordion-item mb-3">
-<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseOne"
-    aria-expanded="true"
-    aria-controls="panelsStayOpen-collapseOne"
-  >
-    What is PEs
-  </button>
-</h2>
-<div
-  id="panelsStayOpen-collapseOne"
-  class="accordion-collapse collapse show"
-  aria-labelledby="panelsStayOpen-headingOne"
->
-  <div class="accordion-body">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-  </div>
-</div>
-</div>
-<div class="accordion-item mb-3">
-<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseOne"
-    aria-expanded="true"
-    aria-controls="panelsStayOpen-collapseOne"
-  >
-    What is PEs
-  </button>
-</h2>
-<div
-  id="panelsStayOpen-collapseOne"
-  class="accordion-collapse collapse show"
-  aria-labelledby="panelsStayOpen-headingOne"
->
-  <div class="accordion-body">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-  </div>
-</div>
-</div>
-<div class="accordion-item mb-3">
-<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseOne"
-    aria-expanded="true"
-    aria-controls="panelsStayOpen-collapseOne"
-  >
-    What is PEs
-  </button>
-</h2>
-<div
-  id="panelsStayOpen-collapseOne"
-  class="accordion-collapse collapse show"
-  aria-labelledby="panelsStayOpen-headingOne"
->
-  <div class="accordion-body">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-  </div>
-</div>
-</div>
-<div class="accordion-item mb-3">
-<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#panelsStayOpen-collapseOne"
-    aria-expanded="true"
-    aria-controls="panelsStayOpen-collapseOne"
-  >
-    What is PEs
-  </button>
-</h2>
-<div
-  id="panelsStayOpen-collapseOne"
-  class="accordion-collapse collapse show"
-  aria-labelledby="panelsStayOpen-headingOne"
->
-  <div class="accordion-body">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, rerum cum reiciendis fugiat officiis, suscipit ducimus minima illo omnis, accusamus fuga? Delectus laborum, distinctio, fuga laboriosam tenetur, soluta eveniet voluptate quis dolore atque vel temporibus? Sint perferendis accusantium a, reiciendis quos voluptas recusandae assumenda odio ex facere neque et repudiandae nisi autem sed id. Sapiente in, aliquid id beatae deleniti officiis possimus molestiae eveniet fugit perferendis quibusdam illo recusandae quia aperiam consequatur vel incidunt ex vero facilis nobis quas quaerat. Aspernatur quaerat, esse cum atque id quae asperiores deleniti itaque?</p>
-  </div>
-</div>
-</div>
-          <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo"
-                aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo"
-              >
-                FAQ's
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It
-                is hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this
-                with custom CSS or overriding our default variables. It's also
-                worth noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree"
-                aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree"
-              >
-                Conclusion
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingThree"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It
-                is hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this
-                with custom CSS or overriding our default variables. It's also
-                worth noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
             </div>
           </div>
         </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-4"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-4"
+            >
+            3.  Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-4"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-4"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-5">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-5"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-5"
+            >
+            4.  Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-5"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-5"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-6">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-6"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-6"
+            >
+            5.  Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-6"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-6"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-7">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-7"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-7"
+            >
+            6. Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-7"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-7"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-8">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-8"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-8"
+            >
+            7. Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-8"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-8"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-9">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-9"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-9"
+            >
+             8. Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-9"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-9"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-2"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-2"
+            >
+             9. FAQ's
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-2"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-2"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="panelsStayOpen-heading-10">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapse-10"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapse-10"
+            >
+             10. Conclusion
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapse-10"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-heading-10"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It
+              is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this
+              with custom CSS or overriding our default variables. It's also
+              worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+
       </div>`,
       },
       {
