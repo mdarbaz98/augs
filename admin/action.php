@@ -242,14 +242,13 @@ if($_POST['btn']=='addProduct'){
     }
 
     
-    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,description,content,title,seo_title,shrt_desc, strnt, prc,slug, link, cat_id, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    if($stmt->execute([$img_id, $name,  $title,$descri, $seo_title,  $content,$shrt_descri,$strn, $prc, $slug, $link, $cat, $PostDate, $draft])){
+    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,title,seo_title, content,shrt_desc, strnt, prc, slug, link, cat_id, description, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    if($stmt->execute([$img_id, $name,  $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat,$descri, $PostDate, $draft])){
       echo "Product Inserted Sucessfully";
     }
   }
 
   if($_POST['btn']=='updateProduct'){
-    $product_id=$_POST['product_id'];
     $product_id="";
     if(isset($_POST['product_id'])){
         $product_id = trim_data($_POST['product_id']);
@@ -322,7 +321,6 @@ if($_POST['btn']=='addProduct'){
     }else{
         $cat="";
     }  
-    $img_id = $_POST['img_id'];
     $img_id="";
     if(isset($_POST['img_id'])){
         $img_id = trim_data($_POST['img_id']);
@@ -330,8 +328,8 @@ if($_POST['btn']=='addProduct'){
         $img_id="";
     }  
     
-    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, description=?, shrt_desc=?,content =?,title=?,seo_title=?,strnt=?, prc=?,slug=?,link=?,cat_id=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content,$descri,$shrt_descri, $strn, $prc, $slug, $link,$cat,1,$product_id])){
+    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
+    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link,$cat,$descri, 1, $product_id])){
       echo "updated";
     }
   }

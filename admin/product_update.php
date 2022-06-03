@@ -38,7 +38,7 @@ include('include/config.php');
 										<div class="form-group    w-100">
 											<textarea id="content" name="content" class="form-control" rows="40"><?php echo $row['content'] ?></textarea>
 										</div>
-										<div class="form-group short mt-1  w-100">
+										<div class="form-group short mt-2  w-100">
 												<label for="horizontal-firstname-input">Product Description</label>
 												<textarea id="shrt_desc" name="shrt_desc" class="form-control" rows="40" ><?php echo $row['shrt_desc'] ?></textarea>
 										</div>
