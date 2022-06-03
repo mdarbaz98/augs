@@ -1,8 +1,8 @@
-@use './variables'as *;
+@use './variables' as *;
 @use './base/reset';
 @use './base/typography';
-@use './components'as *;
-@use './utilities/'as *;
+@use './components' as *;
+@use './utilities/' as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -66,7 +66,6 @@
 
 .section-2 {
   .home-blog-section {
-
     #home-owl-carousel,
     #product-owl-carousel,
     #categoryproduct-owl-carousel,
@@ -337,7 +336,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.25rem 1.25rem;
@@ -366,7 +364,6 @@
     }
 
     .main-section {
-
       .main-section-inside1,
       .contact-section-inside2 {
         @include image-css(100%, 320px);
@@ -394,7 +391,7 @@
       margin: 0.625rem 0rem 2rem 0rem;
     }
 
-    .moretext{
+    .moretext {
       display: none;
     }
 
@@ -677,7 +674,6 @@
 
 // header section css
 header {
-
   // z-index: 10;
   .logo-img {
     width: 70px;
@@ -1321,7 +1317,6 @@ header {
     .table-of-content {
       li {
         a {
-
           span,
           h2 {
             font-size: 1.5rem !important;
@@ -1333,7 +1328,6 @@ header {
 }
 
 // post page css
-
 
 // search
 .search_section {
@@ -1407,5 +1401,4 @@ header {
       }
     }
   }
-
 }
