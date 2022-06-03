@@ -85,9 +85,9 @@ include('admin/include/config.php');
                             <button class="btn menu-open-btn text-white ">
                               <i class="fa-solid fa-bars"></i>
                               </button>
-                              <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
+                              <a class="navbar-brand" href=""><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
                         </div>
-                         <form class="header-form d-flex">
+                         <form class="header-form d-flex" onsubmit="return false">
                            <input class="form-control search-input me-2" type="search" placeholder="Search here..." aria-label="Search">
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                            <div class="wrapper">

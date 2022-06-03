@@ -1,6 +1,6 @@
 <?php include('./include/header.php');
-	  	include('admin/include/config.php'); ?>
-	<section class="home__section pt-5">
+	  	include('admin/include/config.php');?>
+	<section class="home__section pt-4">
 		<div class="section-1">
 			<div class="container-fluid">
 				<div class="row">
