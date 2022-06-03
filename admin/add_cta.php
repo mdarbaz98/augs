@@ -69,6 +69,8 @@ include('include/config.php');
 								
 							 </div>
 							 <input type="hidden" class="image_id" name="img_id" />
+							 <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3">Remove Image</button> </div>
+
 								<div class="customefeature_image w-75  ml-5"> <img src="" alt="" class="image_path">
 							 </div>
 								<!-- Drop Box -->

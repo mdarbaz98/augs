@@ -113,7 +113,7 @@ if($_POST['btn']=='updateCategory'){
   }
   $stmt = $conn->prepare("UPDATE category SET img_id=?, name=?, title=?, slug=?, content=?, description=?, status=? WHERE id=?");
   if($stmt->execute([$img_id, $cat_name, $title, $slug, $content, $desc, 1, $cat_id])){
-    echo "category updated sucessfully";
+    echo "updated";
   }
 
 }
