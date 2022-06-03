@@ -1,3 +1,4 @@
+<?php include('admin/include/config.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,9 +35,26 @@
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                            <div class="wrapper">
                            <ul class="text-black list-unstyled autoCom-Box">
-                             <li><a href="">skdf</a></li>
-                             <li><a href="">tata</a></li>
-                             <li><a href="">oopopo</a></li>
+                            <?php
+                              $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
+                              $selectBlog1->execute(); 
+                              $countCat1 = $selectBlog1->rowCount(); 
+                              if($countCat1>0){
+                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                                $title1 = $row1['title'];
+                                $slug1 = $row1['slug'];
+                            ?>
+                             <li class="searched_list"><a href="<?php echo $slug1 ?>"><?php echo $title1 ?></a></li> 
+                             <?php
+                                }
+                              }
+                              else{
+                                  ?><li>NO Search Result</li>
+                                  <?php 
+                              }
+                            ?>
+                                
+
                              </ul>
                            </div>
                          </form>

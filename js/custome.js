@@ -66,9 +66,14 @@ $(document).ready(function () {
   // search filter js
   $(".search-input").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    $(".autoCom-Box li").filter(function () {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-    });
+    if(value){
+      $('.autoCom-Box').show()
+      $(".autoCom-Box li").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      })
+    }else{
+      $('.autoCom-Box').hide()
+    }
   });
 });
 // readmore
