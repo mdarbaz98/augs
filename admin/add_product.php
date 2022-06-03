@@ -57,7 +57,7 @@
 
 										<div class=" w-100 ">
 													<label for="horizontal-firstname-input" class="col-form-label">Title</label>
-													<input type="text" class="form-control" id="title" name="title" placeholder="SEO Title">
+													<input type="text" class="form-control" id="title" name="title" placeholder=" Title">
 										</div>	
 										<div class=" w-100 ">
 													<label for="horizontal-firstname-input" class="col-form-label">Seo Title</label>
@@ -65,15 +65,15 @@
 										</div>	
 										<div class=" w-100 ">
 													<label for="horizontal-firstname-input" class="col-form-label">Strength</label>
-													<input type="text" class="form-control" id="strn" name="strn" placeholder="SEO Title">
+													<input type="text" class="form-control" id="strn" name="strn" placeholder="Strength">
 										</div>	
 										<div class="w-100">
 														<label for="horizontal-firstname-input" class="col-form-label">Price</label>
-														<input type="text" class="form-control" id="prc" name="prc" placeholder="SEO Title">
+														<input type="text" class="form-control" id="prc" name="prc" placeholder="Price ">
 										</div>	
 										<div class=" w-100">
 													<label for="horizontal-firstname-input" class="col-form-label">Link</label>
-													<input type="text" class="form-control" id="link" name="link" placeholder="SEO Title"> 
+													<input type="text" class="form-control" id="link" name="link" placeholder="Link "> 
 										</div>
 										<div class=" mt-1">
 											<div class=" w-100">

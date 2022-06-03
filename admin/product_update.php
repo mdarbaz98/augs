@@ -38,7 +38,7 @@ include('include/config.php');
 										<div class="form-group    w-100">
 											<textarea id="content" name="content" class="form-control" rows="40"><?php echo $row['content'] ?></textarea>
 										</div>
-										<div class="form-group short mt-1  w-100">
+										<div class="form-group short mt-2  w-100">
 												<label for="horizontal-firstname-input">Product Description</label>
 												<textarea id="shrt_desc" name="shrt_desc" class="form-control" rows="40" ><?php echo $row['shrt_desc'] ?></textarea>
 										</div>
@@ -82,18 +82,16 @@ include('include/config.php');
 										<div class=" mt-1">
 										<div class="form-group w-100">
 												<label class="form-label"> Select Category </label>
-												<?php $stmt = $conn->prepare("SELECT * FROM `category` WHERE status=?");
-												$stmt->execute([1]);
-												$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+												<?php 	$stmt = $conn->prepare("SELECT * FROM `category` WHERE status=?");
+														$stmt->execute([1]);
+														$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 													?>
 													<select class="form-control sel_cat" id="category" name="category" title="Please select Category">
 														<option value="">Pick a Category... </option>
 														<?php foreach ($data as $data) {
-														?>
-															<option value="<?php echo $data['id']; ?>">
-																<?php echo $data['name']; ?>
-															</option>
-															<?php } ?>
+            											?> 
+														<option value="<?php echo $data['id']; ?>" <?php if ($data['id'] == $row['cat_id']) echo ' selected="selected"'; ?> ><?php echo $data['name']; ?></option>
+           											 <?php } ?>
 													</select>
 										</div>
 										<div class=" w-100 ">

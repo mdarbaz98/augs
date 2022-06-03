@@ -12,7 +12,7 @@ $('#cta_form').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
+
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -40,7 +40,6 @@ $('#updateCta').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -81,7 +80,6 @@ $('#product_form').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -120,7 +118,6 @@ $('#updateProduct').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -149,7 +146,6 @@ $('#user_form').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -178,7 +174,6 @@ $('#Updateuser').validate({
   },
   messages: {},
   submitHandler: function (form) {
-    alert('validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -215,9 +210,8 @@ $('#addCategory').validate({
     category: 'Please Select Category',
     img_id: 'Select Image',
   },
-  submitHandler: function (form) {
-    alert('validated form')
-    $.ajax({
+  submitHandler: function (form) {   
+     $.ajax({
       url: 'action.php',
       type: 'post',
       data: new FormData(form),
@@ -254,7 +248,6 @@ $('#updateCategory').validate({
     img_id: 'Select Image',
   },
   submitHandler: function (form) {
-    alert('update validated form')
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -776,7 +769,6 @@ $('#quotesForm').submit(function (event) {
     },
 
     submitHandler: function (form) {
-      //alert("validated form");
       $.ajax({
         url: 'edit_quotes.php',
         type: 'post',
