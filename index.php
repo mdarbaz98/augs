@@ -71,7 +71,7 @@
 							<div class="blog-desc-sec pb-3 px-3 px-md-5">
 								<h1 class="my-2"><?php echo $data['title'] ?></h1>
 								<p><?php echo $data['description'] ?></p>
-								<button class="sq-btn">READ MORE</button>
+								<a href="<?php echo $data['slug'] ?>"><button class="sq-btn">READ MORE</button></a>
 							</div>
 						</a>
 					</div>
