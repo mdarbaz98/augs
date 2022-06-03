@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -897,9 +897,14 @@ header .navbar .header-form .autoCom-Box {
   left: 0px;
   top: 35px;
   width: 100%;
+<<<<<<< Updated upstream
   padding: 0px 10px 10px;
   background-color: transparent;
   display: none;
+=======
+  padding: 10px 15px 10px 15px;
+  background-color: #f1f1f1;
+>>>>>>> Stashed changes
 }
 header .navbar .header-form .autoCom-Box li {
   padding: 0px 10px;

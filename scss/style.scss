@@ -706,10 +706,16 @@ header {
         left: 0px;
         top: 35px;
         width: 100%;
+<<<<<<< Updated upstream
         padding: 0px 10px 10px;
         background-color: transparent;
         display: none;
 
+=======
+        padding: 10px 15px 10px 15px;
+        background-color: #f1f1f1;
+        // display: none
+>>>>>>> Stashed changes
         li {
           padding: 0px 10px;
           font-family: $para-font;
