@@ -63,6 +63,8 @@
     <form id="imageUpdate">
       <h4 class="card-title"><?php echo $row['name'] ?></h4>
       <p class="card-text"><?php echo $date = date('d F Y', strtotime($row['date'])); ?></p>
+         
+
       <p class="card-text">size <?php
       echo $size = formatSizeUnits($row['size'])
       ?></p>
@@ -76,7 +78,9 @@
       </div>
       <input type="hidden" name="img_id" value="<?php echo $row['id'] ?>"/>
       <input type="hidden" name="btn" value="image_update"/>
-      <input type="submit" class="btn btn-primary" value="Update"/>
+      <div class=" d-flex justify-content-between m-2">
+        <input type="submit" class="btn btn-primary" value="Update"/>
+        <button type="button" class="btn btn-danger float-center my-3">Permanent Delete</button> </div>     
     </form>
           </div>
         </div>

@@ -81,8 +81,25 @@
 }
 
 @mixin blogbox {
+  .blog_tabs{
+    margin-top: 4rem;
+    .tabsbtn{
+      font-size: 15px;
+      border-radius: 7px;
+      color: #212429;
+    }
+     .nav-link:hover {
+      border-color: 2px solid#e9ecef #e9ecef #dee2e6;
+      color: #212429;
+  }
+    .nav-tabs .nav-link.active{
+      color: #FFF;
+    background-color: #212429;
+    border-color: #dee2e6 #dee2e6 #fff;
+    }
+  }
   .blog-heading-content{
-    margin-top: 6rem;
+    margin-top: 3rem;
     text-align: center;
     h1{
       text-transform: capitalize;

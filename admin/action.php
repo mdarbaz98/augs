@@ -25,25 +25,92 @@ if($_POST['btn']=='image_update'){
   }
 }
 if($_POST['btn']=='addCategory'){
-  $cat_name = $_POST['cat_name'];
-  $title = $_POST['title'];
-  $slug = $_POST['slug'];
-  $content = $_POST['content'];
+  $cat_name="";
+  if(isset($_POST['cat_name'])){
+      $cat_name = trim_data($_POST['cat_name']);
+  }else{
+      $cat_name="";
+  }
+  $title="";
+  if(isset($_POST['title'])){
+      $title = trim_data($_POST['title']);
+  }else{
+      $title="";
+  }
+  $slug="";
+  if(isset($_POST['slug'])){
+      $slug = trim_data($_POST['slug']);
+  }else{
+      $slug="";
+  }
+  $content="";
+  if(isset($_POST['content'])){
+      $content = ($_POST['content']);
+  }else{
+      $content="";
+  }
   $desc = $_POST['desc'];
-  $img_id = $_POST['img_id'];
+  $desc="";
+  if(isset($_POST['desc'])){
+      $desc = trim_data($_POST['desc']);
+  }else{
+      $desc="";
+  }
+  $img_id="";
+  if(isset($_POST['img_id'])){
+      $img_id = trim_data($_POST['img_id']);
+  }else{
+      $img_id="";
+  }
   $stmt = $conn->prepare("INSERT INTO category(img_id, name, title, slug, content, description, status) VALUES(?,?,?,?,?,?,?)");
   if($stmt->execute([$img_id, $cat_name, $title, $slug, $content, $desc, 1])){
-    echo "inserted";
+    echo "category inserted sucessfully";
   }
 }
 if($_POST['btn']=='updateCategory'){
-  $cat_id = $_POST['cat_id'];
-  $cat_name = $_POST['cat_name'];
-  $title = $_POST['title'];
-  $slug = $_POST['slug'];
-  $content = $_POST['content'];
+  $cat_id="";
+  if(isset($_POST['cat_id'])){
+      $cat_id = trim_data($_POST['cat_id']);
+  }else{
+      $cat_id="";
+  }
+  $cat_name="";
+  if(isset($_POST['cat_name'])){
+      $cat_name = trim_data($_POST['cat_name']);
+  }else{
+      $cat_name="";
+  }
+  $title="";
+  if(isset($_POST['title'])){
+      $title = trim_data($_POST['title']);
+  }else{
+      $title="";
+  }
+  $slug="";
+  if(isset($_POST['slug'])){
+      $slug = trim_data($_POST['slug']);
+  }else{
+      $slug="";
+  }
+  $content="";
+  if(isset($_POST['content'])){
+      $content = ($_POST['content']);
+  }else{
+      $content="";
+  }
   $desc = $_POST['desc'];
-  $img_id = $_POST['img_id'];
+  $desc="";
+  if(isset($_POST['desc'])){
+      $desc = trim_data($_POST['desc']);
+  }else{
+      $desc="";
+  }
+  $img_id="";
+  if(isset($_POST['img_id'])){
+      $img_id = trim_data($_POST['img_id']);
+  }else{
+      $img_id="";
+  }
   $stmt = $conn->prepare("UPDATE category SET img_id=?, name=?, title=?, slug=?, content=?, description=?, status=? WHERE id=?");
   if($stmt->execute([$img_id, $cat_name, $title, $slug, $content, $desc, 1, $cat_id])){
     echo "updated";
@@ -90,21 +157,77 @@ if($_POST['btn']=='addCta'){
 if($_POST['btn']=='addProduct'){
     $name="";
     if(isset($_POST['pro_name'])){
-        $name=$_POST['pro_name'];
+        $name = trim_data($_POST['pro_name']);
     }else{
         $name="";
     }
-    $title=$_POST['title'];
-    $seo_title=$_POST['seo_title'];
-    $descri = $_POST['description'];
-    $content=$_POST['content'];
-    $shrt_descri = $_POST['shrt_desc'];
-    $slug = $_POST['slug'];
-    $strn = $_POST['strn'];
-    $prc = $_POST['prc'];
-    $link = $_POST['link'];
-    $cat = $_POST['category'];   
+    $title="";
+    if(isset($_POST['title'])){
+        $title = trim_data($_POST['title']);
+    }else{
+        $title="";
+    }
+    $seo_title="";
+    if(isset($_POST['seo_title'])){
+        $seo_title = trim_data($_POST['seo_title']);
+    }else{
+        $seo_title="";
+    }
+    $descri="";
+    if(isset($_POST['description'])){
+        $descri = trim_data($_POST['description']);
+    }else{
+        $descri="";
+    }
+    $content="";
+    if(isset($_POST['content'])){
+        $content = $_POST['content'];
+    }else{
+        $content="";
+    }
+    $shrt_descri="";
+    if(isset($_POST['shrt_desc'])){
+        $shrt_descri = $_POST['shrt_desc'];
+    }else{
+        $shrt_descri="";
+    }
+    $slug="";
+    if(isset($_POST['slug'])){
+        $slug = trim_data($_POST['slug']);
+    }else{
+        $slug="";
+    }
+    $strn="";
+    if(isset($_POST['strn'])){
+        $strn = trim_data($_POST['strn']);
+    }else{
+        $strn="";
+    }
+    $prc="";
+    if(isset($_POST['prc'])){
+        $prc = trim_data($_POST['prc']);
+    }else{
+        $prc="";
+    }
+    $link="";
+    if(isset($_POST['link'])){
+        $link = trim_data($_POST['link']);
+    }else{
+        $link="";
+    }
+    $cat="";
+    if(isset($_POST['category'])){
+        $cat = trim_data($_POST['category']);
+    }else{
+        $cat="";
+    }  
     $img_id = $_POST['img_id'];
+    $img_id="";
+    if(isset($_POST['img_id'])){
+        $img_id = trim_data($_POST['img_id']);
+    }else{
+        $img_id="";
+    }  
     $draft=0;
     if(isset($_POST['draft'])){
         $draft = $_POST['draft'];
@@ -119,27 +242,94 @@ if($_POST['btn']=='addProduct'){
     }
 
     
-    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,description,content,title,seo_title,shrt_desc, strnt, prc,slug, link, cat_id, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    if($stmt->execute([$img_id, $name,  $title,$descri, $seo_title,  $content,$shrt_descri,$strn, $prc, $slug, $link, $cat, $PostDate, $draft])){
-      echo "inserted";
+    $stmt = $conn->prepare("INSERT INTO product(img_id, name ,title,seo_title, content,shrt_desc, strnt, prc, slug, link, cat_id, description, PostDate, status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    if($stmt->execute([$img_id, $name,  $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat,$descri, $PostDate, $draft])){
+      echo "Product Inserted Sucessfully";
     }
   }
+
   if($_POST['btn']=='updateProduct'){
-    $product_id=$_POST['product_id'];
-    $name = $_POST['pro_name'];
-    $title=$_POST['title'];
-    $seo_title=$_POST['seo_title'];
-    $content=$_POST['content'];
-    $shrt_descri = $_POST['shrt_desc'];
-    $descri = $_POST['description'];
-    $strn = $_POST['strn'];
-    $prc = $_POST['prc'];
-    $slug = $_POST['slug'];
-    $link = $_POST['link'];
-    $cat = $_POST['category'];   
-    $img_id = $_POST['img_id'];
-    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, description=?, shrt_desc=?,content =?,title=?,seo_title=?,strnt=?, prc=?,slug=?,link=?,cat_id=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content,$descri,$shrt_descri, $strn, $prc, $slug, $link,$cat,1,$product_id])){
+    $product_id="";
+    if(isset($_POST['product_id'])){
+        $product_id = trim_data($_POST['product_id']);
+    }else{
+        $product_id="";
+    }
+    $name="";
+    if(isset($_POST['pro_name'])){
+        $name = trim_data($_POST['pro_name']);
+    }else{
+        $name="";
+    }
+    $title="";
+    if(isset($_POST['title'])){
+        $title = trim_data($_POST['title']);
+    }else{
+        $title="";
+    }
+    $seo_title="";
+    if(isset($_POST['seo_title'])){
+        $seo_title = trim_data($_POST['seo_title']);
+    }else{
+        $seo_title="";
+    }
+    $descri="";
+    if(isset($_POST['description'])){
+        $descri = trim_data($_POST['description']);
+    }else{
+        $descri="";
+    }
+    $content="";
+    if(isset($_POST['content'])){
+        $content = $_POST['content'];
+    }else{
+        $content="";
+    }
+    $shrt_descri="";
+    if(isset($_POST['shrt_desc'])){
+        $shrt_descri = $_POST['shrt_desc'];
+    }else{
+        $shrt_descri="";
+    }
+    $slug="";
+    if(isset($_POST['slug'])){
+        $slug = trim_data($_POST['slug']);
+    }else{
+        $slug="";
+    }
+    $strn="";
+    if(isset($_POST['strn'])){
+        $strn = trim_data($_POST['strn']);
+    }else{
+        $strn="";
+    }
+    $prc="";
+    if(isset($_POST['prc'])){
+        $prc = trim_data($_POST['prc']);
+    }else{
+        $prc="";
+    }
+    $link="";
+    if(isset($_POST['link'])){
+        $link = trim_data($_POST['link']);
+    }else{
+        $link="";
+    }
+    $cat="";
+    if(isset($_POST['category'])){
+        $cat = trim_data($_POST['category']);
+    }else{
+        $cat="";
+    }  
+    $img_id="";
+    if(isset($_POST['img_id'])){
+        $img_id = trim_data($_POST['img_id']);
+    }else{
+        $img_id="";
+    }  
+    
+    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
+    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link,$cat,$descri, 1, $product_id])){
       echo "updated";
     }
   }
@@ -171,7 +361,7 @@ if($_POST['btn']=='addUser'){
     $img_id = $_POST['img_id'];
     $stmt = $conn->prepare("INSERT INTO user(img_id,name ,username,password,status) VALUES(?,?,?,?,?)");
     if($stmt->execute([$img_id, $name, $username,  $pwd,1])){
-      echo "inserted";
+      echo "User Inserted Sucessfully";
     }
   }
 //   UPDATE
@@ -183,7 +373,7 @@ if($_POST['btn']=='addUser'){
     $img_id = $_POST['img_id'];
     $stmt = $conn->prepare("UPDATE user SET img_id=?, name=?, username=?, password=?, status=? WHERE id=?");
     if($stmt->execute([$img_id, $name, $username,  $pwd, 1, $user_id])){
-      echo "updated";
+      echo "User updated Sucessfully";
     }
   }
 
@@ -476,7 +666,43 @@ if($_POST['btn']=='trashPost_id'){
             
     }//update post end
 
+//Remove features image
+if($_POST['btn']=="removeFeatureimage_id")
+{
+    $id = $_POST['removeFeatureimage_id'];
+    $selectAuthor=$conn->prepare("SELECT * FROM blog WHERE id = '$id'");
+    $selectAuthor->execute();
+    while($row=$selectAuthor->fetch(PDO::FETCH_ASSOC)){
+        $filename = $row['featured_image'];
+        $path = '../assets/upload/'.$filename;
+        if(file_exists($path)) {
+            unlink($path);
+            $sql=$conn->prepare("UPDATE `blog` SET `featured_image`='' WHERE `id`=?");            
+            $sql->execute([$id]);
+            echo "Updated";
+            } 
+      
+    }
+}
 
+//Delete features image
+if($_POST['btn']=="deleteFeatureimage_id")
+{
+    $id = $_POST['deleteFeatureimage_id'];
+    $selectAuthor=$conn->prepare("SELECT * FROM blog WHERE id = '$id'");
+    $selectAuthor->execute();
+    while($row=$selectAuthor->fetch(PDO::FETCH_ASSOC)){
+        $filename = $row['featured_image'];
+        $path = '../assets/upload/'.$filename;
+        if(file_exists($path)) {
+            unlink($path);
+            $sql=$conn->prepare("UPDATE `blog` SET `featured_image`='' WHERE `id`=?");            
+            $sql->execute([$id]);
+            echo "Updated";
+            } 
+      
+    }
+}
 
 
 

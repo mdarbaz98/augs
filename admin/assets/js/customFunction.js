@@ -369,7 +369,7 @@ function deleteEnquiry(id) {
       },
       success: function (data) {
         if (data == 'deleted') {
-          alert('Enquiry Successfully deleteed')
+          alert('Enquiry Successfully deleted')
           location.reload()
         }
       },
@@ -391,6 +391,49 @@ function deleteProduct(id) {
       success: function (data) {
         if (data == 'deleted') {
           alert('Product Successfully Deleted')
+          location.reload()
+        }
+      },
+    })
+  }
+}
+// Remove features images
+function removeFeatureimage(id) {
+  var x = confirm('Are you sure you want to permanent delete this?')
+  if (x) {
+    $.ajax({
+      type: 'POST',
+      url: 'action.php',
+      dataType: 'html',
+      data: {
+        removeFeatureimage_id: id,
+        btn: 'removeFeatureimage_id',
+      },
+      success: function (data) {
+        if (data == 'Updated') {
+          alert('Blog Image Deleted Successfully')
+          location.reload()
+        }
+      },
+    })
+  }
+}
+
+// Delete feature Images
+function deleteFeatureimage(id) {
+  var x = confirm('Are you sure you want to permanent delete this?')
+  if (x) {
+    $.ajax({
+      type: 'POST',
+      url: 'action.php',
+      dataType: 'html',
+      data: {
+        deleteFeatureimage_id: id,
+        btn: 'deleteFeatureimage_id',
+      },
+      success: function (data) {
+        if (data == 'Updated') {
+          alert('Blog Image Deleted Successfully')
           location.reload()
         }
       },
