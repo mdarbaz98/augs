@@ -97,26 +97,20 @@ $(".blog-body h2").each(function () {
 });
 
 
-$('.tbc_links').click(function () {
-  $('.tbc_links').removeClass('active');
-  $(this).addClass('active')
-})
+// $('.tbc_links').click(function () {
+//   $('.tbc_links').removeClass('active');
+//   $(this).addClass('active')
+// })
 
-// add active class on scroll
-function loadBlogScrollJs() {
-  $(window).scroll(function () {
-    const headingElement = document.querySelectorAll(".tbc_links");
-    const headingSections = document.querySelectorAll(".blog-body h2");
-    const arrayForm = Array.from(headingElement);
-
-    let len = headingSections.length;
-
-    while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
-    // arrayForm.forEach((ele) => {
-    //   ele.classList.remove("active");
-    // });
-    // arrayForm[len].classList.add("active");
-
-    console.log(arrayForm[len]);
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+  // Assign active class to nav links while scolling
+  $('.heading').each(function(i) {
+    console.log(i)
+      if ($(this).position().top <= scrollDistance) {
+          $('.tbc_links').removeClass('active');
+          $('.tbc_links').eq(i).addClass('active');
+          console.log($('.tbc_links').eq(i).addClass('active'))
+      }
   });
-}
+}).scroll();
