@@ -37,7 +37,7 @@
                   $stmt->execute();
 									$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   foreach ($data as $data)
-                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button>PE</button></a><?php }	?>
+                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button><?php echo $data['short_name']; ?></button></a><?php }	?>
 							</div>
 						</div>
 					</div>

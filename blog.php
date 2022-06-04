@@ -4,14 +4,25 @@
     <section class="section_blogpage">
         <div class="blog_tabs">
         <div class="tabs-section">
+
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
+            <?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
+                    $stmt->execute();
+                    $i=1;
+                    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    foreach ($data as $data)
+                    {
+            
+            ?>
+            <li class="nav-item" role="presentation">
                     <button class="nav-link active tabsbtn" id="psycho-1-tab" data-bs-toggle="tab"
                         data-bs-target="#psycho-1" type="button" role="tab" aria-controls="psycho-1"
                         aria-selected="true">
-                        PE
+                        <?php echo $data['short_name'] ?>
                     </button>
                 </li>
+            <?php } ?>    
+            
                 <li class="nav-item" role="presentation">
                     <button class="nav-link tabsbtn" id="psycho-2-tab" data-bs-toggle="tab" data-bs-target="#psycho-2"
                         type="button" role="tab" aria-controls="psycho-2" aria-selected="false">

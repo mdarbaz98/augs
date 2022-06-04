@@ -41,7 +41,6 @@ $('#form_submit,#form_submit1,#form_submit2').validate({
 
 // for image validation
 function imageUdatevalidate() {
-  alert('Fdsfds')
   $('#imageUpdate,#imageUpdate1').validate({
     rules: {
       alt: {
@@ -76,7 +75,6 @@ function imageUdatevalidate() {
 }
 // get current all images
 function getAllimages() {
-  alert('getAllimages function')
   $.ajax({
     url: 'get_images.php',
     type: 'post',
@@ -98,8 +96,6 @@ var setImgAgain
 
 // onclick change right panel image data
 function imageChahge(id, path) {
-  alert('image id ' + id)
-  alert('path ' + path)
   $.ajax({
     type: 'POST',
     url: 'upload.php',
@@ -123,8 +119,6 @@ function imageChahge(id, path) {
 }
 
 function contenImage(id, path) {
-  alert('image id ' + id)
-  alert('path ' + path)
   $.ajax({
     type: 'POST',
     url: 'upload.php',
@@ -143,8 +137,6 @@ function contenImage(id, path) {
   })
 }
 function postImagechange(id, path) {
-  alert('image id ' + id)
-  alert('path ' + path)
   $.ajax({
     type: 'POST',
     url: 'upload.php',
