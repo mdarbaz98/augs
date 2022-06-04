@@ -110,6 +110,7 @@ function loadBlogScrollJs() {
     //   ele.classList.remove("active");
     // });
     // arrayForm[len].classList.add("active");
+    
     console.log(arrayForm[len]);
   });
 }
