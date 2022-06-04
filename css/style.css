@@ -63,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -904,12 +904,11 @@ header .navbar .header-form .autoCom-Box {
   left: 0px;
   top: 35px;
   width: 100%;
-  padding: 0px 10px 10px;
-  background-color: transparent;
+  background-color: #f1f1f1;
   display: none;
 }
 header .navbar .header-form .autoCom-Box li {
-  padding: 0px 10px;
+  padding: 4px 10px;
   font-family: "Ubuntu", sans-serif;
   background-color: #dee2e6;
   cursor: pointer;
@@ -919,8 +918,9 @@ header .navbar .header-form .autoCom-Box li a {
   color: #212529;
   padding: 5px 10px;
 }
-header .navbar .header-form .autoCom-Box li:hover {
-  background-color: #ffffff;
+header .navbar .header-form .autoCom-Box li a:hover {
+  background-color: #212529;
+  color: #f8f9fa;
 }
 header .navbar .header-form input {
   border-radius: 50px;
@@ -1199,7 +1199,7 @@ header .overlay_Div {
 .post__page .post-content-section .TBC-container .table-of-content li a {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "PT Serif", serif;
   font-weight: 600;
 }

@@ -399,24 +399,24 @@ function deleteProduct(id) {
 }
 // Remove features images
 function removeFeatureimage(id) {
-  var x = confirm('Are you sure you want to permanent delete this?')
-  if (x) {
-    $.ajax({
-      type: 'POST',
-      url: 'action.php',
-      dataType: 'html',
-      data: {
-        removeFeatureimage_id: id,
-        btn: 'removeFeatureimage_id',
-      },
-      success: function (data) {
-        if (data == 'Updated') {
-          alert('Blog Image Deleted Successfully')
-          location.reload()
-        }
-      },
-    })
-  }
+  alert(id)
+  $.ajax({
+    type: 'POST',
+    url: 'action.php',
+    dataType: 'html',
+    data: {
+      removeFeatureimage_id: id,
+      btn: 'removeFeatureimage_id',
+    },
+    success: function (data) {
+      if (data == 'removed') {
+        $('.blog-img-box').html(
+          '<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png">',
+        )
+        $('#remove_btn').hide()
+      }
+    },
+  })
 }
 
 // Delete feature Images
