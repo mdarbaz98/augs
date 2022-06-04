@@ -704,6 +704,13 @@ p {
   font-size: 15px;
   border-radius: 7px;
   color: #212429;
+  border: 2px solid #ddd;
+}
+.section_blogpage .blog_tabs .nav-tabs {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section_blogpage .blog_tabs .nav-link:hover {
   border-color: 2px solid #e9ecef #e9ecef #dee2e6;
