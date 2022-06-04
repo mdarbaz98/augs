@@ -10,18 +10,19 @@
                     $stmt->execute();
                     $i=1;
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                    foreach ($data as $data)
-                    {
-            
+                    foreach ($data as $data){
+                        if($i==1){
+                            $class="active";
+                        }
             ?>
             <li class="nav-item" role="presentation">
-                    <button class="nav-link active tabsbtn" id="psycho-1-tab" data-bs-toggle="tab"
+                    <button class="nav-link <?php echo $class ?> tabsbtn" id="psycho-1-tab" data-bs-toggle="tab"
                         data-bs-target="#psycho-1" type="button" role="tab" aria-controls="psycho-1"
                         aria-selected="true">
                         <?php echo $data['short_name'] ?>
                     </button>
                 </li>
-            <?php } ?>    
+            <?php $i++; } ?>    
             
                 <li class="nav-item" role="presentation">
                     <button class="nav-link tabsbtn" id="psycho-2-tab" data-bs-toggle="tab" data-bs-target="#psycho-2"
