@@ -102,7 +102,7 @@ include('include/config.php');
         <h5>Set Feature Image</h5>
         </div>
         <input type="hidden" class="image_id" name="img_id" value="<?php echo $img_id ?>"/>
-        <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3">Remove Image</button> </div>
+        <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3"  onclick="removeFeatureimage(<?php echo $row_post['id'] ?>)">Remove Image</button> </div>
         <div class="customefeature_image">
         <img src="" alt="" class="image_path">
         </div>
