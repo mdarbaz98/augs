@@ -130,7 +130,7 @@ include('include/config.php');
 													</div>
 													<input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/> 
 													<div class="customefeature_image">
-													<img src="" alt="" class="image_path">
+													<!-- <img src="" alt="" class="image_path"> -->
 													</div>
 									
 										<!-- save to darft -->
