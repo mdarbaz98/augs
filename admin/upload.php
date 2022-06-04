@@ -14,7 +14,7 @@
         $targetFilePath = $targetDir . $filename; 
         $date = date("Y-m-d H:i");
         // Check whether file type is valid 
-      $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+        $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
       if(in_array($fileType, $allowTypes)){ 
         // Upload file to server 
             if(move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)){ 
@@ -60,30 +60,27 @@
     <h3 class="text-center py-2">IMAGE DETAILS</h3> 
       <img class="card-img-top custome_card_image" src="<?php echo $row['path'] ?>" alt="<?php echo $row['alt'] ?>">
     <div class="card-body">
-    <form id="imageUpdate">
-      <h4 class="card-title"><?php echo $row['name'] ?></h4>
-      <p class="card-text"><?php echo $date = date('d F Y', strtotime($row['date'])); ?></p>
-         
-
-      <p class="card-text">size <?php
-      echo $size = formatSizeUnits($row['size'])
-      ?></p>
-      <div class="form-group">
-      <label>Image Alt</label>
-      <input type="text" class="form-control" value="<?php echo $row['alt'] ?>" name="alt"/>
-      </div>
-      <div class="form-group">
-      <label>Image Title</label>
-      <input type="text" class="form-control" value="<?php echo $row['title'] ?>" name="title"/>
-      </div>
-      <input type="hidden" name="img_id" value="<?php echo $row['id'] ?>"/>
-      <input type="hidden" name="btn" value="image_update"/>
-      <div class=" d-flex justify-content-between m-2">
-        <input type="submit" class="btn btn-primary" value="Update"/>
-        <button type="button" class="btn btn-danger float-center my-3">Permanent Delete</button> </div>     
-    </form>
-          </div>
+      <form id="imageUpdate">
+        <h4 class="card-title"><?php echo $row['name'] ?></h4>
+        <p class="card-text"><?php echo $date = date('d F Y', strtotime($row['date'])); ?></p>
+        <p class="card-text">size <?php echo $size = formatSizeUnits($row['size']) ?></p>
+        <div class="form-group">
+          <label>Image Alt</label>
+          <input type="text" class="form-control" value="<?php echo $row['alt'] ?>" name="alt"/>
         </div>
+        <div class="form-group">
+          <label>Image Title</label>        
+          <input type="text" class="form-control" value="<?php echo $row['title'] ?>" name="title"/>
+        </div>
+        <input type="hidden" name="img_id" value="<?php echo $row['id'] ?>"/>
+        <input type="hidden" name="b  tn" value="image_update"/>
+        <div class=" d-flex justify-content-between m-2">
+          <input type="submit" class="btn btn-primary" value="Update"/>
+          <button type="button" class="btn btn-danger float-center my-3" onclick="deleteFeatureimage(<?php echo $row['id'] ?>)">Permanent Delete</button> 
+        </div>     
+      </form>
+    </div>
+  </div>
 <?php
         }
       }
