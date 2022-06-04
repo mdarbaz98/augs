@@ -667,23 +667,12 @@ if($_POST['btn']=='trashPost_id'){
     }//update post end
 
 //Remove features image
-if($_POST['btn']=="removeFeatureimage_id")
-{
-    $id = $_POST['removeFeatureimage_id'];
-    $selectAuthor=$conn->prepare("SELECT * FROM blog WHERE id = '$id'");
-    $selectAuthor->execute();
-    while($row=$selectAuthor->fetch(PDO::FETCH_ASSOC)){
-        $filename = $row['featured_image'];
-        $path = '../assets/upload/'.$filename;
-        if(file_exists($path)) {
-            unlink($path);
-            $sql=$conn->prepare("UPDATE `blog` SET `featured_image`='' WHERE `id`=?");            
+if($_POST['btn']=="removeFeatureimage_id"){
+            $id = $_POST['removeFeatureimage_id'];
+            $sql=$conn->prepare("UPDATE `category` SET `img_id`=0 WHERE `id`=?");            
             $sql->execute([$id]);
-            echo "Updated";
-            } 
-      
+            echo "removed";
     }
-}
 
 //Delete features image
 if($_POST['btn']=="deleteFeatureimage_id")

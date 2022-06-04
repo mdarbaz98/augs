@@ -706,12 +706,10 @@ header {
         left: 0px;
         top: 35px;
         width: 100%;
-        padding: 0px 10px 10px;
-        background-color: transparent;
+        background-color: #f1f1f1;
         display: none;
-
         li {
-          padding: 0px 10px;
+          padding: 4px 10px;
           font-family: $para-font;
           background-color: $color-7;
           cursor: pointer;
@@ -720,11 +718,12 @@ header {
             display: block;
             color: $color-1;
             padding: 5px 10px;
+            &:hover {
+              background-color: $color-1;
+              color: $color-9;
+            }
           }
 
-          &:hover {
-            background-color: #ffffff;
-          }
         }
       }
 

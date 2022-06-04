@@ -67,13 +67,13 @@ include('include/config.php');
                 <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
                 <?php if(!empty($img_data[0]['path'])){ ?>
                 <img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
+                <div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $row_cat['id'] ?>)">Remove Image</button> </div>
                 <?php }else{ ?>
                   <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
                   <?php } ?>
                 <h5>Set Feature Image</h5>
                 </div>
-                 <input type="hidden" class="image_id" name="img_id" value="<?php echo $row_cat['img_id'] ?>"/>  
-                 <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3">Remove Image</button> </div>
+                 <input type="hidden" class="image_id" name="img_id" value="<?php echo $row_cat['img_id'] ?>"/> 
                  <div class="customefeature_image">
                  <!-- <img src="" alt="" class="image_path"> -->
                  </div>
