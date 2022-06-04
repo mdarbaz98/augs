@@ -122,11 +122,10 @@
 							</div>
 						</div>
 					</form>
-				</div>
-			</div>
-			<!-- container-fluid -->
-		</div>
-		<!-- End Page-content -->
+				</div><!-- end container-fluid -->
+		</div><!-- end page-content -->
+	</div><!-- end main-content -->
+
 		<script>
 		function blog_img_pathUrl(input) {
 			$('#blog-img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
