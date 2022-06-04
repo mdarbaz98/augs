@@ -94,6 +94,8 @@ function getAllimages() {
   })
 }
 
+var setImgAgain
+
 // onclick change right panel image data
 function imageChahge(id, path) {
   alert('image id ' + id)
@@ -109,9 +111,10 @@ function imageChahge(id, path) {
       $('#for_dynamicImage,#for_dynamicImage1,#for_dynamicImage2').html(data)
       //location.reload();
       // alert(data);
-      console.log(data)
       $('.image_id').attr('value', id)
+      setImgAgain = path
       $('.image_path').attr('src', path)
+      console.log($('.image_path').attr('src', path))
       $('.customefeature_image').show()
       alert('working')
       imageUdatevalidate()
@@ -410,10 +413,14 @@ function removeFeatureimage(id) {
     },
     success: function (data) {
       if (data == 'removed') {
-        $('.blog-img-box').html(
-          '<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png">',
-        )
-        $('#remove_btn').hide()
+        if (!setImgAgain) {
+          $('.blog-img-box').html(
+            '<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png">',
+          )
+          $('#remove_btn').hide()
+        } else {
+          $('.image_path').attr('src', setImgAgain)
+        }
       }
     },
   })
@@ -432,9 +439,10 @@ function deleteFeatureimage(id) {
         btn: 'deleteFeatureimage_id',
       },
       success: function (data) {
-        if (data == 'Updated') {
-          alert('Blog Image Deleted Successfully')
-          location.reload()
+        if (data == 'deleted') {
+          alert('Deleted Successfully')
+          getAllimages()
+          //location.reload()
         }
       },
     })

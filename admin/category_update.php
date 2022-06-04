@@ -75,7 +75,7 @@ include('include/config.php');
                 </div>
                  <input type="hidden" class="image_id" name="img_id" value="<?php echo $row_cat['img_id'] ?>"/> 
                  <div class="customefeature_image">
-                 <!-- <img src="" alt="" class="image_path"> -->
+                 <img src="" alt="" class="image_path">
                  </div>
                 <div class="submit-btns clearfix d-flex">           
                 <input type="hidden" name="cat_id" value="<?php echo $row_cat['id'] ?>">
