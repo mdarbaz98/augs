@@ -95,7 +95,7 @@
                       </div>
                     </div>
                   </div>
-                <h2 class="before position-relative mx-auto my-5 d-none d-lg-block">
+                <h2 class="before position-relative mx-auto my-3 d-none d-lg-block">
                   Table of content
                 </h2>
                 <ul class="table-of-content list-unstyled mb-md-5 d-none d-lg-block" id="table-of-content">
