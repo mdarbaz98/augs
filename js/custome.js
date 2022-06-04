@@ -84,10 +84,11 @@ $(document).ready(function () {
 // readmore
 $(".moreless-button").click(function () {
   $(".moretext").toggle();
-  if ($(".moreless-button").text() == "Read more") {
-    $(this).text("Read less...");
+  alert($(".moreless-button").text())
+  if ($(".moreless-button").text() == "Read less") {
+    $(this).text("Read more...");
   } else {
-    $(this).text("Read more");
+    $(this).text("Read less");
   }
 });
 
