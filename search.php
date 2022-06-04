@@ -10,15 +10,22 @@
             <div class="container-fluid box_fluid">
             <div class="row">
             <?php
-          $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1 ORDER BY  id DESC limit 8");
+          $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1  limit 8");
           $stmt->execute();
           $i=1;
           $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
           if (!empty($data)) {
           foreach ($data as $data)
-          {  $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-             $stmt_img->execute([$data['img_id']]);
-             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+          { $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=? ");
+            $stmt_img->execute([$data['img_id']]);
+            $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                if (!empty($img_data)) {
+                $image = $img_data[0]['path']; 
+                $alt = $img_data[0]['alt'];
+                }else{
+                    $image="Not Found";
+                    $alt="Not Found";
+                }	
              
             
             
@@ -29,7 +36,7 @@
                             <span class="ribbon"><?php echo $data['title'] ?></span>
                     <div class="seach_img">
                         <!-- <img src="https://pasimage.gumlet.io/assets/upload/Trazodone-control-center.jpg?w=300&dpr=1.0" alt=""> -->
-                        <img src="<?php echo $img_data[0]['path']; ?>" alt="<?php echo $img_data[0]['alt']; ?>" class="custome_img">
+                        <img src="admin/<?php echo $img_data[0]['path']; ?>" alt="<?php echo $img_data[0]['alt']; ?>" class="custome_img">
                     </div>
                     <div class="search_content">
                         <h2><?php echo $data['seo_title'] ?></h2>
