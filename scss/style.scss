@@ -1,8 +1,8 @@
-@use "./variables" as *;
-@use "./base/reset";
-@use "./base/typography";
-@use "./components" as *;
-@use "./utilities/" as *;
+@use './variables'as *;
+@use './base/reset';
+@use './base/typography';
+@use './components'as *;
+@use './utilities/'as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -66,6 +66,7 @@
 
 .section-2 {
   .home-blog-section {
+
     #home-owl-carousel,
     #product-owl-carousel,
     #categoryproduct-owl-carousel,
@@ -113,7 +114,7 @@
   }
 
   button {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -336,6 +337,7 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         padding: 0rem 1.25rem 1.25rem;
@@ -364,6 +366,7 @@
     }
 
     .main-section {
+
       .main-section-inside1,
       .contact-section-inside2 {
         @include image-css(100%, 320px);
@@ -483,7 +486,7 @@
     }
 
     button {
-      font-family: "Ubuntu", sans-serif;
+      font-family: 'Ubuntu', sans-serif;
       padding: 8px 0px;
       border-radius: 15px;
       border: none;
@@ -546,7 +549,7 @@
   }
 
   button {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -674,6 +677,7 @@
 
 // header section css
 header {
+
   // z-index: 10;
   .logo-img {
     width: 70px;
@@ -708,20 +712,7 @@ header {
         width: 100%;
         background-color: #f1f1f1;
         display: none;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-          rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        max-height: 350px;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-          width: 6px;
-        }
-        &::-webkit-scrollbar-track {
-          background-color: $color-9;
-        }
-        &::-webkit-scrollbar-thumb {
-          background-color: $color-1;
-          border-radius: 20px;
-        }
+
         li {
           padding: 4px 10px;
           font-family: $para-font;
@@ -732,11 +723,13 @@ header {
             display: block;
             color: $color-1;
             padding: 5px 10px;
+
             &:hover {
               background-color: $color-1;
               color: $color-9;
             }
           }
+
         }
       }
 
@@ -861,7 +854,7 @@ header {
             }
 
             &::after {
-              background-image: url("../assets/images/dropdownImg.png");
+              background-image: url('../assets/images/dropdownImg.png');
             }
           }
 
@@ -1072,11 +1065,7 @@ header {
       position: sticky;
       top: 90px;
       z-index: 2;
-      overflow-y: scroll;
-      height: 100vh;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+
       .table-of-content {
         li {
           border: solid 1px $color-1;
@@ -1158,7 +1147,7 @@ header {
 
           .box:before {
             position: absolute;
-            content: "";
+            content: '';
             width: 29px;
             height: 29px;
             z-index: 1;
@@ -1279,7 +1268,7 @@ header {
 
             &::after {
               // background-image: url('../assets/images/minus.png');
-              background-image: url("../assets/images/plus.png");
+              background-image: url('../assets/images/plus.png');
             }
 
             &:not(.collapsed) {
@@ -1289,7 +1278,7 @@ header {
               &::after {
                 filter: brightness(0);
                 // background-image: url('../assets/images/plus.png');
-                background-image: url("../assets/images/minus.png");
+                background-image: url('../assets/images/minus.png');
               }
             }
 
@@ -1333,6 +1322,7 @@ header {
     .table-of-content {
       li {
         a {
+
           span,
           h2 {
             font-size: 1.5rem !important;
@@ -1358,6 +1348,7 @@ header {
 
     .box_fluid {
       margin-bottom: 25px;
+
       .search_box {
         box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
         border-radius: 7px;
@@ -1398,6 +1389,12 @@ header {
           p {
             font-size: 13px;
             margin: 0px;
+            height: 3rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
           }
         }
 
@@ -1415,6 +1412,137 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+// search end
+
+// product-page
+.section_productpage{
+  .blog_tabs{
+    margin-top: 4rem;
+    .tabsbtn{
+      font-size: 15px;
+      border-radius: 7px;
+      color: #212429;
+      border: 2px solid #ddd;
+      padding: 8px 0px;
+      width: 136px;
+    }
+    .nav-tabs {
+      border-bottom: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+     .nav-link:hover {
+      border-color: 2px solid#e9ecef #e9ecef #dee2e6;
+      color: #212429;
+  }
+    .nav-tabs .nav-link.active{
+      color: #FFF;
+    background-color: #212429;
+    border-color: #dee2e6 #dee2e6 #fff;
+    }
+    .blog-heading-content{
+      h1{
+        margin: 3rem auto 4rem;
+      }
+    }
+  }
+  .categorysection2 {
+    h2 {
+      margin: 1rem auto 3rem;
+    }
+
+    .categorybox {
+      margin-bottom: 30px;
+      .categorybox_inside {
+        box-shadow: $shadow;
+        padding: 10px;
+        border-radius: 10px;
+
+        .categorybox_img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3rem;
+
+          img {
+            width: 80px;
+            height: 56px;
+            object-fit: cover;
+          }
+        }
+
+        .categorydetail_content {
+          h2 {
+            font-size: 20px;
+            margin: 10px 0px;
+          }
+
+          .cd_span {
+            i {
+              font-size: 11px;
+              color: $color-1;
+              margin: 10px 10px 0px 0px;
+            }
+
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .cd_button {
+          p {
+            margin-top: 1rem;
+          }
+
+          span {
+            font-size: 22px;
+            font-weight: 500;
+          }
+
+          button {
+            @include btn(25px, 12px 40px, 0.8rem, $para-font, 100%);
+            margin: 0px auto;
+            opacity: 0.9;
+            font-size: 1rem;
+            background-color: #444547;
+          }
+        }
+      }
+
+      .categorybox_inside:hover {
+        button {
+          background-color: $color-1;
+        }
+      }
+    }
+
+    .outerline {
+      padding: 4px;
+      border: solid 2px $color-1;
+      border-radius: 35px;
+      height: 45px;
+      width: fit-content;
+      margin: 3rem auto;
+    }
+
+    button {
+      font-family: 'Ubuntu', sans-serif;
+      padding: 8px 0px;
+      border-radius: 15px;
+      border: none;
+      color: #f8f9fa;
+      letter-spacing: 0.7px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      background-color: $color-1;
+      display: block;
+      width: 136px;
     }
   }
 }

@@ -51,28 +51,25 @@ include('include/config.php');
 										<label for="horizontal-firstname-input" class="col-form-label">Password</label>
 										<input type="password" class="form-control" id="pwd" name="pwd" value="<?php echo $row['password'] ?>"> </div>
                                         </div>
-                <?php
+										<?php
                       $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
                       $stmt1->execute([$row['img_id']]);
                       $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-                      if(!empty($img_data)){
-                      $image = $img_data[0]['path'];
-                      $alt = $img_data[0]['alt'];
+                ?>
+                <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
 
-                    }else{
-                        $image = "https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png";
-                        $alt="feature click image";
-                        }
-
-                      ?>
-                <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">  
-                <img src="<?php echo $image ?>"alt="<?php echo $alt ?>" class="image_path">
-                 </div>
-                 <input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>  
-				 <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3"  onclick="removeFeatureimage(<?php echo $row['id'] ?>)">Remove Image</button> </div>        
+                <?php if(!empty($img_data[0]['path'])){ ?>
+                  <img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
+                  <div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $row['id'] ?>)">Remove Image</button> </div>
+                <?php }else{ ?>
+                  <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
+                  <?php } ?>
+                <h5>Set Feature Image</h5>
+                </div>
+                 <input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/> 
                  <div class="customefeature_image">
-                 <!-- <img src="" alt="" class="image_path"> -->
-                 </div>
+                 <img src="" alt="" class="image_path">
+				</div>
 								<!-- Drop Box -->
 								<div class="submit-btns clearfix d-flex">  
                                 <input type="hidden" name="user_id" value="<?php echo $row['id'] ?>"> 

@@ -97,15 +97,25 @@ include('include/config.php');
         $img_id = 0;
       }
       ?>            
-       <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
-        <img src="<?php echo $image ?>"alt="<?php echo $alt ?>" class="custome_img">
-        <h5>Set Feature Image</h5>
-        </div>
-        <input type="hidden" class="image_id" name="img_id" value="<?php echo $img_id ?>"/>
-        <div class=" d-flex justify-content-center"><button type="button" class="btn btn-danger float-center my-3"  onclick="removeFeatureimage(<?php echo $row_post['id'] ?>)">Remove Image</button> </div>
-        <div class="customefeature_image">
-        <img src="" alt="" class="image_path">
-        </div>
+       <?php
+                      $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                      $stmt1->execute([$row_post['img_id']]);
+                      $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+                ?>
+                <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
+
+                <?php if(!empty($img_data[0]['path'])){ ?>
+                  <img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
+                  <div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $row_post['id'] ?>)">Remove Image</button> </div>
+                <?php }else{ ?>
+                  <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
+                  <?php } ?>
+                <h5>Set Feature Image</h5>
+                </div>
+                 <input type="hidden" class="image_id" name="img_id" value="<?php echo $row_post['img_id'] ?>"/> 
+                 <div class="customefeature_image">
+                 <img src="" alt="" class="image_path">
+                 </div>
 
     </div>
 
