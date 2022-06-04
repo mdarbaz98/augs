@@ -87,7 +87,14 @@
       font-size: 15px;
       border-radius: 7px;
       color: #212429;
+      border: 2px solid #ddd;
     }
+    .nav-tabs {
+      border-bottom: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
      .nav-link:hover {
       border-color: 2px solid#e9ecef #e9ecef #dee2e6;
       color: #212429;
