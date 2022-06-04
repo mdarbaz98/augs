@@ -92,9 +92,15 @@ $(".blog-body h2").each(function () {
     >
   </li>`
   );
-  loadBlogScrollJs();
+  // loadBlogScrollJs();
   $("#table-of-content strong").contents().unwrap();
 });
+
+
+$('.tbc_links').click(function () {
+  $('.tbc_links').removeClass('active');
+  $(this).addClass('active')
+})
 
 // add active class on scroll
 function loadBlogScrollJs() {
@@ -110,7 +116,7 @@ function loadBlogScrollJs() {
     //   ele.classList.remove("active");
     // });
     // arrayForm[len].classList.add("active");
-    
+
     console.log(arrayForm[len]);
   });
 }

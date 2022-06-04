@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -906,6 +906,19 @@ header .navbar .header-form .autoCom-Box {
   width: 100%;
   background-color: #f1f1f1;
   display: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+header .navbar .header-form .autoCom-Box::-webkit-scrollbar {
+  width: 6px;
+}
+header .navbar .header-form .autoCom-Box::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+header .navbar .header-form .autoCom-Box::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border-radius: 20px;
 }
 header .navbar .header-form .autoCom-Box li {
   padding: 4px 10px;
@@ -1174,6 +1187,8 @@ header .overlay_Div {
   position: sticky;
   top: 90px;
   z-index: 2;
+  overflow-y: scroll;
+  height: 100vh;
 }
 .post__page .post-content-section .TBC-container .accordion-item .accordion-button {
   font-size: 1.8rem;
@@ -1188,6 +1203,9 @@ header .overlay_Div {
 }
 .post__page .post-content-section .TBC-container .accordion-item .accordion-button:focus {
   box-shadow: none;
+}
+.post__page .post-content-section .TBC-container::-webkit-scrollbar {
+  display: none;
 }
 .post__page .post-content-section .TBC-container .table-of-content li {
   border: solid 1px #212529;

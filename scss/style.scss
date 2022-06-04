@@ -1,8 +1,8 @@
-@use './variables' as *;
-@use './base/reset';
-@use './base/typography';
-@use './components' as *;
-@use './utilities/' as *;
+@use "./variables" as *;
+@use "./base/reset";
+@use "./base/typography";
+@use "./components" as *;
+@use "./utilities/" as *;
 
 // @import './pages/home.scss';
 .home__section {
@@ -113,7 +113,7 @@
   }
 
   button {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -483,7 +483,7 @@
     }
 
     button {
-      font-family: 'Ubuntu', sans-serif;
+      font-family: "Ubuntu", sans-serif;
       padding: 8px 0px;
       border-radius: 15px;
       border: none;
@@ -546,7 +546,7 @@
   }
 
   button {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     padding: 8px 0px;
     border-radius: 15px;
     border: none;
@@ -708,6 +708,20 @@ header {
         width: 100%;
         background-color: #f1f1f1;
         display: none;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        max-height: 350px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: $color-9;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-1;
+          border-radius: 20px;
+        }
         li {
           padding: 4px 10px;
           font-family: $para-font;
@@ -723,7 +737,6 @@ header {
               color: $color-9;
             }
           }
-
         }
       }
 
@@ -848,7 +861,7 @@ header {
             }
 
             &::after {
-              background-image: url('../assets/images/dropdownImg.png');
+              background-image: url("../assets/images/dropdownImg.png");
             }
           }
 
@@ -1059,7 +1072,11 @@ header {
       position: sticky;
       top: 90px;
       z-index: 2;
-
+      overflow-y: scroll;
+      height: 100vh;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .table-of-content {
         li {
           border: solid 1px $color-1;
@@ -1141,7 +1158,7 @@ header {
 
           .box:before {
             position: absolute;
-            content: '';
+            content: "";
             width: 29px;
             height: 29px;
             z-index: 1;
@@ -1262,7 +1279,7 @@ header {
 
             &::after {
               // background-image: url('../assets/images/minus.png');
-              background-image: url('../assets/images/plus.png');
+              background-image: url("../assets/images/plus.png");
             }
 
             &:not(.collapsed) {
@@ -1272,7 +1289,7 @@ header {
               &::after {
                 filter: brightness(0);
                 // background-image: url('../assets/images/plus.png');
-                background-image: url('../assets/images/minus.png');
+                background-image: url("../assets/images/minus.png");
               }
             }
 
