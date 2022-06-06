@@ -104,45 +104,32 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="row m-auto mt-5">
-            <?php 
-            $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-            $images->execute([1]);
-            $total_images = $images->rowCount();
-            if ($total_images > 0) {
-                while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
-          ?>
-              <div class="col">
-              <div class="img_div">
-              <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="imageChahge(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
-              </div>              
-              </div>
-              <?php } }else{ ?>
-                <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
-                <?php }?>
-            </div>
-            <div class="col">
-            <ul>
-                 <li><input type="checkbox" id="cb1" />
-                      <label for="cb1">
-                      <img src="https://picsum.photos/seed/1/100" />
+            <div class="col">     
+                <ul>
+                <?php 
+                    $images=$conn->prepare("SELECT * FROM images WHERE status=?");
+                    $images->execute([1]);
+                    $i=0;
+                    $total_images = $images->rowCount();
+                    if ($total_images > 0) {
+                        while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
+                  ?>                          
+                 <li><input type="checkbox" id="cb<?php echo $i; ?>" />
+                      <label for="cb<?php echo $i; ?>">
+                      <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="imageChahge(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
                       </label>
                 </li>
-                <li><input type="checkbox" id="cb2" />
-          <label for="cb2"><img src="https://picsum.photos/seed/2/100" /></label>
-        </li>
-        <li><input type="checkbox" id="cb3" />
-          <label for="cb3"><img src="https://picsum.photos/seed/3/100" /></label>
-        </li>
-        <li><input type="checkbox" id="cb4" />
-          <label for="cb4"><img src="https://picsum.photos/seed/4/100" /></label>
-        </li>
-              </ul>
-            </div>
-
+                
+            
+                      <?php $i++; } }else{ ?>
+                      <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
+                      <?php }?>
                 </div>
-                <div class="col-sm-4">
-              <div class="card mt-3" id="for_dynamicImage"> 
               </div>
+            </div>
+                <div class="col-sm-4">
+                <div class="card mt-3" id="for_dynamicImage"> 
+                </div>
 
                 </div>
               </div>
