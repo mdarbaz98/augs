@@ -37,7 +37,7 @@
                   $stmt->execute();
 									$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   foreach ($data as $data)
-                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button>PE</button></a><?php }	?>
+                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button><?php echo $data['short_name'] ?></button></a><?php }	?>
 							</div>
 						</div>
 					</div>
@@ -49,12 +49,12 @@
 			<div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
 				<div class="owl-carousel owl-theme" id="home-owl-carousel">
 					<?php
-                                $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC");
-                                $stmt->execute();
-                                $i=1;
-                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                foreach ($data as $data)
-                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                      $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC");
+                      $stmt->execute();
+                      $i=1;
+                      $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                      foreach ($data as $data)
+                  {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
 									$stmt_img->execute([$data['img_id']]);
 									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
 										if (!empty($img_data)) {
