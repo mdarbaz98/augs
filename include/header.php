@@ -144,7 +144,7 @@ include('admin/include/config.php');
                                                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                     $class="";
                                                     foreach ($data as $data){ ?>
-                                                      <li class="mb-3"><a href="<?php echo $data['slug'] ?>"><?php echo $data['name'] ?></a></li>
+                                                      <li class="mb-3"><a href="category/<?php echo $data['slug'] ?>"><?php echo $data['name'] ?></a></li>
                                                     <?php } ?>
                                            </ul>
                                             </div>
