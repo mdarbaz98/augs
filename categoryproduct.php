@@ -86,7 +86,32 @@ include('./include/header.php');
                         </div>
                     </div>
                     <?php $i++;} ?>
-                    
+                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
+                        <div class="categorybox_inside">
+                            <div class="img">
+                            <div class="owl-carousel  owl-theme" id="product-image">
+                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/pngtree-a-scattered-capsule-drug-png-image_4563209.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/pexels-photo-415825_blue white pills.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>
+                                
+                            </div>
+                           
+                            </div>
+                            <div class="categorydetail_content">
+                                <h2 class="text-center">carousel</h2>
+                                <div class="cd_span">
+                                  
+                                    <span>it's carouls</span>
+                                </div>
+                                
+                            </div>
+                            <div class="cd_button">
+                                <p>from <span>$234</span></p>
+                               <a href="#view"><button>View</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="outerline">
                     <button class="">View All</button>

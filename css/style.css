@@ -1658,3 +1658,19 @@ header .overlay_Div {
   display: block;
   width: 136px;
 }
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+color: antiquewhite;
+    border: none;
+    padding: 6px !important;
+    border-radius: 100%;
+    width: 10px;
+    margin-right: 10px;
+    display: inline;
+    font: inherit;
+    background: gray !important;}
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot:hover{
+      background:black !important;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.active {
+      background: black !important;
+  }

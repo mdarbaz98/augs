@@ -34,3 +34,31 @@ $('#post_cta_slider').owlCarousel({
         }
     }
 })
+
+    var owl = $('#product-image');
+owl.owlCarousel({
+    loop:true,
+    margin:10,
+    dots: true,
+
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPlay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$('.img').on('onmouseout',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.img').on('onmouseover',function(){
+    owl.trigger('stop.owl.autoplay')
+})
