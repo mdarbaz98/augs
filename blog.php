@@ -10,9 +10,10 @@
                     $stmt->execute();
                     $i=1;
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    $class="";
                     foreach ($data as $data){
                         if($i==1){
-                            $class="active";
+                            echo $class="active";
                         }
             ?>
             <li class="nav-item" role="presentation">
@@ -22,7 +23,7 @@
                         <?php echo $data['short_name'] ?>
                     </button>
                 </li>
-            <?php $i++; } ?>    
+            <?php echo $i++; } ?>    
             
                 <li class="nav-item" role="presentation">
                     <button class="nav-link tabsbtn" id="psycho-2-tab" data-bs-toggle="tab" data-bs-target="#psycho-2"
