@@ -41,52 +41,43 @@
 </head>
 	
 <body>
-<div class="login_div d-flex justify-content-center align-items-center">			
-<div class="container">
-			<div class="row g-0">
-
-				<div class="col-xl-12 m-auto">
-					<div class="row">
-						<div class="col-sm-4 p-0">
+<div class="login_div d-flex justify-content-center align-items-center">
+	<div class="container">
+		<div class="row g-0">
+			<div class="col-xl-12 m-auto">
+				<div class="row">
+					<div class="col-sm-4 p-0">
 						<div class="auth-full-page-content p-4" id="login_section">
-							<h3 class="text-center"><img src="assets/images/AUGS-logo.png" alt="AUGS Logo" class="logo_design"></h3>				
-						<form id="login_form" class="mt-5">			
-										<div class="mb-3">
-										<label for="formemail" class="form-label">Username</label>
-										<input type="text" class="form-control" id="email" type="text" name="username" placeholder="Enter username"> 
-										</div>
-										<div class="mb-3">
-										<label class="form-label" for="formpassword">Password</label>
-										<input type="password" class="form-control" placeholder="Enter password" id="password" name="password">
-										</div>
-										<div class="mt-3 d-grid">
-											<input type="hidden" name="btn" value="loginUser"/>
-
-											<div class="d-flex justify-content-between">
-											<button class="btn btn-primary waves-effect waves-light lg-btn" name="login" value="login" type="submit" style="background:#000;border:none;">Log In</button>
-											<div class="float-end"> <a href="auth-recoverpw-2.html" class="text-muted">Forgot password?</a> </div>
-											</div>
-										
-										</div>
-										</form>
-							</div>
-					 </div>
-					 <div class="col-sm-8 custome_sideimg d-flex flex-column justify-content-center align-items-center">
+							<h3 class="text-center"><img src="assets/images/AUGS-logo.png" alt="AUGS Logo" class="logo_design"></h3>
+							<form id="login_form" class="mt-5">
+								<div class="mb-3">
+									<label for="formemail" class="form-label">Username</label>
+									<input type="text" class="form-control" id="email" type="text" name="username" placeholder="Enter username"> 
+								</div>
+								<div class="mb-3">
+									<label class="form-label" for="formpassword">Password</label>
+									<input type="password" class="form-control" placeholder="Enter password" id="password" name="password"> 
+								</div>
+								<div class="mt-3 d-grid">
+									<input type="hidden" name="btn" value="loginUser" />
+									<div class="d-flex justify-content-between">
+										<button class="btn btn-primary waves-effect waves-light lg-btn" name="login" value="login" type="submit" style="background:#000;border:none;">Log In</button>
+										<div class="float-end"> <a href="auth-recoverpw-2.html" class="text-muted">Forgot password?</a> </div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div><!-- end col 4 -->
+					<div class="col-sm-8 custome_sideimg d-flex flex-column justify-content-center align-items-center">
 						<h2 class="text-center text-white">Welcome To Our Website</h2>
 						<p class="text-center text-black">Login to access your admin account</p>
 						<!-- <img src="assets/images/Background-2.jpg" alt="" style="width:100%;"> -->
-				 </div>
-
-
-
-
-								</div>
-					</div>
-				<!-- end col -->
-			</div>
-			<!-- end row -->
-		</div>
-</div>
+					</div><!-- end col 8 -->
+				</div>
+			</div><!-- end col -->
+		</div><!-- end row -->
+	</div><!-- end container -->
+</div><!-- end login -->
 	<!-- JAVASCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
@@ -97,19 +88,19 @@ $("#login_form").validate({
 rules:{
 	username:{ 
             required: true,
-            // email:true,
-          },
+         // email:true,
+          	},
     password:{
               required:true,
-            //   minlength:8,
-            //   maxlength:10,
+            //minlength:8,
+            //maxlength:10,
              },
-},
+	  },
 message:{
    email:"Please enter username",
    password:"Please enter password",
-},
-    submitHandler:function(form){
+		},
+	submitHandler:function(form){
 		$.ajax ({
             url: 'action.php',
             type: 'post',
@@ -118,18 +109,18 @@ message:{
             cache: false,
             processData: false,
             success: function(data){
-              if(data=='login'){				
-              alert("Login Successfully");
-							window.location = "http://localhost/augs/admin/home.php";
-							}
-							else{
-								alert("Wrong Credentials")
-							}
-
-        }
-    });
-		}
-	});
+              if(data=='login')
+			  {				
+              	alert("Login Successfully");
+				window.location = "http://localhost/augs/admin/home.php";
+			  }
+			  else{
+					alert("Wrong Credentials")
+				  }
+        	}
+    	});
+	}//submithaandler
+});
 
 </script>
 </body>

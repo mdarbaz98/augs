@@ -78,7 +78,7 @@ include('include/config.php');
                                                                 <div class="customefeature_image">
                                                                     <img src="" alt="" class="image_path">
                                                                 </div>
-                                                            </div>
+                                                            </div><!-- end desc -->
                                                         <div class="title">Category</div>
                                                             <div class="desc">
                                                                 <div class="form-group">
@@ -95,7 +95,7 @@ include('include/config.php');
                                                                         <?php } ?>
                                                                     </select>
                                                                 </div>
-                                                            </div>
+                                                            </div><!-- end desc -->
                                                     <div class="title" data-image="images/app-capture-04.png">Rank Math Advance</div>
                                                             <div class="desc">
                                                                     <div class="tab-pane" id="profile1" role="tabpanel">
@@ -157,11 +157,11 @@ include('include/config.php');
                                                                                     <li>
                                                                                         <input type="checkbox" class="radio-btn" name="max_image" id="max_image" value="max-image-preview:" <?php if("max-image-preview:"=="max-image-preview:"){ echo 'checked="checked"'; }?>/>
                                                                                         <label class="btn btn-outline-primary mr-2" for="max_snippet" style="font-size: 12px; !important">Max Image Preview</label>  
-                                                                                            <select name="max_image_value" class="max_image_select">
+                                                                                          <select name="max_image_value" class="max_image_select">
                                                                                                     <option value="large">Large</option>
                                                                                                     <option value="standar">Standard</option>
                                                                                                     <option value="none">None</option>
-                                                                                            </select>                                                            
+                                                                                          </select>                                                            
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
@@ -201,7 +201,7 @@ include('include/config.php');
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- end col -->
                     </div><!-- end row -->
                 </form>
             </div>

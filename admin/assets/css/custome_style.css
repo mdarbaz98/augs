@@ -479,19 +479,19 @@ div.dataTables_wrapper div.dataTables_filter {
 }
 /* footer Modal  */
 
-#exampleModal ul {
+.img-checkbox ul {
   list-style-type: none;
 }
 
-#exampleModal li {
+.img-checkbox li {
   display: inline-block;
 }
 
-#exampleModal input[type="checkbox"][id^="cb"] {
+.img-checkbox input[type="checkbox"][id^="cb"] {
   display: none;
 }
 
-#exampleModal label {
+.img-checkbox label {
   border: 1px solid #fff;
   padding: 10px;
   display: block;
@@ -506,7 +506,7 @@ div.dataTables_wrapper div.dataTables_filter {
   user-select: none;
 }
 
-#exampleModal label::before {
+.img-checkbox label::before {
   background-color: white;
   color: white;
   content: " ";
@@ -524,24 +524,24 @@ div.dataTables_wrapper div.dataTables_filter {
   transform: scale(0);
 }
 
-#exampleModal label img {
+.img-checkbox label img {
   height: 100px;
   width: 100px;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
 
-#exampleModal :checked+label {
+.img-checkbox :checked+label {
   border-color: #ddd;
 }
 
-#exampleModal :checked+label::before {
+.img-checkbox :checked+label::before {
   content: "✓";
   background-color: grey;
   transform: scale(1);
 }
 
-#exampleModal :checked+label img {
+.img-checkbox :checked+label img {
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
   z-index: -1;
