@@ -7,8 +7,7 @@ include('include/config.php');
 	<div class="main-content">
 		<div class="page-content">
 			<div class="container-fluid product_page">
-				<!--     start page title -->
-				<div class="row">
+				<div class="row"><!--     start page title -->
 					<div class="col-12">
 						<div class="page-title-box d-sm-flex align-items-center justify-content-between">
 							<div>
@@ -21,8 +20,7 @@ include('include/config.php');
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- end page title -->
+				</div><!-- end page title -->
 				<form id="updateProduct">
 						<?php 
 						$stmt= $conn->prepare("SELECT * FROM `product` WHERE id=?");                               
@@ -95,7 +93,7 @@ include('include/config.php');
 													</select>
 										</div>
 										<div class=" w-100 ">
-													<textarea class="form-control"  id="description" name="description"  rows="3"><?php echo $data['description']  ?></textarea>
+												<textarea class="form-control"  id="description" name="description"  rows="3"><?php echo $data['description']  ?></textarea>
 										</div>
 										<!-- Upload Image -->
 											<?php
@@ -112,30 +110,28 @@ include('include/config.php');
 													}
 
                                        		 ?>
-									
-									<?php
-										$stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-										$stmt1->execute([$data['img_id']]);
-										$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-									?>
+											<?php
+												$stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+												$stmt1->execute([$data['img_id']]);
+												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+											?>
 									<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
-
-									<?php if(!empty($img_data[0]['path'])){ ?>
-									<img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
+										<?php if(!empty($img_data[0]['path'])){ ?>
+										<img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
 									<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $data['id'] ?>)">Remove Image</button> </div>
-									<?php }else{ ?>
-									<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
-									<?php } ?>
-									<h5>Set Feature Image</h5>
+										<?php }else{ ?>
+										<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
+										<?php } ?>
+										<h5>Set Feature Image</h5>
 									</div>
 									<input type="hidden" class="image_id" name="img_id" value="<?php echo $data['img_id'] ?>"/> 
 									<div class="customefeature_image">
-									<img src="" alt="" class="image_path">
+										<img src="" alt="" class="image_path">
 									</div>
 									
 										<!-- save to darft -->
 										<div class="float-left saveDraft">
-										<p class="text-center">Save To Draft</p>
+											<p class="text-center">Save To Draft</p>
 										</div>
 										<div class="">
 										<label class="switch">
@@ -153,13 +149,11 @@ include('include/config.php');
 							</div>
 						</div>
 					  <?php  } ?>
-					</form>
+				</form>
+			</div>
+		</div>
 	</div>
-	<!-- end row -->
-	</div>
-	<!-- container-fluid -->
-	</div>
-	<!-- End Page-content -->
+
 
 	<?php
     include('include/footer.php');
