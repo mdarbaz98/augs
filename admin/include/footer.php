@@ -120,6 +120,24 @@
                 <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
                 <?php }?>
             </div>
+            <div class="col">
+            <ul>
+                 <li><input type="checkbox" id="cb1" />
+                      <label for="cb1">
+                      <img src="https://picsum.photos/seed/1/100" />
+                      </label>
+                </li>
+                <li><input type="checkbox" id="cb2" />
+          <label for="cb2"><img src="https://picsum.photos/seed/2/100" /></label>
+        </li>
+        <li><input type="checkbox" id="cb3" />
+          <label for="cb3"><img src="https://picsum.photos/seed/3/100" /></label>
+        </li>
+        <li><input type="checkbox" id="cb4" />
+          <label for="cb4"><img src="https://picsum.photos/seed/4/100" /></label>
+        </li>
+              </ul>
+            </div>
 
                 </div>
                 <div class="col-sm-4">

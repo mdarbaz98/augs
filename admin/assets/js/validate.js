@@ -308,7 +308,7 @@ $('#addPost').validate({
         console.log(data)
         alert(data)
         if (data == 'inserted') {
-          alert('Blog Added Successfully')
+          alert('post Added Successfully')
           $('#addPost').trigger('reset')
         } else {
           alert('Some Technical Issue')
