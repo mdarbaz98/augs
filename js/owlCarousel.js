@@ -43,7 +43,7 @@ owl.owlCarousel({
 
     autoplay:true,
     autoplayTimeout:1000,
-    autoplayHoverPlay:true,
+    autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
@@ -56,9 +56,9 @@ owl.owlCarousel({
         }
     }
 })
-$('.img').on('onmouseout',function(){
+$('.img').on('mouseenter',function(){
     owl.trigger('play.owl.autoplay',[1000])
 })
-$('.img').on('onmouseover',function(){
+$('.img').on('mouseleave',function(){
     owl.trigger('stop.owl.autoplay')
 })
