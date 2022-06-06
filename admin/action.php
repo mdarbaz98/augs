@@ -492,12 +492,12 @@ if($_POST['btn']=='trashPost_id'){
             $concat_image = $max_image.$max_image_value;
             $advance_bot = $bot_robot_value.", ".$concat_snippet.", ".$concat_video.", ".$concat_image;
             
-            $img_id=0;
+            $img_id="";
             if(isset($_POST['img_id'])){
                 $img_id = $_POST['img_id'];
             }
             else{
-                $img_id=0;
+                $img_id="";
             }
             $cat_id="";
             if(isset($_POST['category'])){

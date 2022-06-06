@@ -87,7 +87,7 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="row m-auto mt-5">
-            <div class="col">     
+            <div class="col img-checkbox">     
                 <ul>
                 <?php 
                     $images=$conn->prepare("SELECT * FROM images WHERE status=?");
@@ -97,11 +97,11 @@
                     if ($total_images > 0) {
                         while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
                   ?>                          
-                 <li><input type="checkbox" id="cb<?php echo $i; ?>" />
+                 <li><input type="checkbox" id="cb<?php echo $i; ?>"  class="messageCheckbox" name="images_id" id="images_id" value="<?php echo $row['id'] ?>"/>
                       <label for="cb<?php echo $i; ?>">
                       <img src="<?php echo $row['path']; ?>" alt="<?php echo $row['alt']; ?>" class="img-rounded custome_images" onclick="imageChahge(<?php echo $row['id']; ?>,'<?php echo $row['path']; ?>')">
                       </label>
-                </li>
+                 </li>
                 
             
                       <?php $i++; } }else{ ?>
@@ -306,6 +306,20 @@ $('#datetimepicker').datetimepicker();
 //     viewMode: 'years'
 //   });
 // });
+
+
+$('.messageCheckbox').click(function() {
+  alert("work check");
+            var favorite = [];
+            $.each($("input[name='images_id']:checked"), function(){            
+                favorite.push($(this).val());
+            });
+            var img_id = favorite.join(",");
+            $('.image_id').attr('value', img_id)
+            //alert(img_id);
+})
+
+
 </script>
 </body>
 </html>
