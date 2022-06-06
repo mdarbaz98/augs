@@ -7,22 +7,21 @@ include('include/config.php');
 	<div class="main-content">
 		<div class="page-content">
 			<div class="container-fluid">
-				<!--     start page title -->
-				<div class="row">
+				<div class="row"><!--     start page title -->
 					<div class="col-12">
 						<div class="page-title-box d-sm-flex align-items-center justify-content-between">
 							<div>
 								<h4 class="mb-sm-0 font-size-18">Add Product</h4></div>
 							<div class="page-title-right">
-							<?php
-				$stmt_draft = $conn->prepare("SELECT count(*) FROM `product` WHERE status=2");
-				$stmt_draft->execute();
-			 	$draft_rows = $stmt_draft->fetchColumn();
-				
-				$stmt_trash = $conn->prepare("SELECT count(*) FROM `product` WHERE status=0");
-				$stmt_trash->execute();
-				$trash_rows = $stmt_trash->fetchColumn();
-				?>
+								<?php
+									$stmt_draft = $conn->prepare("SELECT count(*) FROM `product` WHERE status=2");
+									$stmt_draft->execute();
+									$draft_rows = $stmt_draft->fetchColumn();
+									
+									$stmt_trash = $conn->prepare("SELECT count(*) FROM `product` WHERE status=0");
+									$stmt_trash->execute();
+									$trash_rows = $stmt_trash->fetchColumn();
+								?>
 								<ol class="breadcrumb m-0">
 									<li class="breadcrumb-item"><a href="product_draft.php">Draft (<?php echo $draft_rows ?>)</a></li>
 									<li class="breadcrumb-item active"><a href="product_trash.php">Trash (<?php echo $trash_rows ?>)</a></li>
@@ -43,17 +42,11 @@ include('include/config.php');
 				<div class="col-12">
 					<div class="card">
 						<div class="card-body">
-							<div class="header-content d-flex flex-wrap justify-content-between mb-2">
-								<!-- <div class="admin-main-p">
-										<div class="admin-p d-flex flex-wrap">
-											<div class="category-1  d-flex  flex-wrap"> </div>
-										</div>
-									</div> --></div>
-									<div class="row">
+							<div class="row">
 								<div class="header-btn d-flex justify-content-end   mt-3">
 									<button class="btn btn-primary text-white mb-3"><a href="add_product.php" style="color: white;">Add Product<span>  <i class="fas fa-plus"></i></span></a></button>
 								</div>
-								</div>
+							</div>
 							<div id="datatable_wrapper" class="bloglisting dataTables_wrapper dt-bootstrap4 no-footer">
 								<div class="row">
 									<div class="col-sm-12" style="overflow-y:auto;">
@@ -87,16 +80,16 @@ include('include/config.php');
 																$start--;
 																$start = $start*$per_page;
 															}
-                                $sql = "SELECT * FROM `product` WHERE status=1 ORDER BY id DESC LIMIT $start,$per_page";
-                                $stmt = $conn->prepare($sql);
-                                $stmt->execute();
-                                $i=1;
-                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                if (!empty($data)) {
-                                foreach ($data as $data)
-                                {  $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-                                   $stmt1->execute([$data['img_id']]);
-                                   $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);?>
+																$sql = "SELECT * FROM `product` WHERE status=1 ORDER BY id DESC LIMIT $start,$per_page";
+																$stmt = $conn->prepare($sql);
+																$stmt->execute();
+																$i=1;
+																$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+																if (!empty($data)) {
+																foreach ($data as $data)
+																{  $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+																$stmt1->execute([$data['img_id']]);
+																$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);?>
 													<tr class="odd">
 														<td class="sorting_1 dtr-control" tabindex="0">
 															<?php echo $i; ?>
@@ -115,7 +108,6 @@ include('include/config.php');
 															<?php echo $data['prc'] ?>
 														</td>
 														<td>
-
 														<?php
 															 $stmt_cat = $conn->prepare("SELECT * FROM `category` WHERE id=?");
 															 $stmt_cat->execute([$data['cat_id']]);
@@ -129,11 +121,9 @@ include('include/config.php');
 															 ?>
 
 														</td>
-														
-														
 														<td><a href="http://localhost/augs/<?php echo $data['slug']; ?>" class="btn btn-info"><i class="fa-solid fa-eye"></i></td>
-															<td><a href="product_update.php?id=<?php echo $data['id']; ?>" class="btn btn-success"><i class="fas fa-edit"></i></td>                                   
-                                  <td><a class="btn btn-danger" href="javascript:void(0)" onclick="trashProduct(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
+														<td><a href="product_update.php?id=<?php echo $data['id']; ?>" class="btn btn-success"><i class="fas fa-edit"></i></td>                                   
+                                  						<td><a class="btn btn-danger" href="javascript:void(0)" onclick="trashProduct(<?php echo $data['id']; ?>)"><i class="fas fa-trash-alt"></i></a></td>
 													</tr>
 													<?php $i++; } }?>
 											</tbody>
@@ -152,19 +142,15 @@ include('include/config.php');
 												</a>
 											</li>
 											<?php } }?>
-												<li class="page-item <?php if($current_page >= $page) { echo 'disabled'; } ?>"><a class="page-link" href="category_listing.php?start=<?php echo $current_page+1 ?>" class='button'>NEXT</a></li>
+											<li class="page-item <?php if($current_page >= $page) { echo 'disabled'; } ?>"><a class="page-link" href="category_listing.php?start=<?php echo $current_page+1 ?>" class='button'>NEXT</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end col -->
 			</div>
 		</div>
-		<!-- end row -->
-	</div>
-	<!-- container-fluid -->
 	</div>
 	<?php
 include('include/footer.php');
