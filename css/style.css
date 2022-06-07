@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -578,6 +578,19 @@ p {
 
 .categoryproductED .categorysection1_inside1 {
   margin: 1.25rem auto;
+}
+.categoryproductED .categorysection1_inside1 button.owl-dot {
+  padding: 3px !important;
+  margin-right: 13px;
+  background: grey;
+}
+.categoryproductED .categorysection1_inside1 .owl-dots {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 119px;
+}
+.categoryproductED .categorysection1_inside1 button.owl-dot.active {
+  background: black !important;
 }
 .categoryproductED .categorysection1_inside1 img {
   width: 100%;
@@ -1568,7 +1581,7 @@ header .overlay_Div {
   color: #212429;
 }
 .section_productpage .blog_tabs .nav-tabs .nav-link.active {
-  color: #FFF;
+  color: #fff;
   background-color: #212429;
   border-color: #dee2e6 #dee2e6 #fff;
 }

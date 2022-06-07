@@ -97,34 +97,46 @@ include('include/config.php');
 										</div>
 										<!-- Upload Image -->
 											<?php
-												$stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-												$stmt1->execute([$row['img_id']]);
-												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-												if(!empty($img_data)){
-												$image = $img_data[0]['path'];
-												$alt = $img_data[0]['alt'];
+												// $img_id = $row['img_id'];
+												// $sql = "SELECT * FROM `images` WHERE id IN ($img_id)";
+												// $stmt1 = $conn->prepare($sql);
+												// $stmt1->execute();
+												// $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+												// if(!empty($img_data)){
+												// $image = $img_data[0]['path'];
+												// $alt = $img_data[0]['alt'];
 
-													}else{
-													$image = "https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png";
-													$alt="feature click image";
-													}
+												// 	}else{
+												// 	$image = "https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png";
+												// 	$alt="feature click image";
+												// 	}
+													?>
 
-                                       		 ?>
-											<?php
-												$stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+									<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
+									<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
+									<h5>Set Feature Image</h5>
+									</div> 
+
+									<div class="customefeature_image1">
+									<?php
+												$img_id = $row['img_id'];
+											  $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+												$stmt1 = $conn->prepare($sql1);
 												$stmt1->execute([$data['img_id']]);
 												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
 											?>
-									<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
-										<?php if(!empty($img_data[0]['path'])){ ?>
-										<img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
-									<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $data['id'] ?>)">Remove Image</button> </div>
-										<?php }else{ ?>
-										<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
-										<?php } ?>
-										<h5>Set Feature Image</h5>
+										<?php if(!empty($img_data)){
+											foreach ($img_data as $img_val1){ ?>
+											<img src="<?php echo $img_val1['path']; ?>" alt="<?php echo $img_val1['alt'] ?>" class="image_path1">
+												<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeproductimage(<?php echo $img_val1['id'] ?>)">Remove Image</button> </div>									
+										<?php } } ?>
 									</div>
-									<input type="hidden" class="image_id" name="img_id" value="<?php echo $data['img_id'] ?>"/> 
+
+									<input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>
+									
+									
+
+
 									<div class="customefeature_image">
 										<img src="" alt="" class="image_path">
 									</div>
@@ -142,7 +154,8 @@ include('include/config.php');
 										</div>
 										<!-- button -->
 										<div class="submit-btns mt-1 clearfix d-flex">
-											<input type="hidden" name="product_id" value="<?php echo $row['id'] ?>">        
+										<input type="hidden" name="img_id_val" value="<?php echo $row['img_id'] ?>"/>
+											<input type="hidden" name="product_id" value="<?php echo $row['id'] ?>">      
 											<input type="hidden" name="btn" value="updateProduct">
 											<input type="submit" class="post-btn float-left" name="blog_publish" value="Publish">
 										</div>

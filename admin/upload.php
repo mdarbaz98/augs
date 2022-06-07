@@ -73,7 +73,7 @@
           <input type="text" class="form-control" value="<?php echo $row['title'] ?>" name="title"/>
         </div>
         <input type="hidden" name="img_id" value="<?php echo $row['id'] ?>"/>
-        <input type="hidden" name="b  tn" value="image_update"/>
+        <input type="hidden" name="btn" value="image_update"/>
         <div class=" d-flex justify-content-between m-2">
           <input type="submit" class="btn btn-primary" value="Update"/>
           <button type="button" class="btn btn-danger float-center my-3" onclick="deleteFeatureimage(<?php echo $row['id'] ?>)">Permanent Delete</button> 

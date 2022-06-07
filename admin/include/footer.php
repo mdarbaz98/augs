@@ -107,6 +107,7 @@
                       <?php $i++; } }else{ ?>
                       <p class="alert alert-danger text-center mx-auto my-5">No Images Found</p>
                       <?php }?>
+											<ul>
                 </div>
               </div>
             </div>
