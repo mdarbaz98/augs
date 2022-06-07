@@ -12,7 +12,6 @@ $('#cta_form').validate({
   },
   messages: {},
   submitHandler: function (form) {
-
     $.ajax({
       url: 'action.php',
       type: 'post',
@@ -59,10 +58,10 @@ $('#updateCta').validate({
 $('#product_form').validate({
   rules: {
     pro_name: 'required',
-    description:'required',
-    content:'required',
-    title:'required',
-    seo_title:'required',
+    description: 'required',
+    content: 'required',
+    title: 'required',
+    seo_title: 'required',
     strn: { required: true },
     prc: { required: true },
     slug: {
@@ -89,7 +88,12 @@ $('#product_form').validate({
       processData: false,
       success: function (data) {
         alert(data)
-        console.log(data)
+        $('#exampleModal').modal('show')
+        getAllimages()
+        $('.nav-link').removeClass('active')
+        $('#profile-tab,#profile-tab1,#profile-tab2').click()
+        $('#profile-tab,#profile-tab1,#profile-tab2').addClass('active')
+        //        console.log(data)
       },
     })
   },
@@ -97,10 +101,10 @@ $('#product_form').validate({
 $('#updateProduct').validate({
   rules: {
     pro_name: 'required',
-    content:'required',
-    description:'required',
-    title:'required',
-    seo_title:'required',
+    content: 'required',
+    description: 'required',
+    title: 'required',
+    seo_title: 'required',
     strn: { required: true },
     prc: { required: true },
     slug: {
@@ -126,9 +130,9 @@ $('#updateProduct').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        if (data=='updated') {
-          alert('Product Updated Successfully');
-          location.reload();
+        if (data == 'updated') {
+          alert('Product Updated Successfully')
+          location.reload()
         } else {
           alert('Some Technical Issue')
         }
@@ -214,8 +218,8 @@ $('#addCategory').validate({
     category: 'Please Select Category',
     img_id: 'Select Image',
   },
-  submitHandler: function (form) {   
-     $.ajax({
+  submitHandler: function (form) {
+    $.ajax({
       url: 'action.php',
       type: 'post',
       data: new FormData(form),
@@ -260,9 +264,9 @@ $('#updateCategory').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        if (data=='updated') {
-          alert('Category Updated Successfully');
-          location.reload();
+        if (data == 'updated') {
+          alert('Category Updated Successfully')
+          location.reload()
         } else {
           alert('Some Technical Issue')
         }
@@ -353,9 +357,9 @@ $('#updatePost').validate({
       cache: false,
       processData: false,
       success: function (data) {
-        if (data=='updated') {
-          alert('Post Updated Successfully');
-          location.reload();
+        if (data == 'updated') {
+          alert('Post Updated Successfully')
+          location.reload()
         } else {
           alert('Some Technical Issue')
         }
