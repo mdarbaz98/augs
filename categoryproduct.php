@@ -47,27 +47,38 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                      <?php
-                                $stmt = $conn->prepare("SELECT * FROM `product` WHERE cat_id=? ORDER BY id DESC");
-                                $stmt->execute([$catid]);
-                                $i=1;
-                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                foreach ($data as $data)
-                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-									$stmt_img->execute([$data['img_id']]);
-									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
-										if (!empty($img_data)) {
-										$image = $img_data[0]['path']; 
-										$alt = $img_data[0]['alt'];
-										}else{
-											$image="Not Found";
-											$alt="Not Found";
-										}								 
-					?>
+                        $stmt = $conn->prepare("SELECT * FROM `product` WHERE cat_id=? ORDER BY id DESC");
+                        $stmt->execute([$catid]);
+                        $i=1;
+                        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($data as $data){?>
                     <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                         <div class="categorybox_inside">
                             <div class="categorybox_img">
-                            <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img">
+                            
+                            <div class="owl-carousel  owl-theme" id="product-image">
+                            <?php 
+                                 echo $img_id = $data['img_id'];
+                                 echo $sql = "SELECT * FROM `images` WHERE id IN ($img_id)";
+                                 $stmt_img = $conn->prepare($sql);
+                                 $stmt_img->execute();
+                                 $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                                 foreach ($img_data as $img_val){
+                                     echo "<pre>";
+                                     print_r($img_val);
+                                     echo "</pre>";
+                                 }
+                                ?>    
+
+                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/pngtree-a-scattered-capsule-drug-png-image_4563209.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/pexels-photo-415825_blue white pills.jpg" alt="med" class="custome_img"></div>
+                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>    
                             </div>
+
+                            <!-- <img src="admin/<?php //echo $image ?>" alt="<?php //echo $alt  ?>" class="custome_img"> -->
+                            
+                        </div>
                             <div class="categorydetail_content">
                                 <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
@@ -86,36 +97,7 @@ include('./include/header.php');
                         </div>
                     </div>
                     <?php $i++;} ?>
-                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
-                        <div class="categorybox_inside">
-                            <div class="img">
-                            <div class="owl-carousel  owl-theme" id="product-image">
-                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>
-                                <div class="item"> <img src="admin/uploads/pngtree-a-scattered-capsule-drug-png-image_4563209.jpg" alt="med" class="custome_img"></div>
-                                <div class="item"> <img src="admin/uploads/pexels-photo-415825_blue white pills.jpg" alt="med" class="custome_img"></div>
-                                <div class="item"> <img src="admin/uploads/MED.jpg" alt="med" class="custome_img"></div>
-                                
-                            </div>
-                           
-                            </div>
-                            <div class="categorydetail_content">
-                                <h2 class="text-center">carousel</h2>
-                                <div class="cd_span">
-                                  
-                                    <span>it's carouls</span>
-                                </div>
-                                
-                            </div>
-                            <div class="cd_button">
-                                <p>from <span>$234</span></p>
-                               <a href="#view"><button>View</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="outerline">
-                    <button class="">View All</button>
-                </div>
+                    <!--  -->
             </div>
         </div>
         <!-- 3 -->
