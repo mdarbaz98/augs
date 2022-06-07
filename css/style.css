@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap');
-.shadow,
-.section-2 .home-blog-section #home-owl-carousel .blog-card,
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
+.shadow, .section-2 .home-blog-section #home-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .blog-card,
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
 .section-2 .home-blog-section #post-owl-carousel .blog-card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .custom-container {
@@ -49,28 +47,18 @@ html {
   }
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 600;
   margin-top: 0px;
 }
 
-a,
-a:visited,
-a:active,
-a:hover {
+a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'PT Serif', serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", serif;
   color: #212529;
 }
 
@@ -88,7 +76,7 @@ h3 {
 
 p {
   color: #212529;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .home__section .section-1 {
@@ -107,25 +95,14 @@ p {
   padding: 22px 30px;
   height: 100%;
 }
-.home__section
-  .section-1
-  .home__leftSection
-  .three-div-container
-  .home-div
-  span {
+.home__section .section-1 .home__leftSection .three-div-container .home-div span {
   font-size: 1.375rem;
   text-transform: uppercase;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 600;
 }
-.home__section
-  .section-1
-  .home__leftSection
-  .three-div-container
-  .home-div
-  span
-  small {
-  font-family: 'Ubuntu', sans-serif;
+.home__section .section-1 .home__leftSection .three-div-container .home-div span small {
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
 .home__section .section-1 .home__leftSection .three-div-container .home-div p {
@@ -150,13 +127,8 @@ p {
   border: solid #212529 2px;
   color: #f8f9fa;
 }
-.home__section
-  .section-1
-  .right__homeSection
-  .home-category-buttons-section
-  a
-  button {
-  font-family: 'PT Serif', serif;
+.home__section .section-1 .right__homeSection .home-category-buttons-section a button {
+  font-family: "PT Serif", serif;
   padding: 2px 36px;
   border-radius: 50px;
   border: none;
@@ -178,48 +150,18 @@ p {
   border-radius: 6px;
   overflow: hidden;
 }
-.section-2
-  .home-blog-section
-  #home-owl-carousel
-  .blog-card
-  .blog-card-img-div
-  img,
-.section-2
-  .home-blog-section
-  #product-owl-carousel
-  .blog-card
-  .blog-card-img-div
-  img,
-.section-2
-  .home-blog-section
-  #categoryproduct-owl-carousel
-  .blog-card
-  .blog-card-img-div
-  img,
-.section-2
-  .home-blog-section
-  #post-owl-carousel
-  .blog-card
-  .blog-card-img-div
-  img {
+.section-2 .home-blog-section #home-owl-carousel .blog-card .blog-card-img-div img,
+.section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img,
+.section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
   width: fit-content;
   height: 15.75rem;
   object-fit: cover;
   margin: 0px 55px;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
-.section-2
-  .home-blog-section
-  #product-owl-carousel
-  .blog-card
-  .blog-desc-sec
-  h1,
-.section-2
-  .home-blog-section
-  #categoryproduct-owl-carousel
-  .blog-card
-  .blog-desc-sec
-  h1,
+.section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-desc-sec h1 {
   font-size: 1.5625rem;
 }
@@ -248,13 +190,9 @@ p {
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-desc-sec .sq-btn,
 .section-2 .home-blog-section #product-owl-carousel .blog-desc-sec .sq-btn,
-.section-2
-  .home-blog-section
-  #categoryproduct-owl-carousel
-  .blog-desc-sec
-  .sq-btn,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .blog-desc-sec .sq-btn,
 .section-2 .home-blog-section #post-owl-carousel .blog-desc-sec .sq-btn {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 4px;
   border: none;
@@ -279,7 +217,7 @@ p {
   margin: 2rem auto;
 }
 .section-2 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 0px;
   border-radius: 15px;
   border: none;
@@ -297,7 +235,7 @@ p {
   font-size: 2rem;
 }
 .before::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   background: black;
@@ -345,7 +283,7 @@ p {
   color: #212529;
 }
 .section-3 .right-section .form button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 50px;
   border: none;
@@ -396,12 +334,7 @@ p {
   .home__section .section-1 .home__leftSection .three-div-container .home-div {
     padding: 5px 10px;
   }
-  .home__section
-    .section-1
-    .home__leftSection
-    .three-div-container
-    .home-div
-    p {
+  .home__section .section-1 .home__leftSection .three-div-container .home-div p {
     font-size: 0.8rem !important;
   }
   .home__section .section-1 .right__homeSection .image-div {
@@ -542,31 +475,31 @@ p {
 }
 @media only screen and (max-width: 767px) {
   .onetime-privacy .onetime-banner-content,
-  .onetime-about .onetime-banner-content,
-  .onetime-tandc .onetime-banner-content,
-  .onetime-contact .onetime-banner-content {
+.onetime-about .onetime-banner-content,
+.onetime-tandc .onetime-banner-content,
+.onetime-contact .onetime-banner-content {
     top: 40%;
     left: 24%;
     transform: translate(-18%, -50%);
   }
   .onetime-privacy .main-section .main-section-inside1,
-  .onetime-privacy .main-section .contact-section-inside2,
-  .onetime-about .main-section .main-section-inside1,
-  .onetime-about .main-section .contact-section-inside2,
-  .onetime-tandc .main-section .main-section-inside1,
-  .onetime-tandc .main-section .contact-section-inside2,
-  .onetime-contact .main-section .main-section-inside1,
-  .onetime-contact .main-section .contact-section-inside2 {
+.onetime-privacy .main-section .contact-section-inside2,
+.onetime-about .main-section .main-section-inside1,
+.onetime-about .main-section .contact-section-inside2,
+.onetime-tandc .main-section .main-section-inside1,
+.onetime-tandc .main-section .contact-section-inside2,
+.onetime-contact .main-section .main-section-inside1,
+.onetime-contact .main-section .contact-section-inside2 {
     padding: 0rem 1.25rem 1.25rem;
   }
   .onetime-privacy .main-section .main-section-inside1 .image-div,
-  .onetime-privacy .main-section .contact-section-inside2 .image-div,
-  .onetime-about .main-section .main-section-inside1 .image-div,
-  .onetime-about .main-section .contact-section-inside2 .image-div,
-  .onetime-tandc .main-section .main-section-inside1 .image-div,
-  .onetime-tandc .main-section .contact-section-inside2 .image-div,
-  .onetime-contact .main-section .main-section-inside1 .image-div,
-  .onetime-contact .main-section .contact-section-inside2 .image-div {
+.onetime-privacy .main-section .contact-section-inside2 .image-div,
+.onetime-about .main-section .main-section-inside1 .image-div,
+.onetime-about .main-section .contact-section-inside2 .image-div,
+.onetime-tandc .main-section .main-section-inside1 .image-div,
+.onetime-tandc .main-section .contact-section-inside2 .image-div,
+.onetime-contact .main-section .main-section-inside1 .image-div,
+.onetime-contact .main-section .contact-section-inside2 .image-div {
     padding: 10px;
     border: solid 1px #212529;
     border-radius: 6px;
@@ -574,54 +507,54 @@ p {
     height: auto;
   }
   .onetime-privacy .main-section .main-section-inside1 .image-div img,
-  .onetime-privacy .main-section .contact-section-inside2 .image-div img,
-  .onetime-about .main-section .main-section-inside1 .image-div img,
-  .onetime-about .main-section .contact-section-inside2 .image-div img,
-  .onetime-tandc .main-section .main-section-inside1 .image-div img,
-  .onetime-tandc .main-section .contact-section-inside2 .image-div img,
-  .onetime-contact .main-section .main-section-inside1 .image-div img,
-  .onetime-contact .main-section .contact-section-inside2 .image-div img {
+.onetime-privacy .main-section .contact-section-inside2 .image-div img,
+.onetime-about .main-section .main-section-inside1 .image-div img,
+.onetime-about .main-section .contact-section-inside2 .image-div img,
+.onetime-tandc .main-section .main-section-inside1 .image-div img,
+.onetime-tandc .main-section .contact-section-inside2 .image-div img,
+.onetime-contact .main-section .main-section-inside1 .image-div img,
+.onetime-contact .main-section .contact-section-inside2 .image-div img {
     width: 100%;
     height: 100%;
     border-radius: 6px;
     object-fit: cover;
   }
   .onetime-privacy .main-section .main-section-inside2,
-  .onetime-about .main-section .main-section-inside2,
-  .onetime-tandc .main-section .main-section-inside2,
-  .onetime-contact .main-section .main-section-inside2 {
+.onetime-about .main-section .main-section-inside2,
+.onetime-tandc .main-section .main-section-inside2,
+.onetime-contact .main-section .main-section-inside2 {
     padding: 0rem 1.25rem;
   }
   .onetime-privacy .main-section .contact-section-inside1,
-  .onetime-about .main-section .contact-section-inside1,
-  .onetime-tandc .main-section .contact-section-inside1,
-  .onetime-contact .main-section .contact-section-inside1 {
+.onetime-about .main-section .contact-section-inside1,
+.onetime-tandc .main-section .contact-section-inside1,
+.onetime-contact .main-section .contact-section-inside1 {
     margin-top: 0rem;
     padding: 0rem 1.25rem;
   }
   .onetime-privacy .main_section_content2,
-  .onetime-about .main_section_content2,
-  .onetime-tandc .main_section_content2,
-  .onetime-contact .main_section_content2 {
+.onetime-about .main_section_content2,
+.onetime-tandc .main_section_content2,
+.onetime-contact .main_section_content2 {
     margin-top: 0rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .onetime-privacy .onetime-banner-content,
-  .onetime-about .onetime-banner-content,
-  .onetime-tandc .onetime-banner-content,
-  .onetime-contact .onetime-banner-content {
+.onetime-about .onetime-banner-content,
+.onetime-tandc .onetime-banner-content,
+.onetime-contact .onetime-banner-content {
     top: 21%;
     left: 49%;
   }
   .onetime-privacy .main-section .main-section-inside1 .image-div,
-  .onetime-privacy .main-section .contact-section-inside2 .image-div,
-  .onetime-about .main-section .main-section-inside1 .image-div,
-  .onetime-about .main-section .contact-section-inside2 .image-div,
-  .onetime-tandc .main-section .main-section-inside1 .image-div,
-  .onetime-tandc .main-section .contact-section-inside2 .image-div,
-  .onetime-contact .main-section .main-section-inside1 .image-div,
-  .onetime-contact .main-section .contact-section-inside2 .image-div {
+.onetime-privacy .main-section .contact-section-inside2 .image-div,
+.onetime-about .main-section .main-section-inside1 .image-div,
+.onetime-about .main-section .contact-section-inside2 .image-div,
+.onetime-tandc .main-section .main-section-inside1 .image-div,
+.onetime-tandc .main-section .contact-section-inside2 .image-div,
+.onetime-contact .main-section .main-section-inside1 .image-div,
+.onetime-contact .main-section .contact-section-inside2 .image-div {
     padding: 10px;
     border: solid 1px #212529;
     border-radius: 6px;
@@ -629,13 +562,13 @@ p {
     height: 320px;
   }
   .onetime-privacy .main-section .main-section-inside1 .image-div img,
-  .onetime-privacy .main-section .contact-section-inside2 .image-div img,
-  .onetime-about .main-section .main-section-inside1 .image-div img,
-  .onetime-about .main-section .contact-section-inside2 .image-div img,
-  .onetime-tandc .main-section .main-section-inside1 .image-div img,
-  .onetime-tandc .main-section .contact-section-inside2 .image-div img,
-  .onetime-contact .main-section .main-section-inside1 .image-div img,
-  .onetime-contact .main-section .contact-section-inside2 .image-div img {
+.onetime-privacy .main-section .contact-section-inside2 .image-div img,
+.onetime-about .main-section .main-section-inside1 .image-div img,
+.onetime-about .main-section .contact-section-inside2 .image-div img,
+.onetime-tandc .main-section .main-section-inside1 .image-div img,
+.onetime-tandc .main-section .contact-section-inside2 .image-div img,
+.onetime-contact .main-section .main-section-inside1 .image-div img,
+.onetime-contact .main-section .contact-section-inside2 .image-div img {
     width: 100%;
     height: 100%;
     border-radius: 6px;
@@ -671,79 +604,38 @@ p {
   padding: 10px;
   border-radius: 10px;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 1rem;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img
-  img {
-  width: 80px;
-  height: 56px;
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  h2 {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
   font-size: 20px;
   margin: 10px 0px;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  i {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
   color: #212529;
   margin: 10px 10px 0px 0px;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  span {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
   font-size: 15px;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  p {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
   margin-top: 1rem;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  span {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;
   font-weight: 500;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  button {
-  font-family: 'Ubuntu', sans-serif;
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button button {
+  font-family: "Ubuntu", sans-serif;
   padding: 12px 40px;
   border-radius: 25px;
   border: none;
@@ -760,11 +652,7 @@ p {
   font-size: 1rem;
   background-color: #444547;
 }
-.categoryproductED
-  .categorysection2
-  .categorybox
-  .categorybox_inside:hover
-  button {
+.categoryproductED .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #212529;
 }
 .categoryproductED .categorysection2 .outerline {
@@ -776,7 +664,7 @@ p {
   margin: 3rem auto;
 }
 .categoryproductED .categorysection2 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 0px;
   border-radius: 15px;
   border: none;
@@ -798,12 +686,7 @@ p {
   .categoryproductED .categorysection2 .categorybox {
     padding: 20px 20px 0px 20px;
   }
-  .categoryproductED
-    .categorysection2
-    .categorybox
-    .categorybox_inside
-    .cd_button
-    p {
+  .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
     margin-top: 0rem;
   }
   .categoryproductED .categorysection2 button {
@@ -834,7 +717,7 @@ p {
   color: #212429;
 }
 .section_blogpage .blog_tabs .nav-tabs .nav-link.active {
-  color: #fff;
+  color: #FFF;
   background-color: #212429;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -876,7 +759,7 @@ p {
   font-style: italic;
 }
 .section_blogpage .blog-section .blog-section-inside2 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 0px;
   border: none;
@@ -900,7 +783,7 @@ p {
   margin: 4rem auto;
 }
 .section_blogpage button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 0px;
   border-radius: 15px;
   border: none;
@@ -967,7 +850,7 @@ p {
   }
 }
 .footer__section {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   text-transform: capitalize;
   background-color: #212529;
 }
@@ -1026,7 +909,7 @@ header .navbar .header-form .autoCom-Box {
 }
 header .navbar .header-form .autoCom-Box li {
   padding: 4px 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #dee2e6;
   cursor: pointer;
 }
@@ -1041,7 +924,7 @@ header .navbar .header-form .autoCom-Box li a:hover {
 }
 header .navbar .header-form input {
   border-radius: 50px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 header .navbar .header-form input:focus {
   box-shadow: none;
@@ -1138,17 +1021,10 @@ header .side_Bar ul .menu-list .accordion-item .accordion-button:focus {
   box-shadow: unset;
 }
 header .side_Bar ul .menu-list .accordion-item .accordion-button::after {
-  background-image: url('../assets/images/dropdownImg.png');
+  background-image: url("../assets/images/dropdownImg.png");
 }
-header
-  .side_Bar
-  ul
-  .menu-list
-  .accordion-item
-  .accordion-body
-  .menu-inner-ul
-  li {
-  font-family: 'Ubuntu', sans-serif;
+header .side_Bar ul .menu-list .accordion-item .accordion-body .menu-inner-ul li {
+  font-family: "Ubuntu", sans-serif;
 }
 header .overlay_Div {
   position: fixed;
@@ -1200,7 +1076,7 @@ header .overlay_Div {
   object-fit: cover;
 }
 .product__page .top-section .product-section .product-img button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 4px;
   border: none;
@@ -1234,10 +1110,7 @@ header .overlay_Div {
 .product__page .bottom-section .accordion-item .accordion-button:focus {
   box-shadow: none;
 }
-.product__page
-  .bottom-section
-  .accordion-item
-  .accordion-button:not(.collapsed) {
+.product__page .bottom-section .accordion-item .accordion-button:not(.collapsed) {
   background-color: #dcdada;
   color: #212529;
   font-weight: 600;
@@ -1245,10 +1118,7 @@ header .overlay_Div {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.product__page
-  .bottom-section
-  .accordion-item
-  .accordion-button:not(.collapsed)::after {
+.product__page .bottom-section .accordion-item .accordion-button:not(.collapsed)::after {
   filter: brightness(0.1);
 }
 .product__page .bottom-section .accordion-item .accordion-body {
@@ -1265,130 +1135,22 @@ header .overlay_Div {
   .product__page .top-section .product-section {
     border: none;
   }
-  .product__page .top-section .product-section .shadow,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #home-owl-carousel
-    .blog-card,
-  .section-2
-    .home-blog-section
-    #home-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #product-owl-carousel
-    .blog-card,
-  .section-2
-    .home-blog-section
-    #product-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #categoryproduct-owl-carousel
-    .blog-card,
-  .section-2
-    .home-blog-section
-    #categoryproduct-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #post-owl-carousel
-    .blog-card,
-  .section-2
-    .home-blog-section
-    #post-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card {
+  .product__page .top-section .product-section .shadow, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card,
+.product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card,
+.section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card,
+.product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card,
+.product__page .top-section .product-section .section-2 .home-blog-section #post-owl-carousel .blog-card,
+.section-2 .home-blog-section #post-owl-carousel .product__page .top-section .product-section .blog-card {
     box-shadow: unset !important;
   }
-  .product__page .top-section .product-section .shadow .product-img,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #home-owl-carousel
-    .blog-card
-    .product-img,
-  .section-2
-    .home-blog-section
-    #home-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card
-    .product-img,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #product-owl-carousel
-    .blog-card
-    .product-img,
-  .section-2
-    .home-blog-section
-    #product-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card
-    .product-img,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #categoryproduct-owl-carousel
-    .blog-card
-    .product-img,
-  .section-2
-    .home-blog-section
-    #categoryproduct-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card
-    .product-img,
-  .product__page
-    .top-section
-    .product-section
-    .section-2
-    .home-blog-section
-    #post-owl-carousel
-    .blog-card
-    .product-img,
-  .section-2
-    .home-blog-section
-    #post-owl-carousel
-    .product__page
-    .top-section
-    .product-section
-    .blog-card
-    .product-img {
+  .product__page .top-section .product-section .shadow .product-img, .product__page .top-section .product-section .section-2 .home-blog-section #home-owl-carousel .blog-card .product-img, .section-2 .home-blog-section #home-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
+.product__page .top-section .product-section .section-2 .home-blog-section #product-owl-carousel .blog-card .product-img,
+.section-2 .home-blog-section #product-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
+.product__page .top-section .product-section .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .product-img,
+.section-2 .home-blog-section #categoryproduct-owl-carousel .product__page .top-section .product-section .blog-card .product-img,
+.product__page .top-section .product-section .section-2 .home-blog-section #post-owl-carousel .blog-card .product-img,
+.section-2 .home-blog-section #post-owl-carousel .product__page .top-section .product-section .blog-card .product-img {
     padding: 5px;
     border: solid 1px #212529;
     border-radius: 6px;
@@ -1405,7 +1167,7 @@ header .overlay_Div {
   text-transform: capitalize;
 }
 .post__page .post-banner-section p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #6c757d;
 }
 .post__page .post-content-section .TBC-container {
@@ -1413,34 +1175,18 @@ header .overlay_Div {
   top: 90px;
   z-index: 2;
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .accordion-item
-  .accordion-button {
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .accordion-item
-  .accordion-button:not(.collapsed) {
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:not(.collapsed) {
   color: #212529;
   background-color: unset;
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .accordion-item
-  .accordion-button:not(.collapsed)::after {
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:not(.collapsed)::after {
   filter: brightness(0.1);
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .accordion-item
-  .accordion-button:focus {
+.post__page .post-content-section .TBC-container .accordion-item .accordion-button:focus {
   box-shadow: none;
 }
 .post__page .post-content-section .TBC-container .table-of-content li {
@@ -1454,7 +1200,7 @@ header .overlay_Div {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 600;
 }
 .post__page .post-content-section .TBC-container .table-of-content li a span {
@@ -1465,19 +1211,10 @@ header .overlay_Div {
   margin-right: 10px;
   padding: 0px 10px;
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .table-of-content
-  .tbc_links.active {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active {
   background-color: #212529;
 }
-.post__page
-  .post-content-section
-  .TBC-container
-  .table-of-content
-  .tbc_links.active
-  a {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a {
   color: #f8f9fa;
   font-weight: 500;
 }
@@ -1517,7 +1254,7 @@ header .overlay_Div {
 }
 .post__page .post-content-section .cta_main .ctabox .cta_inside .box:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 29px;
   height: 29px;
   z-index: 1;
@@ -1543,63 +1280,31 @@ header .overlay_Div {
   font-size: 2rem;
   margin: 10px 0px;
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 700;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .cta_inside
-  .cta_content
-  .cta_cd_span
-  img {
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_content .cta_cd_span img {
   width: 30px;
   height: 30px;
   object-fit: cover;
   margin: 0px 10px 0px 0px;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .cta_inside
-  .cta_content
-  .cta_cd_span
-  span {
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_content .cta_cd_span span {
   font-size: 15px;
   display: inline-block;
   margin-top: 3px;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .cta_inside
-  .cta_cd_button
-  p {
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button p {
   margin: 1rem 0rem 2rem 0rem;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .cta_inside
-  .cta_cd_button
-  span {
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button span {
   font-size: 22px;
   font-weight: 500;
   text-align: center;
   display: block;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .cta_inside
-  .cta_cd_button
-  button {
-  font-family: 'Ubuntu', sans-serif;
+.post__page .post-content-section .cta_main .ctabox .cta_inside .cta_cd_button button {
+  font-family: "Ubuntu", sans-serif;
   padding: 9px 0px;
   border-radius: 25px;
   border: none;
@@ -1619,12 +1324,7 @@ header .overlay_Div {
   font-weight: 700;
   width: 59%;
 }
-.post__page
-  .post-content-section
-  .cta_main
-  .ctabox
-  .categorybox_inside:hover
-  button {
+.post__page .post-content-section .cta_main .ctabox .categorybox_inside:hover button {
   background-color: #212529;
 }
 @media only screen and (max-width: 767px) {
@@ -1637,98 +1337,45 @@ header .overlay_Div {
   margin: 30px 0px 10px;
 }
 .post__page .post-content-section p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
   padding: 10px;
   border-radius: 10px;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorybox_img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img
-  img {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
   width: 80px;
   height: 56px;
   object-fit: cover;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  h2 {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
   font-size: 20px;
   margin: 10px 0px;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  i {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
   color: #212529;
   margin: 10px 10px 0px 0px;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  span {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
   font-size: 15px;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  p {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button p {
   margin-top: 3rem;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  span {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;
   font-weight: 500;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  button {
-  font-family: 'Ubuntu', sans-serif;
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside .cd_button button {
+  font-family: "Ubuntu", sans-serif;
   padding: 12px 40px;
   border-radius: 25px;
   border: none;
@@ -1745,19 +1392,10 @@ header .overlay_Div {
   font-size: 1rem;
   background-color: #444547;
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside:hover {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside:hover {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
 }
-.post__page
-  .post-content-section
-  .categorysection2
-  .categorybox
-  .categorybox_inside:hover
-  button {
+.post__page .post-content-section .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #212529;
 }
 .post__page .post-content-section .categorysection2 .outerline {
@@ -1769,7 +1407,7 @@ header .overlay_Div {
   margin: 3rem auto;
 }
 .post__page .post-content-section .categorysection2 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 0px;
   border-radius: 15px;
   border: none;
@@ -1782,7 +1420,7 @@ header .overlay_Div {
   width: 136px;
 }
 .post__page .post-content-section .sq-btn {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 40px;
   border-radius: 4px;
   border: none;
@@ -1798,51 +1436,25 @@ header .overlay_Div {
 .post__page .post-content-section .bottom-accordion-section .accordion-item {
   border: none;
 }
-.post__page
-  .post-content-section
-  .bottom-accordion-section
-  .accordion-item
-  .accordian-heading
-  .accordion-button {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button {
   font-size: 1.2rem;
   box-shadow: none;
   border: none;
   font-weight: 600;
   color: #212529;
 }
-.post__page
-  .post-content-section
-  .bottom-accordion-section
-  .accordion-item
-  .accordian-heading
-  .accordion-button::after {
-  background-image: url('../assets/images/plus.png');
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button::after {
+  background-image: url("../assets/images/plus.png");
 }
-.post__page
-  .post-content-section
-  .bottom-accordion-section
-  .accordion-item
-  .accordian-heading
-  .accordion-button:not(.collapsed) {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed) {
   background-color: unset;
   color: #212529;
 }
-.post__page
-  .post-content-section
-  .bottom-accordion-section
-  .accordion-item
-  .accordian-heading
-  .accordion-button:not(.collapsed)::after {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button:not(.collapsed)::after {
   filter: brightness(0);
-  background-image: url('../assets/images/minus.png');
+  background-image: url("../assets/images/minus.png");
 }
-.post__page
-  .post-content-section
-  .bottom-accordion-section
-  .accordion-item
-  .accordian-heading
-  .accordion-button
-  span {
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordian-heading .accordion-button span {
   background-color: #212529;
   color: #f8f9fa;
   padding: 6px 8px;
@@ -1867,7 +1479,7 @@ header .overlay_Div {
 }
 @media screen and (max-width: 922px) {
   .TBC-container .table-of-content li a span,
-  .TBC-container .table-of-content li a h2 {
+.TBC-container .table-of-content li a h2 {
     font-size: 1.5rem !important;
   }
 }
@@ -1956,7 +1568,7 @@ header .overlay_Div {
   color: #212429;
 }
 .section_productpage .blog_tabs .nav-tabs .nav-link.active {
-  color: #fff;
+  color: #FFF;
   background-color: #212429;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -1974,79 +1586,38 @@ header .overlay_Div {
   padding: 10px;
   border-radius: 10px;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorybox_img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorybox_img
-  img {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
   width: 80px;
   height: 56px;
   object-fit: cover;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  h2 {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
   font-size: 20px;
   margin: 10px 0px;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  i {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
   color: #212529;
   margin: 10px 10px 0px 0px;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .categorydetail_content
-  .cd_span
-  span {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
   font-size: 15px;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  p {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button p {
   margin-top: 1rem;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  span {
+.section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;
   font-weight: 500;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside
-  .cd_button
-  button {
-  font-family: 'Ubuntu', sans-serif;
+.section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button button {
+  font-family: "Ubuntu", sans-serif;
   padding: 12px 40px;
   border-radius: 25px;
   border: none;
@@ -2063,11 +1634,7 @@ header .overlay_Div {
   font-size: 1rem;
   background-color: #444547;
 }
-.section_productpage
-  .categorysection2
-  .categorybox
-  .categorybox_inside:hover
-  button {
+.section_productpage .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #212529;
 }
 .section_productpage .categorysection2 .outerline {
@@ -2079,7 +1646,7 @@ header .overlay_Div {
   margin: 3rem auto;
 }
 .section_productpage .categorysection2 button {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 8px 0px;
   border-radius: 15px;
   border: none;
@@ -2090,25 +1657,4 @@ header .overlay_Div {
   background-color: #212529;
   display: block;
   width: 136px;
-}
-.owl-carousel button.owl-dot {
-  color: antiquewhite;
-  border: none;
-  padding: 6px !important;
-  border-radius: 100%;
-  width: 10px;
-  margin-right: 10px;
-  display: inline;
-  font: inherit;
-  background: gray !important;
-}
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot:hover {
-  background: black !important;
-}
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot.active {
-  background: black !important;
 }
