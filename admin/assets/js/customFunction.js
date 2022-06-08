@@ -111,7 +111,7 @@ function imageChahge(id, path) {
       setImgAgain = path
       $('.image_path').attr('src', path)
       console.log($('.image_path').attr('src', path))
-      $('.customefeature_image').show()
+      // $('.customefeature_image').show()
       alert('working')
       imageUdatevalidate()
     },
