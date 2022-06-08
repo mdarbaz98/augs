@@ -134,6 +134,15 @@
   font-size: 2rem;
 }
 
+.product-image {
+    img{
+      width: 530px !important;
+    }
+    .owl-stage-outer{
+      padding: 0px !important;
+    }
+}
+
 .section-3 {
   background-color: $color-8;
 

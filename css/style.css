@@ -244,6 +244,13 @@ p {
   bottom: -4px;
 }
 
+.product-image img {
+  width: 530px !important;
+}
+.product-image .owl-stage-outer {
+  padding: 0px !important;
+}
+
 .section-3 {
   background-color: #e9ecef;
 }
