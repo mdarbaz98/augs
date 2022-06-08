@@ -38,13 +38,13 @@ $('#post_cta_slider').owlCarousel({
   },
 })
 
-var owl = $('#product-image')
+var owl = $('.product-image')
 owl.owlCarousel({
   loop: true,
   margin: 10,
   dots: true,
   autoplay: true,
-  autoplayTimeout: 1000,
+  autoplayTimeout: 5000,
   autoplayHoverPause: false,
   responsive: {
     0: {

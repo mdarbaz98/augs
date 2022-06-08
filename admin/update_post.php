@@ -114,7 +114,7 @@ include('include/config.php');
 																		<select class="form-control sel_cat" id="category" name="category" title="Please select Category">
 																			<option value="">Select a Category... </option>
 																			<?php foreach ($data as $data) { ?>
-																				<option value="<?php echo $data['id']; ?>" <?php if ($data[ 'id']==$ row_post[ 'cat_id']) echo ' selected="selected"'; ?> >
+																				<option value="<?php echo $data['id']; ?>" <?php if($data['id']==$row_post[ 'cat_id']) echo ' selected="selected"'; ?> >
 																					<?php echo $data['name']; ?>
 																				</option>
 																				<?php } ?>

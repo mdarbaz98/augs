@@ -323,13 +323,19 @@ if($_POST['btn']=='addProduct'){
     }  
     $img_id="";
     if(isset($_POST['img_id'])){
-        $img_id = trim_data($_POST['img_id']);
+        $img_id = $_POST['img_id'];
     }else{
         $img_id="";
+    }
+    $img_id_val="";
+    if(isset($_POST['img_id_val'])){
+        $img_id_val = $_POST['img_id_val'];
+    }else{
+        $img_id_val="";
     }  
-    
+    $img_id_val1 = $img_id_val.",".$img_id;
     $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link,$cat,$descri, 1, $product_id])){
+    if($stmt->execute([$img_id_val1, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link,$cat,$descri, 1, $product_id])){
       echo "updated";
     }
   }
@@ -669,11 +675,19 @@ if($_POST['btn']=='trashPost_id'){
 //Remove features image
 if($_POST['btn']=="removeFeatureimage_id"){
             $id = $_POST['removeFeatureimage_id'];
-            $sql=$conn->prepare("UPDATE `category` SET `img_id`=0 WHERE `id`=?");            
+            $sql=$conn->prepare("UPDATE `images` SET `status`=0 WHERE `id`=?");            
             $sql->execute([$id]);
             echo "removed";
     }
 
+    //Remove product image
+if($_POST['btn']=="removeproductimage_id"){
+    $id = $_POST['removeproductimage_id'];
+    $sql=$conn->prepare("UPDATE `images` SET `status`=0 WHERE `id`=?");            
+    $sql->execute([$id]);
+    echo "removed";
+}
+    
 //Delete features image
 if($_POST['btn']=="deleteFeatureimage_id"){
     $id = $_POST['deleteFeatureimage_id'];

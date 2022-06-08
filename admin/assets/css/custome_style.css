@@ -130,6 +130,19 @@
   border: 1px solid black;
   text-align: center;
 }
+.customefeature_image1 {
+  padding: 10px;
+  text-align: center;
+}
+.customefeature_image1 img {
+  width: 50%;
+  padding: 5px;
+  border-radius: 3px;
+  height: 50%;
+  object-fit: cover;
+  border: 1px solid black;
+  text-align: center;
+}
 
 #addCategory .btn .btn-primary {
   color: #fff;
@@ -465,16 +478,20 @@ div.dataTables_wrapper div.dataTables_filter {
 .image_path {
   width: 90px;
 }
+.custome_img,
+.image_path1 {
+  width: 90px;
+}
 #product_form .long .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
   height: 800px !important;
 }
-#product_form  .short .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off{
+#product_form .short .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
   height: 300px !important;
 }
-#updateProduct .long  .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
+#updateProduct .long .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
   height: 800px !important;
 }
-#updateProduct  .short .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
+#updateProduct .short .tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
   height: 300px !important;
 }
 /* footer Modal  */
@@ -487,7 +504,7 @@ div.dataTables_wrapper div.dataTables_filter {
   display: inline-block;
 }
 
-.img-checkbox input[type="checkbox"][id^="cb"] {
+.img-checkbox input[type='checkbox'][id^='cb'] {
   display: none;
 }
 
@@ -509,7 +526,7 @@ div.dataTables_wrapper div.dataTables_filter {
 .img-checkbox label::before {
   background-color: white;
   color: white;
-  content: " ";
+  content: ' ';
   display: block;
   border-radius: 50%;
   border: 1px solid grey;
@@ -531,17 +548,17 @@ div.dataTables_wrapper div.dataTables_filter {
   transform-origin: 50% 50%;
 }
 
-.img-checkbox :checked+label {
+.img-checkbox :checked + label {
   border-color: #ddd;
 }
 
-.img-checkbox :checked+label::before {
-  content: "✓";
+.img-checkbox :checked + label::before {
+  content: '✓';
   background-color: grey;
   transform: scale(1);
 }
 
-.img-checkbox :checked+label img {
+.img-checkbox :checked + label img {
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
   z-index: -1;
