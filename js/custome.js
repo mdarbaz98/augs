@@ -127,7 +127,7 @@ $(window).scroll(function() {
   //} else {
   //		$('nav').fadeOut("fast");
   //}
-
+  // $('.tbc_links').addClass('active');
   // Assign active class to nav links while scolling
   $('.heading').each(function(i) {
       if ($(this).position().top <= scrollDistance) {
