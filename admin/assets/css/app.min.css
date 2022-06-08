@@ -6363,6 +6363,7 @@ ul.postLink li {
   border: none;
   font-size: 24px;
   padding: 0px;
+  margin-right: 10px;
 }
 .content_upload {
   color: #495057;

@@ -47,27 +47,27 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                      <?php
-                                $stmt = $conn->prepare("SELECT * FROM `product` WHERE cat_id=? ORDER BY id DESC");
-                                $stmt->execute([$catid]);
-                                $i=1;
-                                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                foreach ($data as $data)
-                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-									$stmt_img->execute([$data['img_id']]);
-									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
-										if (!empty($img_data)) {
-										$image = $img_data[0]['path']; 
-										$alt = $img_data[0]['alt'];
-										}else{
-											$image="Not Found";
-											$alt="Not Found";
-										}								 
-					?>
-                    <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
-                        <div class="categorybox_inside">
-                            <div class="categorybox_img">
-                            <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img">
-                            </div>
+                        $stmt = $conn->prepare("SELECT * FROM `product` WHERE status=1 AND cat_id=? ORDER BY id DESC limit 4");
+                        $stmt->execute([$catid]);
+                        $i=1;
+                        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        foreach ($data as $data){?>
+
+                            <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
+                                <div class="categorybox_inside">
+                                    <div class="categorybox_img">        
+                                        <div class="owl-carousel owl-theme product-image" id="">
+                                            <?php 
+                                            $img_id = $data['img_id'];
+                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+                                            $stmt_img = $conn->prepare($sql);
+                                            $stmt_img->execute();
+                                            $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                                            foreach ($img_data as $img_val){ ?>
+                                            <div class="item"><img src="admin/<?php echo $img_val['path'] ?>" alt="<?php echo $img_val['alt']  ?>" class="custome_img"></div>
+                                            <?php } ?>    
+                                        </div>
+                                    </div>
                             <div class="categorydetail_content">
                                 <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
@@ -86,11 +86,7 @@ include('./include/header.php');
                         </div>
                     </div>
                     <?php $i++;} ?>
-                    
-                </div>
-                <div class="outerline">
-                    <button class="">View All</button>
-                </div>
+                    <!--  -->
             </div>
         </div>
         <!-- 3 -->

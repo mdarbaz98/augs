@@ -107,7 +107,7 @@ function imageChahge(id, path) {
       $('#for_dynamicImage,#for_dynamicImage1,#for_dynamicImage2').html(data)
       //location.reload();
       // alert(data);
-      $('.image_id').attr('value', id)
+      //$('.image_id').attr('value', id)
       setImgAgain = path
       $('.image_path').attr('src', path)
       console.log($('.image_path').attr('src', path))
@@ -413,6 +413,35 @@ function removeFeatureimage(id) {
         } else {
           $('.image_path').attr('src', setImgAgain)
         }
+      }
+    },
+  })
+}
+
+// Remove product images
+function removeproductimage(id) {
+  alert(id)
+  $.ajax({
+    type: 'POST',
+    url: 'action.php',
+    dataType: 'html',
+    data: {
+      removeproductimage_id: id,
+      btn: 'removeproductimage_id',
+    },
+    success: function (data) {
+      if (data == 'removed') {
+        alert('removed')
+        location.reload()
+        //   if (!setImgAgain) {
+        //     $('.blog-img-box').html(
+        //       '<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png">',
+        //     )
+        //     $('#remove_btn').hide()
+        //   } else {
+        //     $('.image_path').attr('src', setImgAgain)
+        //   }
+        // }
       }
     },
   })

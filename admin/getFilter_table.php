@@ -25,34 +25,35 @@ if($_POST['btn']=="post_title")
     $i=1;
     if(!empty($result))
     {
-            foreach($result as $row)
+        foreach($result as $row)
             {
                 echo "<tr>";
                 $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
                 $stmt_img->execute([$row['img_id']]);
                 $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
-								if (!empty($img_data)) {
+								if (!empty($img_data)) 
+                                    {
 											$image = $img_data[0]['path']; 
 											$alt = $img_data[0]['alt'];
-											}else{
+									}else{
 											$image="Not Found";
 											$alt="Not Found";
-										}
+										 }
                 echo "<td>$i</td>";    
                 echo "<td><img src='".$image."' class='custome_img' alt='".$alt."'></td>";
                 echo "<td>".$row['title']."</td>";
                 $stmt_cat = $conn->prepare("SELECT * FROM `category` WHERE id=?");
                 $stmt_cat->execute([$row['cat_id']]);
                 $cat_data = $stmt_cat->fetchAll(PDO::FETCH_ASSOC);
-                if (!empty($cat_data)) {
-                 $cat_name = $cat_data[0]['name']; 
-                 }else{
-                 $cat_name="Not Found";
-                }
+                if (!empty($cat_data)) 
+                    {
+                        $cat_name = $cat_data[0]['name']; 
+                    }else{
+                        $cat_name="Not Found";
+                         }
                 echo "<td>" .$cat_name. "</td>";
                 echo "<td>" .$row['description']. "</td>";
                 echo "<td>" .$row['uploaded_on']. "</td>";
-
                 echo "<td><a target='_blank' href='https://practicalanxietysolutions.com/".$row['slug']."' class='btn btn-success'><i class='fas fa-solid fa-eye'
 					            style='margin-left:-2px;color: white;font-size: 15px;margin-top:1px;'></i>
 						        </td>";    
@@ -61,12 +62,10 @@ if($_POST['btn']=="post_title")
                 echo "</tr>";
                 $i++;
             }
-
-        }
-        else{
+    }
+     else{
             echo "<tr>No Data Found</tr>";
-        }
-
+         }
         echo "</table>";
 }
 

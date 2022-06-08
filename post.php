@@ -109,7 +109,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-12">r</div>
+            <div class="col-lg-3 col-12"></div>
           </div>
         </div>
       </div>
