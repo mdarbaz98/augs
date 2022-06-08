@@ -37,7 +37,8 @@ include('./include/header.php');
                             alt="">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside2">
-                    <?php echo $content ?>  
+                    <?php echo $content ?>
+                    <a class="moreless-button" id="read-more-btn">Read more...</a>
                     </div>
                 </div>
             </div>

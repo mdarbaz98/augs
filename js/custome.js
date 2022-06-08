@@ -59,11 +59,11 @@ $(document).ready(function () {
 
 // readmore
 $('.moreless-button').click(function () {
-  $('.moretext').toggle()
+  $('.moretext').fadeToggle("slow");
   if ($('.moreless-button').text() == 'Read less') {
-    $(this).text('Read more...')
+    $(this).text('Read more...');
   } else {
-    $(this).text('Read less')
+    $(this).text('Read less');
   }
 })
 
@@ -99,20 +99,42 @@ $('.tbc_links').click(function () {
 })
 
 // add active class on scroll
-function loadBlogScrollJs() {
-  $(window).scroll(function () {
-    const headingElement = document.querySelectorAll('.tbc_links')
-    const headingSections = document.querySelectorAll('.blog-body h2')
-    const arrayForm = Array.from(headingElement)
+// function loadBlogScrollJs() {
+//   $(window).scroll(function () {
+//     const headingElement = document.querySelectorAll('.tbc_links')
+//     const headingSections = document.querySelectorAll('.blog-body h2')
+//     const arrayForm = Array.from(headingElement)
 
-    let len = headingSections.length
+//     let len = headingSections.length
 
-    while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
-    // arrayForm.forEach((ele) => {
-    //   ele.classList.remove("active");
-    // });
-    // arrayForm[len].classList.add("active");
+//     while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
+//     // arrayForm.forEach((ele) => {
+//     //   ele.classList.remove("active");
+//     // });
+//     // arrayForm[len].classList.add("active");
 
-    console.log(arrayForm[len])
-  })
-}
+//     console.log(arrayForm[len])
+//   })
+// }
+
+
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+
+  // Show/hide menu on scroll
+  //if (scrollDistance >= 850) {
+  //		$('nav').fadeIn("fast");
+  //} else {
+  //		$('nav').fadeOut("fast");
+  //}
+
+  // Assign active class to nav links while scolling
+  $('.heading').each(function(i) {
+      if ($(this).position().top <= scrollDistance) {
+        $('.tbc_links.active').removeClass('active');
+        $('.tbc_links').eq(i).addClass('active');
+      }
+      console.log($('.tbc_links'));
+  });
+
+}).scroll();

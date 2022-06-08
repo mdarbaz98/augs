@@ -376,6 +376,10 @@
 
 // categoryproductPE start
 .categoryproductED {
+  #read-more-btn{
+    display: inline-block !important;
+    cursor: pointer;
+  }
   .categorysection1_inside1 {
     margin: 1.25rem auto;
     button.owl-dot {
@@ -435,7 +439,7 @@
 
           img {
             width: 100%;
-            height: auto;
+            height: 209px;
             object-fit: cover;
           }
         }

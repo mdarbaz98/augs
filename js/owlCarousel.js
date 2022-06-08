@@ -46,18 +46,10 @@ owl.owlCarousel({
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: false,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    },
-  },
+  items:1,
 })
+
+
 $('.img').on('mouseenter', function () {
   owl.trigger('play.owl.autoplay', [1000])
 })

@@ -576,6 +576,10 @@ p {
   }
 }
 
+.categoryproductED #read-more-btn {
+  display: inline-block !important;
+  cursor: pointer;
+}
 .categoryproductED .categorysection1_inside1 {
   margin: 1.25rem auto;
 }
@@ -625,7 +629,7 @@ p {
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
   width: 100%;
-  height: auto;
+  height: 209px;
   object-fit: cover;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
