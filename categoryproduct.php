@@ -10,6 +10,12 @@
     $desc = $row['description'];
     $name = $row['name'];
     $content = $row['content'];
+    $cat_img_id = $row['img_id'];
+    $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE status=1 AND id=?");
+    $stmt_img->execute([$cat_img_id]);
+    $img_data_cat = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+    $img_path = $img_data_cat[0]['path'];
+    $img_alt = $img_data_cat[0]['alt'];    
 }
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 // Page Meta Auto Insertion Starts Here
@@ -33,8 +39,8 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside1">
-                        <img class="mt-5 pt-4" src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                            alt="">
+                        <img class="mt-5 pt-4" src="admin/<?php echo $img_path ?>"
+                            alt="<?php echo $img_alt ?>">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside2">
                     <?php echo $content ?>  

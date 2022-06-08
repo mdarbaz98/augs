@@ -44,6 +44,7 @@ owl.owlCarousel({
   margin: 10,
   dots: true,
   autoplay: true,
+  slideTransition: 'linear',
   autoplayTimeout: 5000,
   autoplayHoverPause: false,
   responsive: {

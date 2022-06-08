@@ -109,13 +109,21 @@ function imageChahge(id, path) {
       // alert(data);
       //$('.image_id').attr('value', id)
       setImgAgain = path
-      $('.image_path').attr('src', path)
-      console.log($('.image_path').attr('src', path))
+      // $('.image_path').attr('src', path)
+      // console.log($('.image_path').attr('src', path));
+      
+        var img = `<img src="${path}" alt="" onclick="removeImg(this)" class="set_images" style="width:90px">`; 
+        $(".set_images").append(img);
+    
       // $('.customefeature_image').show()
-      alert('working')
       imageUdatevalidate()
     },
   })
+}
+
+function removeImg(ele){
+  alert('hi')
+  ele.remove()
 }
 
 function contenImage(id, path) {
@@ -411,7 +419,7 @@ function removeFeatureimage(id) {
           )
           $('#remove_btn').hide()
         } else {
-          $('.image_path').attr('src', setImgAgain)
+          $('.set_images img').attr('src', setImgAgain)
         }
       }
     },

@@ -113,16 +113,17 @@ include('include/config.php');
 													?>
 
 									<div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
-									<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
+									<img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png" alt="feature click image" class="image_path">
 									<h5>Set Feature Image</h5>
 									</div> 
-
+									<div class="set_images">					
+									</div>		
 									<div class="customefeature_image1">
 									<?php
-												$img_id = $row['img_id'];
-											  $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+											    $img_id = $row['img_id'];
+											    $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
 												$stmt1 = $conn->prepare($sql1);
-												$stmt1->execute([$data['img_id']]);
+												$stmt1->execute();
 												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
 											?>
 										<?php if(!empty($img_data)){
