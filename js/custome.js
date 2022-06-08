@@ -71,7 +71,6 @@ $('.moreless-button').click(function () {
 $('.categorysection1_inside2 h2').eq(1).next().nextAll().addClass('moretext')
 
 // post active table of content
-
 var i = 0
 $('.blog-body h2').each(function () {
   ++i

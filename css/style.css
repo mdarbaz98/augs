@@ -1171,9 +1171,14 @@ header .overlay_Div {
   color: #6c757d;
 }
 .post__page .post-content-section .TBC-container {
+  overflow-y: scroll;
+  height: 90vh;
   position: sticky;
   top: 90px;
   z-index: 2;
+}
+.post__page .post-content-section .TBC-container::-webkit-scrollbar {
+  display: none;
 }
 .post__page .post-content-section .TBC-container .accordion-item .accordion-button {
   font-size: 1.8rem;

@@ -1042,6 +1042,11 @@ header {
 
   .post-content-section {
     .TBC-container {
+      overflow-y:scroll;
+      height: 90vh;
+      &::-webkit-scrollbar{
+        display: none;
+      }
       .accordion-item {
         .accordion-button {
           font-size: 1.8rem;
