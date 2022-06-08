@@ -44,11 +44,12 @@ owl.owlCarousel({
   margin: 10,
   dots: true,
   autoplay: true,
-  slideSpeed: 500,
+  // slideSpeed: 100,
   slideTransition: 'linear',
   autoplayTimeout: 5000,
-  autoplayHoverPause: false,
+  autoplayHoverPause: true,
   items:1,
+  smartSpeed: 670,
 })
 
 
