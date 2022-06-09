@@ -51,6 +51,9 @@
       background-color: $color-1;
       color: #fff;
       border-radius: 50px;
+      &:hover{
+        background-color: $color-1;
+      }
     }
     .owl-nav {
       display: flex;
