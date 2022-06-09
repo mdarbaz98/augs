@@ -37,7 +37,7 @@
                   $stmt->execute();
 									$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   foreach ($data as $data)
-                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button><?php echo $data['short_name'] ?></button></a><?php }	?>
+                	{ ?><a href="<?php echo $data['slug'] ?>"><button><?php echo $data['short_name'] ?></button></a><?php }	?>
 							</div>
 						</div>
 					</div>
@@ -149,7 +149,7 @@
         <div class="accordion-item mb-3">
             <h2 id="panelsStayOpen-heading-6" class="accordion-header"><button class="accordion-button collapsed"
                     type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse-6"
-                    aria-expanded="false" aria-controls="panelsStayOpen-collapse-6"> 5.What is our goal regarding these
+                    aria-expanded="false" aria-controls="panelsStayOpen-collapse-6"> 5. What is our goal regarding these
                     conditions? </button></h2>
             <div id="panelsStayOpen-collapse-6" class="accordion-collapse collapse"
                 aria-labelledby="panelsStayOpen-heading-6">

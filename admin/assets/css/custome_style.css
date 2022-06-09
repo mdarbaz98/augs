@@ -130,12 +130,16 @@
   border: 1px solid black;
   text-align: center;
 }
+.customefeature_image1 a{
+position: relative;
+top: 30px;
+}
 .customefeature_image1 {
   padding: 10px;
   text-align: center;
 }
 .customefeature_image1 img {
-  width: 50%;
+  width: 85%;
   padding: 5px;
   border-radius: 3px;
   height: 50%;

@@ -478,6 +478,10 @@ function deleteFeatureimage(id) {
   }
 }
 
+function setFrontproductimage(id){
+  alert(id);
+}
+
 //Delete cta
 function deleteCta(id) {
   var x = confirm('Are you sure you want to permanent delete this?')

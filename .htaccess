@@ -1,3 +1,4 @@
+
 RewriteEngine On
 RewriteRule ^/?$ index.php [NC,L]
 RewriteRule ^about/?$ aboutus.php [NC,L]
@@ -8,3 +9,7 @@ RewriteRule ^product/?$ product.php [NC,L]
 RewriteRule ^blogs/?$ blog.php [NC,L]
 RewriteRule ^category/([^/\.]+)/?$ categoryproduct.php?cat=$1 [NC,L]
 RewriteRule ^([a-zA_Z_-]+)$ post.php?slug=$1 [NC,L]
+RewriteRule ^([a-zA_Z_-]+)/([a-zA_Z_-]+)$ post.php?slug2=$1&slug=$2 [NC,L]
+RewriteRule ^404/?$ error_redirect.php [NC,L]
+
+

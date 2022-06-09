@@ -273,11 +273,11 @@ if($_POST['btn']=='addProduct'){
     }else{
         $seo_title="";
     }
-    $descri="";
+    $description="";
     if(isset($_POST['description'])){
-        $descri = trim_data($_POST['description']);
+        $description = trim_data($_POST['description']);
     }else{
-        $descri="";
+        $description="";
     }
     $content="";
     if(isset($_POST['content'])){
@@ -335,7 +335,7 @@ if($_POST['btn']=='addProduct'){
     }  
     $img_id_val1 = $img_id_val.",".$img_id;
     $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id_val1, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link,$cat,$descri, 1, $product_id])){
+    if($stmt->execute([$img_id_val1, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
       echo "updated";
     }
   }

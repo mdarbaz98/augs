@@ -93,7 +93,7 @@ include('include/config.php');
 													</select>
 										</div>
 										<div class=" w-100 ">
-												<textarea class="form-control"  id="description" name="description"  rows="3"><?php echo $data['description']  ?></textarea>
+												<textarea class="form-control"  id="description" name="description"  rows="3"><?php echo $row['description']  ?></textarea>
 										</div>
 										<!-- Upload Image -->
 											<?php
@@ -128,7 +128,8 @@ include('include/config.php');
 											?>
 										<?php if(!empty($img_data)){
 											foreach ($img_data as $img_val1){ ?>
-											<img src="<?php echo $img_val1['path']; ?>" alt="<?php echo $img_val1['alt'] ?>" class="image_path1">
+											<a href="javascript:void(0)" class="text-center text-danger" onclick="setFrontproductimage(<?php echo $img_val1['id'] ?>)">Set As Front</a>
+												<img src="<?php echo $img_val1['path']; ?>" alt="<?php echo $img_val1['alt'] ?>" class="image_path1">
 												<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeproductimage(<?php echo $img_val1['id'] ?>)">Remove Image</button> </div>									
 										<?php } } ?>
 									</div>
