@@ -142,6 +142,50 @@ p {
   width: unset;
   margin: 4px;
 }
+.home__section .section_middle .middle_heading {
+  padding: 20px 50px 0px 50px;
+}
+.home__section .section_middle .middle_heading h3 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0px 0px 14px 0px;
+}
+.home__section .section_middle .accordion-item {
+  border: none;
+}
+.home__section .section_middle .accordion-item .accordion-button {
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+.home__section .section_middle .accordion-item .accordion-button::after {
+  filter: brightness(25);
+}
+.home__section .section_middle .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.home__section .section_middle .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #dcdada;
+  color: #212529;
+  font-weight: 600;
+  box-shadow: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.home__section .section_middle .accordion-item .accordion-button:not(.collapsed)::after {
+  filter: brightness(0.1);
+}
+.home__section .section_middle .accordion-item .accordion-body {
+  background-color: #dcdada;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.home__section .section_middle .accordion-item .accordion-body p {
+  color: #212529;
+  font-size: 1.1rem;
+}
 
 .section-2 .home-blog-section #home-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .blog-card,
@@ -350,6 +394,12 @@ p {
   }
   .home__section .section-1 .right__homeSection .image-div {
     height: 400px;
+  }
+  .home__section .section_middle .middle_heading {
+    padding: 20px 20px 0px 20px;
+  }
+  .home__section .section_middle .middle_heading h3 {
+    font-size: 23px;
   }
   .home__section .section-3 .left-section p {
     font-weight: 600;
