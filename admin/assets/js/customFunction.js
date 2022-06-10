@@ -480,6 +480,22 @@ function deleteFeatureimage(id) {
 
 function setFrontproductimage(id){
   alert(id);
+  $.ajax({
+    type: 'POST',
+    url: 'action.php',
+    dataType: 'html',
+    data: {
+      setFrontimage_id: id,
+      btn: 'setFrontimage_id',
+    },
+    success: function (data) {
+      if (data == 'updated') {
+        alert('Image Set Successfully')
+        location.reload()
+      }
+    },
+  })
+
 }
 
 //Delete cta

@@ -6,8 +6,8 @@
             <div class="col img-checkbox">     
                 <ul>
                 <?php 
-                    $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-                    $images->execute([1]);
+                    $images=$conn->prepare("SELECT * FROM images");
+                    $images->execute();
                     $i=0;
                     $total_images = $images->rowCount();
                     if ($total_images > 0) {

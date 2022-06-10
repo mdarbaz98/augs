@@ -24,6 +24,17 @@ if($_POST['btn']=='image_update'){
     echo "updated";
   }
 }
+
+if($_POST['btn']=='setFrontimage_id'){
+    $id = $_POST['setFrontimage_id'];
+    $stmt = $conn->prepare("UPDATE images SET status=2 WHERE id=?");
+    if($stmt->execute([$id])){
+      echo "updated";
+    }
+  }
+
+
+
 if($_POST['btn']=='addCategory'){
   $cat_name="";
   if(isset($_POST['cat_name'])){
@@ -333,9 +344,17 @@ if($_POST['btn']=='addProduct'){
     }else{
         $img_id_val="";
     }  
+    $front_img = "";
+    if(isset($_POST['front_img'])){
+        $front_img = $_POST['front_img'];
+    }else{
+        $front_img="";
+    }  
+
+    
     $img_id_val1 = $img_id_val.",".$img_id;
-    $stmt = $conn->prepare("UPDATE product SET img_id=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id_val1, $name,  $title, $seo_title,  $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
+    $stmt = $conn->prepare("UPDATE product SET img_id=?, front_img=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
+    if($stmt->execute([$img_id_val1, $front_img, $name, $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
       echo "updated";
     }
   }
