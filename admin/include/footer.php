@@ -90,8 +90,8 @@
             <div class="col img-checkbox">     
                 <ul>
                 <?php 
-                    $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-                    $images->execute([1]);
+                    $images=$conn->prepare("SELECT * FROM images");
+                    $images->execute();
                     $i=0;
                     $total_images = $images->rowCount();
                     if ($total_images > 0) {
@@ -162,8 +162,8 @@
 								<div class="col-sm-8">
 									<div class="row m-auto mt-5">
 										<?php 
-              $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-              $images->execute([1]);
+              $images=$conn->prepare("SELECT * FROM images");
+              $images->execute();
               $total_images = $images->rowCount();
               if ($total_images > 0) {
                   while ($row = $images->fetch(PDO::FETCH_ASSOC)) {
@@ -224,8 +224,8 @@
 								<div class="col-sm-8">
 									<div class="row m-auto mt-5">
 										<?php 
-              $images=$conn->prepare("SELECT * FROM images WHERE status=?");
-              $images->execute([1]);
+              $images=$conn->prepare("SELECT * FROM images");
+              $images->execute();
               $total_images = $images->rowCount();
               if ($total_images > 0) {
                   while ($row = $images->fetch(PDO::FETCH_ASSOC)) {

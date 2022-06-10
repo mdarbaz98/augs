@@ -325,8 +325,7 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside1">
-                        <img class="mt-5 pt-4" src="admin/<?php echo $img_path ?>"
-                            alt="<?php echo $img_alt ?>">
+                        <img class="mt-5 pt-4" src="admin/<?php echo $img_path ?>" alt="<?php echo $img_alt ?>">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside2">
                     <?php echo $content ?>
@@ -349,18 +348,17 @@ include('./include/header.php');
                             <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                                 <div class="categorybox_inside">
                                     <div class="categorybox_img">        
-                                        <div class="owl-carousel owl-theme product-image" id="">
                                             <?php 
                                             $img_id = $data['img_id'];
-                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+                                            $sql = "SELECT * FROM `images` WHERE status=2 AND id IN ($img_id) limit 1";
                                             $stmt_img = $conn->prepare($sql);
                                             $stmt_img->execute();
                                             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
                                             foreach ($img_data as $img_val){ ?>
-                                            <div class="item"><img src="admin/<?php echo $img_val['path'] ?>" alt="<?php echo $img_val['alt']  ?>" class="custome_img"></div>
+                                            <img src="admin/<?php echo $img_val['path'] ?>" alt="<?php echo $img_val['alt']  ?>" class="custome_img">
                                             <?php } ?>    
-                                        </div>
-                                    </div>
+                                      </div>
+                                
                             <div class="categorydetail_content">
                                 <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
