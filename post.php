@@ -350,13 +350,19 @@ include('./include/header.php');
                                     <div class="categorybox_img">        
                                             <?php 
                                             $img_id = $data['img_id'];
-                                            $sql = "SELECT * FROM `images` WHERE status=2 AND id IN ($img_id) limit 1";
+                                            if($data['front_img']){
+                                            $front_img_id = $data['front_img'];
+                                            }else{ $front_img_id=1;}
+                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($front_img_id)";
                                             $stmt_img = $conn->prepare($sql);
                                             $stmt_img->execute();
                                             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
+                                            if(!empty($img_data)){                                            
                                             foreach ($img_data as $img_val){ ?>
                                             <img src="admin/<?php echo $img_val['path'] ?>" alt="<?php echo $img_val['alt']  ?>" class="custome_img">
-                                            <?php } ?>    
+                                            <?php }}else{
+                                              echo "no images";
+                                            } ?>    
                                       </div>
                                 
                             <div class="categorydetail_content">

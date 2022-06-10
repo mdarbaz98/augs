@@ -55,11 +55,10 @@ include('include/config.php');
 												<tr role="row">
 													<th>Sr No.</th>
 													<th>Image</th>
-													<th>Product Name</th>
-													<th>Short desc</th>
-													<th>Strength</th>
-													<th>Price</th>
 													<th>Category</th>
+													<th>Product Name</th>
+													<th>Price</th>
+													<th>Uploaded_on</th>
 													<th>View</th>
 													<th>Edit</th>
 													<th>Delete</th>
@@ -96,18 +95,6 @@ include('include/config.php');
 														</td>
 														<td><img src="<?php echo $img_data[0]['path']; ?>" alt="<?php echo $img_data[0]['alt']; ?>" class="custome_img"></td>
 														<td>
-															<?php echo $data['name'] ?>
-														</td>
-														<td>
-															<?php echo $data['shrt_desc'] ?>
-														</td>
-														<td>
-															<?php echo $data['strnt'] ?>
-														</td>
-														<td>
-															<?php echo $data['prc'] ?>
-														</td>
-														<td>
 														<?php
 															 $stmt_cat = $conn->prepare("SELECT * FROM `category` WHERE id=?");
 															 $stmt_cat->execute([$data['cat_id']]);
@@ -120,6 +107,15 @@ include('include/config.php');
 															 echo $cat_name;
 															 ?>
 
+														</td>
+														<td>
+															<?php echo $data['name'] ?>
+														</td>
+														<td>
+															<?php echo $data['prc'] ?>
+														</td>
+														<td>
+															<?php echo $data['PostDate'] ?>
 														</td>
 														<td><a href="http://localhost/augs/<?php echo $data['slug']; ?>" class="btn btn-info"><i class="fa-solid fa-eye"></i></td>
 														<td><a href="product_update.php?id=<?php echo $data['id']; ?>" class="btn btn-success"><i class="fas fa-edit"></i></td>                                   
