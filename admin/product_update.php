@@ -121,7 +121,7 @@ include('include/config.php');
 									<div class="customefeature_image1">
 									<?php
 											    $img_id = $row['img_id'];
-											    echo $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+											    $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
 												$stmt1 = $conn->prepare($sql1);
 												$stmt1->execute();
 												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
