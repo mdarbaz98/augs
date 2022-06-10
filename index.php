@@ -33,11 +33,11 @@
 							<div class="image-div"> <img class="shadow" src="https://media.istockphoto.com/photos/young-smiling-handsome-man-in-casual-clothes-posing-isolated-on-blue-picture-id1249420269?k=20&m=1249420269&s=612x612&w=0&h=taSQreK8i8J_nt-NQR0SBGVhXXtNWAtJuXiBnHBNW0g=" alt="home-image"> </div>
 							<div class="home-category-buttons-section pt-4 d-flex justify-content-center gap-2">
 							<?php
-                  $stmt = $conn->prepare("SELECT * FROM `category` limit 2");
-                  $stmt->execute();
+                                    $stmt = $conn->prepare("SELECT * FROM `category` limit 2");
+                                    $stmt->execute();
 									$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                  foreach ($data as $data)
-                	{ ?><a href="category/<?php echo $data['slug'] ?>"><button><?php echo $data['short_name'] ?></button></a><?php }	?>
+                                    foreach ($data as $data)
+                	                    { ?><a href="<?php echo $data['slug'] ?>"><button><?php echo $data['short_name'] ?></button></a><?php }	?>
 							</div>
 						</div>
 					</div>

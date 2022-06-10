@@ -118,23 +118,23 @@ $('.tbc_links').click(function () {
 // }
 
 
-$(window).scroll(function() {
-  var scrollDistance = $(window).scrollTop();
+// $(window).scroll(function() {
+//   var scrollDistance = $(window).scrollTop();
 
-  // Show/hide menu on scroll
-  //if (scrollDistance >= 850) {
-  //		$('nav').fadeIn("fast");
-  //} else {
-  //		$('nav').fadeOut("fast");
-  //}
-  // $('.tbc_links').addClass('active');
-  // Assign active class to nav links while scolling
-  $('.heading').each(function(i) {
-      if ($(this).position().top <= scrollDistance) {
-        $('.tbc_links.active').removeClass('active');
-        $('.tbc_links').eq(i).addClass('active');
-      }
-      console.log($('.tbc_links'));
-  });
+//   // Show/hide menu on scroll
+//   //if (scrollDistance >= 850) {
+//   //		$('nav').fadeIn("fast");
+//   //} else {
+//   //		$('nav').fadeOut("fast");
+//   //}
+//   // $('.tbc_links').addClass('active');
+//   // Assign active class to nav links while scolling
+//   $('.heading').each(function(i) {
+//       if ($(this).position().top <= scrollDistance) {
+//         $('.tbc_links.active').removeClass('active');
+//         $('.tbc_links').eq(i).addClass('active');
+//       }
+//       console.log($('.tbc_links'));
+//   });
 
-}).scroll();
+// }).scroll();
