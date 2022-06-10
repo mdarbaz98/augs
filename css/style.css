@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap");
 .shadow, .section-2 .home-blog-section #home-owl-carousel .blog-card,
 .section-2 .home-blog-section #product-owl-carousel .blog-card,
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card,
@@ -143,12 +144,71 @@ p {
   margin: 4px;
 }
 .home__section .section_middle .middle_heading {
-  padding: 20px 50px 0px 50px;
+  padding: 20px 0px 0px 0px;
 }
 .home__section .section_middle .middle_heading h3 {
   text-align: center;
   font-size: 30px;
   padding: 0px 0px 14px 0px;
+}
+.home__section .section_middle .middle_content_1 .comma-left {
+  position: relative;
+}
+.home__section .section_middle .middle_content_1 .comma-left img {
+  width: 35px;
+  position: absolute;
+  height: 35px;
+  top: -20px;
+  left: -12px;
+}
+.home__section .section_middle .middle_content_1 p {
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+.home__section .section_middle .middle_content_1 h3 {
+  padding: 20px 0px 20px 20px;
+  font-family: "Lora", serif;
+  font-size: 25px;
+}
+.home__section .section_middle .middle_content_1 .middle_inside_1 {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 30px 20px 30px;
+}
+.home__section .section_middle .middle_content_1 .middle_inside_1 .middle_icon img {
+  width: 40px;
+  height: 40px;
+}
+.home__section .section_middle .middle_content_1 .middle_inside_1 .middle_icon span {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 6px 0px 0px 10px;
+}
+.home__section .section_middle .middle_content_2 .comma-right {
+  position: relative;
+}
+.home__section .section_middle .middle_content_2 .comma-right img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: -25px;
+  bottom: -19px;
+}
+.home__section .section_middle .middle_content_2 p {
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+.home__section .section_middle .middle_content_2 .middle_inside_2 {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 30px 20px 30px;
+}
+.home__section .section_middle .middle_content_2 .middle_inside_2 .middle_icon img {
+  width: 40px;
+  height: 40px;
+}
+.home__section .section_middle .middle_content_2 .middle_inside_2 .middle_icon span {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 6px 0px 0px 10px;
 }
 .home__section .section_middle .accordion-item {
   border: none;
