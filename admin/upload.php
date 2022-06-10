@@ -50,8 +50,8 @@
 
   }
   if(isset($_POST['image_id'])){
-    $images=$conn->prepare("SELECT * FROM images WHERE status=? AND id=?");
-    $images->execute([1,$_POST['image_id']]);
+    $images=$conn->prepare("SELECT * FROM images WHERE id=?");
+    $images->execute([$_POST['image_id']]);
     $total_images = $images->rowCount();
     if ($total_images > 0) {
         while ($row = $images->fetch(PDO::FETCH_ASSOC)) {

@@ -42,7 +42,7 @@ var owl = $('.product-image')
 owl.owlCarousel({
   loop: true,
   margin: 10,
-  dots: true,
+  dots: false,
   autoplay: true,
   // slideSpeed: 100,
   slideTransition: 'linear',

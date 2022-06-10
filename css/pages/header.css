@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap");
 .shadow {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -51,7 +52,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: #171717;
+  color: rgb(23, 23, 23);
 }
 
 h1, h2, h3, h4, h5, h6 {
