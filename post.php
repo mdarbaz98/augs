@@ -168,9 +168,19 @@
         $id = $row['id'];
         $title = $row['title'];
         $desc = $row['description'];
-        $img_id = $row['img_id'];
         $content = $row['content'];
         $name = $row['name'];
+          if($row['img_id']){
+           echo  $img_id = $row['img_id'];
+          }else{
+            $img_id=1;
+          }
+         echo $front_img_id = $row['front_img'];
+          echo "<br>";
+         $imgArray = explode(',',$img_id);
+         $updatedid = array_diff($imgArray, explode(',',$front_img_id));
+         echo $updatedid = implode(',',$updatedid);  
+
         }
         $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         // Page Meta Auto Insertion Starts Here
@@ -198,8 +208,9 @@
 
                   <div class="owl-carousel owl-theme product-image" id="">
                                             <?php 
+
                                             // $img_id = $data['img_id'];
-                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($updatedid)";
                                             $stmt_img = $conn->prepare($sql);
                                             $stmt_img->execute();
                                             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);

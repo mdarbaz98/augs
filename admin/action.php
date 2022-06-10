@@ -353,9 +353,10 @@ if($_POST['btn']=='addProduct'){
 
     
     $img_id_val1 = $img_id_val.",".$img_id;
+
     $stmt = $conn->prepare("UPDATE product SET img_id=?, front_img=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
     if($stmt->execute([$img_id_val1, $front_img, $name, $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
-      echo "updated";
+     // echo "updated";
     }
   }
 //   upload product
@@ -701,11 +702,60 @@ if($_POST['btn']=="removeFeatureimage_id"){
 
     //Remove product image
 if($_POST['btn']=="removeproductimage_id"){
-    $id = $_POST['removeproductimage_id'];
-    $sql=$conn->prepare("UPDATE `images` SET `status`=0 WHERE `id`=?");            
-    $sql->execute([$id]);
+    $rmid = $_POST['removeproductimage_id'];
+    $removepro_id = $_POST['removepro_id']; 
+    
+    echo $sql = "SELECT * FROM product WHERE id=?";
+    $selectimage=$conn->prepare($sql);
+    $selectimage->execute([$removepro_id]);
+    $result = $selectimage->fetchAll(PDO::FETCH_ASSOC);
+    echo $pro_imgs = $result[0]['img_id'];
+
+$imgArray = explode(',',$pro_imgs);
+$updatedid = array_diff($imgArray, explode(',',$rmid));
+$updatedid = implode(',',$updatedid);
+//update blog set img_id=$updatedid WHERE
+echo $updatedid;
+
+    $sql1=$conn->prepare("UPDATE product SET img_id=? WHERE id=?");            
+    $sql1->execute([$updatedid,$removepro_id]);
     echo "removed";
+
+
+    // echo "<pre>";
+    // print_r($result);
+    // echo "</pre>";
+
+
 }
+// remove category
+if($_POST['btn']=="removecategoryimage_id"){
+    $rmid_img = $_POST['removecategoryimage_id'];
+    //$removecat_id = $_POST['removecat_id']; 
+    // $sql = "SELECT * FROM category WHERE id=?";
+    // $selectimage=$conn->prepare($sql);
+    // $selectimage->execute([$removecat_id]);
+    // $result = $selectimage->fetchAll(PDO::FETCH_ASSOC);
+    // echo $cat_img = $result[0]['img_id'];
+
+// $imgArray = explode(',',$pro_imgs);
+// $updatedid = array_diff($imgArray, explode(',',$rmid));
+// $updatedid = implode(',',$updatedid);
+//update blog set img_id=$updatedid WHERE
+//echo $updatedid;
+
+    $sql1=$conn->prepare("UPDATE category SET img_id=? WHERE id=?");            
+    $sql1->execute([0,$rmid_img]);
+    echo "removed";
+
+
+    // echo "<pre>";
+    // print_r($result);
+    // echo "</pre>";
+
+
+}
+
     
 //Delete features image
 if($_POST['btn']=="deleteFeatureimage_id"){
