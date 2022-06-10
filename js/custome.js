@@ -81,7 +81,7 @@ $('.blog-body h2').each(function () {
   } else {
     var status = ''
   }
-  $('#table-of-content,#table-of-content-for-mobile').append(
+  $('#table-of-content').append(
     `<li onclick="scrollToElement('h${i}')" class="tbc_links ${status}">
     <a
       ><span>${i}.</span>
@@ -92,11 +92,45 @@ $('.blog-body h2').each(function () {
   // loadBlogScrollJs();
   $('#table-of-content strong').contents().unwrap()
 })
+// var j = 0
+// $('.blog-body h2').each(function () {
+//   ++i
+//   $(this).addClass('heading')
+//   $(this).attr('id', 'h' + j)
+//   if (i == 1) {
+//     var status = 'active'
+//   } else {
+//     var status = ''
+//   }
+//   $('#table-of-content-for-mobile').append(
+//     `<li onclick="scrollToElement('h${j}')" class="tbc_links ${status}">
+//     <a
+//       ><span>${j}.</span>
+//       ${$(this).html()}</a
+//     >
+//   </li>`,
+//   )
+//   // loadBlogScrollJs();
+//   $('#table-of-content strong').contents().unwrap()
+// })
 
-$('.tbc_links').click(function () {
-  $('.tbc_links').removeClass('active')
-  $(this).addClass('active')
-})
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+  $('.heading').each(function(i) {
+      if ($(this).position().top + -190 <= scrollDistance) {
+        $('.tbc_links.active').removeClass('active');
+        $('.tbc_links').eq(i).addClass('active');
+      }
+      console.log($('.tbc_links'));
+  });
+
+}).scroll();
+
+
+// $('.tbc_links').click(function () {
+//   $('.tbc_links').removeClass('active')
+//   $(this).addClass('active')
+// })
 
 // add active class on scroll
 // function loadBlogScrollJs() {
@@ -118,23 +152,3 @@ $('.tbc_links').click(function () {
 // }
 
 
-// $(window).scroll(function() {
-//   var scrollDistance = $(window).scrollTop();
-
-//   // Show/hide menu on scroll
-//   //if (scrollDistance >= 850) {
-//   //		$('nav').fadeIn("fast");
-//   //} else {
-//   //		$('nav').fadeOut("fast");
-//   //}
-//   // $('.tbc_links').addClass('active');
-//   // Assign active class to nav links while scolling
-//   $('.heading').each(function(i) {
-//       if ($(this).position().top <= scrollDistance) {
-//         $('.tbc_links.active').removeClass('active');
-//         $('.tbc_links').eq(i).addClass('active');
-//       }
-//       console.log($('.tbc_links'));
-//   });
-
-// }).scroll();
