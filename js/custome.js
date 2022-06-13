@@ -138,3 +138,23 @@ $('.tbc_links').click(function () {
 //   });
 
 // }).scroll();
+
+// read more index
+
+var value = false;
+$('.read-more-btn').click(function(){
+  value = !value;
+  totalHeight=0;
+  $('.sidebar-box').children().each(function(){
+    totalHeight = totalHeight + $(this).height() + 16;
+  });
+  if(value){
+    $(this).text("Read less...");
+  $(this).removeClass('shad-btn');
+  $('.sidebar-box').animate({height: totalHeight});
+  }else{
+    $(this).text("Read more...");
+  $(this).addClass('shad-btn');
+  $('.sidebar-box').css({'height':'950px'});
+  }
+})
