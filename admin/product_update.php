@@ -120,8 +120,14 @@ include('include/config.php');
 									</div>		
 									<div class="customefeature_image1">
 									<?php
-											    $img_id = $row['img_id'];
-											    echo $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+											    $img_id=1;
+												if($row['img_id']){
+													echo $img_id=$row['img_id'];
+												}else{
+													$img_id=1;
+												}
+											    
+												echo $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
 												$stmt1 = $conn->prepare($sql1);
 												$stmt1->execute();
 												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
@@ -135,8 +141,8 @@ include('include/config.php');
 
 											<!-- <a href="javascript:void(0)" class="text-center text-danger" onclick="setFrontproductimage(<?php echo $img_val1['id'] ?>)">Set As Front</a> -->
 												<img src="<?php echo $img_val1['path']; ?>" alt="<?php echo $img_val1['alt'] ?>" class="image_path1">
-												<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeproductimage(<?php echo $img_val1['id'] ?>)">Remove Image</button> </div>									
-										<?php $i++; } } ?>
+												<div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeproductimage(<?php echo $img_val1['id'] ?>,<?php echo $row['id'] ?>)">Remove Image</button> </div>									
+										<?php $i++; } }else{echo "no images"; } ?>
 									</div>
 
 									<input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>

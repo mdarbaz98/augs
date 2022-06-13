@@ -59,20 +59,29 @@ include('include/config.php');
                         <label class="form-label">Description</label>
                         <textarea class="form-control" rows="3" id="desc" name="desc"><?php echo $row_cat['description'] ?></textarea>
                       </div>
-                          <?php
-                                $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
-                                $stmt1->execute([$row_cat['img_id']]);
-                                $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-                          ?>
-                      <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
-                            <?php if(!empty($img_data[0]['path'])){ ?>
-                          <img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
-                      <div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeFeatureimage(<?php echo $row_cat['id'] ?>)">Remove Image</button> </div>
-                            <?php }else{ ?>
+                        
+                          <div class="blog-img-box" data-toggle="modal" data-target="#exampleModal">
                             <img src="https://spruko.com/demo/sash/sash/assets/plugins/fancyuploder/fancy_upload.png"alt="feature click image" class="image_path">
-                            <?php } ?>
                             <h5>Set Feature Image</h5>
-                      </div>
+                          </div> 
+                      
+                          <?php
+                                if($row_cat['img_id']){
+                                  $cat_img = $row_cat['img_id'];
+                                }else{
+                                  $cat_img=1; 
+                                }
+                                $stmt1 = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                                $stmt1->execute([$cat_img]);
+                                $img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+                                if(!empty($img_data)){?>
+                                <div class="customefeature_image1">
+                                  <img src="<?php echo $img_data[0]['path']; ?>"alt="<?php echo $img_data[0]['alt'] ?>" class="image_path">
+                                  <div class=" d-flex justify-content-center"><button type="button" id="remove_btn" class="btn btn-danger float-center my-3" onclick="removeCategoryimage(<?php echo $row_cat['id'] ?>)">Remove Image</button> </div>
+                                </div>
+                              <?php } ?>
+                      <div class="set_images">					
+									    </div>	
                           <input type="hidden" class="image_id" name="img_id" value="<?php echo $row_cat['img_id'] ?>"/> 
                       <div class="customefeature_image"><!-- <img src="" alt="" class="image_path"> --></div>
                       <div class="submit-btns clearfix d-flex">           

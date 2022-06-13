@@ -316,8 +316,9 @@ $('.messageCheckbox').click(function() {
                 favorite.push($(this).val());
             });
             var img_id = favorite.join(",");
-            $('.image_id').attr('value', img_id)
-            //alert(img_id);
+            alert(img_id);
+			$('.image_id').attr('value',img_id)
+            
 })
 
 

@@ -1351,10 +1351,14 @@ header .overlay_Div {
 }
 .post__page .post-content-section .TBC-container {
   overflow-y: scroll;
-  height: 90vh;
   position: sticky;
   top: 90px;
   z-index: 2;
+}
+.post__page .post-content-section .TBC-container #mobile-table-of-content {
+  overflow-y: scroll;
+  max-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .post__page .post-content-section .TBC-container::-webkit-scrollbar {
   display: none;
@@ -1395,10 +1399,10 @@ header .overlay_Div {
   margin-right: 10px;
   padding: 0px 10px;
 }
-.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active, .post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active {
   background-color: #212529;
 }
-.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a, .post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active a {
   color: #f8f9fa;
   font-weight: 500;
 }
