@@ -143,6 +143,9 @@ p {
   width: unset;
   margin: 4px;
 }
+.home__section .section_middle .read-more-btn {
+  display: none;
+}
 .home__section .section_middle .middle_heading {
   padding: 20px 0px 0px 0px;
 }
@@ -454,11 +457,49 @@ p {
   .home__section .section-1 .right__homeSection .image-div {
     height: 400px;
   }
+  .home__section .section_middle {
+    position: relative;
+  }
   .home__section .section_middle .middle_heading {
     padding: 20px 20px 0px 20px;
   }
   .home__section .section_middle .middle_heading h3 {
     font-size: 23px;
+  }
+  .home__section .section_middle .sidebar-box.height {
+    height: 950px;
+    overflow: hidden;
+  }
+  .home__section .section_middle .main_read {
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    z-index: 1;
+  }
+  .home__section .section_middle .main_read .read-more-btn {
+    z-index: 2;
+    color: black;
+    margin: 0px 35px 8px 0px;
+    display: block;
+    float: right;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .home__section .section_middle .main_read .read-more-btn i {
+    margin: 0px 0px 0px 15px;
+  }
+  .home__section .section_middle .shad-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(180deg, rgba(255, 200, 200, 0.01), rgba(141, 141, 141, 0.8));
+    z-index: -1;
   }
   .home__section .section-3 .left-section p {
     font-weight: 600;

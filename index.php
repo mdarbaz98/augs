@@ -44,41 +44,89 @@
 				</div>
 			</div>
 		</div>
-		<div class="section_middle">
-	<div class="container">
-		<div class="middle_heading">
-			<h3>AUGS: American Urogynecologic Society</h3>
-			<p>In July 2014, the American Urogynecologic Society (AUGS) and the International Urogynecological Association (IUGA) jointly hosted their annual scientific meetings in Washington, DC at the Washington Convention Center. The joint meeting served as the largest venue for those in the field of urogynecology and Female Pelvic Medicine and Reconstructive Surgery to come together for education, networking and sharing.</p>
-			<p>AUGS-IUGA, two big names in the world of urogynaecology, have come together to make a potent change in people’s lives. We believe “Health Literacy” is essential for impacting societal health.</p>
-			<p>Information is what educates the community and makes them strong. Here at AUGS-IUGA, keenly observed and highly researched health content is served to reach and give society a better perspective on their conditions.</p>
-		</div>
-		<div class="middle_content_1 mb-4">
-			<h3>The Urogynaecology Conditions We Focus on include</h3>
-			<div class="comma-left"> <img src="https://i.ibb.co/Xxpbqm6/left-quote-1.png"> </div>
-			<div class="middle_inside_1">
-				<div class="middle_icon d-flex mb-4"> <img src="https://i.ibb.co/0qWrL8w/man.png"> <span>Male:</span> </div>
-				<p><strong>Premature Ejaculation:</strong></p>
-                <p>We understand and participate in your feelings, providing you with the right direction to tackle PE with self-confidence and scientific methods. With our regularly updated blogs and other content, you will amaze yourself with lots of easy to use daily ways that benefit you to overcome this condition. </p>
-				<p><strong>Erectile Dysfunction:</strong></p>
-                <p> Don’t be hard on yourself; it’s natural and curable. Just follow our simple instructions. ED is a common situation faced by many people, the articles on our website will help your unheard doubts, questions, and confusions and offer you a firm solution to your condition.</p>
-				<p><strong>Arousal Disorder:</strong></p>
-                <p>Treat the disorder as minor trouble. AUGS-IUGA can assist you in making your sexual life more happening. Arousal disorders need proper guidance. The content is always accurate and easy to understand with the best professional expertise. We specialize in making information easy to use and making the user execute successfully in life.</p>
-			</div>
-		</div>
-		<div class="middle_content_2">
-			<div class="middle_inside_2">
-				<div class="middle_icon d-flex mb-4"> <img src="https://i.ibb.co/LNgQxx0/woman.png"> <span>Female:</span> </div>
-				<p><strong>Low Libido: </strong></p>
-                <p>Increasing Libido problems can turn into irritation. A proper way can get you to regain your interest; it’s simple with our result-driven approach. Women often don’t open up their problems, especially regarding sex. AUGS-IUGA gives you the freedom and privacy to explore the possibilities of solutions available on our site. </p>
-				<p>UTI- All the UTI concerns can be easily solved and taken care of. AUGS-IUGA venture makes sure that you get yourself clear about your condition and work with a positive approach. UTI conditions are hard to identify in the first stages due to a lack of knowledge. Our content-driven approach fulfils this knowledge gap and automatically drives you towards good health.</p>
-				<p><strong>Contraceptives:</strong></p>
-                <p>It’s a complicated and confusing part; with less guidance, people turn to various methods unknowingly and can pull unwanted pregnancies. If you are not fully aware of something, you are less confident. Here We build your confidence to make you entirely regarding contraceptives. You will get answers to all your questions about contraception here at one stop. </p>
-                <div class="comma-right"> <img src="https://i.ibb.co/Tk3S0mj/right-quotation-sign.png"> </div>
-			</div>
-		</div>
-	</div>
+		<!-- cdscs -->
+		<div class="section_middle" id="page-wrap">
+    <div class="container sidebar-box height">
+        <div class="middle_heading">
+            <h3>AUGS: American Urogynecologic Society</h3>
+            <p>In July 2014, the American Urogynecologic Society (AUGS) and the International Urogynecological
+                Association (IUGA) jointly hosted their annual scientific meetings in Washington, DC at the Washington
+                Convention Center. The joint meeting served as the largest venue for those in the field of urogynecology
+                and Female Pelvic Medicine and Reconstructive Surgery to come together for education, networking and
+                sharing.</p>
+            <p>AUGS-IUGA, two big names in the world of urogynaecology, have come together to make a potent change in
+                people’s lives. We believe “Health Literacy” is essential for impacting societal health.</p>
+            <p>Information is what educates the community and makes them strong. Here at AUGS-IUGA, keenly observed and
+                highly researched health content is served to reach and give society a better perspective on their
+                conditions.</p>
+        </div>
+        <div class="middle_content_1 mb-4">
+            <h3>The Urogynaecology Conditions We Focus on include</h3>
+            <div class="comma-left">
+                <img src="https://i.ibb.co/Xxpbqm6/left-quote-1.png">
+            </div>
+            <div class="middle_inside_1">
+                <div class="middle_icon d-flex mb-4">
+                    <img src="https://i.ibb.co/0qWrL8w/man.png">
+                    <span>Male:</span>
+                </div>
+                <p>
+                    <strong>Premature Ejaculation:</strong>
+                </p>
+                <p>We understand and participate in your feelings, providing you with the right direction to tackle PE
+                    with self-confidence and scientific methods. With our regularly updated blogs and other content, you
+                    will amaze yourself with lots of easy to use daily ways that benefit you to overcome this condition.
+                </p>
+                <p>
+                    <strong>Erectile Dysfunction:</strong>
+                </p>
+                <p> Don’t be hard on yourself; it’s natural and curable. Just follow our simple instructions. ED is a
+                    common situation faced by many people, the articles on our website will help your unheard doubts,
+                    questions, and confusions and offer you a firm solution to your condition.</p>
+                <p>
+                    <strong>Arousal Disorder:</strong>
+                </p>
+                <p>Treat the disorder as minor trouble. AUGS-IUGA can assist you in making your sexual life more
+                    happening. Arousal disorders need proper guidance. The content is always accurate and easy to
+                    understand with the best professional expertise. We specialize in making information easy to use and
+                    making the user execute successfully in life.</p>
+            </div>
+        </div>
+        <div class="middle_content_2">
+            <div class="middle_inside_2">
+                <div class="middle_icon d-flex mb-4">
+                    <img src="https://i.ibb.co/LNgQxx0/woman.png">
+                    <span>Female:</span>
+                </div>
+                <p>
+                    <strong>Low Libido: </strong>
+                </p>
+                <p>Increasing Libido problems can turn into irritation. A proper way can get you to regain your
+                    interest; it’s simple with our result-driven approach. Women often don’t open up their problems,
+                    especially regarding sex. AUGS-IUGA gives you the freedom and privacy to explore the possibilities
+                    of solutions available on our site. </p>
+                <p>UTI- All the UTI concerns can be easily solved and taken care of. AUGS-IUGA venture makes sure that
+                    you get yourself clear about your condition and work with a positive approach. UTI conditions are
+                    hard to identify in the first stages due to a lack of knowledge. Our content-driven approach fulfils
+                    this knowledge gap and automatically drives you towards good health.</p>
+                <p>
+                    <strong>Contraceptives:</strong>
+                </p>
+                <p>It’s a complicated and confusing part; with less guidance, people turn to various methods unknowingly
+                    and can pull unwanted pregnancies. If you are not fully aware of something, you are less confident.
+                    Here We build your confidence to make you entirely regarding contraceptives. You will get answers to
+                    all your questions about contraception here at one stop. </p>
+                <div class="comma-right">
+                    <img src="https://i.ibb.co/Tk3S0mj/right-quotation-sign.png">
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="main_read">
+   <button class="read-more-btn shad-btn">Read more<i class="fa-solid fa-arrow-right"></i></button>
+   </div>
 </div>
-</div>
+		<!-- sdadas -->
 
 		<div class="section-2 pb-4">
 			<h2 class="text-center my-5 mb-0 before position-relative m-auto">Recent Blogs</h2>
