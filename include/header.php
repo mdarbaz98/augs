@@ -86,6 +86,79 @@ include('admin/include/config.php');
     <body>
         <header>
             <section class="header">
+            <!-- <nav class="navbar fixed-top py-md-3 px-md-4 navbar-expand-lg">
+              <div class="container-fluid">
+              <a class="navbar-brand" href=""><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="header-form d-flex" onsubmit="return false">
+                           <input class="form-control search-input me-2" type="search" placeholder="Search here..." aria-label="Search">
+                           <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
+                           <div class="wrapper">
+                           <ul class="text-black list-unstyled autoCom-Box">
+                            <?php
+                              $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
+                              $selectBlog1->execute(); 
+                              $countCat1 = $selectBlog1->rowCount(); 
+                              if($countCat1>0){
+                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                                $title1 = $row1['title'];
+                                $slug1 = $row1['slug'];
+                            ?>
+                             <li class="searched_list"><a href="<?php echo $slug1 ?>"><?php echo $title1 ?></a></li> 
+                             <?php
+                                }
+                              }
+                              else{
+                                  ?><li>NO Search Result</li>
+                                  <?php 
+                              }
+                            ?>
+                                
+
+                             </ul>
+                           </div>
+                         </form>
+                </div>
+              </div>
+            </nav> -->
+
+
+
+
                 <nav class="navbar fixed-top py-md-3 px-md-4 navbar-expand-lg">
                     <div class="container-fluid">
                         <div class="d-flex justify-content-center align-content-center">
@@ -117,8 +190,6 @@ include('admin/include/config.php');
                                   <?php 
                               }
                             ?>
-                                
-
                              </ul>
                            </div>
                          </form>
