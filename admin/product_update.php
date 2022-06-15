@@ -122,12 +122,12 @@ include('include/config.php');
 									<?php
 											    $img_id=1;
 												if($row['img_id']){
-													echo $img_id=$row['img_id'];
+												   $img_id=$row['img_id'];
 												}else{
-													$img_id=1;
+												   $img_id=1;
 												}
 											    
-												echo $sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
+												$sql1 = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id)";
 												$stmt1 = $conn->prepare($sql1);
 												$stmt1->execute();
 												$img_data = $stmt1->fetchAll(PDO::FETCH_ASSOC);
@@ -136,7 +136,7 @@ include('include/config.php');
 											$i=1;
 											foreach ($img_data as $img_val1){ ?>
 											<label for="d<?php echo $i ?>">Set As Front</label>
-											<input type="radio" id="d<?php echo $i ?>" name="front_img" value="<?php echo $img_val1['id'] ?>">
+											<input type="radio" id="d<?php echo $i ?>" name="front_img" value="<?php echo $img_val1['id'] ?>" <?php if($row['front_img']==$img_val1['id']){echo "checked";} ?>>
 
 
 											<!-- <a href="javascript:void(0)" class="text-center text-danger" onclick="setFrontproductimage(<?php echo $img_val1['id'] ?>)">Set As Front</a> -->
@@ -145,7 +145,7 @@ include('include/config.php');
 										<?php $i++; } }else{echo "no images"; } ?>
 									</div>
 
-									<input type="hidden" class="image_id" name="img_id" value="<?php echo $row['img_id'] ?>"/>
+									<input type="hidden" class="image_id" name="img_id" value=""/>
 									
 									
 
