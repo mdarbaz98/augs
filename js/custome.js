@@ -121,59 +121,27 @@ $(window)
   })
   .scroll();
 
-//     let len = headingSections.length
-
-//     while (--len && window.scrollY + 197 < headingSections[len].offsetTop) {}
-//     // arrayForm.forEach((ele) => {
-//     //   ele.classList.remove("active");
-//     // });
-//     // arrayForm[len].classList.add("active");
-
-//     console.log(arrayForm[len])
-//   })
-// }
-
-
-// $(window).scroll(function() {
-//   var scrollDistance = $(window).scrollTop();
-
-//   // Show/hide menu on scroll
-//   //if (scrollDistance >= 850) {
-//   //		$('nav').fadeIn("fast");
-//   //} else {
-//   //		$('nav').fadeOut("fast");
-//   //}
-//   // $('.tbc_links').addClass('active');
-//   // Assign active class to nav links while scolling
-//   $('.heading').each(function(i) {
-//       if ($(this).position().top <= scrollDistance) {
-//         $('.tbc_links.active').removeClass('active');
-//         $('.tbc_links').eq(i).addClass('active');
-//       }
-//       console.log($('.tbc_links'));
-//   });
-
-// }).scroll();
-
 // read more index
 
 var value = false;
-$('.read-more-btn').click(function(){
+$(".read-more-btn").click(function () {
   value = !value;
-  totalHeight=0;
-  $('.sidebar-box').children().each(function(){
-    totalHeight = totalHeight + $(this).height() + 16;
-  });
-  if(value){
+  totalHeight = 0;
+  $(".sidebar-box")
+    .children()
+    .each(function () {
+      totalHeight = totalHeight + $(this).height() + 16;
+    });
+  if (value) {
     $(this).text("Read less...");
-  $(this).removeClass('shad-btn');
-  $('.sidebar-box').animate({height: totalHeight});
-  }else{
+    $(this).removeClass("shad-btn");
+    $(".sidebar-box").animate({ height: totalHeight });
+  } else {
     $(this).text("Read more...");
-  $(this).addClass('shad-btn');
-  $('.sidebar-box').css({'height':'950px'});
+    $(this).addClass("shad-btn");
+    $(".sidebar-box").css({ height: "950px" });
   }
-})
+});
 // mobile tbc close after click
 $(".mobile_tbc_links").click(function () {
   $(".mobile_tbc_links").removeClass("active");

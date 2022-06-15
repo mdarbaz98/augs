@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- cdscs -->
+
 		<div class="section_middle" id="page-wrap">
     <div class="container sidebar-box height">
         <div class="middle_heading">
@@ -126,7 +126,7 @@
    <button class="read-more-btn shad-btn">Read more<i class="fa-solid fa-arrow-right"></i></button>
    </div>
 </div>
-		<!-- sdadas -->
+
 
 		<div class="section-2 pb-4">
 			<h2 class="text-center my-5 mb-0 before position-relative m-auto">Recent Blogs</h2>
