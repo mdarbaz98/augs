@@ -55,7 +55,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -264,7 +264,6 @@ p {
   width: fit-content;
   height: 15.75rem;
   object-fit: cover;
-  margin: 0px 55px;
 }
 .section-2 .home-blog-section #home-owl-carousel .blog-card .blog-desc-sec h1,
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-desc-sec h1,
@@ -1065,8 +1064,19 @@ header .navbar {
 header .navbar a {
   color: #f8f9fa;
 }
-header .navbar a:hover {
+header .navbar a:hover, header .navbar a:focus {
   color: #f8f9fa;
+}
+header .navbar .dropdown-menu {
+  padding: 10px 10px 0px 10px;
+  width: 12rem;
+}
+header .navbar .dropdown-menu li:hover {
+  background-color: #dee2e6;
+}
+header .navbar .dropdown-menu li a {
+  padding: 5px;
+  color: #212529;
 }
 header .navbar .menu-open-btn {
   font-size: 20px;
@@ -1085,6 +1095,15 @@ header .navbar .header-form .autoCom-Box {
   width: 100%;
   background-color: #f1f1f1;
   display: none;
+  height: 300px;
+  overflow-y: scroll;
+}
+header .navbar .header-form .autoCom-Box::-webkit-scrollbar {
+  width: 8px;
+}
+header .navbar .header-form .autoCom-Box::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border-radius: 6px;
 }
 header .navbar .header-form .autoCom-Box li {
   padding: 4px 10px;
