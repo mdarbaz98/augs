@@ -7,7 +7,7 @@ $(
   dots: false,
   responsive: {
     0: {
-      items: 1.3,
+      items: 1.2,
     },
     600: {
       items: 3,

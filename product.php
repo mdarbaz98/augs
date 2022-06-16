@@ -68,7 +68,7 @@ include('./include/header.php') ?>
                 <p class="text-center"><?php echo $data['description'] ?></p>
             </div>
            <!-- 1 -->
-           <div class="categorysection2">
+           <div class="categorysection2 px-3 px-md-0">
              <div class="container">
                <div class="row">
                <?php
@@ -100,7 +100,7 @@ include('./include/header.php') ?>
                        </div>
                       
                      </div>
-                     <div class="cd_button">
+                     <div class="cd_button pt-2">
                        <p>
                          <span>$<?php echo $data_pro['prc'] ?></span>
                        </p>

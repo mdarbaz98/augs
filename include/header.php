@@ -78,9 +78,7 @@ include('admin/include/config.php');
     }
     </script>
 <?php
-
     }
-
 ?>
     </head>
     <body>
@@ -93,7 +91,7 @@ include('admin/include/config.php');
                 <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto text-center">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -101,7 +99,7 @@ include('admin/include/config.php');
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categories
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <ul class="dropdown-menu mx-auto" aria-labelledby="navbarDropdown">
                       <?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
                                                     $stmt->execute();
                                                     $i=0;
@@ -160,6 +158,23 @@ include('admin/include/config.php');
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                            <div class="wrapper">
                            <ul class="text-black list-unstyled autoCom-Box">
+                            <?php
+                              $selectBlog1=$conn->prepare("SELECT * FROM product WHERE status ='1' order by title asc");
+                              $selectBlog1->execute(); 
+                              $countCat1 = $selectBlog1->rowCount(); 
+                              if($countCat1>0){
+                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                                $name = $row1['name'];
+                            ?>
+                             <li class="searched_list"><a href="<?php echo $name ?>"><?php echo $name ?></a></li> 
+                             <?php
+                                }
+                              }
+                              else{
+                                  ?><li>NO Search Result</li>
+                                  <?php 
+                              }
+                            ?>
                             <?php
                               $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
                               $selectBlog1->execute(); 

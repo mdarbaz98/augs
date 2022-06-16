@@ -130,7 +130,7 @@ $(".read-more-btn").click(function () {
   $(".sidebar-box")
     .children()
     .each(function () {
-      totalHeight = totalHeight + $(this).height() + 16;
+      totalHeight = totalHeight + $(this).height() + 32;
     });
   if (value) {
     $(this).text("Read less...");
@@ -139,7 +139,7 @@ $(".read-more-btn").click(function () {
   } else {
     $(this).text("Read more...");
     $(this).addClass("shad-btn");
-    $(".sidebar-box").css({ height: "950px" });
+    $(".sidebar-box").css({ height: "550px" });
   }
 });
 // mobile tbc close after click
@@ -179,7 +179,4 @@ function viewMoreblog(x,cat_id){
         }
 
         });
-
-      
-    
 }
