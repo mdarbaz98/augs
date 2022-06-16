@@ -44,7 +44,7 @@
     include ('./include/header.php') ?>
     <section class="post__page pt-5 pt-md-0">
       <div
-        class="post-banner-section d-flex justify-content-center align-items-center p-md-5"
+        class="post-banner-section d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid">
           <?php
@@ -208,9 +208,11 @@
 
                   <div class="owl-carousel owl-theme product-image" id="">
                                             <?php 
+                                            if(empty($updatedid)){
+                                              $updatedid=1;
+                                            }else{ $updatedid;}
 
-                                            // $img_id = $data['img_id'];
-                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($updatedid)";
+                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($updatedid) ";
                                             $stmt_img = $conn->prepare($sql);
                                             $stmt_img->execute();
                                             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
@@ -267,7 +269,7 @@
                               $stmt_img->execute([$data['img_id']]);
                               $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
                               if (!empty($img_data))
-                                      {
+                                {
                                   $image = $img_data[0]['path']; 
                                 $alt = $img_data[0]['alt'];
                                 }else{

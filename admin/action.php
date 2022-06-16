@@ -333,11 +333,13 @@ if($_POST['btn']=='addProduct'){
         $cat="";
     }  
     $img_id="";
+    
     if(isset($_POST['img_id'])){
         $img_id = $_POST['img_id'];
     }else{
         $img_id="";
     }
+
     $img_id_val="";
     if(isset($_POST['img_id_val'])){
         $img_id_val = $_POST['img_id_val'];
@@ -351,12 +353,34 @@ if($_POST['btn']=='addProduct'){
         $front_img="";
     }  
 
-    
-    $img_id_val1 = $img_id_val.",".$img_id;
+    if(!empty($img_id)){
+        $img_id= $img_id;
+    }else{
+        $img_id="";
+    }
 
+    if(!empty($img_id_val)){
+        $img_id_val = $img_id_val.",".$img_id; 
+    }else{
+        $img_id_val = $img_id; 
+    }
+        $img_id_val = rtrim($img_id_val,',');
+
+        //echo $img_id_val = substr(trim($img_id_val), 0,-1);
+
+
+    // echo $img_id_val = $img_id_val.",".$img_id; 
+    // echo "<br>";
+
+
+        // if(empty($img_id_val)){
+        //     $img_id_val = $img_id; 
+        // }else{
+        //     $img_id_val = $img_id_val.",".$img_id;
+        // }
     $stmt = $conn->prepare("UPDATE product SET img_id=?, front_img=?, name=?, title=?, seo_title=?, content =?, shrt_desc=?, strnt=?, prc=?, slug=?, link=?, cat_id=?, description=?, status=? WHERE id=?");
-    if($stmt->execute([$img_id_val1, $front_img, $name, $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
-     // echo "updated";
+    if($stmt->execute([$img_id_val, $front_img, $name, $title, $seo_title, $content, $shrt_descri, $strn, $prc, $slug, $link, $cat, $description, 1, $product_id])){
+      echo "updated";
     }
   }
 //   upload product
@@ -703,20 +727,17 @@ if($_POST['btn']=="removeFeatureimage_id"){
     //Remove product image
 if($_POST['btn']=="removeproductimage_id"){
     $rmid = $_POST['removeproductimage_id'];
-    $removepro_id = $_POST['removepro_id']; 
-    
-    echo $sql = "SELECT * FROM product WHERE id=?";
+    $removepro_id = $_POST['removepro_id'];     
+    $sql = "SELECT * FROM product WHERE id=?";
     $selectimage=$conn->prepare($sql);
     $selectimage->execute([$removepro_id]);
     $result = $selectimage->fetchAll(PDO::FETCH_ASSOC);
-    echo $pro_imgs = $result[0]['img_id'];
-
-$imgArray = explode(',',$pro_imgs);
-$updatedid = array_diff($imgArray, explode(',',$rmid));
-$updatedid = implode(',',$updatedid);
-//update blog set img_id=$updatedid WHERE
-echo $updatedid;
-
+    $pro_imgs = $result[0]['img_id'];
+    $imgArray = explode(',',$pro_imgs);
+    $updatedid = array_diff($imgArray, explode(',',$rmid));
+    $updatedid = implode(',',$updatedid);
+    //update blog set img_id=$updatedid WHERE
+    $updatedid;
     $sql1=$conn->prepare("UPDATE product SET img_id=? WHERE id=?");            
     $sql1->execute([$updatedid,$removepro_id]);
     echo "removed";

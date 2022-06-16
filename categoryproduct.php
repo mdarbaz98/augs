@@ -54,7 +54,7 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                      <?php
-                        $stmt = $conn->prepare("SELECT * FROM `product` WHERE status=1 AND cat_id=? ORDER BY id DESC limit 4");
+                        $stmt = $conn->prepare("SELECT * FROM `product` WHERE status=1 AND cat_id=? ORDER BY id DESC limit 10");
                         $stmt->execute([$catid]);
                         $i=1;
                         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);

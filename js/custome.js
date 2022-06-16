@@ -148,3 +148,37 @@ $(".mobile_tbc_links").click(function () {
   $(this).addClass("active");
   $(".post-sticky-accordion-btn").click();
 });
+
+function viewMoreblog(x){
+  var id = $(x).attr('data-id');
+  alert(id);
+        $.ajax({
+        type: "POST",
+        url: "action.php",
+        dataType: 'json',
+        data: {
+            post_id: id,
+            btn: 'post_id',
+        },
+        beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
+                                  $(".loading").show()},
+        success: function (data) {
+            var json = $.parseJSON(JSON.stringify(data));
+	        var lastId = json.last_id;
+         var htmldata =json.datahtml;
+            alert(htmldata);
+            console.log(htmldata);
+
+            $('#viewpost').attr('data-id',lastId);
+            $("#postAjaxdata").append(htmldata);
+          //   blogs();
+
+            $(".tabs-section").css('opacity', 1)
+            $(".loading").hide()
+        }
+
+        });
+
+      
+    
+}
