@@ -35,7 +35,7 @@
                         }
                         ?>
 						<li class="nav-item" role="presentation">
-							<button class="nav-link <?php echo $class ?> tabsbtn" id="psycho-<?php echo $i ?>-tab" data-bs-toggle="tab" data-bs-target="#psycho-<?php echo $i ?>" type="button" role="tab" aria-controls="psycho-<?php echo $i ?>" aria-selected="true">
+							<button class="nav-link <?php echo $class ?> tabsbtn" id="<?php echo $data['slug'] ?>-tab" data-bs-toggle="tab" data-bs-target="#<?php echo $data['slug'] ?>" type="button" role="tab" aria-controls="<?php echo $data['slug'] ?>" aria-selected="true">
 								<?php echo $data['short_name'] ?>
 							</button>
 						</li>
@@ -56,7 +56,7 @@
                         }
                         ?>
 						<!-- first tab  -->
-						<div class="tab-pane fade <?php echo $class ?> postAjaxdata" id="psycho-<?php echo $i ?>" role="tabpanel" aria-labelledby="psycho-<?php echo $i ?>-tab">
+						<div class="tab-pane fade <?php echo $class ?>" id="<?php echo $data['slug'] ?>" role="tabpanel" aria-labelledby="<?php echo $data['slug'] ?>-tab">
 							<div class="blog-heading-content">
 								<h1><?php echo $data['name'] ?></h1>
 								<p>
@@ -110,11 +110,12 @@
 											</div>
 											<?php } ?>
 										</div>
+										<div class="outerline">
+											<button class="" data-id="<?php echo $data_post['id']; ?>" id="viewpost-<?php echo $data['slug'] ?>" onclick="viewMoreblog(this,<?php echo $data['id'] ?>,'<?php echo $data['slug'] ?>')">View More</button>
+											</div>
 									</div>
 
-									<div class="outerline">
-										<button class="" data-id="<?php echo $data_post['id']; ?>" id="viewpost" onclick="viewMoreblog(this,<?php $cat_id ?>)">View More</button>
-									</div>
+									
 						</div>
 						<?php ++$i; } ?>
 				</div>

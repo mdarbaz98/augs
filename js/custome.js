@@ -149,7 +149,8 @@ $(".mobile_tbc_links").click(function () {
   $(".post-sticky-accordion-btn").click();
 });
 
-function viewMoreblog(x,cat_id){
+function viewMoreblog(x,cat_id,slug){
+  alert(slug)
   alert(cat_id)
   var id = $(x).attr('data-id');
   alert(id);
@@ -159,6 +160,7 @@ function viewMoreblog(x,cat_id){
         dataType: 'json',
         data: {
             post_id: id,
+            cat_id: cat_id,
             btn: 'post_id',
         },
         // beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
@@ -171,7 +173,7 @@ function viewMoreblog(x,cat_id){
             console.log(htmldata);
 
             $('#viewpost').attr('data-id',lastId);
-            $("#postAjaxdata").append(htmldata);
+            $("#"+slug+" #postAjaxdata").append(htmldata);
           //   blogs();
 
             // $(".tabs-section").css('opacity', 1)
