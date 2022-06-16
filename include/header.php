@@ -78,9 +78,7 @@ include('admin/include/config.php');
     }
     </script>
 <?php
-
     }
-
 ?>
     </head>
     <body>
@@ -160,6 +158,23 @@ include('admin/include/config.php');
                            <button class="header-search-btn btn text-white" type="submit"><img src="./assets/images/search-interface-symbol.png" alt=""></button>
                            <div class="wrapper">
                            <ul class="text-black list-unstyled autoCom-Box">
+                            <?php
+                              $selectBlog1=$conn->prepare("SELECT * FROM product WHERE status ='1' order by title asc");
+                              $selectBlog1->execute(); 
+                              $countCat1 = $selectBlog1->rowCount(); 
+                              if($countCat1>0){
+                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                                $name = $row1['name'];
+                            ?>
+                             <li class="searched_list"><a href="<?php echo $name ?>"><?php echo $name ?></a></li> 
+                             <?php
+                                }
+                              }
+                              else{
+                                  ?><li>NO Search Result</li>
+                                  <?php 
+                              }
+                            ?>
                             <?php
                               $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
                               $selectBlog1->execute(); 
