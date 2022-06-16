@@ -132,22 +132,22 @@ include('admin/include/config.php');
                            <div class="wrapper">
                            <ul class="text-black list-unstyled autoCom-Box">
                             <?php
-                              $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
-                              $selectBlog1->execute(); 
-                              $countCat1 = $selectBlog1->rowCount(); 
-                              if($countCat1>0){
-                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
-                                $title1 = $row1['title'];
-                                $slug1 = $row1['slug'];
+                              // $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
+                              // $selectBlog1->execute(); 
+                              // $countCat1 = $selectBlog1->rowCount(); 
+                              // if($countCat1>0){
+                              //   while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                              //   $title1 = $row1['title'];
+                              //   $slug1 = $row1['slug'];
                             ?>
-                             <li class="searched_list"><a href="<?php echo $slug1 ?>"><?php echo $title1 ?></a></li> 
+                             <li class="searched_list"><a href="<?php// echo $slug1 ?>"><?php// echo $title1 ?></a></li> 
                              <?php
-                                }
-                              }
-                              else{
+                              //   }
+                              // }
+                              // else{
                                   ?><li>NO Search Result</li>
                                   <?php 
-                              }
+                              //}
                             ?>
                                 
 
@@ -206,22 +206,23 @@ include('admin/include/config.php');
                            <div class="wrapper">
                            <ul class="text-black list-unstyled autoCom-Box">
                             <?php
-                              $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
-                              $selectBlog1->execute(); 
-                              $countCat1 = $selectBlog1->rowCount(); 
-                              if($countCat1>0){
-                                while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
-                                $title1 = $row1['title'];
-                                $slug1 = $row1['slug'];
+
+                              // $selectBlog1=$conn->prepare("SELECT * FROM post WHERE status ='1' order by title asc");
+                              // $selectBlog1->execute(); 
+                              // $countCat1 = $selectBlog1->rowCount(); 
+                              // if($countCat1>0){
+                              //   while($row1=$selectBlog1->fetch(PDO::FETCH_ASSOC)){ 
+                              //   $title1 = $row1['title'];
+                              //   $slug1 = $row1['slug'];
                             ?>
-                             <li class="searched_list"><a href="<?php echo $slug1 ?>"><?php echo $title1 ?></a></li> 
+                             <li class="searched_list"><a href="<?php //echo $slug1 ?>"><?php //echo $title1 ?></a></li> 
                              <?php
-                                }
-                              }
-                              else{
+                              //   }
+                              // }
+                              // else{
                                   ?><li>NO Search Result</li>
                                   <?php 
-                              }
+//                              }
                             ?>
                                 
 

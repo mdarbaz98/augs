@@ -1,7 +1,6 @@
 <?php include('admin/include/config.php');
-    $page="post";
+    
     $slug = $_GET['slug'];
-
     $post = $conn->prepare('SELECT * FROM post WHERE slug=?');
     $post->execute([$slug]);
     echo $postCount=$post->rowCount();
@@ -19,7 +18,7 @@
     // $selectpostId->execute([$slug]);
 
     if($postCount>0){  
-
+    $page="post";
     while($row=$post->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
     $title = $row['title'];
@@ -164,6 +163,7 @@
     </section>
     <?php include ('./include/footer.php');
     }elseif($productCount>0){
+      $page="product";
       while($row=$product->fetch(PDO::FETCH_ASSOC)){
         $id = $row['id'];
         $title = $row['title'];

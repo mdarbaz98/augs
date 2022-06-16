@@ -4,6 +4,7 @@
     $cat = $_GET['cat'];
     $selectCatId = $conn->prepare('SELECT * FROM category WHERE slug=?');
     $selectCatId->execute([$cat]);
+    
     while($row=$selectCatId->fetch(PDO::FETCH_ASSOC)){
     $catid = $row['id'];
     $title = $row['title'];

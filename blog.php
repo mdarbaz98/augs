@@ -1,16 +1,27 @@
-<?php include('admin/include/config.php');
+<?php
+	$page="Blogs";
+	$title = "Blogs";
+    $desc = "Blogs of AUGS";
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Page Meta Auto Insertion Starts Here
+    $robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+    $seoTitle = $title;
+    $seoDescription = $desc;
+    $canonical = $actual_link;
+    $ogtype = "article";
+    $ogtitle = $seoTitle;
+    $ogdescription = $seoDescription;
+    $ogcurrenturl = $actual_link;
+    // $lastupdate = "2021-11-19T09:50:24+00:00";
+    // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    $ogimagealt = "$title - AUGS";
       include('./include/header.php');
 ?>
 	<section class="section_blogpage">
 		<div class="blog_tabs">
 			<div class="tabs-section">
-			<div class="loader_container">
-            <div class="loading">
-            <img src="assets/loader/1488.gif" alt="">
-            </div>
-           </div>
-
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
                     $stmt->execute();
                     $i=0;
@@ -37,7 +48,7 @@
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $class="";
                     foreach ($data as $data){
-                    
+						
                         if($i==0){
                             $class="show active";
                         }else {
@@ -102,7 +113,7 @@
 									</div>
 
 									<div class="outerline">
-										<button class="" data-id="<?php echo $data_post['id']; ?>" id="viewpost" onclick="viewMoreblog(this)">View More</button>
+										<button class="" data-id="<?php echo $data_post['id']; ?>" id="viewpost" onclick="viewMoreblog(this,<?php $cat_id ?>)">View More</button>
 									</div>
 						</div>
 						<?php ++$i; } ?>

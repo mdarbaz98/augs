@@ -1,3 +1,22 @@
+<?php 
+	$page="home";
+	$title = "AUGS";
+    $desc = "AUGS Home";
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Page Meta Auto Insertion Starts Here
+    $robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+    $seoTitle = $title;
+    $seoDescription = $desc;
+    $canonical = $actual_link;
+    $ogtype = "article";
+    $ogtitle = $seoTitle;
+    $ogdescription = $seoDescription;
+    $ogcurrenturl = $actual_link;
+    // $lastupdate = "2021-11-19T09:50:24+00:00";
+    // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    $ogimagealt = "$title - AUGS";
+?>
 <?php include('./include/header.php');
 	  	include('admin/include/config.php');?>
 	<section class="home__section pt-4">
