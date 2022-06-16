@@ -92,7 +92,7 @@
 
       p {
         margin-bottom: 13px;
-        font-size: 15px;
+        // font-size: 15px;
       }
 
       h3 {
@@ -193,7 +193,9 @@
         background-color: $color-10;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-
+        span{
+          font-size: 1.1875rem;
+        }
         p {
           color: $color-1;
           font-size: 1.1rem;
@@ -382,7 +384,7 @@
         }
       }
       .sidebar-box.height {
-        height: 950px;
+        height: 550px;
         overflow: hidden;
       }
       .main_read{
@@ -661,11 +663,23 @@
 
             span {
               font-size: 15px;
+              ul{
+                height: 108px;
+                @media screen and (max-width: 767px) {
+                  li{
+                    font-size: 1.1875rem;
+                    span{
+                    font-size: 1.1875rem;
+                    }
+                  }
+                }
+              }
             }
           }
         }
 
         .cd_button {
+          padding-top: 20px;
           p {
             margin-top: 1rem;
           }
@@ -718,12 +732,16 @@
 
   @media only screen and (max-width: 767px) {
     .categorysection1_inside1 {
+      img{
+        height: unset;
+      }
       margin: 0.25rem auto;
     }
 
     .categorysection2 {
       h2 {
         margin: 0px auto 12px;
+        font-size: 1.5rem !important;
       }
 
       .categorybox {
@@ -942,7 +960,7 @@ header {
         width: 100%;
         background-color: #f1f1f1;
         display: none;
-        height: 300px;
+        // height: 300px;
         overflow-y: scroll;
         &::-webkit-scrollbar{
           width: 8px;
@@ -1224,7 +1242,6 @@ header {
         background-color: $color-10;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-
         p {
           color: $color-1;
           font-size: 1.1rem;
@@ -1278,9 +1295,12 @@ header {
   }
 
   .post-content-section {
+
     .TBC-container {
+      @media screen and (min-width: 992px) {
+        height: 90vh;
+      }
       overflow-y: scroll;
-      // height: 90vh;
       #mobile-table-of-content{
         overflow-y: scroll;
     max-height: 400px;
@@ -1538,6 +1558,25 @@ header {
             }
           }
         }
+        .accordion-body{
+          span{
+            font-size: 1.1875rem;
+          };
+        }
+      }
+    }
+  }
+}
+
+.post__page{
+  .blog-body{
+    ul{
+      padding-left: 0px;
+      li{
+        padding-left: 30px;
+        list-style: none;
+        background-size: 20px;
+        background: url('../assets/images/success-img.png') no-repeat 4px 4px;
       }
     }
   }
@@ -1559,7 +1598,14 @@ header {
 
     .accordian-heading {
       .accordion-button {
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
+      }
+    }
+    .blog-body{
+      ul,ol{
+        li{
+          font-size: 1.1875rem;
+        }
       }
     }
   }
@@ -1722,11 +1768,17 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 3rem;
+          margin: 0 3rem;
 
+          @media screen and (max-width: 767px) {
+            img{
+              width: 100% !important;
+              height: 100% !important;
+            }
+          }
           img {
-            width: 80px;
-            height: 56px;
+            width: 209px;
+            height: 209px;
             object-fit: cover;
           }
         }
@@ -1738,6 +1790,19 @@ header {
           }
 
           .cd_span {
+            ul{
+              height: 108px;
+            }
+            @media screen and (max-width: 767px) {
+              ul{
+                li{
+                  font-size: 1.1875rem;
+                }
+              }
+              span{
+                font-size: 1.1875rem !important;
+              }
+            }
             i {
               font-size: 11px;
               color: $color-1;
@@ -1752,7 +1817,7 @@ header {
 
         .cd_button {
           p {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
           }
 
           span {

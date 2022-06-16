@@ -91,7 +91,7 @@ include('admin/include/config.php');
                 <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-auto text-center">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -99,7 +99,7 @@ include('admin/include/config.php');
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Categories
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <ul class="dropdown-menu mx-auto" aria-labelledby="navbarDropdown">
                       <?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
                                                     $stmt->execute();
                                                     $i=0;

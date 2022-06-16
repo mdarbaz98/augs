@@ -86,7 +86,7 @@ include('./include/header.php');
                                     <span>Effective for 62-82% of men</span>
                                 </div> -->
                             </div>
-                            <div class="cd_button">
+                            <div class="cd_button pt-2">
                                 <p>from <span>$<?php echo $data['prc'] ?></span></p>
                                <a href="<?php echo $data['slug'] ?>"><button>View</button></a>
                             </div>
@@ -100,7 +100,7 @@ include('./include/header.php');
         <div class="container-fluid">
             <div class="section-2">
                 <h2 class="text-center my-4  mb-0 before position-relative m-auto">Related Blogs</h2>
-                <div class="home-blog-section py-5 mb-5 mx-5 mb-md-0">
+                <div class="home-blog-section py-5 mb-1 mb-md-0">
                     <div class="owl-carousel owl-theme" id="categoryproduct-owl-carousel">
                     <?php
                                 $stmt = $conn->prepare("SELECT * FROM `post` WHERE cat_id=? ORDER BY id DESC");

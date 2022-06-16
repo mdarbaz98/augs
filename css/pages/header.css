@@ -47,12 +47,11 @@ html {
 
 h1, h2, h3 {
   font-weight: 600;
-  margin-top: 0px;
 }
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
