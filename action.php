@@ -16,7 +16,8 @@ if($_POST['btn']=='addEnquiry'){
 if($_POST['btn']=='post_id')
 {
       $post_id = $_POST['post_id'];
-      $sql = "SELECT * FROM `post` WHERE id>=$post_id LIMIT 6";
+      $cat_id = $_POST['cat_id'];
+      $sql = "SELECT * FROM `post` WHERE cat_id=$cat_id AND id>=$post_id LIMIT 6";
       $stmt = $conn->prepare($sql);
       $stmt->execute();
       $post_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
