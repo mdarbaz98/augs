@@ -1,7 +1,7 @@
 <?php include('./include/header.php') ?>
 
-    <section class="product__page pt-4">
-      <div class="top-section py-md-5 pt-5 pb-2">
+    <section class="product__page pt-0">
+      <div class="top-section py-md-5 pt-2 pb-2">
         <div class="container">
           <div class="product-section">
             <div class="container-fluid shadow p-md-0 overflow-hidden">

@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 a, a:visited, a:active, a:hover {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #171717;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -786,7 +786,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
   width: 100%;
@@ -806,7 +806,11 @@ p {
   font-size: 15px;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul {
-  height: 108px;
+  height: 90px;
+  margin-bottom: 0px;
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul p {
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
   .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul li {
@@ -815,9 +819,6 @@ p {
   .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul li span {
     font-size: 1.1875rem;
   }
-}
-.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button {
-  padding-top: 20px;
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
   margin-top: 1rem;
@@ -843,6 +844,11 @@ p {
   opacity: 0.9;
   font-size: 1rem;
   background-color: #444547;
+}
+@media screen and (max-width: 767px) {
+  .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button {
+    padding-top: 20px;
+  }
 }
 .categoryproductED .categorysection2 .categorybox .categorybox_inside:hover button {
   background-color: #212529;
@@ -1275,6 +1281,10 @@ header .overlay_Div {
   top: 50px;
   left: 0px;
   right: 0px;
+}
+
+.header-btn-1 {
+  display: none;
 }
 
 .product__page .top-section {
@@ -1853,7 +1863,8 @@ header .overlay_Div {
   margin: 10px 0px;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul {
-  height: 108px;
+  height: 90px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
   .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul li {

@@ -149,6 +149,18 @@ $(".mobile_tbc_links").click(function () {
   $(".post-sticky-accordion-btn").click();
 });
 
+$('.header-btn-2').click(function(){
+  $('.search-input,.header-search-btn').hide();
+  $('.header-btn-1').show();
+  $(this).hide();
+})
+
+$('.header-btn-1').click(function(){
+  $('.search-input,.header-search-btn').show();
+  $(this).hide();
+  $('.header-btn-2').show()
+});
+
 function viewMoreblog(x,cat_id){
   alert(cat_id)
   var id = $(x).attr('data-id');
