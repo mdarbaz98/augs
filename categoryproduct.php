@@ -40,8 +40,7 @@ include('./include/header.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside1">
-                        <img class="mt-5 pt-4" src="admin/<?php echo $img_path ?>"
-                            alt="<?php echo $img_alt ?>">
+                        <img class="mt-5 pt-4" src="admin/<?php echo $img_path ?>" alt="<?php echo $img_alt ?>">
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 categorysection1_inside2">
                     <?php echo $content ?>
@@ -60,7 +59,6 @@ include('./include/header.php');
                         $i=1;
                         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         foreach ($data as $data){?>
-
                             <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
                                 <div class="categorybox_inside">
                                     <div class="categorybox_img">        
@@ -76,25 +74,24 @@ include('./include/header.php');
                                             <?php } ?>    
                                         </div>
                                     </div>
-                            <div class="categorydetail_content">
-                                <h2 class="text-center"><?php echo $data['name'] ?></h2>
-                                <div class="cd_span">
-                                    <!-- <i class="fa-solid fa-circle"></i> -->
-                                    <span><?php echo $data['shrt_desc'] ?></span>
+                                    <div class="categorydetail_content">
+                                        <h2 class="text-center"><?php echo $data['name'] ?></h2>
+                                        <div class="cd_span">
+                                            <!-- <i class="fa-solid fa-circle"></i> -->
+                                            <span><?php echo $data['shrt_desc'] ?></span>
+                                        </div>
+                                        <!-- <div class="cd_span">
+                                            <i class="fa-solid fa-circle"></i>
+                                            <span>Effective for 62-82% of men</span>
+                                        </div> -->
+                                    </div>
+                                    <div class="cd_button pt-2">
+                                        <p>from <span>$<?php echo $data['prc'] ?></span></p>
+                                        <a href="<?php echo $data['slug'] ?>"><button>View</button></a>
+                                    </div>
                                 </div>
-                                <!-- <div class="cd_span">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <span>Effective for 62-82% of men</span>
-                                </div> -->
                             </div>
-                            <div class="cd_button pt-2">
-                                <p>from <span>$<?php echo $data['prc'] ?></span></p>
-                               <a href="<?php echo $data['slug'] ?>"><button>View</button></a>
-                            </div>
-                        </div>
-                    </div>
                     <?php $i++;} ?>
-                    <!--  -->
             </div>
         </div>
         <!-- 3 -->
@@ -130,7 +127,7 @@ include('./include/header.php');
                                 </div>
                             </a>
                         </div>
-                        <?php $i++;} ?>
+                    <?php $i++;} ?>
                     </div>
                 </div>
 
