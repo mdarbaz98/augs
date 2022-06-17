@@ -1,11 +1,31 @@
-<?php include('./include/header.php') ?>
-<section class="onetime-about">
-	<div class="container-fluid custom-container">
-		<div class="onetime-banner-img">
-			<div class="overlay"></div> <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""> </div>
-		<div class="onetime-banner-content">
-			<h1>About Us</h1>
-			<p>AUGS is determined to be an informative platform for your health conditions, we believe in nurturing your life with detailed information and suitable solutions.Trust us to integrate a set of key facts to keep your life simplified.</p>
+<?php
+	$page="about";
+	$title = "About";
+    $desc = "About Us";
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Page Meta Auto Insertion Starts Here
+    $robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+    $seoTitle = $title;
+    $seoDescription = $desc;
+    $canonical = $actual_link;
+    $ogtype = "article";
+    $ogtitle = $seoTitle;
+    $ogdescription = $seoDescription;
+    $ogcurrenturl = $actual_link;
+    // $lastupdate = "2021-11-19T09:50:24+00:00";
+    // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    $ogimagealt = "$title - AUGS";
+
+include('./include/header.php') ?>
+	<section class="onetime-about">
+		<div class="container-fluid custom-container">
+			<div class="onetime-banner-img">
+				<div class="overlay"></div> <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""> </div>
+			<div class="onetime-banner-content">
+				<h1>About Us</h1>
+				<p>AUGS is determined to be an informative platform for your health conditions, we believe in nurturing your life with detailed information and suitable solutions.Trust us to integrate a set of key facts to keep your life simplified.</p>
+			</div>
 		</div>
 	</div>
 	<div class="container main-section mb-4">

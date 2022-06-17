@@ -50,7 +50,6 @@ html {
 
 h1, h2, h3 {
   font-weight: 600;
-  margin-top: 0px;
 }
 
 a, a:visited, a:active, a:hover {
@@ -166,7 +165,6 @@ p {
 }
 .home__section .section_middle .middle_content_1 p {
   margin-bottom: 13px;
-  font-size: 15px;
 }
 .home__section .section_middle .middle_content_1 h3 {
   padding: 20px 0px 20px 20px;
@@ -245,6 +243,9 @@ p {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+.home__section .section_middle .accordion-item .accordion-body span {
+  font-size: 1.1875rem;
+}
 .home__section .section_middle .accordion-item .accordion-body p {
   color: #212529;
   font-size: 1.1rem;
@@ -261,7 +262,6 @@ p {
 .section-2 .home-blog-section #product-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #categoryproduct-owl-carousel .blog-card .blog-card-img-div img,
 .section-2 .home-blog-section #post-owl-carousel .blog-card .blog-card-img-div img {
-  width: fit-content;
   height: 15.75rem;
   object-fit: cover;
 }
@@ -467,7 +467,7 @@ p {
     font-size: 23px;
   }
   .home__section .section_middle .sidebar-box.height {
-    height: 950px;
+    height: 550px;
     overflow: hidden;
   }
   .home__section .section_middle .main_read {
@@ -805,6 +805,20 @@ p {
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
   font-size: 15px;
 }
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul {
+  height: 108px;
+}
+@media screen and (max-width: 767px) {
+  .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul li {
+    font-size: 1.1875rem;
+  }
+  .categoryproductED .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span ul li span {
+    font-size: 1.1875rem;
+  }
+}
+.categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button {
+  padding-top: 20px;
+}
 .categoryproductED .categorysection2 .categorybox .categorybox_inside .cd_button p {
   margin-top: 1rem;
 }
@@ -858,8 +872,12 @@ p {
   .categoryproductED .categorysection1_inside1 {
     margin: 0.25rem auto;
   }
+  .categoryproductED .categorysection1_inside1 img {
+    height: unset;
+  }
   .categoryproductED .categorysection2 h2 {
     margin: 0px auto 12px;
+    font-size: 1.5rem !important;
   }
   .categoryproductED .categorysection2 .categorybox {
     padding: 20px 20px 0px 20px;
@@ -1095,7 +1113,6 @@ header .navbar .header-form .autoCom-Box {
   width: 100%;
   background-color: #f1f1f1;
   display: none;
-  height: 300px;
   overflow-y: scroll;
 }
 header .navbar .header-form .autoCom-Box::-webkit-scrollbar {
@@ -1373,6 +1390,11 @@ header .overlay_Div {
   position: sticky;
   top: 90px;
   z-index: 2;
+}
+@media screen and (min-width: 992px) {
+  .post__page .post-content-section .TBC-container {
+    height: 90vh;
+  }
 }
 .post__page .post-content-section .TBC-container #mobile-table-of-content {
   overflow-y: scroll;
@@ -1667,6 +1689,19 @@ header .overlay_Div {
   padding: 6px 8px;
   margin-left: 2rem;
 }
+.post__page .post-content-section .bottom-accordion-section .accordion-item .accordion-body span {
+  font-size: 1.1875rem;
+}
+
+.post__page .blog-body ul {
+  padding-left: 0px;
+}
+.post__page .blog-body ul li {
+  padding-left: 30px;
+  list-style: none;
+  background-size: 20px;
+  background: url("../assets/images/success-img.png") no-repeat 4px 4px;
+}
 
 @media screen and (max-width: 399px) {
   .augs-logo {
@@ -1681,7 +1716,10 @@ header .overlay_Div {
     height: 200px !important;
   }
   .post__page .accordian-heading .accordion-button {
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
+  }
+  .post__page .blog-body ul li, .post__page .blog-body ol li {
+    font-size: 1.1875rem;
   }
 }
 @media screen and (max-width: 922px) {
@@ -1797,16 +1835,33 @@ header .overlay_Div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 0 3rem;
+}
+@media screen and (max-width: 767px) {
+  .section_productpage .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .categorybox_img img {
-  width: 80px;
-  height: 56px;
+  width: 209px;
+  height: 209px;
   object-fit: cover;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content h2 {
   font-size: 20px;
   margin: 10px 0px;
+}
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul {
+  height: 108px;
+}
+@media screen and (max-width: 767px) {
+  .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul li {
+    font-size: 1.1875rem;
+  }
+  .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span span {
+    font-size: 1.1875rem !important;
+  }
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span i {
   font-size: 11px;
@@ -1817,7 +1872,7 @@ header .overlay_Div {
   font-size: 15px;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;

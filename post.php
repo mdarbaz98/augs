@@ -1,7 +1,6 @@
 <?php include('admin/include/config.php');
-    $page="post";
+    
     $slug = $_GET['slug'];
-
     $post = $conn->prepare('SELECT * FROM post WHERE slug=?');
     $post->execute([$slug]);
     echo $postCount=$post->rowCount();
@@ -19,7 +18,7 @@
     // $selectpostId->execute([$slug]);
 
     if($postCount>0){  
-
+    $page="post";
     while($row=$post->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
     $title = $row['title'];
@@ -46,7 +45,7 @@
       <div
         class="post-banner-section d-flex justify-content-center align-items-center"
       >
-        <div class="container-fluid">
+        <div class="container">
           <?php
           $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1 AND id=?");
           $stmt->execute([$id]);
@@ -71,7 +70,7 @@
             }
             }
           ?>
-          <h2 class="text-center position-relative mx-auto my-5">Paroxetine</h2>
+          <h2 class="text-center position-relative mx-auto my-md-5">Paroxetine</h2>
           <img class="post-banner-img" src="admin/<?php echo $image ?>" alt="<?php echo $alt ?>"/>
           <p class="mt-2">Publish : 23-01-2020</p>
         </div>
@@ -164,6 +163,7 @@
     </section>
     <?php include ('./include/footer.php');
     }elseif($productCount>0){
+      $page="product";
       while($row=$product->fetch(PDO::FETCH_ASSOC)){
         $id = $row['id'];
         $title = $row['title'];

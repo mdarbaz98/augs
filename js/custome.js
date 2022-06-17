@@ -130,7 +130,7 @@ $(".read-more-btn").click(function () {
   $(".sidebar-box")
     .children()
     .each(function () {
-      totalHeight = totalHeight + $(this).height() + 16;
+      totalHeight = totalHeight + $(this).height() + 32;
     });
   if (value) {
     $(this).text("Read less...");
@@ -139,7 +139,7 @@ $(".read-more-btn").click(function () {
   } else {
     $(this).text("Read more...");
     $(this).addClass("shad-btn");
-    $(".sidebar-box").css({ height: "950px" });
+    $(".sidebar-box").css({ height: "550px" });
   }
 });
 // mobile tbc close after click
@@ -149,7 +149,9 @@ $(".mobile_tbc_links").click(function () {
   $(".post-sticky-accordion-btn").click();
 });
 
-function viewMoreblog(x){
+function viewMoreblog(x,cat_id,slug){
+  alert(slug)
+  alert(cat_id)
   var id = $(x).attr('data-id');
   alert(id);
         $.ajax({
@@ -158,10 +160,11 @@ function viewMoreblog(x){
         dataType: 'json',
         data: {
             post_id: id,
+            cat_id: cat_id,
             btn: 'post_id',
         },
-        beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
-                                  $(".loading").show()},
+        // beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
+        //                           $(".loading").show()},
         success: function (data) {
             var json = $.parseJSON(JSON.stringify(data));
 	        var lastId = json.last_id;
@@ -170,15 +173,12 @@ function viewMoreblog(x){
             console.log(htmldata);
 
             $('#viewpost').attr('data-id',lastId);
-            $("#postAjaxdata").append(htmldata);
+            $("#"+slug+" #postAjaxdata").append(htmldata);
           //   blogs();
 
-            $(".tabs-section").css('opacity', 1)
-            $(".loading").hide()
+            // $(".tabs-section").css('opacity', 1)
+            // $(".loading").hide()
         }
 
         });
-
-      
-    
 }

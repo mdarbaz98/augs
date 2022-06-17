@@ -1,4 +1,24 @@
-<?php include('./include/header.php') ?>
+<?php
+	$page="product";
+	$title = "Product";
+    $desc = "AUGS Home";
+    $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Page Meta Auto Insertion Starts Here
+    $robot="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large";
+    $seoTitle = $title;
+    $seoDescription = $desc;
+    $canonical = $actual_link;
+    $ogtype = "article";
+    $ogtitle = $seoTitle;
+    $ogdescription = $seoDescription;
+    $ogcurrenturl = $actual_link;
+    // $lastupdate = "2021-11-19T09:50:24+00:00";
+    // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
+    $ogimagealt = "$title - AUGS";
+
+
+include('./include/header.php') ?>
 <section class="section_productpage">
    <div class="blog_tabs">
      <div class="tabs-section">
@@ -48,7 +68,7 @@
                 <p class="text-center"><?php echo $data['description'] ?></p>
             </div>
            <!-- 1 -->
-           <div class="categorysection2">
+           <div class="categorysection2 px-3 px-md-0">
              <div class="container">
                <div class="row">
                <?php
@@ -80,7 +100,7 @@
                        </div>
                       
                      </div>
-                     <div class="cd_button">
+                     <div class="cd_button pt-2">
                        <p>
                          <span>$<?php echo $data_pro['prc'] ?></span>
                        </p>
