@@ -22,7 +22,7 @@
 		<div class="blog_tabs">
 			<div class="tabs-section">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
+					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 3");
                     $stmt->execute();
                     $i=0;
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -42,7 +42,7 @@
 						<?php ++$i; } ?>
 				</ul>
 				<div class="tab-content" id="myTabContent">
-					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 6");
+					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 3");
                     $stmt->execute();
                     $i=0;
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -68,7 +68,7 @@
 								<div class="container blog-section">
 									<div class="row" id="postAjaxdata">
 									<?php
-                            $stmt = $conn->prepare("SELECT * FROM `post` WHERE cat_id=? ORDER BY id ASC limit 6");
+                            $stmt = $conn->prepare("SELECT * FROM `post` WHERE cat_id=? ORDER BY id ASC limit 3");
                             $stmt->execute([$data['id']]);
                             $data1 = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             foreach ($data1 as $data_post)
@@ -111,13 +111,15 @@
 											<?php } ?>
 										</div>
 										<div class="outerline">
-											<button class="" data-id="<?php echo $data_post['id']; ?>" id="viewpost-<?php echo $data['slug'] ?>" onclick="viewMoreblog(this,<?php echo $data['id'] ?>,'<?php echo $data['slug'] ?>')">View More</button>
-											</div>
+											<button class="viewpost" data-id="<?php echo $data_post['id']; ?>" onclick="viewMoreblog(this,<?php echo $data['id'] ?>,'<?php echo $data['slug'] ?>')">View More</button>
+										</div>
 									</div>
 
 									
 						</div>
-						<?php ++$i; } ?>
+						<?php ++$i; 
+					
+					} ?>
 				</div>
 			</div>
 		</div>

@@ -150,10 +150,7 @@ $(".mobile_tbc_links").click(function () {
 });
 
 function viewMoreblog(x,cat_id,slug){
-  alert(slug)
-  alert(cat_id)
-  var id = $(x).attr('data-id');
-  alert(id);
+    var id = $(x).attr('data-id');
         $.ajax({
         type: "POST",
         url: "action.php",
@@ -167,13 +164,43 @@ function viewMoreblog(x,cat_id,slug){
         //                           $(".loading").show()},
         success: function (data) {
             var json = $.parseJSON(JSON.stringify(data));
-	        var lastId = json.last_id;
-         var htmldata =json.datahtml;
-            alert(htmldata);
-            console.log(htmldata);
-
-            $('#viewpost').attr('data-id',lastId);
+	          var lastId = json.last_id;
+            var htmldata =json.datahtml;
+            $('.viewpost').attr('data-id',lastId);
             $("#"+slug+" #postAjaxdata").append(htmldata);
+          //   blogs();
+
+            // $(".tabs-section").css('opacity', 1)
+            // $(".loading").hide()
+        }
+
+        });
+}
+
+function viewMoreproduct(x,cat_id,slug){
+  var id = $(x).attr('data-id');
+  alert("pro id "+id);
+  alert("cat id "+cat_id);
+  alert("slug  "+slug);
+
+        $.ajax({
+        type: "POST",
+        url: "action.php",
+        dataType: 'json',
+        data: {
+            pro_id: id,
+            cat_id: cat_id,
+            btn: 'pro_id',
+        },
+        // beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
+        //                           $(".loading").show()},
+        success: function (data) {
+            var json = $.parseJSON(JSON.stringify(data));
+	          var lastId = json.last_id;
+            var htmldata =json.datahtml;
+            alert("ladt id  "+lastId)
+            $('.viewproduct').attr('data-id',lastId);
+            $("#"+slug+" #productAjaxdata").append(htmldata);
           //   blogs();
 
             // $(".tabs-section").css('opacity', 1)
