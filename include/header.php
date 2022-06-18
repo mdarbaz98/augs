@@ -87,7 +87,7 @@ include('admin/include/config.php');
             <nav class="navbar fixed-top py-md-3 px-md-4 navbar-expand-lg ">
               <div class="container-fluid">
               <a class="navbar-brand me-4" href=""><img class="logo-img" src="./assets/images/augs-logo.png" alt="logo"></a>
-                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler header-btn-1 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -198,7 +198,7 @@ include('admin/include/config.php');
                              </ul>
                            </div>
                          </form>
-                         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <button class="navbar-toggler header-btn-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars text-white"></i>
                         </button>
               </div>

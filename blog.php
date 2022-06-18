@@ -18,9 +18,14 @@
     $ogimagealt = "$title - AUGS";
       include('./include/header.php');
 ?>
-	<section class="section_blogpage">
-		<div class="blog_tabs">
-			<div class="tabs-section">
+<section class="section_blogpage">
+	<div class="blog_tabs">
+		<div class="tabs-section">
+			<div class="loader_container">
+				<div class="loading">
+				<img src="assets/loader/1488.gif" alt="">
+				</div>
+           	</div>
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 3");
                     $stmt->execute();
@@ -114,14 +119,35 @@
 											<button class="viewpost" data-id="<?php echo $data_post['id']; ?>" onclick="viewMoreblog(this,<?php echo $data['id'] ?>,'<?php echo $data['slug'] ?>')">View More</button>
 										</div>
 									</div>
-
-									
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-6 blog-section-inside2"> 
+									<span class="span1">
+										<?php
+											$stmt_cat = $conn->prepare("SELECT * FROM `category` WHERE id=?");
+											$stmt_cat->execute([$data_post['cat_id']]);
+											$cat_data = $stmt_cat->fetchAll(PDO::FETCH_ASSOC);
+											if (!empty($cat_data)) {
+											$cat_name = $cat_data[0]['name']; 
+											}else{
+											$cat_name="Not Found";
+											}
+											echo $cat_name;
+										?>	
+									</span>
+									<h1><?php echo $data_post['title']?></h1> 
+									<span class="span2">Published <?php echo $data_post['uploaded_on']?></span>
+									<p><?php echo $data_post['description']?></p>			
+									<a href="<?php echo $data_post['slug']?>"><button>Read more</button></a>			
+								</div>
+							<?php } ?>
 						</div>
 						<?php ++$i; 
 					
 					} ?>
 				</div>
+				<?php ++$i; } ?>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 	<?php include('./include/footer.php') ?>
