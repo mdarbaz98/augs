@@ -4,7 +4,7 @@
     <div class="col-sm-8">
     <div class="row m-auto mt-5">
             <div class="col img-checkbox">     
-                <ul>
+                <ul style="overflow-y: scroll;height: 500px;">
                 <?php 
                     $images=$conn->prepare("SELECT * FROM images WHERE status=?");
                     $images->execute([1]);

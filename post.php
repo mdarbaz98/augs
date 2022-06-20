@@ -53,7 +53,7 @@
           $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
           if (!empty($data)) {
           foreach ($data as $data)
-          {  $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+          {  $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE status=1 AND id=?");
              $stmt_img->execute([$data['img_id']]);
              $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
              if (!empty($img_data)) {
@@ -70,7 +70,7 @@
             }
             }
           ?>
-          <h2 class="text-center position-relative mx-auto my-md-5">Paroxetine</h2>
+          <!-- <h2 class="text-center position-relative mx-auto my-md-5">Paroxetine</h2> -->
           <img class="post-banner-img" src="admin/<?php echo $image ?>" alt="<?php echo $alt ?>"/>
           <p class="mt-2">Publish : 23-01-2020</p>
         </div>
@@ -125,8 +125,8 @@
           <div class="home-blog-section py-5 p-md-5 mb-5 mb-md-4">
             <div class="owl-carousel owl-theme" id="post-owl-carousel">
                     <?php
-                        $stmt = $conn->prepare("SELECT * FROM `post` ORDER BY id DESC limit 6");
-                        $stmt->execute();
+                        $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1 AND cat_id=? ORDER BY id DESC limit 6");
+                        $stmt->execute([$data['cat_id']]);
                         $i=1;
                         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         foreach ($data as $data)
@@ -175,11 +175,11 @@
           }else{
             $img_id=1;
           }
-         echo $front_img_id = $row['front_img'];
-          echo "<br>";
-         $imgArray = explode(',',$img_id);
-         $updatedid = array_diff($imgArray, explode(',',$front_img_id));
-         echo $updatedid = implode(',',$updatedid);  
+        //  echo $front_img_id = $row['front_img'];
+        //   echo "<br>";
+        //  $imgArray = explode(',',$img_id);
+        //  $updatedid = array_diff($imgArray, explode(',',$front_img_id));
+        //  echo $updatedid = implode(',',$updatedid);  
 
         }
         $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -208,11 +208,11 @@
 
                   <div class="owl-carousel owl-theme product-image" id="">
                                             <?php 
-                                            if(empty($updatedid)){
-                                              $updatedid=1;
-                                            }else{ $updatedid;}
+                                            if(empty($img_id)){
+                                              $img_id=1;
+                                            }else{ $img_id;}
 
-                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($updatedid) ";
+                                            $sql = "SELECT * FROM `images` WHERE status=1 AND id IN ($img_id) ";
                                             $stmt_img = $conn->prepare($sql);
                                             $stmt_img->execute();
                                             $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
@@ -259,7 +259,9 @@
             <div class="home-blog-section py-5 px-4 p-md-5 mb-5 mb-md-0">
               <div class="owl-carousel owl-theme" id="product-owl-carousel">
                 <?php
-                            $stmt = $conn->prepare("SELECT * FROM `post`where `cat_id`= 4 ORDER BY id DESC limit 6");
+                            echo $sql ="SELECT * FROM `post` where status=1 AND `cat_id`= '$cat_id' ORDER BY id DESC limit 6";  
+                            $cat_id=$row['name'];
+                            $stmt = $conn->prepare($sql);
                             $stmt->execute();
                             $i=1;
                             $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -309,12 +311,20 @@
     $desc = $row['description'];
     $name = $row['name'];
     $content = $row['content'];
+    
     $cat_img_id = $row['img_id'];
+
     $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE status=1 AND id=?");
     $stmt_img->execute([$cat_img_id]);
     $img_data_cat = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
-    $img_path = $img_data_cat[0]['path'];
-    $img_alt = $img_data_cat[0]['alt'];    
+    if(!empty($img_data_cat)){
+      $img_path = $img_data_cat[0]['path'];
+      $img_alt = $img_data_cat[0]['alt'];
+    }else{
+      $img_path = "no img";
+      $img_alt = "please set image";
+    }
+    
 }
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 // Page Meta Auto Insertion Starts Here
@@ -406,12 +416,12 @@ include('./include/header.php');
                 <div class="home-blog-section py-5 mb-5 mx-5 mb-md-0">
                     <div class="owl-carousel owl-theme" id="categoryproduct-owl-carousel">
                     <?php
-                                $stmt = $conn->prepare("SELECT * FROM `post` WHERE cat_id=? ORDER BY id DESC");
+                                $stmt = $conn->prepare("SELECT * FROM `post` WHERE status=1 AND cat_id=? ORDER BY id DESC");
                                 $stmt->execute([$catid]);
                                 $i=1;
                                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 foreach ($data as $data)
-                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
+                                {	$stmt_img = $conn->prepare("SELECT * FROM `images` WHERE status=1 AND id=?");
 									$stmt_img->execute([$data['img_id']]);
 									$img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
 										if (!empty($img_data)) {
