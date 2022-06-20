@@ -422,7 +422,7 @@ $ogimagealt = "$category_name - AUGS";
                      ?>
                     <!--  -->
             </div>
-            <button class="my-5 mx-auto rounded-pill">View All</button>
+            <a href="product"><button class="my-5 mx-auto rounded-pill">View All</button></a>
         </div>
         <!-- 3 -->
         <div class="container-fluid">
