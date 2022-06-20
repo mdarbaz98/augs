@@ -309,7 +309,7 @@
     $catid = $row['id'];
     $title = $row['title'];
     $desc = $row['description'];
-    $name = $row['name'];
+    $category_name = $row['name'];
     $content = $row['content'];
     
     $cat_img_id = $row['img_id'];
@@ -339,7 +339,7 @@ $ogcurrenturl = $actual_link;
 // $lastupdate = "2021-11-19T09:50:24+00:00";
 // $ogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
 // $sogimage = "https://practicalanxietysolutions.com/wp-content/uploads/2021/11/man-running-in-brain-300x176.jpg";
-$ogimagealt = "$name - AUGS";
+$ogimagealt = "$category_name - AUGS";
 
 include('./include/header.php');
 ?>
@@ -389,6 +389,7 @@ include('./include/header.php');
                                       </div>
                                 
                             <div class="categorydetail_content">
+                            <span class="rounded-pill btn btn-dark btn-sm" style="font-size:10px;"><?php echo $category_name ?></span>
                                 <h2 class="text-center"><?php echo $data['name'] ?></h2>
                                 <div class="cd_span">
                                     <!-- <i class="fa-solid fa-circle"></i> -->
