@@ -640,7 +640,6 @@
     }
 
     .categorybox {
-      overflow: hidden;
       .categorybox_inside {
         box-shadow: $shadow;
         padding: 10px;
@@ -765,7 +764,7 @@
       }
 
       .categorybox {
-        overflow: hidden;
+        // overflow: hidden;
         padding: 20px 20px 0px 20px;
 
         .categorybox_inside {
@@ -1337,6 +1336,7 @@ header {
       width: 100%;
       border-radius: 6px;
       object-fit: cover;
+      object-position: top;
     }
 
     h2 {
@@ -1791,7 +1791,7 @@ header {
 // product-page
 .section_productpage {
   .blog_tabs {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .tabsbtn {
       font-size: 15px;
@@ -1833,7 +1833,6 @@ header {
     }
 
     .categorybox {
-      overflow: hidden;
       margin-bottom: 30px;
 
       .categorybox_inside {

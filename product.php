@@ -19,7 +19,7 @@
 
 
 include('./include/header.php') ?>
-<section class="section_productpage pt-5 ">
+<section class="section_productpage pt-lg-5 ">
    <div class="blog_tabs">
      <div class="tabs-section">
        
@@ -100,7 +100,7 @@ include('./include/header.php') ?>
                      <!-- <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""> -->
                      </div>
                      <div class="categorydetail_content">
-                       <span class="badge badge-primary"><?php echo $cat_name ?></span>
+                       <span class="rounded-pill btn btn-dark btn-sm" style="font-size: 10px"><?php echo $cat_name ?></span>
                        <h2><?php echo $data_pro['name'] ?></h2>
                        <div class="cd_span">
                        <?php echo $data_pro['shrt_desc'] ?>

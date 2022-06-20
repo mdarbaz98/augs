@@ -19,7 +19,7 @@
       include('./include/header.php');
 ?>
 	<section class="section_blogpage">
-		<div class="blog_tabs">
+		<div class="blog_tabs" style="margin-top: 6rem;">
 			<div class="tabs-section">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<?php   $stmt = $conn->prepare("SELECT * FROM `category` ORDER BY id DESC limit 3");
@@ -86,10 +86,10 @@
                                     $alt="Not Found";
                                     }								 
                                     ?>
-										<div class="col-sm-12 col-md-6 col-lg-6 blog-section-inside1">
+										<div class="mb-lg-5 col-sm-12 col-md-6 col-lg-6 blog-section-inside1">
 											<div class="blog-section_img"> <img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img"> </div>
 										</div>
-										<div class="col-sm-12 col-md-6 col-lg-6 blog-section-inside2"> <span class="span1">
+										<div class="mb-5  col-sm-12 col-md-6 col-lg-6 blog-section-inside2"> <span class="span1">
 											<?php
 													$stmt_cat = $conn->prepare("SELECT * FROM `category` WHERE id=?");
 													$stmt_cat->execute([$data_post['cat_id']]);
