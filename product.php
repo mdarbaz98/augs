@@ -19,7 +19,7 @@
 
 
 include('./include/header.php') ?>
-<section class="section_productpage">
+<section class="section_productpage pt-5 ">
    <div class="blog_tabs">
      <div class="tabs-section">
        
@@ -100,7 +100,7 @@ include('./include/header.php') ?>
                        </div>
                       
                      </div>
-                     <div class="cd_button pt-2">
+                     <div class="cd_button pt-4">
                        <p>
                          <span>$<?php echo $data_pro['prc'] ?></span>
                        </p>

@@ -142,7 +142,7 @@
         </div>
     </div>
    <div class="main_read">
-   <button class="read-more-btn shad-btn">Read more<i class="fa-solid fa-arrow-right"></i></button>
+   <button class="read-more-btn shad-btn btn btn-dark shadow">Read more<i class="fa-solid fa-arrow-right"></i></button>
    </div>
 </div>
 
@@ -169,12 +169,12 @@
 										}								 
 					?>
 					<div class="blog-card">
-						<a href="">
+						<a href="<?php echo $data['slug'] ?>">
 							<div class="blog-card-img-div"><img src="admin/<?php echo $image ?>" alt="<?php echo $alt  ?>" class="custome_img"></div>
 							<div class="blog-desc-sec pb-3 px-3 px-md-5">
 								<h1 class="my-2"><?php echo $data['title'] ?></h1>
 								<p><?php echo $data['description'] ?></p>
-								<a href="<?php echo $data['slug'] ?>"><button class="sq-btn">READ MORE</button></a>
+								<button class="sq-btn">READ MORE</button>
 							</div>
 						</a>
 					</div>

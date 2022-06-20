@@ -43,7 +43,7 @@ $(document).ready(function () {
       window.location.href = "http://localhost/augs/search.php?q=" + value;
     }
     if (value) {
-      $(".autoCom-Box").show();
+      $(".autoCom-Box").show().css({'max-height':'300px'});
       $(".autoCom-Box li").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
       });
@@ -80,7 +80,7 @@ $(".blog-body h2").each(function () {
   $("#table-of-content").append(
     `<li onclick="scrollToElement('h${i}')" class="tbc_links ${status}">
     <a
-      ><span>${i}.</span>
+      ><span class="tbc_number_div">${i}.</span>
       ${$(this).html()}</a
     >
   </li>`
@@ -101,7 +101,7 @@ $(".blog-body h2").each(function () {
   $("#table-of-content-for-mobile").append(
     `<li onclick="scrollToElement('h${j}')" class="mobile_tbc_links ${status}">
     <a
-      ><span>${j}.</span>
+      ><span class="tbc_number_div">${j}.</span>
       ${$(this).html()}</a
     >
   </li>`
@@ -133,12 +133,16 @@ $(".read-more-btn").click(function () {
       totalHeight = totalHeight + $(this).height() + 32;
     });
   if (value) {
-    $(this).text("Read less...");
-    $(this).removeClass("shad-btn");
+    $(this)
+      .text("Read less...")
+      .removeClass("shad-btn")
+      .css({ "margin-bottom": "0px" });
     $(".sidebar-box").animate({ height: totalHeight });
   } else {
-    $(this).text("Read more...");
-    $(this).addClass("shad-btn");
+    $(this)
+      .text("Read more...")
+      .addClass("shad-btn")
+      .css({ "margin-bottom": "8px" });
     $(".sidebar-box").css({ height: "550px" });
   }
 });
@@ -149,47 +153,46 @@ $(".mobile_tbc_links").click(function () {
   $(".post-sticky-accordion-btn").click();
 });
 
-$('.header-btn-2').click(function(){
-  $('.search-input,.header-search-btn').hide();
-  $('.header-btn-1').show();
+$(".header-btn-2").click(function () {
+  $(".search-input,.header-search-btn").hide();
+  $(".header-btn-1").show();
   $(this).hide();
-})
-
-$('.header-btn-1').click(function(){
-  $('.search-input,.header-search-btn').show();
-  $(this).hide();
-  $('.header-btn-2').show()
 });
 
-function viewMoreblog(x,cat_id){
-  alert(cat_id)
-  var id = $(x).attr('data-id');
+$(".header-btn-1").click(function () {
+  $(".search-input,.header-search-btn").show();
+  $(this).hide();
+  $(".header-btn-2").show();
+});
+
+function viewMoreblog(x, cat_id) {
+  alert(cat_id);
+  var id = $(x).attr("data-id");
   alert(id);
-        $.ajax({
-        type: "POST",
-        url: "action.php",
-        dataType: 'json',
-        data: {
-            post_id: id,
-            cat_id: cat_id,
-            btn: 'post_id',
-        },
-        // beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
-        //                           $(".loading").show()},
-        success: function (data) {
-            var json = $.parseJSON(JSON.stringify(data));
-	        var lastId = json.last_id;
-         var htmldata =json.datahtml;
-            alert(htmldata);
-            console.log(htmldata);
+  $.ajax({
+    type: "POST",
+    url: "action.php",
+    dataType: "json",
+    data: {
+      post_id: id,
+      cat_id: cat_id,
+      btn: "post_id",
+    },
+    // beforeSend: function(){$(".tabs-section").css('opacity', 0.5)
+    //                           $(".loading").show()},
+    success: function (data) {
+      var json = $.parseJSON(JSON.stringify(data));
+      var lastId = json.last_id;
+      var htmldata = json.datahtml;
+      alert(htmldata);
+      console.log(htmldata);
 
-            $('#viewpost').attr('data-id',lastId);
-            $("#"+slug+" #postAjaxdata").append(htmldata);
-          //   blogs();
+      $("#viewpost").attr("data-id", lastId);
+      $("#" + slug + " #postAjaxdata").append(htmldata);
+      //   blogs();
 
-            // $(".tabs-section").css('opacity', 1)
-            // $(".loading").hide()
-        }
-
-        });
+      // $(".tabs-section").css('opacity', 1)
+      // $(".loading").hide()
+    },
+  });
 }

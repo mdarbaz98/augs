@@ -60,6 +60,7 @@ include('./include/header.php');
                         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         foreach ($data as $data){?>
                             <div class="col-lg-3 col-sm-12 col-md-6 categorybox">
+                                <a href="<?php echo $data['slug'] ?>">
                                 <div class="categorybox_inside">
                                     <div class="categorybox_img">        
                                         <div class="owl-carousel owl-theme product-image" id="">
@@ -87,9 +88,10 @@ include('./include/header.php');
                                     </div>
                                     <div class="cd_button pt-2">
                                         <p>from <span>$<?php echo $data['prc'] ?></span></p>
-                                        <a href="<?php echo $data['slug'] ?>"><button>View</button></a>
+                                        <!-- <a href="<?php echo $data['slug'] ?>"><button>View</button></a> -->
                                     </div>
                                 </div>
+                                </a>
                             </div>
                     <?php $i++;} ?>
             </div>

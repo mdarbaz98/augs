@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                </div>
-               <p class="mt-2">© 2022 American Urogynecologic Society</p>
+               <p class="mt-2" style="font-size: 1rem;">© 2022 American Urogynecologic Society</p>
             </section>
         </footer>
         

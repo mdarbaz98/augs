@@ -63,15 +63,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
-}
-
-h2 {
   font-size: 1.6rem;
 }
 
+h2 {
+  font-size: 1.4rem;
+}
+
 h3 {
-  font-size: 1.5625rem;
+  font-size: 1.2625rem;
 }
 
 p {
@@ -196,7 +196,6 @@ p {
 }
 .home__section .section_middle .middle_content_2 p {
   margin-bottom: 13px;
-  font-size: 15px;
 }
 .home__section .section_middle .middle_content_2 .middle_inside_2 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -484,9 +483,10 @@ p {
     float: right;
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    text-decoration: underline;
+    background: whitesmoke;
+    font-family: "Ubuntu";
   }
   .home__section .section_middle .main_read .read-more-btn i {
     margin: 0px 0px 0px 15px;
@@ -759,14 +759,21 @@ p {
 }
 .categoryproductED .categorysection1_inside1 img {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   object-fit: cover;
+  border-radius: 6px;
 }
 .categoryproductED .categorysection1_inside2 h1 {
   margin: 0.625rem 0rem 2rem 0rem;
 }
 .categoryproductED .categorysection1_inside2 .moretext {
   display: none;
+}
+@media screen and (max-width: 767px) {
+  .categoryproductED .categorysection1_inside2 ol li,
+.categoryproductED .categorysection1_inside2 ul li {
+    font-size: 1.2rem;
+  }
 }
 .categoryproductED .categorysection1_inside2 .moreless-button {
   background-color: transparent;
@@ -879,7 +886,7 @@ p {
     margin: 0.25rem auto;
   }
   .categoryproductED .categorysection1_inside1 img {
-    height: unset;
+    height: 16rem;
   }
   .categoryproductED .categorysection2 h2 {
     margin: 0px auto 12px;
@@ -1079,8 +1086,14 @@ p {
   margin-bottom: 0px;
 }
 
-header .logo-img {
-  width: 70px;
+header .logo-img,
+header .website-logo {
+  width: 100px;
+}
+@media screen and (max-width: 767px) {
+  header .website-logo {
+    width: 80px !important;
+  }
 }
 header .navbar {
   background-color: #212529;
@@ -1110,11 +1123,10 @@ header .navbar .menu-open-btn {
 header .navbar .header-form {
   position: relative;
   height: 2.125rem;
-  width: 18.75rem;
 }
 header .navbar .header-form .autoCom-Box {
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 35px;
   width: 100%;
   background-color: #f1f1f1;
@@ -1143,9 +1155,16 @@ header .navbar .header-form .autoCom-Box li a:hover {
   background-color: #212529;
   color: #f8f9fa;
 }
+@media screen and (min-width: 992px) {
+  header .navbar .header-form .autoCom-Box {
+    width: 240px;
+  }
+}
 header .navbar .header-form input {
   border-radius: 50px;
   font-family: "Ubuntu", sans-serif;
+  width: auto;
+  margin-left: auto;
 }
 header .navbar .header-form input:focus {
   box-shadow: none;
@@ -1155,7 +1174,8 @@ header .navbar .header-form .header-search-btn {
   width: 3.125rem;
   height: 2.125rem;
   position: absolute;
-  right: 12px;
+  right: 4px;
+  top: 2px;
   padding-top: 2px;
 }
 header .navbar .header-form .header-search-btn:focus {
@@ -1166,6 +1186,14 @@ header .navbar .header-form .header-search-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  header .navbar .header-form {
+    width: 16.75rem;
+  }
+  header .navbar .header-form input {
+    width: inherit;
+  }
 }
 header .side_Bar {
   position: fixed;
@@ -1260,7 +1288,7 @@ header .overlay_Div {
 
 @media screen and (max-width: 767px) {
   .header-form {
-    width: 14.75rem !important;
+    width: 12.75rem !important;
   }
 
   .side_Bar .menu-list .menu-links {
@@ -1278,9 +1306,13 @@ header .overlay_Div {
 }
 .sticky_accordion {
   position: fixed;
-  top: 50px;
+  top: 48px;
   left: 0px;
   right: 0px;
+}
+
+.post-sticky-accordion-btn {
+  font-size: 1.4rem !important;
 }
 
 .header-btn-1 {
@@ -1354,6 +1386,11 @@ header .overlay_Div {
 .product__page .bottom-section .accordion-item .accordion-body p {
   color: #212529;
   font-size: 1.1rem;
+}
+@media screen and (max-width: 767px) {
+  .product__page .bottom-section .accordion-item .accordion-body ul li {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1440,22 +1477,28 @@ header .overlay_Div {
   align-items: center;
   font-size: 1rem;
   font-family: "PT Serif", serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .post__page .post-content-section .TBC-container .table-of-content li a span {
   margin-bottom: 0px;
+  font-weight: 500 !important;
 }
-.post__page .post-content-section .TBC-container .table-of-content li a span {
+.post__page .post-content-section .TBC-container .table-of-content li a .tbc_number_div {
   border-right: solid 1px #212529;
   margin-right: 10px;
   padding: 0px 10px;
 }
-.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active, .post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active,
+.post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active {
   background-color: #212529;
 }
-.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a, .post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active a {
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a,
+.post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active a {
   color: #f8f9fa;
-  font-weight: 500;
+}
+.post__page .post-content-section .TBC-container .table-of-content .tbc_links.active a span,
+.post__page .post-content-section .TBC-container .table-of-content .mobile_tbc_links.active a span {
+  font-weight: 400 !important;
 }
 .post__page .post-content-section .cta_main #post_cta_slider .owl-nav {
   bottom: -4rem;
@@ -1574,6 +1617,12 @@ header .overlay_Div {
 .post__page .post-content-section .headings {
   font-size: 1.7rem;
   margin: 30px 0px 10px;
+}
+.post__page .post-content-section .heading {
+  margin-top: 1rem;
+}
+.post__page .post-content-section .heading span {
+  font-weight: 600 !important;
 }
 .post__page .post-content-section p {
   font-family: "Ubuntu", sans-serif;
@@ -1710,7 +1759,7 @@ header .overlay_Div {
   padding-left: 30px;
   list-style: none;
   background-size: 20px;
-  background: url("../assets/images/success-img.png") no-repeat 4px 4px;
+  background: url("../assets/images/edit.png") no-repeat 4px 4px;
 }
 
 @media screen and (max-width: 399px) {
@@ -1728,14 +1777,26 @@ header .overlay_Div {
   .post__page .accordian-heading .accordion-button {
     font-size: 1.3rem !important;
   }
-  .post__page .blog-body ul li, .post__page .blog-body ol li {
+  .post__page .blog-body h1 {
+    font-size: 1.5rem;
+  }
+  .post__page .blog-body h2 {
+    font-size: 1.3rem;
+  }
+  .post__page .blog-body h3 {
+    font-size: 1.1rem;
+  }
+  .post__page .blog-body ul li,
+.post__page .blog-body ol li {
     font-size: 1.1875rem;
   }
 }
 @media screen and (max-width: 922px) {
-  .TBC-container .table-of-content li a span,
+  .TBC-container .table-of-content li a strong,
+.TBC-container .table-of-content li a span,
 .TBC-container .table-of-content li a h2 {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 500;
   }
 }
 .search_section .search_heading h1 {
@@ -1866,6 +1927,9 @@ header .overlay_Div {
   height: 90px;
   margin-bottom: 0px;
 }
+.section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul li p {
+  margin-bottom: 0px;
+}
 @media screen and (max-width: 767px) {
   .section_productpage .categorysection2 .categorybox .categorybox_inside .categorydetail_content .cd_span ul li {
     font-size: 1.1875rem;
@@ -1883,7 +1947,7 @@ header .overlay_Div {
   font-size: 15px;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button p {
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 .section_productpage .categorysection2 .categorybox .categorybox_inside .cd_button span {
   font-size: 22px;
@@ -1930,4 +1994,10 @@ header .overlay_Div {
   background-color: #212529;
   display: block;
   width: 136px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
 }
