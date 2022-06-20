@@ -51,7 +51,7 @@ include('./include/header.php') ?>
                     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $class="";
                     foreach ($data as $data){
-                    
+                      $cat_id = $data['id'];
                         if($i==0){
                             $class="show active";
                         }else {
@@ -69,11 +69,11 @@ include('./include/header.php') ?>
              <div class="container">
                <div class="row" id="productAjaxdata">
                <?php
-                                $stmt = $conn->prepare("SELECT * FROM `product` ORDER BY id DESC limit 4");
-                                $stmt->execute();
-                                $data1 = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                foreach ($data1 as $data_pro)
-                                {	
+                      $stmt = $conn->prepare("SELECT * FROM `product` WHERE status=? AND cat_id=? ORDER BY id DESC limit 4");
+                      $stmt->execute([1,$cat_id]);
+                      $data1 = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                      foreach ($data1 as $data_pro)
+                      {	
                                   $stmt_img = $conn->prepare("SELECT * FROM `images` WHERE id=?");
                                   $stmt_img->execute([$data_pro['img_id']]);
                                   $img_data = $stmt_img->fetchAll(PDO::FETCH_ASSOC);
