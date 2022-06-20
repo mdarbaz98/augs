@@ -2,7 +2,7 @@
     include('include/config.php');
     if(isset($_POST['btn'])){
     $targetDir = "uploads/"; 
-    $allowTypes = array('jpg','png','jpeg','gif');      
+    $allowTypes = array('jpg','png','jpeg','gif','webp');      
     $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = ''; 
     $filename = array_filter($_FILES['files']['name']); 
     if(!empty($filename)){ 
@@ -15,7 +15,7 @@
         $date = date("Y-m-d H:i");
         // Check whether file type is valid 
         $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
-      if(in_array($fileType, $allowTypes)){ 
+     // if(in_array($fileType, $allowTypes)){ 
         // Upload file to server 
             if(move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)){ 
                 // Image conn insert sql 
@@ -30,9 +30,9 @@
             }else{ 
                 $errorUpload .= $_FILES['files']['name'][$key].' | '; 
             }     
-      }else{ 
-          $errorUploadType .= $_FILES['files']['name'][$key].' | '; 
-      }
+      // }else{ 
+      //     $errorUploadType .= $_FILES['files']['name'][$key].' | '; 
+      // }
       $i++; 
     }
         if($i>0){
